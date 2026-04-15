@@ -1,0 +1,11 @@
+.vercel/
+_workspace/
+__pycache__/
+*.pyc
+.DS_Store
+node_modules/
+.env.local
+.env*.local
+.mcp.json
+.mcp.local.json
+.claude/settings.local.json
