@@ -1,0 +1,69 @@
+{
+  "slug": "2511-equitac-tactile-equivariance",
+  "post_number": 37,
+  "source_title": "Residual Rotation Correction using Tactile Equivariance",
+  "domain": "robotics",
+  "subfields": [
+    "tactile-sensing",
+    "in-hand-manipulation",
+    "equivariant-learning"
+  ],
+  "key_concepts": [
+    "tactile-equivariance",
+    "SO2-symmetry",
+    "surface-normal-map",
+    "residual-rotation",
+    "flow-matching",
+    "sample-efficiency"
+  ],
+  "methodology": [
+    "equivariant-network",
+    "flow-matching",
+    "imitation-learning",
+    "tactile-sensing"
+  ],
+  "taxonomy_primary": "robotics/hand/tactile",
+  "taxonomy_secondary": [
+    "robotics/hand/dexterous"
+  ],
+  "ai_summary": {
+    "one_liner": "SO(2)-equivariant tactile network for sample-efficient in-hand rotation correction — 90% success from 10 demos",
+    "problem": "Tactile data collection is expensive; existing visuotactile policies need large datasets to generalize across orientations",
+    "solution": "Exploit SO(2) equivariance in tactile normal maps via C8-equivariant CNN for residual yaw correction on top of flow matching base policy",
+    "key_result": "Mean 2.9° angular error (vs 13.5° w/o equivariance); 90% success with 10 demos (baseline: 75% with 60 demos); zero-shot to unseen screw geometries",
+    "limitations": [
+      "SO(2) only, not SE(3)",
+      "Real-world multimodal data still expensive",
+      "2-DOF gripper yaw correction only"
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "2-DoF 그리퍼의 yaw 보정에 국한되며, 다지 손의 풍부한 인핸드 조작(예: 손가락 재배치)에 대한 확장 가능성은 미검증",
+      "source": "ai_analysis",
+      "relates_to": []
+    }
+  ],
+  "relations": [
+    {
+      "slug": "2407-tactile-skin-inhand-translation",
+      "type": "related",
+      "strength": "tangential"
+    },
+    {
+      "slug": "2409-3dtactile-dex",
+      "type": "related",
+      "strength": "tangential"
+    },
+    {
+      "slug": "2504-pp-tac",
+      "type": "related",
+      "strength": "tangential"
+    }
+  ],
+  "source_author": "Yizhe Zhu et al.",
+  "source_date": "2025-11-10T00:00:00Z",
+  "published_at": "2026-04-15T00:00:00Z"
+}

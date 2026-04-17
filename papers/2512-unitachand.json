@@ -1,0 +1,77 @@
+{
+  "slug": "2512-unitachand",
+  "post_number": 16,
+  "source_title": "UniTacHand: Unified Spatio-Tactile Representation for Human to Robotic Hand Skill Transfer",
+  "domain": "robotics",
+  "subfields": [
+    "dexterous-manipulation",
+    "tactile-sensing",
+    "human-robot-transfer"
+  ],
+  "key_concepts": [
+    "MANO-UV-mapping",
+    "unified-tactile-representation",
+    "contrastive-learning",
+    "human-to-robot-transfer",
+    "zero-shot-transfer",
+    "tactile-sensing",
+    "domain-adaptation",
+    "dexterous-manipulation"
+  ],
+  "methodology": [
+    "MANO-UV-projection",
+    "contrastive-learning",
+    "domain-adversarial-training",
+    "physics-informed-augmentation",
+    "imitation-learning"
+  ],
+  "taxonomy_primary": "robotics/hand/tactile",
+  "taxonomy_secondary": [
+    "robotics/hand/dexterous"
+  ],
+  "ai_summary": {
+    "one_liner": "인간 햅틱 글러브와 로봇 손의 이질적 촉각 신호를 MANO UV 맵으로 통합하고 대조 학습으로 정렬해, 단 10분 페어 데이터로 제로샷 정책 이전 달성",
+    "problem": "인간 손(137 센서)과 로봇 손(1062 센서)의 이질적 촉각 데이터를 같은 공간에 표현하는 방법 부재",
+    "solution": "MANO 손 모델 UV 맵으로 인간·로봇 촉각 모두 투영 후, InfoNCE 대조 학습 + 도메인 적대적 학습 + 물리 기반 증강으로 정렬",
+    "key_result": "제로샷 조작 85~100%, 원샷 73.3% (UV-Direct 63.3% 대비 +10%p), 10분 페어 데이터만으로 달성",
+    "limitations": [
+      "현재 페어 데이터셋 규모에서 듀얼 디코더가 ~25 에포크 후 과적합",
+      "단일 로봇 플랫폼 (RealMan 6-DoF + 촉각 손) 검증만",
+      "🤖 MANO UV 맵 정렬은 손가락 형태·관절 개수가 유사한 손에만 적용 가능 — 형태가 크게 다른 비인간형 말단장치(gripper 등)로 확장 어려움"
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "MANO UV 정렬은 인간형 손(5손가락)과 형태가 유사한 로봇 손에만 적용 가능 — 2~3손가락 그리퍼처럼 형태가 크게 다른 말단장치로의 확장성은 근본적으로 제약됨",
+      "source": "ai_analysis",
+      "relates_to": []
+    }
+  ],
+  "relations": [
+    {
+      "target": "2409-3dtactile-dex",
+      "type": "related",
+      "strength": "tangential"
+    },
+    {
+      "target": "2407-tactile-skin-inhand-translation",
+      "type": "related",
+      "strength": "tangential"
+    },
+    {
+      "target": "2504-pp-tac",
+      "type": "related",
+      "strength": "tangential"
+    },
+    {
+      "target": "2505-dexumi",
+      "type": "related",
+      "strength": "tangential"
+    }
+  ],
+  "source_author": "Chi Zhang et al.",
+  "source_date": "2025-12-24",
+  "published_at": "2026-03-19T11:00:00+09:00"
+}

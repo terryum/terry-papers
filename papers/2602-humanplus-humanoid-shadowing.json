@@ -1,0 +1,76 @@
+{
+  "slug": "2602-humanplus-humanoid-shadowing",
+  "post_number": 38,
+  "source_title": "EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data",
+  "domain": "robotics",
+  "subfields": [
+    "dexterous-manipulation",
+    "vla",
+    "scaling-law",
+    "human-to-robot-transfer"
+  ],
+  "key_concepts": [
+    "egocentric-video",
+    "scaling-law",
+    "dexterous-manipulation",
+    "VLA",
+    "human-to-robot-transfer",
+    "flow-matching",
+    "cross-embodiment"
+  ],
+  "methodology": [
+    "flow-matching",
+    "imitation-learning",
+    "transfer-learning",
+    "scaling-analysis"
+  ],
+  "taxonomy_primary": "robotics/hand/dexterous",
+  "taxonomy_secondary": [
+    "robotics/brain/vla"
+  ],
+  "ai_summary": {
+    "one_liner": "20,854 hours egocentric human video pretraining discovers scaling law (R²=0.9983) for robot dexterous manipulation",
+    "problem": "Robot dexterity data is scarce; can massive egocentric human video scale robot manipulation performance?",
+    "solution": "Two-stage framework: large-scale human pretraining (20K hours) + lightweight aligned human-robot mid-training with flow-based VLA",
+    "key_result": "54% avg success rate improvement; scaling law R²=0.9983; one-shot shirt folding 88%; cross-embodiment 30%p improvement",
+    "limitations": [
+      "No saturation observed — more data needed",
+      "5 lab tasks only",
+      "Self-supervised unlabeled video unexplored"
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "5개 실험실 과제에서만 검증되었으며, 비구조적 실환경에서의 일반화와 연속 운영 안정성은 미검증",
+      "source": "ai_analysis",
+      "relates_to": []
+    }
+  ],
+  "relations": [
+    {
+      "slug": "2303-diffusion-policy",
+      "type": "uses_method",
+      "strength": "foundational"
+    },
+    {
+      "slug": "2410-pi0-vla-flow-model",
+      "type": "builds_on",
+      "strength": "foundational"
+    },
+    {
+      "slug": "2505-dexumi",
+      "type": "related",
+      "strength": "tangential"
+    },
+    {
+      "slug": "2511-act1-robot-foundation-model",
+      "type": "compares_with",
+      "strength": "direct"
+    }
+  ],
+  "source_author": "Ruijie Zheng et al.",
+  "source_date": "2026-02-18T00:00:00Z",
+  "published_at": "2026-04-15T00:00:00Z"
+}

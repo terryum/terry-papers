@@ -1,0 +1,69 @@
+{
+  "slug": "2603-roboclaw-agentic-long-horizon",
+  "post_number": 20,
+  "source_title": "RoboClaw: An Agentic Framework for Scalable Long-Horizon Robotic Tasks",
+  "domain": "robotics",
+  "subfields": [
+    "manipulation",
+    "long-horizon-planning",
+    "agentic-framework",
+    "data-collection"
+  ],
+  "key_concepts": [
+    "VLA",
+    "Entangled-Action-Pairs",
+    "self-resetting",
+    "MCP-tools",
+    "VLM-agent",
+    "policy-orchestration"
+  ],
+  "methodology": [
+    "imitation-learning",
+    "LoRA-fine-tuning",
+    "agentic-inference"
+  ],
+  "taxonomy_primary": "robotics/brain/vla",
+  "taxonomy_secondary": [
+    "robotics/arm"
+  ],
+  "ai_summary": {
+    "one_liner": "Agentic framework unifying VLA data collection, policy learning, and long-horizon deployment under a single VLM controller with self-resetting EAP loops",
+    "problem": "VLA pipelines separate data collection, learning, and deployment, requiring heavy manual resets and causing semantic mismatch that degrades multi-policy robustness",
+    "solution": "Single VLM agent with Entangled Action Pairs (forward+inverse policies) for autonomous self-resetting data collection, structured memory, and MCP tool interface for unified lifecycle management",
+    "key_result": "25% success rate improvement on long-horizon tasks and 53.7% reduction in human time investment compared to baselines",
+    "limitations": [
+      "Single platform (Agibot G1) evaluation only",
+      "EAP requires reversible tasks",
+      "Falls back to human when inverse policy fails"
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "역방향 정책이 실패할 경우 인간 호출에 의존하며, 복잡한 비가역적 태스크(예: 물 붓기)에 대한 EAP 적용은 미검증",
+      "source": "author",
+      "relates_to": []
+    },
+    {
+      "question": "실험이 단일 플랫폼(Agibot G1)의 tabletop 정리 태스크에 한정되어 있어, 다양한 로봇 형태나 조작 도메인(예: deformable objects, 공구 사용)으로의 일반화 가능성은 검증되지 않았다",
+      "source": "ai_analysis",
+      "relates_to": []
+    }
+  ],
+  "relations": [
+    {
+      "target": "2410-pi0-vla-flow-model",
+      "type": "builds_on",
+      "strength": "foundational"
+    },
+    {
+      "target": "2603-capx-coding-agents-manipulation",
+      "type": "compares_with",
+      "strength": "direct"
+    }
+  ],
+  "source_author": "Ruiying Li et al.",
+  "source_date": "2026-03-12T00:00:00Z",
+  "published_at": "2026-04-03T00:00:00Z"
+}

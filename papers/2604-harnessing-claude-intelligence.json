@@ -1,0 +1,66 @@
+{
+  "slug": "2604-harnessing-claude-intelligence",
+  "post_number": 25,
+  "source_title": "Harnessing Claude's Intelligence",
+  "domain": "ai",
+  "subfields": [
+    "agent-engineering",
+    "llm-application",
+    "harness-design",
+    "context-management"
+  ],
+  "key_concepts": [
+    "agent-harness",
+    "tool-composition",
+    "self-orchestration",
+    "prompt-caching",
+    "progressive-context",
+    "memory-persistence",
+    "declarative-tools",
+    "context-management"
+  ],
+  "methodology": [
+    "benchmark-evaluation",
+    "ablation-study",
+    "design-pattern-analysis"
+  ],
+  "taxonomy_primary": "ai/agent",
+  "taxonomy_secondary": [
+    "ai/llm"
+  ],
+  "ai_summary": {
+    "one_liner": "Three architectural patterns for building applications that adapt to Claude's evolving intelligence: use general tools, enable self-orchestration, and set boundaries carefully",
+    "problem": "Agent frameworks encode assumptions about LLM limitations that become outdated as capabilities evolve, creating unnecessary bottlenecks on performance",
+    "solution": "Three design patterns: (1) use general-purpose tools Claude already knows (bash, text editor), (2) let Claude self-orchestrate via code execution, progressive context, and memory persistence, (3) set boundaries through prompt caching, declarative tools, and security layers",
+    "key_result": "Claude 3.5 Sonnet achieved 49% on SWE-bench Verified with just bash + text editor; Opus 4.6 BrowseComp improved from 45.3% to 61.6% with self-orchestration; Opus 4.6 reached 84% on BrowseComp with compaction",
+    "limitations": [
+      "Patterns are prescriptive guidelines rather than empirically validated across diverse domains",
+      "SWE-bench and BrowseComp are specific benchmarks; generalization to other agent tasks is assumed but not shown",
+      "Cost-latency tradeoffs not quantified beyond prompt caching discount"
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "프롬프트 캐싱의 10% 비용 절감 외에 3가지 패턴 적용 시의 전체적인 비용-레이턴시 트레이드오프가 정량화되지 않아, 실제 프로덕션 환경에서의 경제성 판단이 어렵다",
+      "source": "ai_analysis",
+      "relates_to": []
+    }
+  ],
+  "relations": [
+    {
+      "target": "2603-meta-harness-optimization",
+      "type": "related",
+      "strength": "tangential"
+    },
+    {
+      "target": "2502-ai-co-scientist",
+      "type": "related",
+      "strength": "tangential"
+    }
+  ],
+  "source_author": "Lance Martin",
+  "source_date": "2026-04-02",
+  "published_at": "2026-04-03T18:00:00Z"
+}

@@ -1,0 +1,75 @@
+{
+  "slug": "2601-umi-ft-compliant-manipulation",
+  "post_number": 36,
+  "source_title": "In-the-Wild Compliant Manipulation with UMI-FT",
+  "domain": "robotics",
+  "subfields": [
+    "force-control",
+    "compliant-manipulation",
+    "imitation-learning",
+    "data-collection"
+  ],
+  "key_concepts": [
+    "CoinFT",
+    "adaptive-compliance-policy",
+    "force-torque-sensing",
+    "admittance-control",
+    "in-the-wild-demonstration",
+    "UMI"
+  ],
+  "methodology": [
+    "imitation-learning",
+    "diffusion-model",
+    "admittance-control",
+    "compliance-control"
+  ],
+  "taxonomy_primary": "robotics/arm/force-control",
+  "taxonomy_secondary": [
+    "robotics/brain"
+  ],
+  "ai_summary": {
+    "one_liner": "UMI + 2g CoinFT 6-axis sensors on each finger for in-the-wild force-aware compliant manipulation learning",
+    "problem": "Contact-rich manipulation requires force modulation but commercial F/T sensors are too expensive/bulky for in-the-wild data collection",
+    "solution": "CoinFT per-finger sensors + Adaptive Compliance Policy predicting position, grasp force, and stiffness simultaneously via 3 parallel control loops",
+    "key_result": "Whiteboard wiping 92%, zucchini skewering 80% (in-the-wild: 100%), lightbulb insertion 95% — overwhelming advantage over force-unaware baselines",
+    "limitations": [
+      "Tethered via USB-serial",
+      "CoinFT delamination risk",
+      "3 single-arm tasks only"
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "3개의 비교적 단순한 1팔 접촉 과제에서만 검증되었으며, 양팔 협응이나 변형체 조작의 복합 과제로의 확장은 미검증",
+      "source": "ai_analysis",
+      "relates_to": []
+    }
+  ],
+  "relations": [
+    {
+      "slug": "2402-umi-universal-manipulation-interface",
+      "type": "builds_on",
+      "strength": "foundational"
+    },
+    {
+      "slug": "2303-diffusion-policy",
+      "type": "uses_method",
+      "strength": "foundational"
+    },
+    {
+      "slug": "2501-dexforce-force-informed-actions",
+      "type": "related",
+      "strength": "tangential"
+    },
+    {
+      "slug": "2505-forcevla-force-aware-moe",
+      "type": "related",
+      "strength": "tangential"
+    }
+  ],
+  "source_author": "Hojung Choi et al.",
+  "source_date": "2026-01-15T00:00:00Z",
+  "published_at": "2026-04-15T00:00:00Z"
+}

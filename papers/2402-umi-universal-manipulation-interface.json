@@ -1,0 +1,72 @@
+{
+  "slug": "2402-umi-universal-manipulation-interface",
+  "post_number": 35,
+  "source_title": "Universal Manipulation Interface: In-The-Wild Robot Teaching Without In-The-Wild Robots",
+  "domain": "robotics",
+  "subfields": [
+    "manipulation",
+    "imitation-learning",
+    "data-collection",
+    "visuomotor-policy"
+  ],
+  "key_concepts": [
+    "hand-held-gripper",
+    "in-the-wild-demonstration",
+    "fisheye-camera",
+    "side-mirror-stereo",
+    "relative-trajectory",
+    "latency-matching",
+    "diffusion-policy",
+    "zero-shot-generalization"
+  ],
+  "methodology": [
+    "imitation-learning",
+    "diffusion-model",
+    "SLAM",
+    "data-collection-interface"
+  ],
+  "taxonomy_primary": "robotics/brain",
+  "taxonomy_secondary": [
+    "robotics/arm"
+  ],
+  "ai_summary": {
+    "one_liner": "$371 hand-held gripper + GoPro for in-the-wild robot teaching — zero-shot deployment across multiple robot platforms",
+    "problem": "Teleoperation-based data collection is expensive, environment-limited, and cannot demonstrate dynamic/bimanual tasks",
+    "solution": "Hand-held gripper with fisheye camera + side mirrors + IMU-SLAM for in-the-wild data, Diffusion Policy with latency matching and relative trajectory for hardware-agnostic deployment",
+    "key_result": "Cup arrangement 100%, dynamic tossing 87.5%, bimanual cloth folding 70%, dish washing 70%; zero-shot generalization to unseen environments (71.7% vs 0% with lab data)",
+    "limitations": [
+      "Relies on data filtering for kinematic feasibility",
+      "SLAM fails in texture-poor environments",
+      "2-DOF gripper only"
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "2-DoF 그리퍼만 지원하므로 다지 손의 풍부한 조작 능력을 활용할 수 없으며, 이는 후속 연구 DexUMI에서 부분적으로 해결됨",
+      "source": "ai_analysis",
+      "relates_to": []
+    }
+  ],
+  "relations": [
+    {
+      "slug": "2303-diffusion-policy",
+      "type": "builds_on",
+      "strength": "foundational"
+    },
+    {
+      "slug": "2505-dexumi",
+      "type": "related",
+      "strength": "tangential"
+    },
+    {
+      "slug": "2602-robopaint",
+      "type": "related",
+      "strength": "tangential"
+    }
+  ],
+  "source_author": "Cheng Chi et al.",
+  "source_date": "2024-02-15T00:00:00Z",
+  "published_at": "2026-04-15T00:00:00Z"
+}

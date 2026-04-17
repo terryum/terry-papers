@@ -1,0 +1,63 @@
+{
+  "slug": "2603-medical-ai-scientist",
+  "post_number": 21,
+  "source_title": "Towards a Medical AI Scientist",
+  "domain": "ai",
+  "subfields": [
+    "medical-ai",
+    "autonomous-research",
+    "multi-agent",
+    "scientific-discovery"
+  ],
+  "key_concepts": [
+    "AI-scientist",
+    "clinician-engineer-co-reasoning",
+    "autonomous-research",
+    "multi-agent-framework",
+    "medical-evidence"
+  ],
+  "methodology": [
+    "multi-agent-system",
+    "LLM-based-evaluation",
+    "double-blind-evaluation"
+  ],
+  "taxonomy_primary": "ai/agent",
+  "taxonomy_secondary": [
+    "ai/llm"
+  ],
+  "ai_summary": {
+    "one_liner": "First autonomous research framework specialized for clinical medicine with clinician-engineer co-reasoning for evidence-grounded ideation and MICCAI-level manuscript generation",
+    "problem": "Existing AI Scientists are domain-agnostic and cannot handle clinical medicine's requirements for medical evidence, specialized data modalities, and ethical policies",
+    "solution": "Multi-agent framework with clinician-engineer co-reasoning, 3 progressive research modes (reproduction/innovation/exploration), medical toolbox (MONAI), and evidence-grounded manuscript composer",
+    "key_result": "Outperforms Gemini 2.5 Pro and GPT-5 in idea quality across 171 cases/19 tasks; generated papers approach MICCAI level in double-blind evaluation",
+    "limitations": [
+      "Focused on medical imaging/time-series/text only",
+      "No genomics or drug discovery evaluation",
+      "Automated evaluation vs actual peer review gap"
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "현재 프레임워크는 의학 영상/시계열/텍스트에 집중하며, 유전체학이나 약물 발견 등 다른 의학 서브도메인으로의 확장은 미검증",
+      "source": "author",
+      "relates_to": []
+    },
+    {
+      "question": "MICCAI \"수준에 근접\"한다는 평가가 있지만, 실제 peer review를 통과하는 것과 자동 평가 점수는 다른 문제이며, 생성된 아이디어의 실제 임상적 가치나 재현성은 별도의 장기 검증이 필요하다",
+      "source": "ai_analysis",
+      "relates_to": []
+    }
+  ],
+  "relations": [
+    {
+      "target": "2502-ai-co-scientist",
+      "type": "compares_with",
+      "strength": "direct"
+    }
+  ],
+  "source_author": "Hongtao Wu et al.",
+  "source_date": "2026-03-30T00:00:00Z",
+  "published_at": "2026-04-03T00:00:00Z"
+}

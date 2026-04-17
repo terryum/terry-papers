@@ -1,0 +1,69 @@
+{
+  "slug": "2604-gen1-scaling-mastery",
+  "post_number": 24,
+  "source_title": "GEN-1: Scaling Embodied Foundation Models to Mastery",
+  "domain": "robotics",
+  "subfields": [
+    "foundation-model",
+    "scaling",
+    "commercial-deployment"
+  ],
+  "key_concepts": [
+    "embodied-foundation-model",
+    "mastery",
+    "scaling-laws",
+    "wearable-pretraining",
+    "harmonic-reasoning",
+    "VLA"
+  ],
+  "methodology": [
+    "pretraining",
+    "fine-tuning",
+    "reinforcement-learning",
+    "multi-task-learning"
+  ],
+  "taxonomy_primary": "robotics/brain/vla",
+  "taxonomy_secondary": [
+    "robotics/arm"
+  ],
+  "ai_summary": {
+    "one_liner": "Second-generation embodied foundation model achieving 99% task success rates at 3x speed with only 1 hour of task-specific robot data",
+    "problem": "First-gen embodied models like GEN-0 achieved ~64% success rates — not commercially viable for real-world deployment",
+    "solution": "GEN-1: scaled pretraining on 500K+ hours of human wearable data (no robot data), redesigned multimodal architecture, RL-based post-training, and inference-time optimization with harmonic reasoning",
+    "key_result": "99% success rates across 6 tasks (vs. GEN-0's 64%), 3x faster execution, 10x less task-specific fine-tuning data needed",
+    "limitations": [
+      "Not all attempted tasks reach mastery-level performance",
+      "Emergent improvisation behaviors can be liabilities when misaligned with task objectives",
+      "No open-source model or dataset release"
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "모델과 데이터셋이 비공개이므로 독립적 재현이 불가능하며, 성능 주장이 자체 벤치마크에 의존",
+      "source": "ai_analysis",
+      "relates_to": []
+    }
+  ],
+  "relations": [
+    {
+      "target": "2511-gen0-embodied-foundation-model",
+      "type": "builds_on",
+      "strength": "foundational"
+    },
+    {
+      "target": "2410-pi0-vla-flow-model",
+      "type": "related",
+      "strength": "tangential"
+    },
+    {
+      "target": "2511-pi0-6-recap",
+      "type": "related",
+      "strength": "tangential"
+    }
+  ],
+  "source_author": "Generalist AI Team",
+  "source_date": "2026-04-02T00:00:00Z",
+  "published_at": "2026-04-03T00:00:00Z"
+}

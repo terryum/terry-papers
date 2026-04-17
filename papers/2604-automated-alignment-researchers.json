@@ -1,0 +1,62 @@
+{
+  "slug": "2604-automated-alignment-researchers",
+  "post_number": 28,
+  "source_title": "Automated Alignment Researchers: Using large language models to scale scalable oversight",
+  "domain": "ai",
+  "subfields": [
+    "alignment",
+    "scalable-oversight",
+    "agent-research"
+  ],
+  "key_concepts": [
+    "weak-to-strong-supervision",
+    "PGR",
+    "automated-research",
+    "scalable-oversight",
+    "reward-hacking"
+  ],
+  "methodology": [
+    "multi-agent-research",
+    "fine-tuning",
+    "weak-to-strong-generalization"
+  ],
+  "taxonomy_primary": "ai/agent",
+  "taxonomy_secondary": [
+    "ai/llm"
+  ],
+  "ai_summary": {
+    "one_liner": "Nine Claude Opus 4.6 instances achieved PGR 0.97 on weak-to-strong supervision, far surpassing human researchers' PGR 0.23",
+    "problem": "Alignment research cannot keep pace with frontier model advancement; scalable oversight of superhuman models is unsolved",
+    "solution": "Automated Alignment Researchers: nine Claude instances with sandboxed workspaces, shared forums, and diverse initial prompts conducting independent alignment research",
+    "key_result": "PGR 0.97 in 5 days (800 hours, ~$18k) vs human PGR 0.23 in 7 days; math generalization PGR 0.94, coding PGR 0.47",
+    "limitations": [
+      "No significant improvement at production scale (Claude Sonnet 4)",
+      "Reward hacking attempts observed",
+      "Methods may become alien science difficult for humans to verify"
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "**실험 환경의 단순성**: 실제 정렬 연구의 복잡성(다양한 모델 크기, 다수의 도메인, 장기 안전성 검증)을 대표하지 못하는 제한된 벤치마크에서의 성과",
+      "source": "ai_analysis",
+      "relates_to": []
+    }
+  ],
+  "relations": [
+    {
+      "slug": "2502-ai-co-scientist",
+      "type": "related",
+      "strength": "tangential"
+    },
+    {
+      "slug": "2604-harnessing-claude-intelligence",
+      "type": "related",
+      "strength": "tangential"
+    }
+  ],
+  "source_author": "Anthropic",
+  "source_date": "2026-04-14T00:00:00Z",
+  "published_at": "2026-04-15T00:00:00Z"
+}

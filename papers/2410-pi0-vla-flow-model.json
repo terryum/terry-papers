@@ -1,0 +1,54 @@
+{
+  "slug": "2410-pi0-vla-flow-model",
+  "post_number": 2,
+  "source_title": "π₀: A Vision-Language-Action Flow Model for General Robot Control",
+  "domain": "robotics",
+  "subfields": [
+    "manipulation",
+    "foundation-model",
+    "visuomotor-policy"
+  ],
+  "key_concepts": [
+    "VLA",
+    "flow-matching",
+    "pre-training",
+    "fine-tuning"
+  ],
+  "methodology": [
+    "imitation-learning",
+    "flow-matching",
+    "pre-training"
+  ],
+  "taxonomy_primary": "robotics/brain/vla",
+  "taxonomy_secondary": [],
+  "ai_summary": {
+    "one_liner": "Generalist VLA policy using pre-trained VLM + flow matching action expert for multi-robot control",
+    "problem": "No single generalist robot policy that works across diverse embodiments and tasks",
+    "solution": "Pre-trained 3B VLM backbone with flow matching action expert, trained on 10K+ hours of diverse robot data",
+    "key_result": "50%+ max score on complex long-horizon tasks; strong zero-shot and fine-tuning transfer",
+    "limitations": [
+      "Requires large-scale robot data",
+      "Limited to manipulation tasks tested",
+      "No force/tactile sensing"
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "**자체 데이터 비공개**: 사전학습 데이터의 90.9%가 비공개 자체 데이터(π 데이터셋)로, 외부 연구자의 재현성이 크게 제한됨",
+      "source": "ai_analysis",
+      "relates_to": []
+    }
+  ],
+  "relations": [
+    {
+      "target": "2511-pi0-6-recap",
+      "type": "related",
+      "strength": "tangential"
+    }
+  ],
+  "source_author": "Kevin Black et al.",
+  "source_date": "2024-10-31T00:00:00Z",
+  "published_at": "2026-03-05T00:00:00Z"
+}

@@ -1,0 +1,60 @@
+{
+  "slug": "2511-pi0-6-recap",
+  "post_number": 4,
+  "source_title": "π₀.₆: a VLA That Learns From Experience",
+  "domain": "robotics",
+  "subfields": [
+    "manipulation",
+    "foundation-model",
+    "reinforcement-learning"
+  ],
+  "key_concepts": [
+    "VLA",
+    "reinforcement-learning",
+    "value-function",
+    "advantage-weighted-regression",
+    "iterative-improvement"
+  ],
+  "methodology": [
+    "reinforcement-learning",
+    "advantage-weighted-regression",
+    "flow-matching"
+  ],
+  "taxonomy_primary": "robotics/brain/vla",
+  "taxonomy_secondary": [],
+  "ai_summary": {
+    "one_liner": "RL-based iterative improvement method (Recap) for VLA policies using advantage-weighted regression with a learned value function",
+    "problem": "VLA policies plateau with imitation learning alone; no scalable RL method for real-robot VLA fine-tuning",
+    "solution": "Recap: train separate value function from VLM, compute binarized advantages, condition VLA on success indicator",
+    "key_result": "2-3x throughput improvement on complex real-world tasks (laundry, box assembly, espresso) over IL-only baseline",
+    "limitations": [
+      "Requires autonomous data collection infrastructure",
+      "Binary advantage only",
+      "Tested on single bimanual platform"
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "시스템이 완전 자율화되지 않음 — 보상 레이블링, 전문가 개입, 에피소드 리셋에 여전히 사람의 노력이 필요하다. 탐색(exploration)이 주로 정책의 확률적 다양성과 사람 개입에 의존하며 체계적이지 않다. 완전 온라인 RL 루프(실시간 정책·가치함수 업데이트) 대신 반복적 오프라인 업데이트 방식을 사용한다.",
+      "source": "author",
+      "relates_to": []
+    },
+    {
+      "question": "advantage indicator를 이진으로 이산화하면 정보 손실이 발생하며, 연속적인 advantage 값을 활용하는 방법과의 비교가 없어 이 설계 선택의 최적성이 불분명하다.",
+      "source": "ai_analysis",
+      "relates_to": []
+    }
+  ],
+  "relations": [
+    {
+      "target": "2410-pi0-vla-flow-model",
+      "type": "builds_on",
+      "strength": "foundational"
+    }
+  ],
+  "source_author": "Ali Amin et al.",
+  "source_date": "2025-11-18",
+  "published_at": "2026-03-07T00:00:00Z"
+}

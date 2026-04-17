@@ -1,0 +1,57 @@
+{
+  "slug": "2603-meta-harness-optimization",
+  "post_number": 22,
+  "source_title": "Meta-Harness: End-to-End Optimization of Model Harnesses",
+  "domain": "ai",
+  "subfields": [
+    "harness-engineering",
+    "meta-optimization",
+    "llm-agent",
+    "code-search"
+  ],
+  "key_concepts": [
+    "harness-optimization",
+    "outer-loop-search",
+    "filesystem-experience",
+    "agentic-proposer",
+    "context-management"
+  ],
+  "methodology": [
+    "automated-search",
+    "agentic-code-generation",
+    "ablation-study"
+  ],
+  "taxonomy_primary": "ai/agent",
+  "taxonomy_secondary": [
+    "ai/llm"
+  ],
+  "ai_summary": {
+    "one_liner": "Outer-loop system that searches over LLM harness code by giving proposer agents full filesystem access to prior candidates' source, traces, and scores",
+    "problem": "LLM harnesses (code for information storage/retrieval/presentation) are hand-designed; existing text optimizers compress feedback too aggressively to optimize them",
+    "solution": "Agentic proposer with filesystem-based full access to all prior candidates' source code, execution traces, and evaluation scores for iterative harness improvement",
+    "key_result": "+7.7 on text classification (4x fewer tokens), +4.7 on IMO math across 5 models, #1 Haiku agent on TerminalBench-2",
+    "limitations": [
+      "High search cost per iteration",
+      "Only 3 domains tested",
+      "No scaling strategy for growing proposer context"
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "탐색 비용이 높아(iteration당 다수의 LLM 호출 + 평가) 소규모 태스크에서는 수작업이 더 효율적일 수 있음. 현재 3개 도메인에서만 검증",
+      "source": "author",
+      "relates_to": []
+    },
+    {
+      "question": "파일시스템 기반 경험 축적은 iteration이 증가할수록 proposer의 컨텍스트가 커져, 컨텍스트 윈도우 한계에 도달할 수 있으며, 이에 대한 스케일링 전략이 부재하다",
+      "source": "ai_analysis",
+      "relates_to": []
+    }
+  ],
+  "relations": [],
+  "source_author": "Yoonho Lee et al.",
+  "source_date": "2026-03-30T00:00:00Z",
+  "published_at": "2026-04-03T00:00:00Z"
+}

@@ -1,0 +1,60 @@
+{
+  "slug": "2505-forcevla-force-aware-moe",
+  "post_number": 1,
+  "source_title": "ForceVLA: Enhancing VLA Models with a Force-aware MoE for Contact-rich Manipulation",
+  "domain": "robotics",
+  "subfields": [
+    "manipulation",
+    "force-control",
+    "visuomotor-policy"
+  ],
+  "key_concepts": [
+    "VLA",
+    "flow-matching",
+    "MoE",
+    "force-torque-sensing"
+  ],
+  "methodology": [
+    "imitation-learning",
+    "mixture-of-experts"
+  ],
+  "taxonomy_primary": "robotics/brain/vla",
+  "taxonomy_secondary": [
+    "robotics/arm"
+  ],
+  "ai_summary": {
+    "one_liner": "Force-aware MoE module for VLA that dynamically routes F/T info across task phases",
+    "problem": "VLA models lack force sensing, failing at contact-rich manipulation",
+    "solution": "FVLMoE sparse MoE fusing 6-axis F/T with VLM embeddings via gating network",
+    "key_result": "+23.2%p avg success rate over baselines on 5 contact-rich tasks",
+    "limitations": [
+      "Single-arm only",
+      "F/T sensor at end-effector only",
+      "No sim-to-real transfer"
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "**단일 로봇 플랫폼**: Flexiv Rizon + Dahuan 그리퍼 조합에서만 검증되어, 다른 로봇/그리퍼로의 전이 가능성 미검증",
+      "source": "ai_analysis",
+      "relates_to": []
+    }
+  ],
+  "relations": [
+    {
+      "target": "2410-pi0-vla-flow-model",
+      "type": "builds_on",
+      "strength": "foundational"
+    },
+    {
+      "target": "2501-dexforce-force-informed-actions",
+      "type": "uses_method",
+      "strength": "foundational"
+    }
+  ],
+  "source_author": "Jiawen Yu et al.",
+  "source_date": "2025-05-28T00:00:00Z",
+  "published_at": "2026-03-04T00:00:00Z"
+}

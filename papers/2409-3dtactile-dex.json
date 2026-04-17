@@ -1,0 +1,77 @@
+{
+  "slug": "2409-3dtactile-dex",
+  "post_number": 14,
+  "source_title": "Canonical Representation and Force-Based Pretraining of 3D Tactile for Dexterous Visuo-Tactile Policy Learning",
+  "domain": "robotics",
+  "subfields": [
+    "dexterous-manipulation",
+    "tactile-sensing",
+    "self-supervised-learning"
+  ],
+  "key_concepts": [
+    "3D-tactile",
+    "canonical-representation",
+    "force-based-pretraining",
+    "self-supervised-pretraining",
+    "visuo-tactile-policy",
+    "dexterous-manipulation",
+    "diffusion-policy",
+    "GraphMAE"
+  ],
+  "methodology": [
+    "self-supervised-pretraining",
+    "graph-neural-network",
+    "masked-autoencoder",
+    "diffusion-policy",
+    "imitation-learning"
+  ],
+  "taxonomy_primary": "robotics/hand/tactile",
+  "taxonomy_secondary": [
+    "robotics/hand/dexterous"
+  ],
+  "ai_summary": {
+    "one_liner": "3D 촉각 데이터 학습의 어려움을 정규 좌표계 표현(canonical representation)과 힘 기반 자기지도 사전학습으로 해결해, 4가지 정밀 손 조작 태스크에서 78% 평균 성공률 달성",
+    "problem": "대규모 데이터셋이나 사전학습 백본이 없는 3D 촉각 데이터 학습의 고차원성·복잡성",
+    "solution": "정규 좌표계 표현 + GraphMAE 기반 로컬/넷 힘 예측 사전학습 → Diffusion Policy에 통합",
+    "key_result": "4개 정밀 접촉 태스크 평균 78% 성공률 (best baseline T-DEX 63% 대비 +15%p)",
+    "limitations": [
+      "형태/동역학이 크게 다른 미관찰 물체에 대한 일반화 제한",
+      "단일 로봇 플랫폼(LEAP Hand + FR3 arm) 검증만",
+      "🤖 force-based pretraining이 촉각 배치 방식에 의존적 — 다른 센서 토폴로지로 재현 시 canonicalization 재설계 필요"
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "Canonicalization이 촉각 센서의 물리적 배치(taxel topology)에 의존적 — 다른 형태의 센서에 적용 시 canonical 공간 재정의가 필요해 범용성 제약",
+      "source": "ai_analysis",
+      "relates_to": []
+    }
+  ],
+  "relations": [
+    {
+      "target": "2504-pp-tac",
+      "type": "related",
+      "strength": "tangential"
+    },
+    {
+      "target": "2407-tactile-skin-inhand-translation",
+      "type": "related",
+      "strength": "tangential"
+    },
+    {
+      "target": "2501-dexforce-force-informed-actions",
+      "type": "related",
+      "strength": "tangential"
+    },
+    {
+      "target": "2505-dexumi",
+      "type": "related",
+      "strength": "tangential"
+    }
+  ],
+  "source_author": "Tianhao Wu et al.",
+  "source_date": "2024-09-26",
+  "published_at": "2026-03-19T09:00:00+09:00"
+}

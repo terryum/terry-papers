@@ -1,0 +1,51 @@
+{
+  "slug": "2407-stretchable-glove-hand-pose",
+  "post_number": 6,
+  "source_title": "Stretchable glove for accurate and robust hand pose reconstruction based on comprehensive motion data",
+  "domain": "robotics",
+  "subfields": [
+    "wearable-sensing",
+    "hand-tracking",
+    "soft-robotics",
+    "teleoperation"
+  ],
+  "key_concepts": [
+    "stretchable-sensor",
+    "liquid-metal",
+    "forward-kinematics",
+    "bone-length-estimation",
+    "joint-angle-estimation",
+    "kalman-filter"
+  ],
+  "methodology": [
+    "gaussian-process-regression",
+    "bayesian-estimation",
+    "forward-kinematics"
+  ],
+  "taxonomy_primary": "robotics/hand/tactile",
+  "taxonomy_secondary": [],
+  "ai_summary": {
+    "one_liner": "Stretchable liquid-metal glove that estimates both finger bone lengths and joint angles from a single sensing mechanism for accurate hand pose reconstruction",
+    "problem": "Existing hand tracking gloves require bulky multi-sensor setups or manual bone length measurement, and evaluate only on limited hand poses",
+    "solution": "One-size-fits-all stretchable glove with 9 eGaIn traces that estimates bone lengths via initial stretch + Bayesian refinement, and joint angles via Kalman filter, using comprehensive motion data for calibration",
+    "key_result": "Bone length error 2.1mm, joint angle error 4.16°, fingertip 3D error 4.02mm — outperforming commercial hand tracking systems",
+    "limitations": [
+      "Only tracks 3 fingers (thumb, index, middle)",
+      "Bone length refinement requires constrained poses",
+      "Linear sensor model limits accuracy"
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "**선형 센서 모델**: 관절 각도 추정에 선형 시스템 모델을 사용하여, 비선형 센서 응답이 지배적인 극단 자세에서 정확도 저하 가능성",
+      "source": "ai_analysis",
+      "relates_to": []
+    }
+  ],
+  "relations": [],
+  "source_author": "Myungsun Park et al.",
+  "source_date": "2024-07-09T00:00:00Z",
+  "published_at": "2026-03-10T00:00:00Z"
+}

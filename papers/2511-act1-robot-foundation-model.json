@@ -1,0 +1,71 @@
+{
+  "slug": "2511-act1-robot-foundation-model",
+  "post_number": 29,
+  "source_title": "ACT-1: A Robot Foundation Model Trained on Zero Robot Data",
+  "domain": "robotics",
+  "subfields": [
+    "mobile-manipulation",
+    "foundation-model",
+    "embodiment-alignment",
+    "dexterous-manipulation"
+  ],
+  "key_concepts": [
+    "embodiment-alignment",
+    "skill-capture-glove",
+    "skill-transform",
+    "zero-shot-generalization",
+    "long-horizon-manipulation",
+    "foundation-model"
+  ],
+  "methodology": [
+    "imitation-learning",
+    "human-to-robot-transfer",
+    "end-to-end-learning"
+  ],
+  "taxonomy_primary": "robotics/brain",
+  "taxonomy_secondary": [
+    "robotics/arm"
+  ],
+  "ai_summary": {
+    "one_liner": "Home robot foundation model trained on zero robot data via Embodiment Alignment — human hand data directly transferred to robot",
+    "problem": "No internet-scale robot manipulation data exists; teleoperation creates a scaling deadlock",
+    "solution": "Embodiment Alignment: match robot hardware to human form + Skill Capture Glove + Skill Transform (90% conversion rate)",
+    "key_result": "Table-to-Dishwasher: 33 unique dexterous interactions, 21 objects, 130ft+ navigation; zero-shot generalization in unseen Airbnb homes",
+    "limitations": [
+      "No systematic benchmarks or quantitative success rates",
+      "Proprietary hardware prevents external reproduction",
+      "Skill Transform 10% failure impact unclear"
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "재현 불가: 독자적 하드웨어(로봇 + Skill Capture Glove)에 전적으로 의존하여 외부 연구자의 검증이나 확장이 불가능",
+      "source": "ai_analysis",
+      "relates_to": [
+        "skill-capture-glove"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "slug": "2511-gen0-embodied-foundation-model",
+      "type": "compares_with",
+      "strength": "direct"
+    },
+    {
+      "slug": "2604-gen1-scaling-mastery",
+      "type": "compares_with",
+      "strength": "direct"
+    },
+    {
+      "slug": "2410-pi0-vla-flow-model",
+      "type": "related",
+      "strength": "tangential"
+    }
+  ],
+  "source_author": "Sunday Robotics",
+  "source_date": "2025-11-19T00:00:00Z",
+  "published_at": "2026-04-15T00:00:00Z"
+}

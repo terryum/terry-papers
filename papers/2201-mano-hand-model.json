@@ -1,0 +1,71 @@
+{
+  "slug": "2201-mano-hand-model",
+  "post_number": 17,
+  "source_title": "Embodied Hands: Modeling and Capturing Hands and Bodies Together",
+  "domain": "robotics",
+  "subfields": [
+    "hand-pose-estimation",
+    "3D-modeling",
+    "computer-vision"
+  ],
+  "key_concepts": [
+    "statistical-hand-model",
+    "MANO",
+    "SMPL+H",
+    "blend-skinning",
+    "PCA",
+    "non-rigid-deformation",
+    "hand-mesh",
+    "pose-blendshapes",
+    "4D-scan",
+    "body-hand-model"
+  ],
+  "methodology": [
+    "PCA",
+    "blend-skinning",
+    "3D-scan-registration",
+    "energy-minimization"
+  ],
+  "taxonomy_primary": "robotics/hand/dexterous",
+  "taxonomy_secondary": [],
+  "ai_summary": {
+    "one_liner": "손 형태·포즈의 통계적 모델 MANO를 3D 스캔 1,000개에서 학습, SMPL 신체와 통합해 전신 4D 캡처 실현",
+    "problem": "손의 3D 형태·포즈 표현에 통계적 모델이 없어 개인 간 형태 다양성과 포즈 의존 비선형 변형 포착이 불가",
+    "solution": "PCA 형상 공간 + 포즈 블렌드셰이프 + 포즈 시너지로 구성된 778-vertex 손 메시 모델 MANO, SMPL 신체와 결합한 SMPL+H",
+    "key_result": "scan-to-mesh 오차 0.93mm (full space), 6개 PC → 81% / 15개 PC → 95% 포즈 분산 설명",
+    "limitations": [
+      "손-물체 상호작용 미모델링 (잘못된 대응 발생)",
+      "비일반적 포즈는 저차원 포즈 공간 밖",
+      "🤖 31명 제한 피험자에서 학습된 형상 공간이 인종·연령 다양성을 충분히 반영하지 못할 수 있음"
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "31명의 제한적 피험자에서 학습된 형상 공간이 다양한 인종·연령·체형을 충분히 커버하지 못할 가능성이 있다.",
+      "source": "ai_analysis",
+      "relates_to": []
+    }
+  ],
+  "relations": [
+    {
+      "target": "2407-stretchable-glove-hand-pose",
+      "type": "related",
+      "strength": "tangential"
+    },
+    {
+      "target": "2512-unitachand",
+      "type": "related",
+      "strength": "tangential"
+    },
+    {
+      "target": "2602-robopaint",
+      "type": "related",
+      "strength": "tangential"
+    }
+  ],
+  "source_author": "Javier Romero et al.",
+  "source_date": "2017-11-01",
+  "published_at": "2026-03-26T09:00:00Z"
+}

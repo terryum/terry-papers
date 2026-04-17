@@ -1,0 +1,71 @@
+{
+  "slug": "2509-dexop",
+  "post_number": 10,
+  "source_title": "DEXOP: A Device for Robotic Transfer of Dexterous Human Manipulation",
+  "domain": "robotics",
+  "subfields": [
+    "dexterous-manipulation",
+    "teleoperation",
+    "data-collection",
+    "imitation-learning"
+  ],
+  "key_concepts": [
+    "passive-exoskeleton",
+    "mechanical-linkage",
+    "4-bar-linkage",
+    "direct-contact-feedback",
+    "co-design",
+    "data-efficiency",
+    "dexterous-hand"
+  ],
+  "methodology": [
+    "passive-exoskeleton-hardware",
+    "4-bar-linkage-design",
+    "diffusion-policy",
+    "behavioral-cloning",
+    "humanoid-deployment"
+  ],
+  "taxonomy_primary": "robotics/hand/dexterous",
+  "taxonomy_secondary": [
+    "robotics/arm"
+  ],
+  "ai_summary": {
+    "one_liner": "DEXOP is a passive exoskeleton that mechanically links human and robot fingers, enabling direct-contact dexterous demonstration collection at up to 8× the speed of teleoperation.",
+    "problem": "Dexterous robot manipulation requires high-quality demonstrations of complex multi-finger tasks, but teleoperation is slow (seconds per action), lacks natural contact feedback, and produces noisy data for contact-rich manipulation.",
+    "solution": "A passive exoskeleton (DEXOP) with 4-bar linkages directly coupling human and robot finger joints, requiring no actuation or calibration. Humans manipulate objects naturally while the robot hand mirrors their movements; tactile sensors provide supplementary force data.",
+    "key_result": "DEXOP achieves up to 8× higher task throughput than teleoperation (bulb install: 11s vs 86s); policies trained on 160 DEXOP + 40 TeleOP demos achieve 51.3% vs 42.5% success for pure TeleOP, collected in half the time.",
+    "limitations": [
+      "Requires per-robot-hand co-design; current EyeSight hand lacks full human hand DOF for in-hand reorientation",
+      "Provides proprioceptive but not tactile feedback to the human operator"
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "정책 평가가 단일 태스크(전구 설치)에 집중되어 있어, 더 다양한 태스크에서 DEXOP 데이터의 품질 이점이 일반화되는지 확인이 필요하다",
+      "source": "ai_analysis",
+      "relates_to": []
+    }
+  ],
+  "relations": [
+    {
+      "target": "2505-dexumi",
+      "type": "compares_with",
+      "strength": "direct"
+    },
+    {
+      "target": "2506-exostart",
+      "type": "compares_with",
+      "strength": "direct"
+    },
+    {
+      "target": "2407-stretchable-glove-hand-pose",
+      "type": "addresses_task",
+      "strength": "direct"
+    }
+  ],
+  "source_author": "Hao-Shu Fang et al.",
+  "source_date": "2025-09-04",
+  "published_at": "2026-03-11T00:00:00+09:00"
+}

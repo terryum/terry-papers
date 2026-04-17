@@ -1,0 +1,71 @@
+{
+  "slug": "2407-tactile-skin-inhand-translation",
+  "post_number": 13,
+  "source_title": "Learning In-Hand Translation Using Tactile Skin With Shear and Normal Force Sensing",
+  "domain": "robotics",
+  "subfields": [
+    "dexterous-manipulation",
+    "tactile-sensing",
+    "sim-to-real",
+    "reinforcement-learning"
+  ],
+  "key_concepts": [
+    "tactile-skin",
+    "shear-force-sensing",
+    "normal-force-sensing",
+    "sim-to-real",
+    "in-hand-translation",
+    "ReSkin",
+    "finger-gaiting"
+  ],
+  "methodology": [
+    "reinforcement-learning",
+    "sim-to-real",
+    "teacher-student-distillation",
+    "PPO"
+  ],
+  "taxonomy_primary": "robotics/hand/tactile",
+  "taxonomy_secondary": [
+    "robotics/hand/dexterous"
+  ],
+  "ai_summary": {
+    "one_liner": "Tactile skin sensor model for zero-shot sim-to-real transfer of ternary shear and binary normal forces, enabling RL-based dexterous in-hand translation",
+    "problem": "Tactile simulation is either too slow (FEM) or too simplified (collision-based) for RL, and in-hand translation with shear force feedback has not been demonstrated",
+    "solution": "Novel tactile skin model simulating compliant ReSkin sensor with point-cloud penetration for normal forces and Coulomb-inspired shear forces, binarized for sim-to-real transfer",
+    "key_result": "S3-Axis policy: 93% avg success rate on OOD objects, +51% distance and +94% velocity over proprioception-only baseline in 190 real-world rollouts",
+    "limitations": [
+      "No vision input for precise goal specification",
+      "Frozen policy during deployment (no online adaptation)",
+      "Binary tactile signals only (continuous signals may enable better performance)"
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "AI 분석: 이진 촉각 신호로 인한 정보 손실이 크며, 연속 촉각 신호로의 확장 시 성능 향상 여지가 있으나, 이 경우 sim-to-real 격차가 다시 증가할 수 있어 근본적 트레이드오프가 존재",
+      "source": "ai_analysis",
+      "relates_to": []
+    }
+  ],
+  "relations": [
+    {
+      "target": "2504-pp-tac",
+      "type": "related",
+      "strength": "tangential"
+    },
+    {
+      "target": "2407-stretchable-glove-hand-pose",
+      "type": "related",
+      "strength": "tangential"
+    },
+    {
+      "target": "2501-dexforce-force-informed-actions",
+      "type": "related",
+      "strength": "tangential"
+    }
+  ],
+  "source_author": "Jessica Yin et al.",
+  "source_date": "2024-07-10",
+  "published_at": "2026-03-18T09:00:00Z"
+}

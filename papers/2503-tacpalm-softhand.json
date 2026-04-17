@@ -1,0 +1,88 @@
+{
+  "slug": "2503-tacpalm-softhand",
+  "post_number": 40,
+  "source_title": "Soft robotic hand with tactile palm-finger coordination",
+  "domain": "robotics",
+  "subfields": [
+    "soft-robotics",
+    "tactile-sensing",
+    "robotic-hand"
+  ],
+  "key_concepts": [
+    "visual-tactile-palm",
+    "soft-pneumatic-finger",
+    "fiber-reinforced-actuator",
+    "palm-finger-cooperation",
+    "high-density-tactile",
+    "GelSight-style-sensor",
+    "two-segment-actuation",
+    "object-classification"
+  ],
+  "methodology": [
+    "soft-robot-fabrication",
+    "visual-tactile-sensing",
+    "shape-reconstruction",
+    "ResNet34-classification",
+    "tactile-feedback-control"
+  ],
+  "taxonomy_primary": "robotics/hand/tactile",
+  "taxonomy_secondary": [
+    "robotics/hand/dexterous"
+  ],
+  "ai_summary": {
+    "one_liner": "Three-finger soft pneumatic hand with a 181,000 unit/cm² visual-tactile palm — palm-finger coordination yields 100% cup-cap pickup, 97% fabric classification, and dynamic teapot-pose stabilization",
+    "problem": "Soft robotic hands rarely instrument the palm with high-density tactile sensing despite the palm carrying a substantial share of grasping/manipulation contact in humans",
+    "solution": "TacPalm SoftHand combines a GelSight-style visual-tactile palm (181,000 unit/cm², 1 kPa response, 5000+ cycle durability) with three two-segment fiber-reinforced pneumatic soft fingers, plus palm-finger feedback strategies for grasp stabilization, surface reconstruction, and object classification",
+    "key_result": "Tactile cup-cap pickup 100% vs 65% without (n=20); fabric classification 97% across 10 textures; blind-bag classification 88% across 5 categories; 92.3%/81% shape reconstruction accuracy in x-y/z; teapot pose dynamically restabilized via ICA-based feedback",
+    "limitations": [
+      "Three fingers only — no thumb opposition or rotational dexterity",
+      "Pneumatic actuation requires external compressor / multi-channel valves",
+      "Palm sensing area is a 30×19 mm rectangle — small relative to human palm",
+      "Classification relies on offline-trained ResNet34 per scenario; no general policy"
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "시각-촉각 손바닥은 데이터 대역폭이 크고 GelSight 계열은 시뮬레이션-실제 갭이 여전히 어려움 — 학습 기반 정책과 결합한 sim-to-real 검증은 미수행",
+      "source": "ai_analysis",
+      "relates_to": []
+    }
+  ],
+  "relations": [
+    {
+      "slug": "2412-f-tac-hand",
+      "type": "compares_with",
+      "strength": "direct"
+    },
+    {
+      "slug": "2407-tactile-skin-inhand-translation",
+      "type": "related",
+      "strength": "tangential"
+    },
+    {
+      "slug": "2409-3dtactile-dex",
+      "type": "related",
+      "strength": "tangential"
+    },
+    {
+      "slug": "2504-pp-tac",
+      "type": "related",
+      "strength": "tangential"
+    },
+    {
+      "slug": "2511-equitac-tactile-equivariance",
+      "type": "related",
+      "strength": "tangential"
+    },
+    {
+      "slug": "2512-osmo-tactile-glove",
+      "type": "related",
+      "strength": "tangential"
+    }
+  ],
+  "source_author": "Ningbin Zhang et al.",
+  "source_date": "2025-03-10T00:00:00Z",
+  "published_at": "2026-04-17T00:00:00Z"
+}

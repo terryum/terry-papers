@@ -1,0 +1,75 @@
+{
+  "slug": "2603-capx-coding-agents-manipulation",
+  "post_number": 19,
+  "source_title": "CaP-X: A Framework for Benchmarking and Improving Coding Agents for Robot Manipulation",
+  "domain": "robotics",
+  "subfields": [
+    "manipulation",
+    "code-generation",
+    "benchmark",
+    "llm-agent"
+  ],
+  "key_concepts": [
+    "Code-as-Policy",
+    "agentic-test-time-computation",
+    "visual-differencing",
+    "ensemble-reasoning",
+    "verifiable-reward-RL"
+  ],
+  "methodology": [
+    "benchmark",
+    "agentic-inference",
+    "reinforcement-learning"
+  ],
+  "taxonomy_primary": "robotics/brain",
+  "taxonomy_secondary": [
+    "robotics/arm"
+  ],
+  "ai_summary": {
+    "one_liner": "Open-access framework for systematically benchmarking and improving Code-as-Policy agents in robot manipulation",
+    "problem": "Code-as-Policy effectiveness as autonomous controllers for manipulation is underexplored; performance degrades when human-crafted abstractions are removed",
+    "solution": "CaP-Gym environment + CaP-Bench benchmark across abstraction/interaction axes + CaP-Agent0 (training-free agentic framework) + CaP-RL (RL with verifiable rewards)",
+    "key_result": "CaP-Agent0 matches human expert on 4/7 tasks training-free; CaP-RL improves Cube Stack from 4% to 44% in sim and 12% to 76% in real",
+    "limitations": [
+      "Single-arm manipulation only",
+      "RL uses privileged state observation",
+      "Multi-model ensemble has high inference cost"
+    ]
+  },
+  "terry_memos": [
+    "CaP는 \"LLM이 코드를 생성하여 API를 호출하는\" 구조인데, 이는 \"LLM이 태스크를 분해하여 API를 호출하는\" 기존 LLM 플래너(SayCan, RoboClaw 등)와 본질적으로 같다. 코드 출력이냐 자연어 계획이냐는 구현 디테일이지 패러다임의 차이가 아니다.",
+    "CaP의 \"제로샷\" 장점은 결국 low-level API가 이미 해결해준 범위 안에서만 유효하다. 진짜 어려운 물리적 조작(접촉, 힘 제어 등)은 여전히 텔레옵 데이터 + VLA 학습이 필요하며, 제로샷으로 할 수 있는 것은 고전적 모션 플래닝으로도 가능한 것들이다.",
+    "CaP-X에서 VLA(π₀, OpenVLA)와 비교한 것은 불공정하다. 공정한 비교 대상은 LLM+VLA(RoboClaw 같은 구조)여야 하며, 이 비교는 이 논문에 없다.",
+    "이 논문의 실질적 기여는 새로운 패러다임이 아니라 **벤치마크**: 12개 모델 × 추상화 수준 × 상호작용 모드의 격자 형태 체계적 평가 데이터를 제공한 것. \"LLM 기반 로봇 제어가 어디서 되고 어디서 안 되는지\"를 처음으로 정량적으로 측정했다.",
+    "로봇 제어 스택에서 LLM은 \"계획·추론\" 층, VLA는 \"실행\" 층이고, 이 분리는 CaP든 LLM+VLA든 동일하다. 진짜 병목은 LLM의 추론 능력이 아니라, low-level API와 하드웨어의 물리적 조작 능력에 있다."
+  ],
+  "terry_memo_topics": [
+    "VLA",
+    "LLM",
+    "CaP"
+  ],
+  "research_gaps": [
+    {
+      "question": "single-arm 조작 위주 평가로 bimanual이나 mobile manipulation은 미검증. RL 학습이 privileged state(S1) 기반으로 vision observation 하에서의 RL은 미해결",
+      "source": "author",
+      "relates_to": [
+        "manipulation"
+      ]
+    },
+    {
+      "question": "CaP-Agent0의 multi-model 앙상블(Gemini-3-Pro + GPT-5.2 + Claude Opus)은 추론 비용이 매우 높아 실시간 제어가 필요한 실제 응용에서의 경제성은 불확실하다",
+      "source": "ai_analysis",
+      "relates_to": []
+    }
+  ],
+  "relations": [
+    {
+      "target": "2410-pi0-vla-flow-model",
+      "type": "compares_with",
+      "strength": "direct"
+    }
+  ],
+  "source_author": "Max Fu et al.",
+  "source_date": "2026-03-23T00:00:00Z",
+  "published_at": "2026-04-03T00:00:00Z"
+}

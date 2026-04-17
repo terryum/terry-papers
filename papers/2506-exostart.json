@@ -1,0 +1,69 @@
+{
+  "slug": "2506-exostart",
+  "post_number": 9,
+  "source_title": "ExoStart: Efficient learning for dexterous manipulation with sensorized exoskeleton demonstrations",
+  "domain": "robotics",
+  "subfields": [
+    "dexterous-manipulation",
+    "sim-to-real",
+    "reinforcement-learning",
+    "data-collection"
+  ],
+  "key_concepts": [
+    "exoskeleton",
+    "dynamics-filtering",
+    "auto-curriculum",
+    "teacher-student-distillation",
+    "zero-shot-transfer",
+    "trajectory-optimization",
+    "mjpc"
+  ],
+  "methodology": [
+    "sensorized-exoskeleton",
+    "mjpc-trajectory-optimization",
+    "auto-curriculum-rl",
+    "policy-distillation",
+    "ar-tag-pose-estimation"
+  ],
+  "taxonomy_primary": "robotics/arm/exoskeleton",
+  "taxonomy_secondary": [],
+  "ai_summary": {
+    "one_liner": "ExoStart converts ~10 exoskeleton demonstrations into dexterous robot manipulation policies via dynamics filtering, auto-curriculum RL, and vision-based distillation for zero-shot real-world transfer.",
+    "problem": "Dexterous manipulation learning requires many demonstrations or expensive RL training; exoskeleton demonstrations are kinematically rich but physically inconsistent with robot dynamics, creating a sim-to-real gap.",
+    "solution": "Sensorized exoskeleton (kinematically equivalent to robot hand) collects ~10 real demonstrations → MuJoCo dynamics filtering augments them into physically feasible sim trajectories → auto-curriculum RL trains a feature-based teacher policy → vision-based student policy is distilled for zero-shot real deployment.",
+    "key_result": ">50% real-world success rate on 6 of 7 complex dexterous tasks (teacher 95-99% in sim); 6× faster data collection than teleoperation.",
+    "limitations": [
+      "Per-robot-hand exoskeleton design required; sim-to-real gap from control rate mismatch (200 Hz sim vs 20 Hz real)",
+      "Object pose tracking requires AR-tagged replicas; soft-contact model failure causes 2% success on Bulb Install"
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "Teacher → Student 증류 과정에서 vision student가 teacher 성능(95~99%)의 절반 수준에 머무는 원인이 sim-to-real 시각 격차인지 행동 복제 capacity 한계인지 분석되지 않아, 향후 개선의 병목이 불명확하다",
+      "source": "ai_analysis",
+      "relates_to": []
+    }
+  ],
+  "relations": [
+    {
+      "target": "2505-dexumi",
+      "type": "compares_with",
+      "strength": "direct"
+    },
+    {
+      "target": "2501-dexforce-force-informed-actions",
+      "type": "addresses_task",
+      "strength": "direct"
+    },
+    {
+      "target": "2505-forcevla-force-aware-moe",
+      "type": "addresses_task",
+      "strength": "direct"
+    }
+  ],
+  "source_author": "Zilin Si et al.",
+  "source_date": "2025-06-13",
+  "published_at": "2026-03-11T00:00:00+09:00"
+}

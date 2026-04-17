@@ -1,0 +1,69 @@
+{
+  "slug": "2504-pp-tac",
+  "post_number": 12,
+  "source_title": "PP-Tac: Paper Picking Using Tactile Feedback in Dexterous Robotic Hands",
+  "domain": "robotics",
+  "subfields": [
+    "dexterous-manipulation",
+    "tactile-sensing",
+    "deformable-object-manipulation"
+  ],
+  "key_concepts": [
+    "tactile-sensor",
+    "slip-detection",
+    "diffusion-policy",
+    "force-control",
+    "deformable-objects",
+    "dexterous-hand"
+  ],
+  "methodology": [
+    "tactile-feedback",
+    "slip-detection-network",
+    "diffusion-policy",
+    "trajectory-synthesis",
+    "compliant-control"
+  ],
+  "taxonomy_primary": "robotics/hand/tactile",
+  "taxonomy_secondary": [
+    "robotics/arm"
+  ],
+  "ai_summary": {
+    "one_liner": "Tactile-feedback dexterous hand system that picks paper-like thin deformable objects via R-Tac slip detection + online force control + diffusion policy, achieving 87.5% success rate",
+    "problem": "Robotic hands cannot reliably grasp thin, flat, deformable objects like paper and fabric due to insufficient perception for slip/force state estimation and lack of appropriate grasp motion planning",
+    "solution": "PP-Tac: dexterous hand with 4 round-shaped high-resolution tactile sensors (R-Tac) + slip detection CNN + online frictional force control + diffusion-based policy trained on synthesized pinching trajectories",
+    "key_result": "87.5% overall success rate across 4 objects (paper, plastic bag, cloth, paper bag) and 4 terrains (plane, slope, book, random)",
+    "limitations": [
+      "Constrained to specific dexterous hand morphology and fingertip-mounted sensor form factor",
+      "Trajectory synthesis assumes specific contact geometry (buckling model) that may not generalize to 3D deformable objects"
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "87.5%의 전체 성공률은 16개 조건의 평균으로, 특정 물체-지형 조합에서는 성능이 크게 낮을 수 있음 — 조건별 분포 공개가 필요해 실제 범용성 판단이 어렵다",
+      "source": "ai_analysis",
+      "relates_to": []
+    }
+  ],
+  "relations": [
+    {
+      "target": "2505-dexumi",
+      "type": "related",
+      "strength": "tangential"
+    },
+    {
+      "target": "2501-dexforce",
+      "type": "related",
+      "strength": "tangential"
+    },
+    {
+      "target": "2407-stretchable-glove-hand-pose",
+      "type": "related",
+      "strength": "tangential"
+    }
+  ],
+  "source_author": "Pei Lin et al.",
+  "source_date": "2025-04-23",
+  "published_at": "2026-03-17T09:00:00Z"
+}

@@ -1,0 +1,70 @@
+{
+  "slug": "2303-diffusion-policy",
+  "post_number": 34,
+  "source_title": "Diffusion Policy: Visuomotor Policy Learning via Action Diffusion",
+  "domain": "robotics",
+  "subfields": [
+    "visuomotor-policy",
+    "imitation-learning",
+    "diffusion-model",
+    "manipulation"
+  ],
+  "key_concepts": [
+    "diffusion-policy",
+    "DDPM",
+    "score-function",
+    "receding-horizon-control",
+    "visual-conditioning",
+    "multimodal-action-distribution"
+  ],
+  "methodology": [
+    "imitation-learning",
+    "diffusion-model",
+    "behavior-cloning",
+    "denoising-diffusion"
+  ],
+  "taxonomy_primary": "robotics/brain",
+  "taxonomy_secondary": [
+    "robotics/arm"
+  ],
+  "ai_summary": {
+    "one_liner": "Diffusion models applied to robot visuomotor policies — 46.9% average improvement over SOTA across 15 tasks from 4 benchmarks",
+    "problem": "Behavior cloning struggles with multimodal action distributions, high-dimensional action spaces, and training instability",
+    "solution": "Represent visuomotor policy as conditional DDPM with receding horizon control, visual conditioning, and time-series diffusion transformer",
+    "key_result": "Average 46.9% improvement across 15 tasks; ToolHang 87% (BET: 20%), Kitchen 4-stage 99% (BET: 44%)",
+    "limitations": [
+      "CNN over-smooths fast actions; Transformer is hyperparameter-sensitive",
+      "Iterative denoising limits inference speed",
+      "Single-arm manipulation tasks only"
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "모든 평가가 비교적 단순한 단일 팔 조작 과제에 집중되어 있으며, 이족 보행이나 복잡한 다관절 과제에서의 확장성은 검증되지 않음",
+      "source": "ai_analysis",
+      "relates_to": []
+    }
+  ],
+  "relations": [
+    {
+      "slug": "2410-pi0-vla-flow-model",
+      "type": "related",
+      "strength": "tangential"
+    },
+    {
+      "slug": "2505-forcevla-force-aware-moe",
+      "type": "related",
+      "strength": "tangential"
+    },
+    {
+      "slug": "2602-habilis-vla-on-device",
+      "type": "related",
+      "strength": "tangential"
+    }
+  ],
+  "source_author": "Cheng Chi et al.",
+  "source_date": "2023-03-07T00:00:00Z",
+  "published_at": "2026-04-15T00:00:00Z"
+}

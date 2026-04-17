@@ -22,14 +22,28 @@
 terry-papers/
 ├── CLAUDE.md              ← 이 파일
 ├── posts/                 ← terry-artlab-homepage/posts/ 심링크
-│   ├── papers/            ← 논문 MDX + meta.json
+│   ├── papers/            ← 논문 MDX + meta.json (소스 오브 트루스)
 │   ├── essays/            ← 에세이
 │   ├── memos/             ← 메모
 │   └── index.json         ← 포스트 인덱스 (generate-index.mjs로 생성)
+├── papers/                ← 논문별 AI 인사이트 JSON (이 레포에 직접 커밋)
+│   └── <slug>.json        ← terrys_memos, research_gaps, enriched relations
+├── knowledge-index.json   ← memo_index, gap_index, knowledge_graph 통합 인덱스
 ├── scripts/               ← terry-artlab-homepage/scripts/ 심링크
 ├── .claude/skills/        ← 스킬 심링크 (post, paper-search, del, share 등)
 └── .env.local             ← 환경변수 (R2, Supabase)
 ```
+
+> **`posts/papers/` vs `papers/` 헷갈리지 말 것.** `posts/papers/<slug>/`(심링크)는 MDX 콘텐츠와 meta.json의 소스 오브 트루스. 최상위 `papers/<slug>.json`은 거기서 추출한 AI 인사이트 캐시 — `scripts/export-knowledge.mjs`가 자동 갱신한다. 둘은 같은 슬러그를 공유.
+
+## 지식 베이스 (papers/, knowledge-index.json)
+
+`/post` 또는 `/del` 실행 시 `scripts/export-knowledge.mjs`가 자동으로 두 파일을 갱신한다. AI 에이전트(`/paper-search` 등)는 별도 클론 없이 이 레포 안의 파일을 직접 읽으면 된다.
+
+- `papers/<slug>.json` — 논문별 인사이트 (`terry_memos`, `research_gaps`, 강화 관계)
+- `knowledge-index.json` — `memo_index`, `gap_index`, `knowledge_graph` (역방향 엣지 포함)
+
+수동 재생성: `cd ~/Codes/personal/terry-artlab-homepage && node scripts/export-knowledge.mjs` (인자 없음 → 이 레포로 출력)
 
 ## 핵심 명령어
 

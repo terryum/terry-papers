@@ -1,0 +1,62 @@
+{
+  "slug": "2603-autoresearch-autonomous-ml",
+  "post_number": 30,
+  "source_title": "autoresearch: A framework for autonomous AI research agents",
+  "domain": "ai",
+  "subfields": [
+    "autonomous-research",
+    "ml-optimization",
+    "agent-systems"
+  ],
+  "key_concepts": [
+    "autonomous-research",
+    "ml-optimization",
+    "agent-experimentation",
+    "hyperparameter-tuning",
+    "validation-loss"
+  ],
+  "methodology": [
+    "autonomous-agent",
+    "iterative-optimization",
+    "automated-experimentation"
+  ],
+  "taxonomy_primary": "ai/agent",
+  "taxonomy_secondary": [
+    "ai/llm"
+  ],
+  "ai_summary": {
+    "one_liner": "Open-source framework for AI agents to autonomously iterate on ML training — 700 experiments in 2 days, 11% faster GPT-2",
+    "problem": "Human researcher is the bottleneck in the iterative ML experiment loop — can only test one hypothesis at a time",
+    "solution": "autoresearch: 3-file framework (prepare.py, train.py, program.md) with fixed 5-min time budget and single val_bpb metric, letting AI agents autonomously modify and evaluate",
+    "key_result": "GPT-2 training time 2.02h → 1.80h (11% reduction) in ~700 autonomous experiments over 2 days; found real bugs (QKnorm, missing regularization) that transferred to larger models",
+    "limitations": [
+      "Single file + single GPU constraint",
+      "Hyperparameter tuning level, not novel research",
+      "Multi-agent scaling unimplemented"
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "멀티에이전트 협업과 대규모 스케일링은 언급만 되었고 구현/검증되지 않음 — \"just engineering\"이라는 주장은 아직 증명되지 않음",
+      "source": "ai_analysis",
+      "relates_to": []
+    }
+  ],
+  "relations": [
+    {
+      "slug": "2502-ai-co-scientist",
+      "type": "related",
+      "strength": "tangential"
+    },
+    {
+      "slug": "2604-automated-alignment-researchers",
+      "type": "related",
+      "strength": "tangential"
+    }
+  ],
+  "source_author": "Andrej Karpathy",
+  "source_date": "2026-03-26T00:00:00Z",
+  "published_at": "2026-04-15T00:00:00Z"
+}

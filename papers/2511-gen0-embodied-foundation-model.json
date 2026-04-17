@@ -1,0 +1,64 @@
+{
+  "slug": "2511-gen0-embodied-foundation-model",
+  "post_number": 23,
+  "source_title": "GEN-0: Embodied Foundation Models That Scale with Physical Interaction",
+  "domain": "robotics",
+  "subfields": [
+    "foundation-model",
+    "scaling-laws",
+    "cross-embodiment"
+  ],
+  "key_concepts": [
+    "embodied-foundation-model",
+    "scaling-laws",
+    "harmonic-reasoning",
+    "cross-embodiment",
+    "VLA"
+  ],
+  "methodology": [
+    "pretraining",
+    "power-law-scaling",
+    "multi-task-learning"
+  ],
+  "taxonomy_primary": "robotics/brain/vla",
+  "taxonomy_secondary": [
+    "robotics/arm"
+  ],
+  "ai_summary": {
+    "one_liner": "Embodied foundation model trained on 270K+ hours of real-world manipulation data, exhibiting phase transitions at 7B parameters and predictable power-law scaling",
+    "problem": "Robotics lacks foundation models that scale predictably with data and compute, unlike LLMs",
+    "solution": "GEN-0: multimodal pretraining on 270K+ hours of diverse real-world interaction data with harmonic reasoning for simultaneous thinking and acting",
+    "key_result": "Up to 99% real-robot success rates; phase transition at 7B params; power-law scaling enabling performance prediction",
+    "limitations": [
+      "Anonymized data partners make reproducibility difficult",
+      "No open-source model or dataset release",
+      "Limited detail on architecture specifics"
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "**아키텍처 상세 미공개**: harmonic reasoning 등 핵심 기법의 구체적 구현이 공개되지 않아, 기술적 기여의 정확한 평가가 제한적",
+      "source": "ai_analysis",
+      "relates_to": [
+        "harmonic-reasoning"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target": "2410-pi0-vla-flow-model",
+      "type": "related",
+      "strength": "tangential"
+    },
+    {
+      "target": "2511-pi0-6-recap",
+      "type": "related",
+      "strength": "tangential"
+    }
+  ],
+  "source_author": "Generalist AI Team",
+  "source_date": "2025-11-04T00:00:00Z",
+  "published_at": "2026-04-03T00:00:00Z"
+}

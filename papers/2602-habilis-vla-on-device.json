@@ -1,0 +1,72 @@
+{
+  "slug": "2602-habilis-vla-on-device",
+  "post_number": 33,
+  "source_title": "Habilis-β: A Fast-Motion and Long-Lasting On-Device Vision-Language-Action Model",
+  "domain": "robotics",
+  "subfields": [
+    "vla",
+    "on-device-inference",
+    "deployment",
+    "manipulation"
+  ],
+  "key_concepts": [
+    "VLA",
+    "on-device-inference",
+    "tasks-per-hour",
+    "MTBI",
+    "rectified-flow-distillation",
+    "ESPADA",
+    "classifier-free-guidance",
+    "play-data-pretraining"
+  ],
+  "methodology": [
+    "flow-matching",
+    "knowledge-distillation",
+    "imitation-learning",
+    "continuous-evaluation"
+  ],
+  "taxonomy_primary": "robotics/brain/vla",
+  "taxonomy_secondary": [
+    "robotics/arm"
+  ],
+  "ai_summary": {
+    "one_liner": "On-device VLA model achieving 572.6 TPH in simulation and 124 TPH in real-world via 3-stage training + ESPADA motion compression",
+    "problem": "Single-trial success rates don't capture real deployment performance; cloud-dependent VLA models have latency/cost barriers",
+    "solution": "3-stage training (play pre-train → cyclic post-train → rectified flow distillation) + ESPADA semantic motion compression + CFG deployment knob",
+    "key_result": "Simulation: TPH 572.6 (4.75× vs π0.5); Real-world: TPH 124, MTBI 137.4s, 82.7% success (6.53× productivity vs π0.5)",
+    "limitations": [
+      "Limited generalization, not human-level accuracy",
+      "ESPADA LLM-based segmentation introduces variance",
+      "Single real-world task validation only"
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "Dual-Bin Conveyor Packing이라는 단일 실환경 과제에서만 검증되어, 다양한 조작 시나리오에서의 일반화 가능성은 미검증",
+      "source": "ai_analysis",
+      "relates_to": []
+    }
+  ],
+  "relations": [
+    {
+      "slug": "2410-pi0-vla-flow-model",
+      "type": "builds_on",
+      "strength": "foundational"
+    },
+    {
+      "slug": "2511-pi0-6-recap",
+      "type": "compares_with",
+      "strength": "direct"
+    },
+    {
+      "slug": "2505-forcevla-force-aware-moe",
+      "type": "related",
+      "strength": "tangential"
+    }
+  ],
+  "source_author": "Jesoon Kang et al.",
+  "source_date": "2026-02-21T00:00:00Z",
+  "published_at": "2026-04-15T00:00:00Z"
+}

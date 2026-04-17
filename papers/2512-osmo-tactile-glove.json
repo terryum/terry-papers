@@ -1,0 +1,86 @@
+{
+  "slug": "2512-osmo-tactile-glove",
+  "post_number": 18,
+  "source_title": "OSMO: Open-Source Tactile Glove for Human-to-Robot Skill Transfer",
+  "domain": "robotics",
+  "subfields": [
+    "tactile-sensing",
+    "human-robot-transfer",
+    "contact-rich-manipulation"
+  ],
+  "key_concepts": [
+    "tactile-glove",
+    "wearable-sensor",
+    "3-axis-magnetic-sensor",
+    "human-to-robot-transfer",
+    "embodiment-gap",
+    "contact-rich-manipulation",
+    "MuMetal-shielding",
+    "skill-transfer",
+    "open-source-hardware",
+    "IK-retargeting"
+  ],
+  "methodology": [
+    "magnetic-tactile-sensing",
+    "IK-retargeting",
+    "behavior-cloning",
+    "imitation-learning"
+  ],
+  "taxonomy_primary": "robotics/hand/tactile",
+  "taxonomy_secondary": [
+    "robotics/arm/exoskeleton"
+  ],
+  "ai_summary": {
+    "one_liner": "동일 오픈소스 촉각 글러브를 인간·로봇에 장착해 visual·tactile 구현 간극을 동시 해소, 로봇 데이터 없이 72% 성공률 달성",
+    "problem": "비디오 시연만으로는 접촉 신호 포착 불가, 촉각 센서의 embodiment gap이 인간→로봇 기술 이전을 막음",
+    "solution": "12개 3축 자성 촉각 센서 탑재 오픈소스 글러브 OSMO를 인간·로봇 공용으로 사용, IK retargeting으로 joint target 생성 후 정책 학습",
+    "key_result": "닦기 태스크: 72%(촉각) vs 56%(비전만) vs 27%(고유감각만), 로봇 데이터 0건",
+    "limitations": [
+      "우측 손 및 Ability Hand에만 설계·검증됨",
+      "단일 태스크(닦기) 검증",
+      "🤖 IK retargeting이 특정 로봇 손(Ability Hand) 기반이라 다른 형태의 로봇 말단으로 확장 시 재설계 필요"
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "IK retargeting이 Ability Hand 관절 구조 기반으로 설계돼, 관절 수·형태가 크게 다른 로봇 손으로 확장 시 IK 재설계가 필요하다.",
+      "source": "ai_analysis",
+      "relates_to": [
+        "IK-retargeting",
+        "IK-retargeting"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target": "2407-tactile-skin-inhand-translation",
+      "type": "builds_on",
+      "strength": "foundational"
+    },
+    {
+      "target": "2512-unitachand",
+      "type": "compares_with",
+      "strength": "direct"
+    },
+    {
+      "target": "2504-pp-tac",
+      "type": "related",
+      "strength": "tangential"
+    },
+    {
+      "target": "2409-3dtactile-dex",
+      "type": "related",
+      "strength": "tangential"
+    },
+    {
+      "target": "2505-dexumi",
+      "type": "compares_with",
+      "strength": "direct"
+    }
+  ],
+  "source_author": "Jessica Yin et al.",
+  "source_date": "2025-12-09",
+  "published_at": "2026-03-26T10:00:00Z"
+}

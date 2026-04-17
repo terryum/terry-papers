@@ -1,0 +1,1810 @@
+{
+  "generated_at": "2026-04-17T12:19:33.866Z",
+  "total_papers": 36,
+  "papers_with_memos": 1,
+  "papers_with_gaps": 36,
+  "memo_index": {
+    "VLA": [
+      "2603-capx-coding-agents-manipulation"
+    ],
+    "LLM": [
+      "2603-capx-coding-agents-manipulation"
+    ],
+    "CaP": [
+      "2603-capx-coding-agents-manipulation"
+    ]
+  },
+  "gap_index": {
+    "skill-capture-glove": [
+      {
+        "slug": "2511-act1-robot-foundation-model",
+        "question": "재현 불가: 독자적 하드웨어(로봇 + Skill Capture Glove)에 전적으로 의존하여 외부 연구자의 검증이나 확장이 불가능",
+        "source": "ai_analysis"
+      }
+    ],
+    "harmonic-reasoning": [
+      {
+        "slug": "2511-gen0-embodied-foundation-model",
+        "question": "**아키텍처 상세 미공개**: harmonic reasoning 등 핵심 기법의 구체적 구현이 공개되지 않아, 기술적 기여의 정확한 평가가 제한적",
+        "source": "ai_analysis"
+      }
+    ],
+    "IK-retargeting": [
+      {
+        "slug": "2512-osmo-tactile-glove",
+        "question": "IK retargeting이 Ability Hand 관절 구조 기반으로 설계돼, 관절 수·형태가 크게 다른 로봇 손으로 확장 시 IK 재설계가 필요하다.",
+        "source": "ai_analysis"
+      },
+      {
+        "slug": "2512-osmo-tactile-glove",
+        "question": "IK retargeting이 Ability Hand 관절 구조 기반으로 설계돼, 관절 수·형태가 크게 다른 로봇 손으로 확장 시 IK 재설계가 필요하다.",
+        "source": "ai_analysis"
+      }
+    ],
+    "manipulation": [
+      {
+        "slug": "2603-capx-coding-agents-manipulation",
+        "question": "single-arm 조작 위주 평가로 bimanual이나 mobile manipulation은 미검증. RL 학습이 privileged state(S1) 기반으로 vision observation 하에서의 RL은 미해결",
+        "source": "author"
+      }
+    ]
+  },
+  "knowledge_graph": {
+    "edges": [
+      {
+        "from": "2201-mano-hand-model",
+        "to": "2407-stretchable-glove-hand-pose",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2407-stretchable-glove-hand-pose",
+        "to": "2201-mano-hand-model",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2201-mano-hand-model",
+        "to": "2512-unitachand",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2512-unitachand",
+        "to": "2201-mano-hand-model",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2201-mano-hand-model",
+        "to": "2602-robopaint",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2602-robopaint",
+        "to": "2201-mano-hand-model",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2303-diffusion-policy",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "to": "2303-diffusion-policy",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2303-diffusion-policy",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "to": "2303-diffusion-policy",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2303-diffusion-policy",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "to": "2303-diffusion-policy",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2402-umi-universal-manipulation-interface",
+        "type": "builds_on",
+        "strength": "foundational"
+      },
+      {
+        "to": "2402-umi-universal-manipulation-interface",
+        "type": "reverse_builds_on",
+        "strength": "foundational"
+      },
+      {
+        "from": "2402-umi-universal-manipulation-interface",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "to": "2402-umi-universal-manipulation-interface",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2402-umi-universal-manipulation-interface",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "to": "2402-umi-universal-manipulation-interface",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2407-tactile-skin-inhand-translation",
+        "to": "2504-pp-tac",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2504-pp-tac",
+        "to": "2407-tactile-skin-inhand-translation",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2407-tactile-skin-inhand-translation",
+        "to": "2407-stretchable-glove-hand-pose",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2407-stretchable-glove-hand-pose",
+        "to": "2407-tactile-skin-inhand-translation",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2407-tactile-skin-inhand-translation",
+        "to": "2501-dexforce-force-informed-actions",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2501-dexforce-force-informed-actions",
+        "to": "2407-tactile-skin-inhand-translation",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2409-3dtactile-dex",
+        "to": "2504-pp-tac",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2504-pp-tac",
+        "to": "2409-3dtactile-dex",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2409-3dtactile-dex",
+        "to": "2407-tactile-skin-inhand-translation",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2407-tactile-skin-inhand-translation",
+        "to": "2409-3dtactile-dex",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2409-3dtactile-dex",
+        "to": "2501-dexforce-force-informed-actions",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2501-dexforce-force-informed-actions",
+        "to": "2409-3dtactile-dex",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2409-3dtactile-dex",
+        "to": "2505-dexumi",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2505-dexumi",
+        "to": "2409-3dtactile-dex",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2410-pi0-vla-flow-model",
+        "to": "2511-pi0-6-recap",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2511-pi0-6-recap",
+        "to": "2410-pi0-vla-flow-model",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2412-f-tac-hand",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "to": "2412-f-tac-hand",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2412-f-tac-hand",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "to": "2412-f-tac-hand",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2412-f-tac-hand",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "to": "2412-f-tac-hand",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2412-f-tac-hand",
+        "type": "compares_with",
+        "strength": "direct"
+      },
+      {
+        "to": "2412-f-tac-hand",
+        "type": "reverse_compares_with",
+        "strength": "direct"
+      },
+      {
+        "from": "2412-f-tac-hand",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "to": "2412-f-tac-hand",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2412-f-tac-hand",
+        "type": "compares_with",
+        "strength": "direct"
+      },
+      {
+        "to": "2412-f-tac-hand",
+        "type": "reverse_compares_with",
+        "strength": "direct"
+      },
+      {
+        "from": "2501-dexforce-force-informed-actions",
+        "to": "2505-forcevla-force-aware-moe",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2505-forcevla-force-aware-moe",
+        "to": "2501-dexforce-force-informed-actions",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2503-tacpalm-softhand",
+        "type": "compares_with",
+        "strength": "direct"
+      },
+      {
+        "to": "2503-tacpalm-softhand",
+        "type": "reverse_compares_with",
+        "strength": "direct"
+      },
+      {
+        "from": "2503-tacpalm-softhand",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "to": "2503-tacpalm-softhand",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2503-tacpalm-softhand",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "to": "2503-tacpalm-softhand",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2503-tacpalm-softhand",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "to": "2503-tacpalm-softhand",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2503-tacpalm-softhand",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "to": "2503-tacpalm-softhand",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2503-tacpalm-softhand",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "to": "2503-tacpalm-softhand",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2504-pp-tac",
+        "to": "2505-dexumi",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2505-dexumi",
+        "to": "2504-pp-tac",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2504-pp-tac",
+        "to": "2501-dexforce",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2501-dexforce",
+        "to": "2504-pp-tac",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2504-pp-tac",
+        "to": "2407-stretchable-glove-hand-pose",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2407-stretchable-glove-hand-pose",
+        "to": "2504-pp-tac",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2505-dexumi",
+        "to": "2407-stretchable-glove-hand-pose",
+        "type": "compares_with",
+        "strength": "direct"
+      },
+      {
+        "from": "2407-stretchable-glove-hand-pose",
+        "to": "2505-dexumi",
+        "type": "reverse_compares_with",
+        "strength": "direct"
+      },
+      {
+        "from": "2505-dexumi",
+        "to": "2501-dexforce-force-informed-actions",
+        "type": "addresses_task",
+        "strength": "direct"
+      },
+      {
+        "from": "2501-dexforce-force-informed-actions",
+        "to": "2505-dexumi",
+        "type": "reverse_addresses_task",
+        "strength": "direct"
+      },
+      {
+        "from": "2505-dexumi",
+        "to": "2505-forcevla-force-aware-moe",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2505-forcevla-force-aware-moe",
+        "to": "2505-dexumi",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2505-forcevla-force-aware-moe",
+        "to": "2410-pi0-vla-flow-model",
+        "type": "builds_on",
+        "strength": "foundational"
+      },
+      {
+        "from": "2410-pi0-vla-flow-model",
+        "to": "2505-forcevla-force-aware-moe",
+        "type": "reverse_builds_on",
+        "strength": "foundational"
+      },
+      {
+        "from": "2505-forcevla-force-aware-moe",
+        "to": "2501-dexforce-force-informed-actions",
+        "type": "uses_method",
+        "strength": "foundational"
+      },
+      {
+        "from": "2501-dexforce-force-informed-actions",
+        "to": "2505-forcevla-force-aware-moe",
+        "type": "reverse_uses_method",
+        "strength": "foundational"
+      },
+      {
+        "from": "2506-exostart",
+        "to": "2505-dexumi",
+        "type": "compares_with",
+        "strength": "direct"
+      },
+      {
+        "from": "2505-dexumi",
+        "to": "2506-exostart",
+        "type": "reverse_compares_with",
+        "strength": "direct"
+      },
+      {
+        "from": "2506-exostart",
+        "to": "2501-dexforce-force-informed-actions",
+        "type": "addresses_task",
+        "strength": "direct"
+      },
+      {
+        "from": "2501-dexforce-force-informed-actions",
+        "to": "2506-exostart",
+        "type": "reverse_addresses_task",
+        "strength": "direct"
+      },
+      {
+        "from": "2506-exostart",
+        "to": "2505-forcevla-force-aware-moe",
+        "type": "addresses_task",
+        "strength": "direct"
+      },
+      {
+        "from": "2505-forcevla-force-aware-moe",
+        "to": "2506-exostart",
+        "type": "reverse_addresses_task",
+        "strength": "direct"
+      },
+      {
+        "from": "2509-dexop",
+        "to": "2505-dexumi",
+        "type": "compares_with",
+        "strength": "direct"
+      },
+      {
+        "from": "2505-dexumi",
+        "to": "2509-dexop",
+        "type": "reverse_compares_with",
+        "strength": "direct"
+      },
+      {
+        "from": "2509-dexop",
+        "to": "2506-exostart",
+        "type": "compares_with",
+        "strength": "direct"
+      },
+      {
+        "from": "2506-exostart",
+        "to": "2509-dexop",
+        "type": "reverse_compares_with",
+        "strength": "direct"
+      },
+      {
+        "from": "2509-dexop",
+        "to": "2407-stretchable-glove-hand-pose",
+        "type": "addresses_task",
+        "strength": "direct"
+      },
+      {
+        "from": "2407-stretchable-glove-hand-pose",
+        "to": "2509-dexop",
+        "type": "reverse_addresses_task",
+        "strength": "direct"
+      },
+      {
+        "from": "2509-tactile-sensing-distribution",
+        "type": "compares_with",
+        "strength": "direct"
+      },
+      {
+        "to": "2509-tactile-sensing-distribution",
+        "type": "reverse_compares_with",
+        "strength": "direct"
+      },
+      {
+        "from": "2509-tactile-sensing-distribution",
+        "type": "compares_with",
+        "strength": "direct"
+      },
+      {
+        "to": "2509-tactile-sensing-distribution",
+        "type": "reverse_compares_with",
+        "strength": "direct"
+      },
+      {
+        "from": "2509-tactile-sensing-distribution",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "to": "2509-tactile-sensing-distribution",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2509-tactile-sensing-distribution",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "to": "2509-tactile-sensing-distribution",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2509-tactile-sensing-distribution",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "to": "2509-tactile-sensing-distribution",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2511-act1-robot-foundation-model",
+        "type": "compares_with",
+        "strength": "direct"
+      },
+      {
+        "to": "2511-act1-robot-foundation-model",
+        "type": "reverse_compares_with",
+        "strength": "direct"
+      },
+      {
+        "from": "2511-act1-robot-foundation-model",
+        "type": "compares_with",
+        "strength": "direct"
+      },
+      {
+        "to": "2511-act1-robot-foundation-model",
+        "type": "reverse_compares_with",
+        "strength": "direct"
+      },
+      {
+        "from": "2511-act1-robot-foundation-model",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "to": "2511-act1-robot-foundation-model",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2511-equitac-tactile-equivariance",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "to": "2511-equitac-tactile-equivariance",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2511-equitac-tactile-equivariance",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "to": "2511-equitac-tactile-equivariance",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2511-equitac-tactile-equivariance",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "to": "2511-equitac-tactile-equivariance",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2511-gen0-embodied-foundation-model",
+        "to": "2410-pi0-vla-flow-model",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2410-pi0-vla-flow-model",
+        "to": "2511-gen0-embodied-foundation-model",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2511-gen0-embodied-foundation-model",
+        "to": "2511-pi0-6-recap",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2511-pi0-6-recap",
+        "to": "2511-gen0-embodied-foundation-model",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2511-pi0-6-recap",
+        "to": "2410-pi0-vla-flow-model",
+        "type": "builds_on",
+        "strength": "foundational"
+      },
+      {
+        "from": "2410-pi0-vla-flow-model",
+        "to": "2511-pi0-6-recap",
+        "type": "reverse_builds_on",
+        "strength": "foundational"
+      },
+      {
+        "from": "2512-osmo-tactile-glove",
+        "to": "2407-tactile-skin-inhand-translation",
+        "type": "builds_on",
+        "strength": "foundational"
+      },
+      {
+        "from": "2407-tactile-skin-inhand-translation",
+        "to": "2512-osmo-tactile-glove",
+        "type": "reverse_builds_on",
+        "strength": "foundational"
+      },
+      {
+        "from": "2512-osmo-tactile-glove",
+        "to": "2512-unitachand",
+        "type": "compares_with",
+        "strength": "direct"
+      },
+      {
+        "from": "2512-unitachand",
+        "to": "2512-osmo-tactile-glove",
+        "type": "reverse_compares_with",
+        "strength": "direct"
+      },
+      {
+        "from": "2512-osmo-tactile-glove",
+        "to": "2504-pp-tac",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2504-pp-tac",
+        "to": "2512-osmo-tactile-glove",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2512-osmo-tactile-glove",
+        "to": "2409-3dtactile-dex",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2409-3dtactile-dex",
+        "to": "2512-osmo-tactile-glove",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2512-osmo-tactile-glove",
+        "to": "2505-dexumi",
+        "type": "compares_with",
+        "strength": "direct"
+      },
+      {
+        "from": "2505-dexumi",
+        "to": "2512-osmo-tactile-glove",
+        "type": "reverse_compares_with",
+        "strength": "direct"
+      },
+      {
+        "from": "2512-unitachand",
+        "to": "2409-3dtactile-dex",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2409-3dtactile-dex",
+        "to": "2512-unitachand",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2512-unitachand",
+        "to": "2407-tactile-skin-inhand-translation",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2407-tactile-skin-inhand-translation",
+        "to": "2512-unitachand",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2512-unitachand",
+        "to": "2504-pp-tac",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2504-pp-tac",
+        "to": "2512-unitachand",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2512-unitachand",
+        "to": "2505-dexumi",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2505-dexumi",
+        "to": "2512-unitachand",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2601-umi-ft-compliant-manipulation",
+        "type": "builds_on",
+        "strength": "foundational"
+      },
+      {
+        "to": "2601-umi-ft-compliant-manipulation",
+        "type": "reverse_builds_on",
+        "strength": "foundational"
+      },
+      {
+        "from": "2601-umi-ft-compliant-manipulation",
+        "type": "uses_method",
+        "strength": "foundational"
+      },
+      {
+        "to": "2601-umi-ft-compliant-manipulation",
+        "type": "reverse_uses_method",
+        "strength": "foundational"
+      },
+      {
+        "from": "2601-umi-ft-compliant-manipulation",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "to": "2601-umi-ft-compliant-manipulation",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2601-umi-ft-compliant-manipulation",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "to": "2601-umi-ft-compliant-manipulation",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2602-habilis-vla-on-device",
+        "type": "builds_on",
+        "strength": "foundational"
+      },
+      {
+        "to": "2602-habilis-vla-on-device",
+        "type": "reverse_builds_on",
+        "strength": "foundational"
+      },
+      {
+        "from": "2602-habilis-vla-on-device",
+        "type": "compares_with",
+        "strength": "direct"
+      },
+      {
+        "to": "2602-habilis-vla-on-device",
+        "type": "reverse_compares_with",
+        "strength": "direct"
+      },
+      {
+        "from": "2602-habilis-vla-on-device",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "to": "2602-habilis-vla-on-device",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2602-humanplus-humanoid-shadowing",
+        "type": "uses_method",
+        "strength": "foundational"
+      },
+      {
+        "to": "2602-humanplus-humanoid-shadowing",
+        "type": "reverse_uses_method",
+        "strength": "foundational"
+      },
+      {
+        "from": "2602-humanplus-humanoid-shadowing",
+        "type": "builds_on",
+        "strength": "foundational"
+      },
+      {
+        "to": "2602-humanplus-humanoid-shadowing",
+        "type": "reverse_builds_on",
+        "strength": "foundational"
+      },
+      {
+        "from": "2602-humanplus-humanoid-shadowing",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "to": "2602-humanplus-humanoid-shadowing",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2602-humanplus-humanoid-shadowing",
+        "type": "compares_with",
+        "strength": "direct"
+      },
+      {
+        "to": "2602-humanplus-humanoid-shadowing",
+        "type": "reverse_compares_with",
+        "strength": "direct"
+      },
+      {
+        "from": "2602-robopaint",
+        "to": "2505-dexumi",
+        "type": "compares_with",
+        "strength": "direct"
+      },
+      {
+        "from": "2505-dexumi",
+        "to": "2602-robopaint",
+        "type": "reverse_compares_with",
+        "strength": "direct"
+      },
+      {
+        "from": "2602-robopaint",
+        "to": "2506-exostart",
+        "type": "compares_with",
+        "strength": "direct"
+      },
+      {
+        "from": "2506-exostart",
+        "to": "2602-robopaint",
+        "type": "reverse_compares_with",
+        "strength": "direct"
+      },
+      {
+        "from": "2602-robopaint",
+        "to": "2509-dexop",
+        "type": "compares_with",
+        "strength": "direct"
+      },
+      {
+        "from": "2509-dexop",
+        "to": "2602-robopaint",
+        "type": "reverse_compares_with",
+        "strength": "direct"
+      },
+      {
+        "from": "2602-robopaint",
+        "to": "2410-pi0-vla-flow-model",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2410-pi0-vla-flow-model",
+        "to": "2602-robopaint",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2603-autoresearch-autonomous-ml",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "to": "2603-autoresearch-autonomous-ml",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2603-autoresearch-autonomous-ml",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "to": "2603-autoresearch-autonomous-ml",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2603-capx-coding-agents-manipulation",
+        "to": "2410-pi0-vla-flow-model",
+        "type": "compares_with",
+        "strength": "direct"
+      },
+      {
+        "from": "2410-pi0-vla-flow-model",
+        "to": "2603-capx-coding-agents-manipulation",
+        "type": "reverse_compares_with",
+        "strength": "direct"
+      },
+      {
+        "from": "2603-medical-ai-scientist",
+        "to": "2502-ai-co-scientist",
+        "type": "compares_with",
+        "strength": "direct"
+      },
+      {
+        "from": "2502-ai-co-scientist",
+        "to": "2603-medical-ai-scientist",
+        "type": "reverse_compares_with",
+        "strength": "direct"
+      },
+      {
+        "from": "2603-roboclaw-agentic-long-horizon",
+        "to": "2410-pi0-vla-flow-model",
+        "type": "builds_on",
+        "strength": "foundational"
+      },
+      {
+        "from": "2410-pi0-vla-flow-model",
+        "to": "2603-roboclaw-agentic-long-horizon",
+        "type": "reverse_builds_on",
+        "strength": "foundational"
+      },
+      {
+        "from": "2603-roboclaw-agentic-long-horizon",
+        "to": "2603-capx-coding-agents-manipulation",
+        "type": "compares_with",
+        "strength": "direct"
+      },
+      {
+        "from": "2603-capx-coding-agents-manipulation",
+        "to": "2603-roboclaw-agentic-long-horizon",
+        "type": "reverse_compares_with",
+        "strength": "direct"
+      },
+      {
+        "from": "2604-automated-alignment-researchers",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "to": "2604-automated-alignment-researchers",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2604-automated-alignment-researchers",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "to": "2604-automated-alignment-researchers",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2604-gen1-scaling-mastery",
+        "to": "2511-gen0-embodied-foundation-model",
+        "type": "builds_on",
+        "strength": "foundational"
+      },
+      {
+        "from": "2511-gen0-embodied-foundation-model",
+        "to": "2604-gen1-scaling-mastery",
+        "type": "reverse_builds_on",
+        "strength": "foundational"
+      },
+      {
+        "from": "2604-gen1-scaling-mastery",
+        "to": "2410-pi0-vla-flow-model",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2410-pi0-vla-flow-model",
+        "to": "2604-gen1-scaling-mastery",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2604-gen1-scaling-mastery",
+        "to": "2511-pi0-6-recap",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2511-pi0-6-recap",
+        "to": "2604-gen1-scaling-mastery",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2604-harnessing-claude-intelligence",
+        "to": "2603-meta-harness-optimization",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2603-meta-harness-optimization",
+        "to": "2604-harnessing-claude-intelligence",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2604-harnessing-claude-intelligence",
+        "to": "2502-ai-co-scientist",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2502-ai-co-scientist",
+        "to": "2604-harnessing-claude-intelligence",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2604-self-driving-labs",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "to": "2604-self-driving-labs",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2604-self-driving-labs",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "to": "2604-self-driving-labs",
+        "type": "reverse_related",
+        "strength": "tangential"
+      },
+      {
+        "from": "2604-self-driving-labs",
+        "type": "related",
+        "strength": "tangential"
+      },
+      {
+        "to": "2604-self-driving-labs",
+        "type": "reverse_related",
+        "strength": "tangential"
+      }
+    ],
+    "total_edges": 196
+  },
+  "paper_list": [
+    {
+      "slug": "2505-forcevla-force-aware-moe",
+      "post_number": 1,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/brain/vla",
+      "key_concepts": [
+        "VLA",
+        "flow-matching",
+        "MoE",
+        "force-torque-sensing"
+      ],
+      "one_liner": "Force-aware MoE module for VLA that dynamically routes F/T info across task phases",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2410-pi0-vla-flow-model",
+      "post_number": 2,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/brain/vla",
+      "key_concepts": [
+        "VLA",
+        "flow-matching",
+        "pre-training",
+        "fine-tuning"
+      ],
+      "one_liner": "Generalist VLA policy using pre-trained VLM + flow matching action expert for multi-robot control",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2501-dexforce-force-informed-actions",
+      "post_number": 3,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/arm/force-control",
+      "key_concepts": [
+        "force-informed-actions",
+        "kinesthetic-demonstration",
+        "compliance-control",
+        "F/T-sensing"
+      ],
+      "one_liner": "Extract force-informed action targets from kinesthetic demos to reproduce contact forces in policy execution",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2511-pi0-6-recap",
+      "post_number": 4,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/brain/vla",
+      "key_concepts": [
+        "VLA",
+        "reinforcement-learning",
+        "value-function",
+        "advantage-weighted-regression",
+        "iterative-improvement"
+      ],
+      "one_liner": "RL-based iterative improvement method (Recap) for VLA policies using advantage-weighted regression with a learned value function",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2407-stretchable-glove-hand-pose",
+      "post_number": 6,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/hand/tactile",
+      "key_concepts": [
+        "stretchable-sensor",
+        "liquid-metal",
+        "forward-kinematics",
+        "bone-length-estimation",
+        "joint-angle-estimation",
+        "kalman-filter"
+      ],
+      "one_liner": "Stretchable liquid-metal glove that estimates both finger bone lengths and joint angles from a single sensing mechanism for accurate hand pose reconstruction",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2505-dexumi",
+      "post_number": 8,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/arm/exoskeleton",
+      "key_concepts": [
+        "exoskeleton",
+        "kinematic-gap",
+        "visual-gap",
+        "ai-inpainting",
+        "relative-action",
+        "tactile-sensing",
+        "universal-manipulation-interface",
+        "workspace-optimization"
+      ],
+      "one_liner": "DexUMI bridges kinematic and visual gaps between human and robot hands via exoskeleton hardware and AI inpainting to enable efficient dexterous manipulation skill transfer.",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2506-exostart",
+      "post_number": 9,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/arm/exoskeleton",
+      "key_concepts": [
+        "exoskeleton",
+        "dynamics-filtering",
+        "auto-curriculum",
+        "teacher-student-distillation",
+        "zero-shot-transfer",
+        "trajectory-optimization",
+        "mjpc"
+      ],
+      "one_liner": "ExoStart converts ~10 exoskeleton demonstrations into dexterous robot manipulation policies via dynamics filtering, auto-curriculum RL, and vision-based distillation for zero-shot real-world transfer.",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2509-dexop",
+      "post_number": 10,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/hand/dexterous",
+      "key_concepts": [
+        "passive-exoskeleton",
+        "mechanical-linkage",
+        "4-bar-linkage",
+        "direct-contact-feedback",
+        "co-design",
+        "data-efficiency",
+        "dexterous-hand"
+      ],
+      "one_liner": "DEXOP is a passive exoskeleton that mechanically links human and robot fingers, enabling direct-contact dexterous demonstration collection at up to 8× the speed of teleoperation.",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2502-ai-co-scientist",
+      "post_number": 11,
+      "domain": "ml",
+      "taxonomy_primary": "ai/agent",
+      "key_concepts": [
+        "multi-agent-system",
+        "test-time-compute",
+        "elo-tournament",
+        "hypothesis-generation",
+        "drug-repurposing",
+        "scientific-reasoning",
+        "self-improving-loop",
+        "scientific-debate"
+      ],
+      "one_liner": "Gemini 2.0 multi-agent system that generates, debates, and evolves research hypotheses via Elo-based tournaments, with wet-lab-validated results in drug repurposing and target discovery",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2504-pp-tac",
+      "post_number": 12,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/hand/tactile",
+      "key_concepts": [
+        "tactile-sensor",
+        "slip-detection",
+        "diffusion-policy",
+        "force-control",
+        "deformable-objects",
+        "dexterous-hand"
+      ],
+      "one_liner": "Tactile-feedback dexterous hand system that picks paper-like thin deformable objects via R-Tac slip detection + online force control + diffusion policy, achieving 87.5% success rate",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2407-tactile-skin-inhand-translation",
+      "post_number": 13,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/hand/tactile",
+      "key_concepts": [
+        "tactile-skin",
+        "shear-force-sensing",
+        "normal-force-sensing",
+        "sim-to-real",
+        "in-hand-translation",
+        "ReSkin",
+        "finger-gaiting"
+      ],
+      "one_liner": "Tactile skin sensor model for zero-shot sim-to-real transfer of ternary shear and binary normal forces, enabling RL-based dexterous in-hand translation",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2409-3dtactile-dex",
+      "post_number": 14,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/hand/tactile",
+      "key_concepts": [
+        "3D-tactile",
+        "canonical-representation",
+        "force-based-pretraining",
+        "self-supervised-pretraining",
+        "visuo-tactile-policy",
+        "dexterous-manipulation",
+        "diffusion-policy",
+        "GraphMAE"
+      ],
+      "one_liner": "3D 촉각 데이터 학습의 어려움을 정규 좌표계 표현(canonical representation)과 힘 기반 자기지도 사전학습으로 해결해, 4가지 정밀 손 조작 태스크에서 78% 평균 성공률 달성",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2602-robopaint",
+      "post_number": 15,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/arm/exoskeleton",
+      "key_concepts": [
+        "Real-Sim-Real",
+        "human-to-robot-retargeting",
+        "3D-Gaussian-Splatting",
+        "tactile-retargeting",
+        "dexterous-manipulation",
+        "data-augmentation",
+        "VLA",
+        "cross-embodiment"
+      ],
+      "one_liner": "텔레오퍼레이션 없이 인간 시연을 기구학·촉각 리타겟팅 + 3DGS 시뮬 렌더링으로 어떤 로봇·카메라 뷰로도 변환하는 Real-Sim-Real 데이터 파이프라인",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2512-unitachand",
+      "post_number": 16,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/hand/tactile",
+      "key_concepts": [
+        "MANO-UV-mapping",
+        "unified-tactile-representation",
+        "contrastive-learning",
+        "human-to-robot-transfer",
+        "zero-shot-transfer",
+        "tactile-sensing",
+        "domain-adaptation",
+        "dexterous-manipulation"
+      ],
+      "one_liner": "인간 햅틱 글러브와 로봇 손의 이질적 촉각 신호를 MANO UV 맵으로 통합하고 대조 학습으로 정렬해, 단 10분 페어 데이터로 제로샷 정책 이전 달성",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2201-mano-hand-model",
+      "post_number": 17,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/hand/dexterous",
+      "key_concepts": [
+        "statistical-hand-model",
+        "MANO",
+        "SMPL+H",
+        "blend-skinning",
+        "PCA",
+        "non-rigid-deformation",
+        "hand-mesh",
+        "pose-blendshapes",
+        "4D-scan",
+        "body-hand-model"
+      ],
+      "one_liner": "손 형태·포즈의 통계적 모델 MANO를 3D 스캔 1,000개에서 학습, SMPL 신체와 통합해 전신 4D 캡처 실현",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2512-osmo-tactile-glove",
+      "post_number": 18,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/hand/tactile",
+      "key_concepts": [
+        "tactile-glove",
+        "wearable-sensor",
+        "3-axis-magnetic-sensor",
+        "human-to-robot-transfer",
+        "embodiment-gap",
+        "contact-rich-manipulation",
+        "MuMetal-shielding",
+        "skill-transfer",
+        "open-source-hardware",
+        "IK-retargeting"
+      ],
+      "one_liner": "동일 오픈소스 촉각 글러브를 인간·로봇에 장착해 visual·tactile 구현 간극을 동시 해소, 로봇 데이터 없이 72% 성공률 달성",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2603-capx-coding-agents-manipulation",
+      "post_number": 19,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/brain",
+      "key_concepts": [
+        "Code-as-Policy",
+        "agentic-test-time-computation",
+        "visual-differencing",
+        "ensemble-reasoning",
+        "verifiable-reward-RL"
+      ],
+      "one_liner": "Open-access framework for systematically benchmarking and improving Code-as-Policy agents in robot manipulation",
+      "has_memo": true,
+      "has_gaps": true,
+      "memo_preview": "CaP는 \"LLM이 코드를 생성하여 API를 호출하는\" 구조인데, 이는 \"LLM이 태스크를 분해하여 API를 호출하는\" 기존 LLM 플래너(SayCan, RoboClaw 등)와 본"
+    },
+    {
+      "slug": "2603-roboclaw-agentic-long-horizon",
+      "post_number": 20,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/brain/vla",
+      "key_concepts": [
+        "VLA",
+        "Entangled-Action-Pairs",
+        "self-resetting",
+        "MCP-tools",
+        "VLM-agent",
+        "policy-orchestration"
+      ],
+      "one_liner": "Agentic framework unifying VLA data collection, policy learning, and long-horizon deployment under a single VLM controller with self-resetting EAP loops",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2603-medical-ai-scientist",
+      "post_number": 21,
+      "domain": "ai",
+      "taxonomy_primary": "ai/agent",
+      "key_concepts": [
+        "AI-scientist",
+        "clinician-engineer-co-reasoning",
+        "autonomous-research",
+        "multi-agent-framework",
+        "medical-evidence"
+      ],
+      "one_liner": "First autonomous research framework specialized for clinical medicine with clinician-engineer co-reasoning for evidence-grounded ideation and MICCAI-level manuscript generation",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2603-meta-harness-optimization",
+      "post_number": 22,
+      "domain": "ai",
+      "taxonomy_primary": "ai/agent",
+      "key_concepts": [
+        "harness-optimization",
+        "outer-loop-search",
+        "filesystem-experience",
+        "agentic-proposer",
+        "context-management"
+      ],
+      "one_liner": "Outer-loop system that searches over LLM harness code by giving proposer agents full filesystem access to prior candidates' source, traces, and scores",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2511-gen0-embodied-foundation-model",
+      "post_number": 23,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/brain/vla",
+      "key_concepts": [
+        "embodied-foundation-model",
+        "scaling-laws",
+        "harmonic-reasoning",
+        "cross-embodiment",
+        "VLA"
+      ],
+      "one_liner": "Embodied foundation model trained on 270K+ hours of real-world manipulation data, exhibiting phase transitions at 7B parameters and predictable power-law scaling",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2604-gen1-scaling-mastery",
+      "post_number": 24,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/brain/vla",
+      "key_concepts": [
+        "embodied-foundation-model",
+        "mastery",
+        "scaling-laws",
+        "wearable-pretraining",
+        "harmonic-reasoning",
+        "VLA"
+      ],
+      "one_liner": "Second-generation embodied foundation model achieving 99% task success rates at 3x speed with only 1 hour of task-specific robot data",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2604-harnessing-claude-intelligence",
+      "post_number": 25,
+      "domain": "ai",
+      "taxonomy_primary": "ai/agent",
+      "key_concepts": [
+        "agent-harness",
+        "tool-composition",
+        "self-orchestration",
+        "prompt-caching",
+        "progressive-context",
+        "memory-persistence",
+        "declarative-tools",
+        "context-management"
+      ],
+      "one_liner": "Three architectural patterns for building applications that adapt to Claude's evolving intelligence: use general tools, enable self-orchestration, and set boundaries carefully",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2604-automated-alignment-researchers",
+      "post_number": 28,
+      "domain": "ai",
+      "taxonomy_primary": "ai/agent",
+      "key_concepts": [
+        "weak-to-strong-supervision",
+        "PGR",
+        "automated-research",
+        "scalable-oversight",
+        "reward-hacking"
+      ],
+      "one_liner": "Nine Claude Opus 4.6 instances achieved PGR 0.97 on weak-to-strong supervision, far surpassing human researchers' PGR 0.23",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2511-act1-robot-foundation-model",
+      "post_number": 29,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/brain",
+      "key_concepts": [
+        "embodiment-alignment",
+        "skill-capture-glove",
+        "skill-transform",
+        "zero-shot-generalization",
+        "long-horizon-manipulation",
+        "foundation-model"
+      ],
+      "one_liner": "Home robot foundation model trained on zero robot data via Embodiment Alignment — human hand data directly transferred to robot",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2603-autoresearch-autonomous-ml",
+      "post_number": 30,
+      "domain": "ai",
+      "taxonomy_primary": "ai/agent",
+      "key_concepts": [
+        "autonomous-research",
+        "ml-optimization",
+        "agent-experimentation",
+        "hyperparameter-tuning",
+        "validation-loss"
+      ],
+      "one_liner": "Open-source framework for AI agents to autonomously iterate on ML training — 700 experiments in 2 days, 11% faster GPT-2",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2604-self-driving-labs",
+      "post_number": 31,
+      "domain": "ai",
+      "taxonomy_primary": "ai/agent",
+      "key_concepts": [
+        "self-driving-lab",
+        "autonomous-experimentation",
+        "bayesian-optimization",
+        "llm-guided-research",
+        "robot-scientist"
+      ],
+      "one_liner": "Nature survey on self-driving labs: AI+robotics platforms autonomously running the full scientific experimentation loop",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2602-habilis-vla-on-device",
+      "post_number": 33,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/brain/vla",
+      "key_concepts": [
+        "VLA",
+        "on-device-inference",
+        "tasks-per-hour",
+        "MTBI",
+        "rectified-flow-distillation",
+        "ESPADA",
+        "classifier-free-guidance",
+        "play-data-pretraining"
+      ],
+      "one_liner": "On-device VLA model achieving 572.6 TPH in simulation and 124 TPH in real-world via 3-stage training + ESPADA motion compression",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2303-diffusion-policy",
+      "post_number": 34,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/brain",
+      "key_concepts": [
+        "diffusion-policy",
+        "DDPM",
+        "score-function",
+        "receding-horizon-control",
+        "visual-conditioning",
+        "multimodal-action-distribution"
+      ],
+      "one_liner": "Diffusion models applied to robot visuomotor policies — 46.9% average improvement over SOTA across 15 tasks from 4 benchmarks",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2402-umi-universal-manipulation-interface",
+      "post_number": 35,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/brain",
+      "key_concepts": [
+        "hand-held-gripper",
+        "in-the-wild-demonstration",
+        "fisheye-camera",
+        "side-mirror-stereo",
+        "relative-trajectory",
+        "latency-matching",
+        "diffusion-policy",
+        "zero-shot-generalization"
+      ],
+      "one_liner": "$371 hand-held gripper + GoPro for in-the-wild robot teaching — zero-shot deployment across multiple robot platforms",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2601-umi-ft-compliant-manipulation",
+      "post_number": 36,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/arm/force-control",
+      "key_concepts": [
+        "CoinFT",
+        "adaptive-compliance-policy",
+        "force-torque-sensing",
+        "admittance-control",
+        "in-the-wild-demonstration",
+        "UMI"
+      ],
+      "one_liner": "UMI + 2g CoinFT 6-axis sensors on each finger for in-the-wild force-aware compliant manipulation learning",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2511-equitac-tactile-equivariance",
+      "post_number": 37,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/hand/tactile",
+      "key_concepts": [
+        "tactile-equivariance",
+        "SO2-symmetry",
+        "surface-normal-map",
+        "residual-rotation",
+        "flow-matching",
+        "sample-efficiency"
+      ],
+      "one_liner": "SO(2)-equivariant tactile network for sample-efficient in-hand rotation correction — 90% success from 10 demos",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2602-humanplus-humanoid-shadowing",
+      "post_number": 38,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/hand/dexterous",
+      "key_concepts": [
+        "egocentric-video",
+        "scaling-law",
+        "dexterous-manipulation",
+        "VLA",
+        "human-to-robot-transfer",
+        "flow-matching",
+        "cross-embodiment"
+      ],
+      "one_liner": "20,854 hours egocentric human video pretraining discovers scaling law (R²=0.9983) for robot dexterous manipulation",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2412-f-tac-hand",
+      "post_number": 39,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/hand/tactile",
+      "key_concepts": [
+        "high-resolution-tactile",
+        "vision-based-tactile-sensor",
+        "biomimetic-hand",
+        "multi-object-grasping",
+        "human-like-grasp-generation",
+        "adaptive-control",
+        "GelSight",
+        "palm-tactile"
+      ],
+      "one_liner": "17 vision-based tactile sensors covering 70% of a 15-DoF biomimetic hand enable 100% success on multi-object adaptive grasping (vs 53.5% without tactile, p<0.0001)",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2503-tacpalm-softhand",
+      "post_number": 40,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/hand/tactile",
+      "key_concepts": [
+        "visual-tactile-palm",
+        "soft-pneumatic-finger",
+        "fiber-reinforced-actuator",
+        "palm-finger-cooperation",
+        "high-density-tactile",
+        "GelSight-style-sensor",
+        "two-segment-actuation",
+        "object-classification"
+      ],
+      "one_liner": "Three-finger soft pneumatic hand with a 181,000 unit/cm² visual-tactile palm — palm-finger coordination yields 100% cup-cap pickup, 97% fabric classification, and dynamic teapot-pose stabilization",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2509-tactile-sensing-distribution",
+      "post_number": 41,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/hand/tactile",
+      "key_concepts": [
+        "tactile-distribution",
+        "sensor-placement",
+        "Shadow-Hand",
+        "force-torque-sensing",
+        "PPO",
+        "LSTM-policy",
+        "Isaac-Gym",
+        "in-hand-reorientation",
+        "palm-tactile"
+      ],
+      "one_liner": "Systematic ablation across 19 tactile regions of a Shadow Hand shows the upper palm is nearly as important as distal phalanges for in-hand reorientation — fingertips alone are not optimal",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    }
+  ]
+}

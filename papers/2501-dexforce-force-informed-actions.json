@@ -1,0 +1,53 @@
+{
+  "slug": "2501-dexforce-force-informed-actions",
+  "post_number": 3,
+  "source_title": "DexForce: Extracting Force-informed Actions from Kinesthetic Demonstrations for Dexterous Manipulation",
+  "domain": "robotics",
+  "subfields": [
+    "dexterous-manipulation",
+    "force-control",
+    "demonstration-learning"
+  ],
+  "key_concepts": [
+    "force-informed-actions",
+    "kinesthetic-demonstration",
+    "compliance-control",
+    "F/T-sensing"
+  ],
+  "methodology": [
+    "imitation-learning",
+    "force-position-mapping"
+  ],
+  "taxonomy_primary": "robotics/arm/force-control",
+  "taxonomy_secondary": [],
+  "ai_summary": {
+    "one_liner": "Extract force-informed action targets from kinesthetic demos to reproduce contact forces in policy execution",
+    "problem": "Kinesthetic demonstrations record positions but lose contact force information critical for contact-rich tasks",
+    "solution": "Two-stage pipeline: record kinesthetic demo with F/T sensors, compute virtual targets offset by compliance model",
+    "key_result": "Near-zero to 77-97% success rate improvement on contact-rich dexterous tasks vs position-only baselines",
+    "limitations": [
+      "Requires per-task compliance gain tuning",
+      "Two F/T sensors only (thumb + index)",
+      "Single dexterous hand platform"
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "스프링 모델의 단순함이 강점이자 한계다. 연성 접촉이나 마찰을 명시적으로 모델링하지 않으면서도 경험적으로 작동하지만, 더 복잡한 접촉 역학(예: 변형체 조작)에서는 한계가 있을 수 있다. 또한 6축 힘-토크 센서(CoinFT)가 필수 하드웨어이므로 기존 로봇 시스템에의 적용성은 제한적이다.",
+      "source": "ai_analysis",
+      "relates_to": []
+    }
+  ],
+  "relations": [
+    {
+      "target": "2505-forcevla-force-aware-moe",
+      "type": "related",
+      "strength": "tangential"
+    }
+  ],
+  "source_author": "Claire Chen et al.",
+  "source_date": "2025-01-17T00:00:00Z",
+  "published_at": "2026-03-05T00:00:00Z"
+}

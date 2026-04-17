@@ -1,0 +1,74 @@
+{
+  "slug": "2505-dexumi",
+  "post_number": 8,
+  "source_title": "DexUMI: Using Human Hand as the Universal Manipulation Interface for Dexterous Manipulation",
+  "domain": "robotics",
+  "subfields": [
+    "dexterous-manipulation",
+    "teleoperation",
+    "imitation-learning",
+    "data-collection"
+  ],
+  "key_concepts": [
+    "exoskeleton",
+    "kinematic-gap",
+    "visual-gap",
+    "ai-inpainting",
+    "relative-action",
+    "tactile-sensing",
+    "universal-manipulation-interface",
+    "workspace-optimization"
+  ],
+  "methodology": [
+    "exoskeleton-hardware",
+    "bi-level-optimization",
+    "sam2-segmentation",
+    "diffusion-policy",
+    "relative-action-representation",
+    "fsr-tactile"
+  ],
+  "taxonomy_primary": "robotics/arm/exoskeleton",
+  "taxonomy_secondary": [
+    "robotics/hand"
+  ],
+  "ai_summary": {
+    "one_liner": "DexUMI bridges kinematic and visual gaps between human and robot hands via exoskeleton hardware and AI inpainting to enable efficient dexterous manipulation skill transfer.",
+    "problem": "Teaching dexterous manipulation to robot hands is blocked by two gaps: kinematic gap (human and robot hand morphologies differ) and visual gap (demonstration data shows human hands, causing distribution shift during robot execution).",
+    "solution": "Hardware adaptation via wearable exoskeleton with bi-level workspace-matching optimization; software adaptation via SAM2 segmentation + AI inpainting to replace human hand appearances with robot hand images in collected demonstrations.",
+    "key_result": "Average 86% task success rate across 4 challenging real-world tasks on two different robot platforms; 3.2× higher data collection efficiency than teleoperation.",
+    "limitations": [
+      "Requires per-robot-hand exoskeleton design and fabrication",
+      "Camera must be rigidly attached to robot hand/exoskeleton",
+      "Robot hand images for inpainting still require real hardware in the loop"
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "실험 태스크가 단일 고정 시점 카메라 환경에서 진행되어, 다양한 카메라 배치나 비정형 환경에서의 일반화 가능성은 미검증",
+      "source": "ai_analysis",
+      "relates_to": []
+    }
+  ],
+  "relations": [
+    {
+      "target": "2407-stretchable-glove-hand-pose",
+      "type": "compares_with",
+      "strength": "direct"
+    },
+    {
+      "target": "2501-dexforce-force-informed-actions",
+      "type": "addresses_task",
+      "strength": "direct"
+    },
+    {
+      "target": "2505-forcevla-force-aware-moe",
+      "type": "related",
+      "strength": "tangential"
+    }
+  ],
+  "source_author": "Mengda Xu et al.",
+  "source_date": "2025-05-28",
+  "published_at": "2026-03-11T00:00:00+09:00"
+}

@@ -1,0 +1,66 @@
+{
+  "slug": "2604-self-driving-labs",
+  "post_number": 31,
+  "source_title": "'Self-driving' labs power up",
+  "domain": "ai",
+  "subfields": [
+    "autonomous-lab",
+    "scientific-discovery",
+    "ai-robotics"
+  ],
+  "key_concepts": [
+    "self-driving-lab",
+    "autonomous-experimentation",
+    "bayesian-optimization",
+    "llm-guided-research",
+    "robot-scientist"
+  ],
+  "methodology": [
+    "autonomous-agent",
+    "bayesian-optimization",
+    "llm-integration",
+    "robotic-automation"
+  ],
+  "taxonomy_primary": "ai/agent",
+  "taxonomy_secondary": [],
+  "ai_summary": {
+    "one_liner": "Nature survey on self-driving labs: AI+robotics platforms autonomously running the full scientific experimentation loop",
+    "problem": "Scientific experimentation is mostly manual craft work — humans are the bottleneck in the experiment-evaluate-iterate loop",
+    "solution": "Self-driving labs integrating AI, robotics, and automated instrumentation to design and perform experiments with minimal human input",
+    "key_result": "Eve discovered antimalarial compounds from 1,600 candidates; Coscientist optimized synthesis in ~20 cycles; AISF achieved superhuman experiment design in catalyst discovery",
+    "limitations": [
+      "Cannot understand the big picture or achieve conceptual breakthroughs",
+      "Safety control frameworks incomplete",
+      "Researcher resistance to automation"
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "대부분의 성과가 좁은 최적화 영역(약물 스크리닝, 촉매 탐색)에 국한되며, 진정한 가설 생성·개념 혁신에 대한 증거는 아직 없음",
+      "source": "ai_analysis",
+      "relates_to": []
+    }
+  ],
+  "relations": [
+    {
+      "slug": "2502-ai-co-scientist",
+      "type": "related",
+      "strength": "tangential"
+    },
+    {
+      "slug": "2604-automated-alignment-researchers",
+      "type": "related",
+      "strength": "tangential"
+    },
+    {
+      "slug": "2603-autoresearch-autonomous-ml",
+      "type": "related",
+      "strength": "tangential"
+    }
+  ],
+  "source_author": "Rachel Brazil",
+  "source_date": "2026-04-02T00:00:00Z",
+  "published_at": "2026-04-15T00:00:00Z"
+}
