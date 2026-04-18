@@ -11,7 +11,7 @@
 | 블로그/에세이 포스팅 | Next.js 라우트 변경 |
 | 지식그래프 관리 (sync-papers, sync-references) | 빌드 스크립트 수정 |
 | R2 이미지 업로드 | Supabase 스키마 변경 |
-| 논문 추천 (`/paper-search`) | Vercel 배포 설정 |
+| 논문 추천 (`/paper-search`) | Cloudflare Workers/Pages 배포 설정 |
 | 포스트 삭제 (`/del`) | ACL/인증 시스템 수정 |
 | 소셜 공유 (`/share`) | |
 | Obsidian 동기화 | |
@@ -90,4 +90,4 @@ terry-artlab-homepage의 .env.local과 동일한 키 필요:
 - 홈페이지 개발: `terry-artlab-homepage`
 - Obsidian 운영: `terry-obsidian`
 - Survey 콘텐츠: `terry-surveys`
-- 사이트: https://terry.artlab.ai
+- 사이트: https://www.terryum.ai

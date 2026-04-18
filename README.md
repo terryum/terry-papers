@@ -2,7 +2,7 @@
 
 [한국어](#한국어) | **English**
 
-> Content workspace for managing research paper posts, knowledge graphs, and references on [terry.artlab.ai](https://terry.artlab.ai).
+> Content workspace for managing research paper posts, knowledge graphs, and references on [www.terryum.ai](https://www.terryum.ai).
 
 This workspace is part of the [terry-artlab-homepage](https://github.com/terryum/terry-artlab-homepage) ecosystem. For full site documentation, architecture, and setup guide, see the [main repository README](https://github.com/terryum/terry-artlab-homepage#readme).
 
@@ -10,7 +10,7 @@ This workspace is part of the [terry-artlab-homepage](https://github.com/terryum
 
 ## What This Does
 
-This workspace manages the **content side** of paper posting — summarizing arXiv papers, blog posts, and multi-source materials into bilingual (KO/EN) research summaries, then publishing them to [terry.artlab.ai/posts](https://terry.artlab.ai/ko/posts).
+This workspace manages the **content side** of paper posting — summarizing arXiv papers, blog posts, and multi-source materials into bilingual (KO/EN) research summaries, then publishing them to [www.terryum.ai/posts](https://www.terryum.ai/ko/posts).
 
 All content operations are performed via Claude Code skills:
 
@@ -73,13 +73,13 @@ This workspace symlinks into `terry-artlab-homepage` — editing posts here edit
 
 # terry-papers — 논문 포스팅 워크스페이스
 
-> [terry.artlab.ai](https://terry.artlab.ai)의 논문 포스팅, 지식그래프, 참고문헌을 관리하는 콘텐츠 워크스페이스.
+> [www.terryum.ai](https://www.terryum.ai)의 논문 포스팅, 지식그래프, 참고문헌을 관리하는 콘텐츠 워크스페이스.
 
 이 워크스페이스는 [terry-artlab-homepage](https://github.com/terryum/terry-artlab-homepage) 생태계의 일부입니다. 전체 사이트 문서, 아키텍처, 설정 가이드는 [메인 리포지토리 README](https://github.com/terryum/terry-artlab-homepage#readme)를 참고하세요.
 
 ## 하는 일
 
-arXiv 논문, 블로그, 다중 소스를 한국어/영어 양국어 연구 요약으로 변환하여 [terry.artlab.ai/posts](https://terry.artlab.ai/ko/posts)에 발행합니다.
+arXiv 논문, 블로그, 다중 소스를 한국어/영어 양국어 연구 요약으로 변환하여 [www.terryum.ai/posts](https://www.terryum.ai/ko/posts)에 발행합니다.
 
 | 명령어 | 기능 | 예시 |
 |--------|------|------|
