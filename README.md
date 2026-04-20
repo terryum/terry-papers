@@ -4,7 +4,7 @@
 
 > Content workspace for managing research paper posts, knowledge graphs, and references on [www.terryum.ai](https://www.terryum.ai).
 
-This workspace is part of the [terry-artlab-homepage](https://github.com/terryum/terry-artlab-homepage) ecosystem. For full site documentation, architecture, and setup guide, see the [main repository README](https://github.com/terryum/terry-artlab-homepage#readme).
+This workspace is part of the [terryum-ai](https://github.com/terryum/terryum-ai) ecosystem. For full site documentation, architecture, and setup guide, see the [main repository README](https://github.com/terryum/terryum-ai#readme).
 
 ---
 
@@ -26,13 +26,13 @@ All content operations are performed via Claude Code skills:
 
 ```
 terry-papers/
-├── posts/        → symlink to terry-artlab-homepage/posts/
-├── scripts/      → symlink to terry-artlab-homepage/scripts/
+├── posts/        → symlink to terryum-ai/posts/
+├── scripts/      → symlink to terryum-ai/scripts/
 ├── .claude/skills/ → symlinks to homepage skills
 └── .env.local    → R2 + Supabase credentials
 ```
 
-This workspace symlinks into `terry-artlab-homepage` — editing posts here edits the same files. The benefit is **separation of concerns**: you can run `/post` here while another terminal runs homepage development in `terry-artlab-homepage`.
+This workspace symlinks into `terryum-ai` — editing posts here edits the same files. The benefit is **separation of concerns**: you can run `/post` here while another terminal runs homepage development in `terryum-ai`.
 
 ### Posting Pipeline
 
@@ -50,15 +50,15 @@ This workspace symlinks into `terry-artlab-homepage` — editing posts here edit
 
 ## Setup
 
-1. **Clone** this repo alongside `terry-artlab-homepage`:
+1. **Clone** this repo alongside `terryum-ai`:
    ```bash
    cd ~/Codes/personal
    git clone https://github.com/terryum/terry-papers.git
    ```
 
-2. **Ensure symlinks point correctly** (they reference `terry-artlab-homepage` in the same parent directory)
+2. **Ensure symlinks point correctly** (they reference `terryum-ai` in the same parent directory)
 
-3. **Copy `.env.local`** from `terry-artlab-homepage` (or create your own with the same keys)
+3. **Copy `.env.local`** from `terryum-ai` (or create your own with the same keys)
 
 4. **Use Claude Code** to start posting:
    ```bash
@@ -75,7 +75,7 @@ This workspace symlinks into `terry-artlab-homepage` — editing posts here edit
 
 > [www.terryum.ai](https://www.terryum.ai)의 논문 포스팅, 지식그래프, 참고문헌을 관리하는 콘텐츠 워크스페이스.
 
-이 워크스페이스는 [terry-artlab-homepage](https://github.com/terryum/terry-artlab-homepage) 생태계의 일부입니다. 전체 사이트 문서, 아키텍처, 설정 가이드는 [메인 리포지토리 README](https://github.com/terryum/terry-artlab-homepage#readme)를 참고하세요.
+이 워크스페이스는 [terryum-ai](https://github.com/terryum/terryum-ai) 생태계의 일부입니다. 전체 사이트 문서, 아키텍처, 설정 가이드는 [메인 리포지토리 README](https://github.com/terryum/terryum-ai#readme)를 참고하세요.
 
 ## 하는 일
 

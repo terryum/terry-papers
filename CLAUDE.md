@@ -3,7 +3,7 @@
 ## 이 워크스페이스의 역할
 
 논문 포스팅, 지식그래프, 참고문헌 관리에 집중하는 워크스페이스.
-홈페이지 코드 수정, 인프라 변경은 `terry-artlab-homepage`에서 한다.
+홈페이지 코드 수정, 인프라 변경은 `terryum-ai`에서 한다.
 
 | 이곳에서 하는 것 | 이곳에서 하지 않는 것 |
 |---|---|
@@ -21,7 +21,7 @@
 ```
 terry-papers/
 ├── CLAUDE.md              ← 이 파일
-├── posts/                 ← terry-artlab-homepage/posts/ 심링크
+├── posts/                 ← terryum-ai/posts/ 심링크
 │   ├── papers/            ← 논문 MDX + meta.json (소스 오브 트루스)
 │   ├── essays/            ← 에세이
 │   ├── memos/             ← 메모
@@ -29,7 +29,7 @@ terry-papers/
 ├── papers/                ← 논문별 AI 인사이트 JSON (이 레포에 직접 커밋)
 │   └── <slug>.json        ← terrys_memos, research_gaps, enriched relations
 ├── knowledge-index.json   ← memo_index, gap_index, knowledge_graph 통합 인덱스
-├── scripts/               ← terry-artlab-homepage/scripts/ 심링크
+├── scripts/               ← terryum-ai/scripts/ 심링크
 ├── .claude/skills/        ← 스킬 심링크 (post, paper-search, del, share 등)
 └── .env.local             ← 환경변수 (R2, Supabase)
 ```
@@ -43,7 +43,7 @@ terry-papers/
 - `papers/<slug>.json` — 논문별 인사이트 (`terry_memos`, `research_gaps`, 강화 관계)
 - `knowledge-index.json` — `memo_index`, `gap_index`, `knowledge_graph` (역방향 엣지 포함)
 
-수동 재생성: `cd ~/Codes/personal/terry-artlab-homepage && node scripts/export-knowledge.mjs` (인자 없음 → 이 레포로 출력)
+수동 재생성: `cd ~/Codes/personal/terryum-ai && node scripts/export-knowledge.mjs` (인자 없음 → 이 레포로 출력)
 
 ## 핵심 명령어
 
@@ -69,12 +69,12 @@ terry-papers/
 
 ## Git 규칙
 
-- 이 워크스페이스에서 terry-artlab-homepage에 push할 때 반드시 `git pull --rebase origin main` 후 push
+- 이 워크스페이스에서 terryum-ai에 push할 때 반드시 `git pull --rebase origin main` 후 push
 - 콘텐츠 커밋과 코드 커밋을 분리
 
 ## 환경변수 (.env.local)
 
-terry-artlab-homepage의 .env.local과 동일한 키 필요:
+terryum-ai의 .env.local과 동일한 키 필요:
 - `NEXT_PUBLIC_SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`
 - `R2_ACCOUNT_ID`, `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY`, `R2_BUCKET_NAME`, `R2_PUBLIC_URL`
 - `NEXT_PUBLIC_R2_URL`
@@ -87,7 +87,7 @@ terry-artlab-homepage의 .env.local과 동일한 키 필요:
 
 ## 참고
 
-- 홈페이지 개발: `terry-artlab-homepage`
+- 홈페이지 개발: `terryum-ai`
 - Obsidian 운영: `terry-obsidian`
 - Survey 콘텐츠: `terry-surveys`
 - 사이트: https://www.terryum.ai
