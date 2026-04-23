@@ -9,3 +9,12 @@ node_modules/
 .mcp.json
 .mcp.local.json
 .claude/settings.local.json
+
+# Symlinks to other repo skills (Android can't render — manage per-device)
+.claude/skills/defuddle
+.claude/skills/del
+.claude/skills/paper-search
+.claude/skills/post
+.claude/skills/project
+.claude/skills/share
+.claude/skills/survey
