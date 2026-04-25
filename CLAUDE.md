@@ -72,6 +72,10 @@ terry-papers/
 - 이 워크스페이스에서 terryum-ai에 push할 때 반드시 `git pull --rebase origin main` 후 push
 - 콘텐츠 커밋과 코드 커밋을 분리
 
+## Supabase / 인증 시스템
+
+이 워크스페이스는 **Supabase 스키마, RLS 정책, ACL/그룹 인증 코드를 수정하지 않는다** (위 "이곳에서 하지 않는 것" 표 참조). 새 그룹이 필요하면 `terryum-ai/src/lib/group-auth.ts`의 `ALLOWED_GROUPS` allowlist + `.env.local` 갱신을 사용자에게 안내만 한다.
+
 ## 환경변수 (.env.local)
 
 terryum-ai의 .env.local과 동일한 키 필요:
