@@ -57,6 +57,8 @@ argument-hint: "<URL | virtual 자연어요청 | synthesis URL1 URL2 ...> [--vis
   - **Git 커밋/푸시 불필요**
   - 사이트에서 해당 그룹 로그인 세션이 있어야만 노출됨
 
+> **새 그룹을 도입할 때**: 슬러그는 `terryum-ai/src/lib/group-auth.ts`의 `ALLOWED_GROUPS` allowlist + `.env.local`의 `CO_<SLUG>_PASSWORD` + `.env.example` 안내, 세 곳을 같이 갱신해야 한다. allowlist에 없으면 그룹 로그인이 거부된다.
+
 ---
 
 ## Papers 경로
@@ -151,6 +153,18 @@ f. meta.json 생성 전에 아래를 출력:
   - `source_project_url`: 프로젝트 페이지 URL (있으면)
 
 ### Step R9) 빌드 스크립트 실행
+
+**권장 (통합 파이프라인):**
+```bash
+cd /Users/terrytaewoongum/Codes/personal/terryum-ai
+node scripts/post-publish-pipeline.mjs --slug=<slug>
+node scripts/sync-references.mjs --slug=<slug>
+```
+`post-publish-pipeline.mjs`가 thumbnails / og-image / embeddings / index 를 병렬 실행하고, 이어서 flatten + R2 업로드를 직렬로 처리한다 (~30~60초 절약). `sync-references`만 paper 전용이라 개별 호출.
+
+<details>
+<summary>개별 호출 (디버깅·재시도용 reference)</summary>
+
 ```bash
 cd /Users/terrytaewoongum/Codes/personal/terryum-ai
 node scripts/generate-thumbnails.mjs
@@ -163,6 +177,7 @@ node scripts/upload-to-r2.mjs --slug=<slug>
 node scripts/sync-references.mjs --slug=<slug>
 node scripts/generate-embeddings.mjs --slug=<slug>
 ```
+</details>
 - `generate-thumbnails.mjs`: `cover.webp`에서 288×288 `cover-thumb.webp`를 `public/posts/<slug>/`에 생성 (리스트 카드 썸네일용)
 - `upload-to-r2.mjs`: 이미지를 Cloudflare R2에 업로드 (cover, **cover-thumb**, figures, OG)
 - **썸네일 생성 → flatten → R2 업로드 순서 필수**: 투명 이미지가 R2 엣지에 1년 immutable로 캐시되면 나중에 교체해도 먹히지 않는다. 업로드 **전에** 반드시 opaque로 만들 것.
