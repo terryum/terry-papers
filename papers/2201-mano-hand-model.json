@@ -51,17 +51,17 @@
   "relations": [
     {
       "target": "2407-stretchable-glove-hand-pose",
-      "type": "related",
+      "type": "sharesTopicWith",
       "strength": "tangential"
     },
     {
       "target": "2512-unitachand",
-      "type": "related",
+      "type": "sharesTopicWith",
       "strength": "tangential"
     },
     {
       "target": "2602-robopaint",
-      "type": "related",
+      "type": "sharesTopicWith",
       "strength": "tangential"
     }
   ],

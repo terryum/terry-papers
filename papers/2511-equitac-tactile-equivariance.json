@@ -48,18 +48,18 @@
   ],
   "relations": [
     {
-      "slug": "2407-tactile-skin-inhand-translation",
-      "type": "related",
+      "type": "sharesTopicWith",
+      "target": "2407-tactile-skin-inhand-translation",
       "strength": "tangential"
     },
     {
-      "slug": "2409-3dtactile-dex",
-      "type": "related",
+      "type": "sharesTopicWith",
+      "target": "2409-3dtactile-dex",
       "strength": "tangential"
     },
     {
-      "slug": "2504-pp-tac",
-      "type": "related",
+      "type": "sharesTopicWith",
+      "target": "2504-pp-tac",
       "strength": "tangential"
     }
   ],

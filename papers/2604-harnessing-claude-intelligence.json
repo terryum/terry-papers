@@ -51,12 +51,12 @@
   "relations": [
     {
       "target": "2603-meta-harness-optimization",
-      "type": "related",
+      "type": "sharesTopicWith",
       "strength": "tangential"
     },
     {
       "target": "2502-ai-co-scientist",
-      "type": "related",
+      "type": "sharesTopicWith",
       "strength": "tangential"
     }
   ],

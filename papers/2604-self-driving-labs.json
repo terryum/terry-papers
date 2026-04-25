@@ -45,18 +45,18 @@
   ],
   "relations": [
     {
-      "slug": "2502-ai-co-scientist",
-      "type": "related",
+      "type": "sharesTopicWith",
+      "target": "2502-ai-co-scientist",
       "strength": "tangential"
     },
     {
-      "slug": "2604-automated-alignment-researchers",
-      "type": "related",
+      "type": "sharesTopicWith",
+      "target": "2604-automated-alignment-researchers",
       "strength": "tangential"
     },
     {
-      "slug": "2603-autoresearch-autonomous-ml",
-      "type": "related",
+      "type": "sharesTopicWith",
+      "target": "2603-autoresearch-autonomous-ml",
       "strength": "tangential"
     }
   ],

@@ -51,17 +51,17 @@
   "relations": [
     {
       "target": "2504-pp-tac",
-      "type": "related",
+      "type": "sharesTopicWith",
       "strength": "tangential"
     },
     {
       "target": "2407-stretchable-glove-hand-pose",
-      "type": "related",
+      "type": "sharesTopicWith",
       "strength": "tangential"
     },
     {
       "target": "2501-dexforce-force-informed-actions",
-      "type": "related",
+      "type": "sharesTopicWith",
       "strength": "tangential"
     }
   ],

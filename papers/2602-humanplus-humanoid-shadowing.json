@@ -50,23 +50,23 @@
   ],
   "relations": [
     {
-      "slug": "2303-diffusion-policy",
-      "type": "uses_method",
+      "type": "usesMethodIn",
+      "target": "2303-diffusion-policy",
       "strength": "foundational"
     },
     {
-      "slug": "2410-pi0-vla-flow-model",
-      "type": "builds_on",
+      "type": "extends",
+      "target": "2410-pi0-vla-flow-model",
       "strength": "foundational"
     },
     {
-      "slug": "2505-dexumi",
-      "type": "related",
+      "type": "sharesTopicWith",
+      "target": "2505-dexumi",
       "strength": "tangential"
     },
     {
-      "slug": "2511-act1-robot-foundation-model",
-      "type": "compares_with",
+      "type": "reviews",
+      "target": "2511-act1-robot-foundation-model",
       "strength": "direct"
     }
   ],

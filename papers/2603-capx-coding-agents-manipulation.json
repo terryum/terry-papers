@@ -65,7 +65,7 @@
   "relations": [
     {
       "target": "2410-pi0-vla-flow-model",
-      "type": "compares_with",
+      "type": "reviews",
       "strength": "direct"
     }
   ],

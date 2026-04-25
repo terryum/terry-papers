@@ -49,23 +49,23 @@
   ],
   "relations": [
     {
-      "slug": "2402-umi-universal-manipulation-interface",
-      "type": "builds_on",
+      "type": "extends",
+      "target": "2402-umi-universal-manipulation-interface",
       "strength": "foundational"
     },
     {
-      "slug": "2303-diffusion-policy",
-      "type": "uses_method",
+      "type": "usesMethodIn",
+      "target": "2303-diffusion-policy",
       "strength": "foundational"
     },
     {
-      "slug": "2501-dexforce-force-informed-actions",
-      "type": "related",
+      "type": "sharesTopicWith",
+      "target": "2501-dexforce-force-informed-actions",
       "strength": "tangential"
     },
     {
-      "slug": "2505-forcevla-force-aware-moe",
-      "type": "related",
+      "type": "sharesTopicWith",
+      "target": "2505-forcevla-force-aware-moe",
       "strength": "tangential"
     }
   ],

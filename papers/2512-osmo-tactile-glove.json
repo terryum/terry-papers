@@ -56,27 +56,27 @@
   "relations": [
     {
       "target": "2407-tactile-skin-inhand-translation",
-      "type": "builds_on",
+      "type": "extends",
       "strength": "foundational"
     },
     {
       "target": "2512-unitachand",
-      "type": "compares_with",
+      "type": "reviews",
       "strength": "direct"
     },
     {
       "target": "2504-pp-tac",
-      "type": "related",
+      "type": "sharesTopicWith",
       "strength": "tangential"
     },
     {
       "target": "2409-3dtactile-dex",
-      "type": "related",
+      "type": "sharesTopicWith",
       "strength": "tangential"
     },
     {
       "target": "2505-dexumi",
-      "type": "compares_with",
+      "type": "reviews",
       "strength": "direct"
     }
   ],

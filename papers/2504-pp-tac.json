@@ -49,17 +49,17 @@
   "relations": [
     {
       "target": "2505-dexumi",
-      "type": "related",
+      "type": "sharesTopicWith",
       "strength": "tangential"
     },
     {
       "target": "2501-dexforce",
-      "type": "related",
+      "type": "sharesTopicWith",
       "strength": "tangential"
     },
     {
       "target": "2407-stretchable-glove-hand-pose",
-      "type": "related",
+      "type": "sharesTopicWith",
       "strength": "tangential"
     }
   ],

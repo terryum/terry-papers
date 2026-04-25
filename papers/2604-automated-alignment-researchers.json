@@ -46,13 +46,13 @@
   ],
   "relations": [
     {
-      "slug": "2502-ai-co-scientist",
-      "type": "related",
+      "type": "sharesTopicWith",
+      "target": "2502-ai-co-scientist",
       "strength": "tangential"
     },
     {
-      "slug": "2604-harnessing-claude-intelligence",
-      "type": "related",
+      "type": "sharesTopicWith",
+      "target": "2604-harnessing-claude-intelligence",
       "strength": "tangential"
     }
   ],

@@ -53,22 +53,22 @@
   "relations": [
     {
       "target": "2505-dexumi",
-      "type": "compares_with",
+      "type": "reviews",
       "strength": "direct"
     },
     {
       "target": "2506-exostart",
-      "type": "compares_with",
+      "type": "reviews",
       "strength": "direct"
     },
     {
       "target": "2509-dexop",
-      "type": "compares_with",
+      "type": "reviews",
       "strength": "direct"
     },
     {
       "target": "2410-pi0-vla-flow-model",
-      "type": "related",
+      "type": "sharesTopicWith",
       "strength": "tangential"
     }
   ],

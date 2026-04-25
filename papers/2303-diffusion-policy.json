@@ -49,18 +49,18 @@
   ],
   "relations": [
     {
-      "slug": "2410-pi0-vla-flow-model",
-      "type": "related",
+      "type": "sharesTopicWith",
+      "target": "2410-pi0-vla-flow-model",
       "strength": "tangential"
     },
     {
-      "slug": "2505-forcevla-force-aware-moe",
-      "type": "related",
+      "type": "sharesTopicWith",
+      "target": "2505-forcevla-force-aware-moe",
       "strength": "tangential"
     },
     {
-      "slug": "2602-habilis-vla-on-device",
-      "type": "related",
+      "type": "sharesTopicWith",
+      "target": "2602-habilis-vla-on-device",
       "strength": "tangential"
     }
   ],

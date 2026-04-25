@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-17T12:19:33.866Z",
+  "generated_at": "2026-04-25T04:40:40.704Z",
   "total_papers": 36,
   "papers_with_memos": 1,
   "papers_with_gaps": 36,
@@ -54,1087 +54,885 @@
       {
         "from": "2201-mano-hand-model",
         "to": "2407-stretchable-glove-hand-pose",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "from": "2407-stretchable-glove-hand-pose",
-        "to": "2201-mano-hand-model",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2201-mano-hand-model",
         "to": "2512-unitachand",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "from": "2512-unitachand",
-        "to": "2201-mano-hand-model",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2201-mano-hand-model",
         "to": "2602-robopaint",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "from": "2602-robopaint",
-        "to": "2201-mano-hand-model",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2303-diffusion-policy",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "to": "2303-diffusion-policy",
-        "type": "reverse_related",
-        "strength": "tangential"
-      },
-      {
-        "from": "2303-diffusion-policy",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "to": "2303-diffusion-policy",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "to": "2410-pi0-vla-flow-model",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2303-diffusion-policy",
-        "type": "related",
-        "strength": "tangential"
+        "to": "2505-forcevla-force-aware-moe",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
+        "from": "2303-diffusion-policy",
+        "to": "2602-habilis-vla-on-device",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2402-umi-universal-manipulation-interface",
         "to": "2303-diffusion-policy",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "predicate": "extends",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": null
+      },
+      {
+        "from": "2303-diffusion-policy",
+        "to": "2402-umi-universal-manipulation-interface",
+        "predicate": "isExtendedBy",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": "extends"
       },
       {
         "from": "2402-umi-universal-manipulation-interface",
-        "type": "builds_on",
-        "strength": "foundational"
-      },
-      {
-        "to": "2402-umi-universal-manipulation-interface",
-        "type": "reverse_builds_on",
-        "strength": "foundational"
-      },
-      {
-        "from": "2402-umi-universal-manipulation-interface",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "to": "2402-umi-universal-manipulation-interface",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "to": "2505-dexumi",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2402-umi-universal-manipulation-interface",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "to": "2402-umi-universal-manipulation-interface",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "to": "2602-robopaint",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2407-tactile-skin-inhand-translation",
         "to": "2504-pp-tac",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "from": "2504-pp-tac",
-        "to": "2407-tactile-skin-inhand-translation",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2407-tactile-skin-inhand-translation",
         "to": "2407-stretchable-glove-hand-pose",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "from": "2407-stretchable-glove-hand-pose",
-        "to": "2407-tactile-skin-inhand-translation",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2407-tactile-skin-inhand-translation",
         "to": "2501-dexforce-force-informed-actions",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "from": "2501-dexforce-force-informed-actions",
-        "to": "2407-tactile-skin-inhand-translation",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2409-3dtactile-dex",
         "to": "2504-pp-tac",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "from": "2504-pp-tac",
-        "to": "2409-3dtactile-dex",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2409-3dtactile-dex",
         "to": "2407-tactile-skin-inhand-translation",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "from": "2407-tactile-skin-inhand-translation",
-        "to": "2409-3dtactile-dex",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2409-3dtactile-dex",
         "to": "2501-dexforce-force-informed-actions",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "from": "2501-dexforce-force-informed-actions",
-        "to": "2409-3dtactile-dex",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2409-3dtactile-dex",
         "to": "2505-dexumi",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "from": "2505-dexumi",
-        "to": "2409-3dtactile-dex",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2410-pi0-vla-flow-model",
         "to": "2511-pi0-6-recap",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "from": "2511-pi0-6-recap",
-        "to": "2410-pi0-vla-flow-model",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2412-f-tac-hand",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "to": "2412-f-tac-hand",
-        "type": "reverse_related",
-        "strength": "tangential"
-      },
-      {
-        "from": "2412-f-tac-hand",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "to": "2412-f-tac-hand",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "to": "2201-mano-hand-model",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2412-f-tac-hand",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "to": "2412-f-tac-hand",
-        "type": "reverse_related",
-        "strength": "tangential"
-      },
-      {
-        "from": "2412-f-tac-hand",
-        "type": "compares_with",
-        "strength": "direct"
-      },
-      {
-        "to": "2412-f-tac-hand",
-        "type": "reverse_compares_with",
-        "strength": "direct"
+        "to": "2407-tactile-skin-inhand-translation",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2412-f-tac-hand",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "to": "2412-f-tac-hand",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "to": "2409-3dtactile-dex",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2412-f-tac-hand",
-        "type": "compares_with",
-        "strength": "direct"
+        "to": "2504-pp-tac",
+        "predicate": "reviews",
+        "strength": "direct",
+        "directional": false,
+        "inverse_of": null
       },
       {
-        "to": "2412-f-tac-hand",
-        "type": "reverse_compares_with",
-        "strength": "direct"
+        "from": "2412-f-tac-hand",
+        "to": "2511-equitac-tactile-equivariance",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2412-f-tac-hand",
+        "to": "2512-osmo-tactile-glove",
+        "predicate": "reviews",
+        "strength": "direct",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2501-dexforce-force-informed-actions",
         "to": "2505-forcevla-force-aware-moe",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "from": "2505-forcevla-force-aware-moe",
-        "to": "2501-dexforce-force-informed-actions",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2503-tacpalm-softhand",
-        "type": "compares_with",
-        "strength": "direct"
-      },
-      {
-        "to": "2503-tacpalm-softhand",
-        "type": "reverse_compares_with",
-        "strength": "direct"
-      },
-      {
-        "from": "2503-tacpalm-softhand",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "to": "2503-tacpalm-softhand",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "to": "2412-f-tac-hand",
+        "predicate": "reviews",
+        "strength": "direct",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2503-tacpalm-softhand",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "to": "2503-tacpalm-softhand",
-        "type": "reverse_related",
-        "strength": "tangential"
-      },
-      {
-        "from": "2503-tacpalm-softhand",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "to": "2503-tacpalm-softhand",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "to": "2407-tactile-skin-inhand-translation",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2503-tacpalm-softhand",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "to": "2503-tacpalm-softhand",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "to": "2409-3dtactile-dex",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2503-tacpalm-softhand",
-        "type": "related",
-        "strength": "tangential"
+        "to": "2504-pp-tac",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
-        "to": "2503-tacpalm-softhand",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "from": "2503-tacpalm-softhand",
+        "to": "2511-equitac-tactile-equivariance",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2503-tacpalm-softhand",
+        "to": "2512-osmo-tactile-glove",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2504-pp-tac",
         "to": "2505-dexumi",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "from": "2505-dexumi",
-        "to": "2504-pp-tac",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2504-pp-tac",
         "to": "2501-dexforce",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "from": "2501-dexforce",
-        "to": "2504-pp-tac",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2504-pp-tac",
         "to": "2407-stretchable-glove-hand-pose",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "from": "2407-stretchable-glove-hand-pose",
-        "to": "2504-pp-tac",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2505-dexumi",
         "to": "2407-stretchable-glove-hand-pose",
-        "type": "compares_with",
-        "strength": "direct"
-      },
-      {
-        "from": "2407-stretchable-glove-hand-pose",
-        "to": "2505-dexumi",
-        "type": "reverse_compares_with",
-        "strength": "direct"
+        "predicate": "reviews",
+        "strength": "direct",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2505-dexumi",
         "to": "2501-dexforce-force-informed-actions",
-        "type": "addresses_task",
-        "strength": "direct"
-      },
-      {
-        "from": "2501-dexforce-force-informed-actions",
-        "to": "2505-dexumi",
-        "type": "reverse_addresses_task",
-        "strength": "direct"
+        "predicate": "sharesGoalWith",
+        "strength": "direct",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2505-dexumi",
         "to": "2505-forcevla-force-aware-moe",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "from": "2505-forcevla-force-aware-moe",
-        "to": "2505-dexumi",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2505-forcevla-force-aware-moe",
         "to": "2410-pi0-vla-flow-model",
-        "type": "builds_on",
-        "strength": "foundational"
+        "predicate": "extends",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": null
       },
       {
         "from": "2410-pi0-vla-flow-model",
         "to": "2505-forcevla-force-aware-moe",
-        "type": "reverse_builds_on",
-        "strength": "foundational"
+        "predicate": "isExtendedBy",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": "extends"
       },
       {
         "from": "2505-forcevla-force-aware-moe",
         "to": "2501-dexforce-force-informed-actions",
-        "type": "uses_method",
-        "strength": "foundational"
+        "predicate": "usesMethodIn",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": null
       },
       {
         "from": "2501-dexforce-force-informed-actions",
         "to": "2505-forcevla-force-aware-moe",
-        "type": "reverse_uses_method",
-        "strength": "foundational"
+        "predicate": "providesMethodFor",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": "usesMethodIn"
       },
       {
         "from": "2506-exostart",
         "to": "2505-dexumi",
-        "type": "compares_with",
-        "strength": "direct"
-      },
-      {
-        "from": "2505-dexumi",
-        "to": "2506-exostart",
-        "type": "reverse_compares_with",
-        "strength": "direct"
+        "predicate": "reviews",
+        "strength": "direct",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2506-exostart",
         "to": "2501-dexforce-force-informed-actions",
-        "type": "addresses_task",
-        "strength": "direct"
-      },
-      {
-        "from": "2501-dexforce-force-informed-actions",
-        "to": "2506-exostart",
-        "type": "reverse_addresses_task",
-        "strength": "direct"
+        "predicate": "sharesGoalWith",
+        "strength": "direct",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2506-exostart",
         "to": "2505-forcevla-force-aware-moe",
-        "type": "addresses_task",
-        "strength": "direct"
-      },
-      {
-        "from": "2505-forcevla-force-aware-moe",
-        "to": "2506-exostart",
-        "type": "reverse_addresses_task",
-        "strength": "direct"
+        "predicate": "sharesGoalWith",
+        "strength": "direct",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2509-dexop",
         "to": "2505-dexumi",
-        "type": "compares_with",
-        "strength": "direct"
-      },
-      {
-        "from": "2505-dexumi",
-        "to": "2509-dexop",
-        "type": "reverse_compares_with",
-        "strength": "direct"
+        "predicate": "reviews",
+        "strength": "direct",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2509-dexop",
         "to": "2506-exostart",
-        "type": "compares_with",
-        "strength": "direct"
-      },
-      {
-        "from": "2506-exostart",
-        "to": "2509-dexop",
-        "type": "reverse_compares_with",
-        "strength": "direct"
+        "predicate": "reviews",
+        "strength": "direct",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2509-dexop",
         "to": "2407-stretchable-glove-hand-pose",
-        "type": "addresses_task",
-        "strength": "direct"
-      },
-      {
-        "from": "2407-stretchable-glove-hand-pose",
-        "to": "2509-dexop",
-        "type": "reverse_addresses_task",
-        "strength": "direct"
+        "predicate": "sharesGoalWith",
+        "strength": "direct",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2509-tactile-sensing-distribution",
-        "type": "compares_with",
-        "strength": "direct"
-      },
-      {
-        "to": "2509-tactile-sensing-distribution",
-        "type": "reverse_compares_with",
-        "strength": "direct"
-      },
-      {
-        "from": "2509-tactile-sensing-distribution",
-        "type": "compares_with",
-        "strength": "direct"
-      },
-      {
-        "to": "2509-tactile-sensing-distribution",
-        "type": "reverse_compares_with",
-        "strength": "direct"
+        "to": "2412-f-tac-hand",
+        "predicate": "reviews",
+        "strength": "direct",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2509-tactile-sensing-distribution",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "to": "2509-tactile-sensing-distribution",
-        "type": "reverse_related",
-        "strength": "tangential"
-      },
-      {
-        "from": "2509-tactile-sensing-distribution",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "to": "2509-tactile-sensing-distribution",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "to": "2503-tacpalm-softhand",
+        "predicate": "reviews",
+        "strength": "direct",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2509-tactile-sensing-distribution",
-        "type": "related",
-        "strength": "tangential"
+        "to": "2407-tactile-skin-inhand-translation",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
-        "to": "2509-tactile-sensing-distribution",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "from": "2509-tactile-sensing-distribution",
+        "to": "2409-3dtactile-dex",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2509-tactile-sensing-distribution",
+        "to": "2511-equitac-tactile-equivariance",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2511-act1-robot-foundation-model",
-        "type": "compares_with",
-        "strength": "direct"
-      },
-      {
-        "to": "2511-act1-robot-foundation-model",
-        "type": "reverse_compares_with",
-        "strength": "direct"
-      },
-      {
-        "from": "2511-act1-robot-foundation-model",
-        "type": "compares_with",
-        "strength": "direct"
-      },
-      {
-        "to": "2511-act1-robot-foundation-model",
-        "type": "reverse_compares_with",
-        "strength": "direct"
+        "to": "2511-gen0-embodied-foundation-model",
+        "predicate": "reviews",
+        "strength": "direct",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2511-act1-robot-foundation-model",
-        "type": "related",
-        "strength": "tangential"
+        "to": "2604-gen1-scaling-mastery",
+        "predicate": "reviews",
+        "strength": "direct",
+        "directional": false,
+        "inverse_of": null
       },
       {
-        "to": "2511-act1-robot-foundation-model",
-        "type": "reverse_related",
-        "strength": "tangential"
-      },
-      {
-        "from": "2511-equitac-tactile-equivariance",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "to": "2511-equitac-tactile-equivariance",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "from": "2511-act1-robot-foundation-model",
+        "to": "2410-pi0-vla-flow-model",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2511-equitac-tactile-equivariance",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "to": "2511-equitac-tactile-equivariance",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "to": "2407-tactile-skin-inhand-translation",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2511-equitac-tactile-equivariance",
-        "type": "related",
-        "strength": "tangential"
+        "to": "2409-3dtactile-dex",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
-        "to": "2511-equitac-tactile-equivariance",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "from": "2511-equitac-tactile-equivariance",
+        "to": "2504-pp-tac",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2511-gen0-embodied-foundation-model",
         "to": "2410-pi0-vla-flow-model",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "from": "2410-pi0-vla-flow-model",
-        "to": "2511-gen0-embodied-foundation-model",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2511-gen0-embodied-foundation-model",
         "to": "2511-pi0-6-recap",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "from": "2511-pi0-6-recap",
-        "to": "2511-gen0-embodied-foundation-model",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2511-pi0-6-recap",
         "to": "2410-pi0-vla-flow-model",
-        "type": "builds_on",
-        "strength": "foundational"
+        "predicate": "extends",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": null
       },
       {
         "from": "2410-pi0-vla-flow-model",
         "to": "2511-pi0-6-recap",
-        "type": "reverse_builds_on",
-        "strength": "foundational"
+        "predicate": "isExtendedBy",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": "extends"
       },
       {
         "from": "2512-osmo-tactile-glove",
         "to": "2407-tactile-skin-inhand-translation",
-        "type": "builds_on",
-        "strength": "foundational"
+        "predicate": "extends",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": null
       },
       {
         "from": "2407-tactile-skin-inhand-translation",
         "to": "2512-osmo-tactile-glove",
-        "type": "reverse_builds_on",
-        "strength": "foundational"
+        "predicate": "isExtendedBy",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": "extends"
       },
       {
         "from": "2512-osmo-tactile-glove",
         "to": "2512-unitachand",
-        "type": "compares_with",
-        "strength": "direct"
-      },
-      {
-        "from": "2512-unitachand",
-        "to": "2512-osmo-tactile-glove",
-        "type": "reverse_compares_with",
-        "strength": "direct"
+        "predicate": "reviews",
+        "strength": "direct",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2512-osmo-tactile-glove",
         "to": "2504-pp-tac",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "from": "2504-pp-tac",
-        "to": "2512-osmo-tactile-glove",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2512-osmo-tactile-glove",
         "to": "2409-3dtactile-dex",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "from": "2409-3dtactile-dex",
-        "to": "2512-osmo-tactile-glove",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2512-osmo-tactile-glove",
         "to": "2505-dexumi",
-        "type": "compares_with",
-        "strength": "direct"
-      },
-      {
-        "from": "2505-dexumi",
-        "to": "2512-osmo-tactile-glove",
-        "type": "reverse_compares_with",
-        "strength": "direct"
+        "predicate": "reviews",
+        "strength": "direct",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2512-unitachand",
         "to": "2409-3dtactile-dex",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "from": "2409-3dtactile-dex",
-        "to": "2512-unitachand",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2512-unitachand",
         "to": "2407-tactile-skin-inhand-translation",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "from": "2407-tactile-skin-inhand-translation",
-        "to": "2512-unitachand",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2512-unitachand",
         "to": "2504-pp-tac",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "from": "2504-pp-tac",
-        "to": "2512-unitachand",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2512-unitachand",
         "to": "2505-dexumi",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "from": "2505-dexumi",
-        "to": "2512-unitachand",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2601-umi-ft-compliant-manipulation",
-        "type": "builds_on",
-        "strength": "foundational"
+        "to": "2402-umi-universal-manipulation-interface",
+        "predicate": "extends",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": null
       },
       {
+        "from": "2402-umi-universal-manipulation-interface",
         "to": "2601-umi-ft-compliant-manipulation",
-        "type": "reverse_builds_on",
-        "strength": "foundational"
+        "predicate": "isExtendedBy",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": "extends"
       },
       {
         "from": "2601-umi-ft-compliant-manipulation",
-        "type": "uses_method",
-        "strength": "foundational"
+        "to": "2303-diffusion-policy",
+        "predicate": "usesMethodIn",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": null
       },
       {
+        "from": "2303-diffusion-policy",
         "to": "2601-umi-ft-compliant-manipulation",
-        "type": "reverse_uses_method",
-        "strength": "foundational"
+        "predicate": "providesMethodFor",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": "usesMethodIn"
       },
       {
         "from": "2601-umi-ft-compliant-manipulation",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "to": "2601-umi-ft-compliant-manipulation",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "to": "2501-dexforce-force-informed-actions",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2601-umi-ft-compliant-manipulation",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "to": "2601-umi-ft-compliant-manipulation",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "to": "2505-forcevla-force-aware-moe",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2602-habilis-vla-on-device",
-        "type": "builds_on",
-        "strength": "foundational"
+        "to": "2410-pi0-vla-flow-model",
+        "predicate": "extends",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": null
       },
       {
+        "from": "2410-pi0-vla-flow-model",
         "to": "2602-habilis-vla-on-device",
-        "type": "reverse_builds_on",
-        "strength": "foundational"
+        "predicate": "isExtendedBy",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": "extends"
       },
       {
         "from": "2602-habilis-vla-on-device",
-        "type": "compares_with",
-        "strength": "direct"
-      },
-      {
-        "to": "2602-habilis-vla-on-device",
-        "type": "reverse_compares_with",
-        "strength": "direct"
+        "to": "2511-pi0-6-recap",
+        "predicate": "reviews",
+        "strength": "direct",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2602-habilis-vla-on-device",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "to": "2602-habilis-vla-on-device",
-        "type": "reverse_related",
-        "strength": "tangential"
-      },
-      {
-        "from": "2602-humanplus-humanoid-shadowing",
-        "type": "uses_method",
-        "strength": "foundational"
-      },
-      {
-        "to": "2602-humanplus-humanoid-shadowing",
-        "type": "reverse_uses_method",
-        "strength": "foundational"
+        "to": "2505-forcevla-force-aware-moe",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2602-humanplus-humanoid-shadowing",
-        "type": "builds_on",
-        "strength": "foundational"
+        "to": "2303-diffusion-policy",
+        "predicate": "usesMethodIn",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": null
       },
       {
+        "from": "2303-diffusion-policy",
         "to": "2602-humanplus-humanoid-shadowing",
-        "type": "reverse_builds_on",
-        "strength": "foundational"
+        "predicate": "providesMethodFor",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": "usesMethodIn"
       },
       {
         "from": "2602-humanplus-humanoid-shadowing",
-        "type": "related",
-        "strength": "tangential"
+        "to": "2410-pi0-vla-flow-model",
+        "predicate": "extends",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": null
       },
       {
+        "from": "2410-pi0-vla-flow-model",
         "to": "2602-humanplus-humanoid-shadowing",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "predicate": "isExtendedBy",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": "extends"
       },
       {
         "from": "2602-humanplus-humanoid-shadowing",
-        "type": "compares_with",
-        "strength": "direct"
+        "to": "2505-dexumi",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
-        "to": "2602-humanplus-humanoid-shadowing",
-        "type": "reverse_compares_with",
-        "strength": "direct"
+        "from": "2602-humanplus-humanoid-shadowing",
+        "to": "2511-act1-robot-foundation-model",
+        "predicate": "reviews",
+        "strength": "direct",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2602-robopaint",
         "to": "2505-dexumi",
-        "type": "compares_with",
-        "strength": "direct"
-      },
-      {
-        "from": "2505-dexumi",
-        "to": "2602-robopaint",
-        "type": "reverse_compares_with",
-        "strength": "direct"
+        "predicate": "reviews",
+        "strength": "direct",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2602-robopaint",
         "to": "2506-exostart",
-        "type": "compares_with",
-        "strength": "direct"
-      },
-      {
-        "from": "2506-exostart",
-        "to": "2602-robopaint",
-        "type": "reverse_compares_with",
-        "strength": "direct"
+        "predicate": "reviews",
+        "strength": "direct",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2602-robopaint",
         "to": "2509-dexop",
-        "type": "compares_with",
-        "strength": "direct"
-      },
-      {
-        "from": "2509-dexop",
-        "to": "2602-robopaint",
-        "type": "reverse_compares_with",
-        "strength": "direct"
+        "predicate": "reviews",
+        "strength": "direct",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2602-robopaint",
         "to": "2410-pi0-vla-flow-model",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "from": "2410-pi0-vla-flow-model",
-        "to": "2602-robopaint",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2603-autoresearch-autonomous-ml",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "to": "2603-autoresearch-autonomous-ml",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "to": "2502-ai-co-scientist",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2603-autoresearch-autonomous-ml",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "to": "2603-autoresearch-autonomous-ml",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "to": "2604-automated-alignment-researchers",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2603-capx-coding-agents-manipulation",
         "to": "2410-pi0-vla-flow-model",
-        "type": "compares_with",
-        "strength": "direct"
-      },
-      {
-        "from": "2410-pi0-vla-flow-model",
-        "to": "2603-capx-coding-agents-manipulation",
-        "type": "reverse_compares_with",
-        "strength": "direct"
+        "predicate": "reviews",
+        "strength": "direct",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2603-medical-ai-scientist",
         "to": "2502-ai-co-scientist",
-        "type": "compares_with",
-        "strength": "direct"
-      },
-      {
-        "from": "2502-ai-co-scientist",
-        "to": "2603-medical-ai-scientist",
-        "type": "reverse_compares_with",
-        "strength": "direct"
+        "predicate": "reviews",
+        "strength": "direct",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2603-roboclaw-agentic-long-horizon",
         "to": "2410-pi0-vla-flow-model",
-        "type": "builds_on",
-        "strength": "foundational"
+        "predicate": "extends",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": null
       },
       {
         "from": "2410-pi0-vla-flow-model",
         "to": "2603-roboclaw-agentic-long-horizon",
-        "type": "reverse_builds_on",
-        "strength": "foundational"
+        "predicate": "isExtendedBy",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": "extends"
       },
       {
         "from": "2603-roboclaw-agentic-long-horizon",
         "to": "2603-capx-coding-agents-manipulation",
-        "type": "compares_with",
-        "strength": "direct"
-      },
-      {
-        "from": "2603-capx-coding-agents-manipulation",
-        "to": "2603-roboclaw-agentic-long-horizon",
-        "type": "reverse_compares_with",
-        "strength": "direct"
+        "predicate": "reviews",
+        "strength": "direct",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2604-automated-alignment-researchers",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "to": "2604-automated-alignment-researchers",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "to": "2502-ai-co-scientist",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2604-automated-alignment-researchers",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "to": "2604-automated-alignment-researchers",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "to": "2604-harnessing-claude-intelligence",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2604-gen1-scaling-mastery",
         "to": "2511-gen0-embodied-foundation-model",
-        "type": "builds_on",
-        "strength": "foundational"
+        "predicate": "extends",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": null
       },
       {
         "from": "2511-gen0-embodied-foundation-model",
         "to": "2604-gen1-scaling-mastery",
-        "type": "reverse_builds_on",
-        "strength": "foundational"
+        "predicate": "isExtendedBy",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": "extends"
       },
       {
         "from": "2604-gen1-scaling-mastery",
         "to": "2410-pi0-vla-flow-model",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "from": "2410-pi0-vla-flow-model",
-        "to": "2604-gen1-scaling-mastery",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2604-gen1-scaling-mastery",
         "to": "2511-pi0-6-recap",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "from": "2511-pi0-6-recap",
-        "to": "2604-gen1-scaling-mastery",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2604-harnessing-claude-intelligence",
         "to": "2603-meta-harness-optimization",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "from": "2603-meta-harness-optimization",
-        "to": "2604-harnessing-claude-intelligence",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2604-harnessing-claude-intelligence",
         "to": "2502-ai-co-scientist",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "from": "2502-ai-co-scientist",
-        "to": "2604-harnessing-claude-intelligence",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2604-self-driving-labs",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "to": "2604-self-driving-labs",
-        "type": "reverse_related",
-        "strength": "tangential"
-      },
-      {
-        "from": "2604-self-driving-labs",
-        "type": "related",
-        "strength": "tangential"
-      },
-      {
-        "to": "2604-self-driving-labs",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "to": "2502-ai-co-scientist",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
         "from": "2604-self-driving-labs",
-        "type": "related",
-        "strength": "tangential"
+        "to": "2604-automated-alignment-researchers",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       },
       {
-        "to": "2604-self-driving-labs",
-        "type": "reverse_related",
-        "strength": "tangential"
+        "from": "2604-self-driving-labs",
+        "to": "2603-autoresearch-autonomous-ml",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       }
     ],
-    "total_edges": 196
+    "total_edges": 110
   },
   "paper_list": [
     {

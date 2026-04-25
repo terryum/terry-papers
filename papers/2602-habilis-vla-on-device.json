@@ -51,18 +51,18 @@
   ],
   "relations": [
     {
-      "slug": "2410-pi0-vla-flow-model",
-      "type": "builds_on",
+      "type": "extends",
+      "target": "2410-pi0-vla-flow-model",
       "strength": "foundational"
     },
     {
-      "slug": "2511-pi0-6-recap",
-      "type": "compares_with",
+      "type": "reviews",
+      "target": "2511-pi0-6-recap",
       "strength": "direct"
     },
     {
-      "slug": "2505-forcevla-force-aware-moe",
-      "type": "related",
+      "type": "sharesTopicWith",
+      "target": "2505-forcevla-force-aware-moe",
       "strength": "tangential"
     }
   ],

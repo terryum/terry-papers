@@ -52,33 +52,33 @@
   ],
   "relations": [
     {
-      "slug": "2412-f-tac-hand",
-      "type": "compares_with",
+      "type": "reviews",
+      "target": "2412-f-tac-hand",
       "strength": "direct"
     },
     {
-      "slug": "2407-tactile-skin-inhand-translation",
-      "type": "related",
+      "type": "sharesTopicWith",
+      "target": "2407-tactile-skin-inhand-translation",
       "strength": "tangential"
     },
     {
-      "slug": "2409-3dtactile-dex",
-      "type": "related",
+      "type": "sharesTopicWith",
+      "target": "2409-3dtactile-dex",
       "strength": "tangential"
     },
     {
-      "slug": "2504-pp-tac",
-      "type": "related",
+      "type": "sharesTopicWith",
+      "target": "2504-pp-tac",
       "strength": "tangential"
     },
     {
-      "slug": "2511-equitac-tactile-equivariance",
-      "type": "related",
+      "type": "sharesTopicWith",
+      "target": "2511-equitac-tactile-equivariance",
       "strength": "tangential"
     },
     {
-      "slug": "2512-osmo-tactile-glove",
-      "type": "related",
+      "type": "sharesTopicWith",
+      "target": "2512-osmo-tactile-glove",
       "strength": "tangential"
     }
   ],

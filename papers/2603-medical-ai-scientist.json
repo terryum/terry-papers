@@ -53,7 +53,7 @@
   "relations": [
     {
       "target": "2502-ai-co-scientist",
-      "type": "compares_with",
+      "type": "reviews",
       "strength": "direct"
     }
   ],

@@ -50,18 +50,18 @@
   ],
   "relations": [
     {
-      "slug": "2511-gen0-embodied-foundation-model",
-      "type": "compares_with",
+      "type": "reviews",
+      "target": "2511-gen0-embodied-foundation-model",
       "strength": "direct"
     },
     {
-      "slug": "2604-gen1-scaling-mastery",
-      "type": "compares_with",
+      "type": "reviews",
+      "target": "2604-gen1-scaling-mastery",
       "strength": "direct"
     },
     {
-      "slug": "2410-pi0-vla-flow-model",
-      "type": "related",
+      "type": "sharesTopicWith",
+      "target": "2410-pi0-vla-flow-model",
       "strength": "tangential"
     }
   ],

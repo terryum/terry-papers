@@ -49,12 +49,12 @@
   "relations": [
     {
       "target": "2410-pi0-vla-flow-model",
-      "type": "related",
+      "type": "sharesTopicWith",
       "strength": "tangential"
     },
     {
       "target": "2511-pi0-6-recap",
-      "type": "related",
+      "type": "sharesTopicWith",
       "strength": "tangential"
     }
   ],

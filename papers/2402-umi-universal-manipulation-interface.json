@@ -51,18 +51,18 @@
   ],
   "relations": [
     {
-      "slug": "2303-diffusion-policy",
-      "type": "builds_on",
+      "type": "extends",
+      "target": "2303-diffusion-policy",
       "strength": "foundational"
     },
     {
-      "slug": "2505-dexumi",
-      "type": "related",
+      "type": "sharesTopicWith",
+      "target": "2505-dexumi",
       "strength": "tangential"
     },
     {
-      "slug": "2602-robopaint",
-      "type": "related",
+      "type": "sharesTopicWith",
+      "target": "2602-robopaint",
       "strength": "tangential"
     }
   ],
