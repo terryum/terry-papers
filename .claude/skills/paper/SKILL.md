@@ -1,6 +1,6 @@
 ---
 name: paper
-description: "Papers 포스트 생성 파이프라인 (From AI 섹션). arXiv/학술 저널/기술 블로그 URL을 요약하여 포스트로 발행하고 terry-papers 지식그래프에 노드로 추가한다. virtual(가상 논문), synthesis(다중 소스 종합)도 지원. --visibility=public(기본)/private/group 지원. 커버 이미지 없을 시 /gemini-3-image-generation 사용. essays/memos/threads 발행은 /post 스킬(terry-obsidian) 사용."
+description: "Papers 포스트 생성 파이프라인 (From AI 섹션). arXiv/학술 저널/기술 블로그 URL을 요약하여 포스트로 발행하고 terry-papers 지식그래프에 노드로 추가한다. virtual(가상 논문), synthesis(다중 소스 종합)도 지원. --visibility=public(기본)/private/group 지원. 커버 이미지 없을 시 /image-gen 사용. essays/memos/threads 발행은 /post 스킬(terry-obsidian) 사용."
 argument-hint: "<URL | virtual 자연어요청 | synthesis URL1 URL2 ...> [--visibility=public|private|group --group=<g>] [--tags=TAG1,TAG2] [--memo=메모] [--featured] [--pdf=<path>]"
 ---
 
@@ -109,17 +109,21 @@ f. meta.json 생성 전에 아래를 출력:
 
 ### Step R6) Figure 추출 + R2 업로드
 - `GET https://arxiv.org/html/<id>v1/` → 200이면 img src 전수 추출 + 다운로드
-  - 다운로드 완료 후 투명배경 변환: `python /Users/terrytaewoongum/Codes/personal/terryum-ai/scripts/flatten-transparent-figures.py posts/papers/<slug>/`
 - **404이면 PDF fallback** (Semantic Scholar 등 외부 사이트 탐색 금지):
   a. PDF를 임시 다운로드: `curl -sL https://arxiv.org/pdf/<id> -o /tmp/<slug>.pdf`
   b. `python /Users/terrytaewoongum/Codes/personal/terryum-ai/scripts/extract-paper-pdf.py /tmp/<slug>.pdf posts/papers/<slug>/`
   c. `extraction_report.json` 읽기 → figures/captions 자동 적용
   d. `suggested_cover`를 `cover.webp`로 PIL 변환
   e. 임시 PDF 삭제: `rm /tmp/<slug>.pdf`
-- **figure 추출 실패 또는 cover 후보 없음** → `/gemini-3-image-generation` 스킬로 커버 이미지 생성
+- **figure 추출 실패 또는 cover 후보 없음** → `/image-gen` 스킬로 커버 이미지 생성
   - 프롬프트: 논문 제목/핵심 주제를 반영한 추상적 기술 일러스트, 16:9 비율, 텍스트 없이
   - 생성된 이미지를 `posts/papers/<slug>/cover.webp`로 저장
   - API 키가 없거나 생성 실패 시 → 커버 없이 진행 + 경고 출력
+- **⚠ 투명배경 제거 — 필수, 분기 무관**: 위 세 경로(HTML 추출·PDF fallback·/image-gen) 어떤 것을 탔든, 이 단계 종료 직전에 반드시 1회 실행한다. 다크모드에서 투명 픽셀이 검정으로 비쳐 판독 불가가 되는 사고를 막는다 (2026-04 post #13 사고).
+  ```bash
+  python /Users/terrytaewoongum/Codes/personal/terryum-ai/scripts/flatten-transparent-figures.py posts/papers/<slug>/
+  ```
+  대상: 추출된 `fig-*.png/webp`, `cover.webp`, `cover_Original.*` 포함 포스트 디렉토리 전부. 스크립트는 실제 투명 픽셀이 없는 파일은 자동으로 skip.
 - **추출된 이미지는 R2에 업로드**: `node /Users/terrytaewoongum/Codes/personal/terryum-ai/scripts/upload-to-r2.mjs --slug=<slug>`
 - 로컬 이미지 파일은 Git에 추가하지 않음 (.gitignore로 제외됨)
 
@@ -152,13 +156,16 @@ cd /Users/terrytaewoongum/Codes/personal/terryum-ai
 node scripts/generate-thumbnails.mjs
 node scripts/generate-index.mjs
 node scripts/generate-og-image.mjs
+# ⚠ 투명배경 제거 — generate-thumbnails / generate-og-image가 alpha를 유지한 채 산출할 수 있으므로
+# R2 업로드 직전에 public 자산도 한 번 flatten 한다.
+python scripts/flatten-transparent-figures.py public/posts/<slug>/
 node scripts/upload-to-r2.mjs --slug=<slug>
 node scripts/sync-references.mjs --slug=<slug>
 node scripts/generate-embeddings.mjs --slug=<slug>
 ```
 - `generate-thumbnails.mjs`: `cover.webp`에서 288×288 `cover-thumb.webp`를 `public/posts/<slug>/`에 생성 (리스트 카드 썸네일용)
 - `upload-to-r2.mjs`: 이미지를 Cloudflare R2에 업로드 (cover, **cover-thumb**, figures, OG)
-- **썸네일 생성 → R2 업로드 순서 필수**: `upload-to-r2.mjs`는 `public/posts/<slug>/cover-thumb.webp`가 있어야 업로드함
+- **썸네일 생성 → flatten → R2 업로드 순서 필수**: 투명 이미지가 R2 엣지에 1년 immutable로 캐시되면 나중에 교체해도 먹히지 않는다. 업로드 **전에** 반드시 opaque로 만들 것.
 - OG 이미지는 `public/posts/<slug>/og.png`에 생성 (Cloudflare Worker 번들에 포함되어 서빙, R2 아님)
 
 ### Step R10) 포스트 검증
@@ -433,7 +440,7 @@ Papers 포스트와 동일 구조 + Virtual Paper 전용 필드:
 
 ### Step V6) 커버 이미지 생성
 
-- `/gemini-3-image-generation` 스킬로 논문 주제에 맞는 개념적 커버 이미지 생성
+- `/image-gen` 스킬로 논문 주제에 맞는 개념적 커버 이미지 생성
 - 프롬프트: 논문 제목/핵심 주제 반영, 16:9 비율, 텍스트 없이, 추상적 기술 일러스트
 - `cover.webp` + `cover-thumb.webp` + `og.png` 생성
 
