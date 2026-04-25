@@ -4,10 +4,12 @@ __pycache__/
 *.pyc
 .DS_Store
 node_modules/
+.env
 .env.local
 .env*.local
 .mcp.json
 .mcp.local.json
+*.log
 .claude/settings.local.json
 
 # Symlinks to other repo skills (Android can't render — manage per-device)
