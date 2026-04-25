@@ -18,3 +18,15 @@ node_modules/
 .claude/skills/project
 .claude/skills/share
 .claude/skills/survey
+
+# Symlinks to terryum-ai (source of truth lives there, not here)
+/posts
+/scripts
+/node_modules
+/package.json
+/content.config.json
+
+# Local Next.js build artifacts (this workspace is content-only;
+# builds happen in terryum-ai)
+.next/
+public/
