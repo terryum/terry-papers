@@ -2,6 +2,9 @@
   "slug": "2506-exostart",
   "post_number": 9,
   "source_title": "ExoStart: Efficient learning for dexterous manipulation with sensorized exoskeleton demonstrations",
+  "arxiv_id": "2506.11775",
+  "doi": null,
+  "bibtex_key": null,
   "domain": "robotics",
   "subfields": [
     "dexterous-manipulation",

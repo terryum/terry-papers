@@ -2,6 +2,9 @@
   "slug": "2512-osmo-tactile-glove",
   "post_number": 18,
   "source_title": "OSMO: Open-Source Tactile Glove for Human-to-Robot Skill Transfer",
+  "arxiv_id": "2512.08920",
+  "doi": null,
+  "bibtex_key": null,
   "domain": "robotics",
   "subfields": [
     "tactile-sensing",

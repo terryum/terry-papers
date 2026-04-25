@@ -2,6 +2,9 @@
   "slug": "2410-pi0-vla-flow-model",
   "post_number": 2,
   "source_title": "π₀: A Vision-Language-Action Flow Model for General Robot Control",
+  "arxiv_id": "2410.24164",
+  "doi": null,
+  "bibtex_key": "black2024pi0",
   "domain": "robotics",
   "subfields": [
     "manipulation",

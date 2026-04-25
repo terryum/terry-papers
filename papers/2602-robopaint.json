@@ -2,6 +2,9 @@
   "slug": "2602-robopaint",
   "post_number": 15,
   "source_title": "RoboPaint: From Human Demonstration to Any Robot and Any View",
+  "arxiv_id": "2602.05325",
+  "doi": null,
+  "bibtex_key": null,
   "domain": "robotics",
   "subfields": [
     "data-collection",

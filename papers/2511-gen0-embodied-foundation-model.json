@@ -2,6 +2,9 @@
   "slug": "2511-gen0-embodied-foundation-model",
   "post_number": 23,
   "source_title": "GEN-0: Embodied Foundation Models That Scale with Physical Interaction",
+  "arxiv_id": null,
+  "doi": null,
+  "bibtex_key": null,
   "domain": "robotics",
   "subfields": [
     "foundation-model",

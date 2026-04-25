@@ -2,6 +2,9 @@
   "slug": "2603-roboclaw-agentic-long-horizon",
   "post_number": 20,
   "source_title": "RoboClaw: An Agentic Framework for Scalable Long-Horizon Robotic Tasks",
+  "arxiv_id": "2603.11558",
+  "doi": null,
+  "bibtex_key": null,
   "domain": "robotics",
   "subfields": [
     "manipulation",

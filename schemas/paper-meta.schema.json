@@ -44,6 +44,20 @@
     },
     "source_date": { "type": "string" },
     "published_at": { "type": "string" },
+    "arxiv_id": {
+      "type": "string",
+      "pattern": "^[0-9]{4}\\.[0-9]{4,5}(v[0-9]+)?$",
+      "description": "arXiv ID without 'arXiv:' prefix. Used as canonical bridge to surveys candidate pool — promotes a candidate node to confirmed when set."
+    },
+    "doi": {
+      "type": "string",
+      "pattern": "^10\\.[0-9]{4,9}/.+$",
+      "description": "DOI without 'doi:' prefix. Secondary canonical bridge."
+    },
+    "bibtex_key": {
+      "type": "string",
+      "description": "Optional bibtex key from terry-surveys/bibtex/references.bib for promotion matching when arxiv_id/doi are absent."
+    },
     "ai_summary": {
       "type": "object",
       "properties": {

@@ -2,6 +2,9 @@
   "slug": "2602-habilis-vla-on-device",
   "post_number": 33,
   "source_title": "Habilis-β: A Fast-Motion and Long-Lasting On-Device Vision-Language-Action Model",
+  "arxiv_id": "2602.18813",
+  "doi": null,
+  "bibtex_key": null,
   "domain": "robotics",
   "subfields": [
     "vla",

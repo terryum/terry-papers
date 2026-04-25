@@ -2,6 +2,9 @@
   "slug": "2505-forcevla-force-aware-moe",
   "post_number": 1,
   "source_title": "ForceVLA: Enhancing VLA Models with a Force-aware MoE for Contact-rich Manipulation",
+  "arxiv_id": "2505.22159",
+  "doi": null,
+  "bibtex_key": null,
   "domain": "robotics",
   "subfields": [
     "manipulation",

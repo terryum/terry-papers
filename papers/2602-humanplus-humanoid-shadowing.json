@@ -2,6 +2,9 @@
   "slug": "2602-humanplus-humanoid-shadowing",
   "post_number": 38,
   "source_title": "EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data",
+  "arxiv_id": "2602.16710",
+  "doi": null,
+  "bibtex_key": null,
   "domain": "robotics",
   "subfields": [
     "dexterous-manipulation",

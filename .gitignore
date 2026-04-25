@@ -30,3 +30,6 @@ node_modules/
 # builds happen in terryum-ai)
 .next/
 public/
+
+# Local caches (regeneratable: candidate embeddings, etc.)
+.cache/

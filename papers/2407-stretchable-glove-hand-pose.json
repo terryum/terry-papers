@@ -2,6 +2,9 @@
   "slug": "2407-stretchable-glove-hand-pose",
   "post_number": 6,
   "source_title": "Stretchable glove for accurate and robust hand pose reconstruction based on comprehensive motion data",
+  "arxiv_id": null,
+  "doi": "10.1038/s41467-024-50101-w",
+  "bibtex_key": null,
   "domain": "robotics",
   "subfields": [
     "wearable-sensing",

@@ -2,6 +2,9 @@
   "slug": "2303-diffusion-policy",
   "post_number": 34,
   "source_title": "Diffusion Policy: Visuomotor Policy Learning via Action Diffusion",
+  "arxiv_id": "2303.04137",
+  "doi": null,
+  "bibtex_key": "chi2023diffusion",
   "domain": "robotics",
   "subfields": [
     "visuomotor-policy",

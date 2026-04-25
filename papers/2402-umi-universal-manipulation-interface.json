@@ -2,6 +2,9 @@
   "slug": "2402-umi-universal-manipulation-interface",
   "post_number": 35,
   "source_title": "Universal Manipulation Interface: In-The-Wild Robot Teaching Without In-The-Wild Robots",
+  "arxiv_id": "2402.10329",
+  "doi": null,
+  "bibtex_key": "ha2024umi",
   "domain": "robotics",
   "subfields": [
     "manipulation",

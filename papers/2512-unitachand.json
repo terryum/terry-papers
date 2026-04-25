@@ -2,6 +2,9 @@
   "slug": "2512-unitachand",
   "post_number": 16,
   "source_title": "UniTacHand: Unified Spatio-Tactile Representation for Human to Robotic Hand Skill Transfer",
+  "arxiv_id": "2512.21233",
+  "doi": null,
+  "bibtex_key": null,
   "domain": "robotics",
   "subfields": [
     "dexterous-manipulation",

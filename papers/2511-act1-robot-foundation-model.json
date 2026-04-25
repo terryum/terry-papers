@@ -2,6 +2,9 @@
   "slug": "2511-act1-robot-foundation-model",
   "post_number": 29,
   "source_title": "ACT-1: A Robot Foundation Model Trained on Zero Robot Data",
+  "arxiv_id": null,
+  "doi": null,
+  "bibtex_key": null,
   "domain": "robotics",
   "subfields": [
     "mobile-manipulation",

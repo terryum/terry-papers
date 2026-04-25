@@ -2,6 +2,9 @@
   "slug": "2201-mano-hand-model",
   "post_number": 17,
   "source_title": "Embodied Hands: Modeling and Capturing Hands and Bodies Together",
+  "arxiv_id": "2201.02610",
+  "doi": null,
+  "bibtex_key": null,
   "domain": "robotics",
   "subfields": [
     "hand-pose-estimation",

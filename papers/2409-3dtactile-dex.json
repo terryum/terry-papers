@@ -2,6 +2,9 @@
   "slug": "2409-3dtactile-dex",
   "post_number": 14,
   "source_title": "Canonical Representation and Force-Based Pretraining of 3D Tactile for Dexterous Visuo-Tactile Policy Learning",
+  "arxiv_id": "2409.17549",
+  "doi": null,
+  "bibtex_key": null,
   "domain": "robotics",
   "subfields": [
     "dexterous-manipulation",
