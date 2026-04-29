@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node scripts/check-embedding-milestone.mjs",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}
