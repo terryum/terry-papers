@@ -1,0 +1,19 @@
+{
+  "_doc": "Tunable weights for /paper-search. Re-tune at every milestone (50/100/200/400/800/...). Update _tuned_at_paper_count + _last_retune when tuned.",
+  "alpha_embedding_sim": 0.5,
+  "beta_edge_weight": 0.3,
+  "gamma_memo_bonus": 0.2,
+  "edge_weights": {
+    "foundational": 1.0,
+    "direct": 0.6,
+    "tangential": 0.3
+  },
+  "external_alignment": {
+    "w1_anchor_sim": 0.4,
+    "w2_citation_overlap": 0.2,
+    "w3_concept_jaccard": 0.2,
+    "w4_gap_diversity": 0.2
+  },
+  "_tuned_at_paper_count": 36,
+  "_last_retune": "2026-04-29"
+}
