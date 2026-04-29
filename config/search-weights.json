@@ -1,8 +1,8 @@
 {
-  "_doc": "Tunable weights for /paper-search. Re-tune at every milestone (50/100/200/400/800/...). Update _tuned_at_paper_count + _last_retune when tuned.",
+  "_doc": "Tunable weights for /paper-search. Re-tune at every milestone (50/100/200/400/800/...). Update _tuned_at_paper_count + _last_retune when tuned. Single source of truth — all scripts load via lib/search-weights.mjs.",
   "alpha_embedding_sim": 0.5,
-  "beta_edge_weight": 0.3,
-  "gamma_memo_bonus": 0.2,
+  "beta_edge_weight": 0.4,
+  "gamma_memo_bonus": 0.1,
   "edge_weights": {
     "foundational": 1.0,
     "direct": 0.6,
@@ -10,9 +10,25 @@
   },
   "external_alignment": {
     "w1_anchor_sim": 0.4,
-    "w2_citation_overlap": 0.2,
+    "w2_citation_overlap": 0.3,
     "w3_concept_jaccard": 0.2,
-    "w4_gap_diversity": 0.2
+    "w4_gap_diversity": 0.1
+  },
+  "rank_next_weights": {
+    "anchor": 0.60,
+    "survey": 0.12,
+    "graph": 0.10,
+    "gap": 0.08,
+    "verify": 0.05,
+    "recency": 0.05,
+    "anchor_floor": 0.20
+  },
+  "mode_a_weights": {
+    "seed_a": 0.35,
+    "seed_d": 0.25,
+    "seed_c": 0.25,
+    "seed_e": 0.10,
+    "seed_b": 0.05
   },
   "_tuned_at_paper_count": 36,
   "_last_retune": "2026-04-29"
