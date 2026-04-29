@@ -226,16 +226,19 @@ npx opennextjs-cloudflare deploy
 ### Step R12.5) Knowledge Base 업데이트 (terry-papers)
 ```bash
 node /Users/terrytaewoongum/Codes/personal/terryum-ai/scripts/export-knowledge.mjs   # 기본 출력: ~/Codes/personal/terry-papers
+node /Users/terrytaewoongum/Codes/personal/terryum-ai/scripts/sync-obsidian-kg.mjs   # KG → vault/Papers KB/ 시각화
 cd ~/Codes/personal/terry-papers && git add papers/ knowledge-index.json \
   && git commit -m "kb: <slug>" && git push && cd -
 ```
 - 별도 KB 레포는 없다 — `papers/<slug>.json`과 `knowledge-index.json`은 `terry-papers` 레포에 직접 커밋된다
 - Terry's memo가 있는 포스트만 의미 있는 변경이 생기지만, 매 /paper마다 갱신해서 인덱스를 최신 상태로 유지
+- `sync-obsidian-kg.mjs`는 vault의 `Papers KB/` 폴더를 매번 비우고 재생성 — typed-edge wikilinks가 Obsidian Graph View에 즉시 반영. 실패 시 경고만 출력하고 계속 진행 (vault 미설정도 비차단).
 
-### Step R12.6) Obsidian Vault Sync
+### Step R12.6) Obsidian Vault Sync (full posts)
 - Run: `node /Users/terrytaewoongum/Codes/personal/terryum-ai/scripts/sync-obsidian.mjs --slug=<slug>`
 - If vault directory does not exist or script fails, print warning and continue (non-blocking)
 - This ensures the new/updated post appears in Obsidian immediately
+- 위 R12.5의 `sync-obsidian-kg.mjs`와는 별개 — 이쪽은 `Public/Papers/<slug>.mdx` 본문, KG sync는 `Papers KB/<slug>.md` 시각화 노드
 
 ### Step R12.7) 서베이 교차 연결 (terry-surveys) — 자동 호출 필수
 
