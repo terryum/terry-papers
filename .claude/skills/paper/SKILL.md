@@ -1,6 +1,6 @@
 ---
 name: paper
-description: "Papers 포스트 생성 파이프라인 (From AI 섹션). arXiv/학술 저널/기술 블로그 URL을 요약하여 포스트로 발행하고 terry-papers 지식그래프에 노드로 추가한다. virtual(가상 논문), synthesis(다중 소스 종합)도 지원. --visibility=public(기본)/private/group 지원. 커버 이미지 없을 시 /image-gen 사용. essays/memos/threads 발행은 /post 스킬(terry-obsidian) 사용."
+description: "Papers 포스트 생성 파이프라인 (From AI 섹션). arXiv/학술 저널/기술 블로그 URL을 요약하여 포스트로 발행하고 terry-papers 지식그래프에 노드로 추가한다. virtual(가상 논문), synthesis(다중 소스 종합)도 지원. --visibility=public(기본)/private/group 지원. 커버 이미지 없을 시 /image-gen 사용. essays/notes 발행은 /post 스킬(terry-obsidian) 사용."
 argument-hint: "<URL | virtual 자연어요청 | synthesis URL1 URL2 ...> [--visibility=public|private|group --group=<g>] [--tags=TAG1,TAG2] [--memo=메모] [--featured] [--pdf=<path>]"
 ---
 
@@ -8,7 +8,7 @@ argument-hint: "<URL | virtual 자연어요청 | synthesis URL1 URL2 ...> [--vis
 
 입력: $ARGUMENTS
 
-> 이 스킬은 **외부 콘텐츠 요약 전용**이다. `export-knowledge.mjs`를 실행해 KB 노드를 자동 추가한다. Terry 본인이 쓴 essays/memos, ChatGPT 대화 요약 threads는 `/post` 스킬(terry-obsidian canonical)을 사용할 것.
+> 이 스킬은 **외부 콘텐츠 요약 전용**이다. `export-knowledge.mjs`를 실행해 KB 노드를 자동 추가한다. Terry 본인이 쓴 essays와 notes(짧은 메모 또는 ChatGPT 대화 요약)는 `/post` 스킬(terry-obsidian canonical)을 사용할 것.
 
 ## Step 0) 타입 자동 감지
 
@@ -211,7 +211,7 @@ git push
 
 ### Step R12.1) Cloudflare Workers 배포 (필수)
 
-**Git push만으로는 공개 사이트에 반영되지 않는다** — `posts/index.json`이 빌드 시점 번들에 import되므로, 새 포스트는 Worker 재배포 후에야 `/posts` 목록과 `tab=memos/essays/papers` 필터에 노출된다.
+**Git push만으로는 공개 사이트에 반영되지 않는다** — `posts/index.json`이 빌드 시점 번들에 import되므로, 새 포스트는 Worker 재배포 후에야 `/posts` 목록과 `tab=essays/papers/notes` 필터에 노출된다.
 
 ```bash
 cd /Users/terrytaewoongum/Codes/personal/terryum-ai
