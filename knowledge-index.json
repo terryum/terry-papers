@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-04-25T05:29:38.811Z",
-  "total_papers": 36,
+  "generated_at": "2026-05-05T07:18:18.610Z",
+  "total_papers": 37,
   "papers_with_memos": 1,
-  "papers_with_gaps": 36,
+  "papers_with_gaps": 37,
   "memo_index": {
     "VLA": [
       "2603-capx-coding-agents-manipulation"
@@ -1600,6 +1600,26 @@
         "palm-tactile"
       ],
       "one_liner": "Systematic ablation across 19 tactile regions of a Shadow Hand shows the upper palm is nearly as important as distal phalanges for in-hand reorientation — fingertips alone are not optimal",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2512-conductor-llm-orchestration",
+      "post_number": 54,
+      "domain": "ml",
+      "taxonomy_primary": "ai/agent",
+      "key_concepts": [
+        "rl-conductor",
+        "llm-orchestration",
+        "multi-agent-coordination",
+        "communication-topology",
+        "automated-prompt-engineering",
+        "recursive-self-orchestration",
+        "test-time-scaling",
+        "GRPO"
+      ],
+      "one_liner": "Sakana AI의 7B Conductor는 RL로 LLM 에이전트들을 조율하는 통신 토폴로지·프롬프트 엔지니어링을 자동 학습해 LiveCodeBench·GPQA·AIME25에서 GPT-5·Gemini 2.5 Pro·Claude Sonnet 4를 능가하는 SOTA 평균 77.27%를 달성했다",
       "has_memo": false,
       "has_gaps": true,
       "memo_preview": null
