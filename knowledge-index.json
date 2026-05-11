@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-11T15:08:37.339Z",
-  "total_papers": 38,
+  "generated_at": "2026-05-11T15:19:45.927Z",
+  "total_papers": 39,
   "papers_with_memos": 1,
   "papers_with_gaps": 37,
   "memo_index": {
@@ -272,6 +272,22 @@
         "to": "2512-osmo-tactile-glove",
         "predicate": "reviews",
         "strength": "direct",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2412-robovlms-what-matters",
+        "to": "2405-octo-generalist-policy",
+        "predicate": "reviews",
+        "strength": "direct",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2412-robovlms-what-matters",
+        "to": "2410-pi0-vla-flow-model",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
         "directional": false,
         "inverse_of": null
       },
@@ -964,7 +980,7 @@
         "inverse_of": null
       }
     ],
-    "total_edges": 114
+    "total_edges": 116
   },
   "paper_list": [
     {
@@ -1674,6 +1690,28 @@
         "language-conditioning"
       ],
       "one_liner": "Open-source generalist robot transformer pre-trained on 800k Open X-Embodiment trajectories with block-wise attention and a diffusion action head for modular fine-tuning to new robots, cameras, and action spaces.",
+      "has_memo": false,
+      "has_gaps": false,
+      "memo_preview": null
+    },
+    {
+      "slug": "2412-robovlms-what-matters",
+      "post_number": 56,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/brain/vla",
+      "key_concepts": [
+        "VLA",
+        "generalist-policy",
+        "VLM-backbone-study",
+        "policy-head",
+        "continuous-action",
+        "history-aggregation",
+        "cross-embodiment",
+        "post-training",
+        "ablation-study",
+        "RoboVLMs"
+      ],
+      "one_liner": "A 600+ experiment systematic study of VLA design choices (backbone, action space, history, OXE timing) bundled into the open-source RoboVLMs meta-builder.",
       "has_memo": false,
       "has_gaps": false,
       "memo_preview": null

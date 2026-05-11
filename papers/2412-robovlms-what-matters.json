@@ -1,0 +1,67 @@
+{
+  "slug": "2412-robovlms-what-matters",
+  "post_number": 56,
+  "source_title": "Towards Generalist Robot Policies: What Matters in Building Vision-Language-Action Models",
+  "arxiv_id": "2412.14058",
+  "doi": null,
+  "bibtex_key": "li2024robovlms",
+  "domain": "robotics",
+  "subfields": [
+    "manipulation",
+    "foundation-model",
+    "visuomotor-policy",
+    "design-study"
+  ],
+  "key_concepts": [
+    "VLA",
+    "generalist-policy",
+    "VLM-backbone-study",
+    "policy-head",
+    "continuous-action",
+    "history-aggregation",
+    "cross-embodiment",
+    "post-training",
+    "ablation-study",
+    "RoboVLMs"
+  ],
+  "methodology": [
+    "imitation-learning",
+    "transformer",
+    "pre-training",
+    "ablation-study"
+  ],
+  "taxonomy_primary": "robotics/brain/vla",
+  "taxonomy_secondary": [
+    "ai/llm"
+  ],
+  "ai_summary": {
+    "one_liner": "A 600+ experiment systematic study of VLA design choices (backbone, action space, history, OXE timing) bundled into the open-source RoboVLMs meta-builder.",
+    "problem": "VLA papers each pick a different VLM backbone, action formulation, and OXE integration strategy on their own terms, making honest comparisons impossible and leaving follow-up researchers without a clear recipe.",
+    "solution": "Decompose VLA design into (backbone, structure, OXE timing), run 600+ controlled experiments on CALVIN / SimplerEnv / 20 real-robot tasks using one framework (RoboVLMs), and quantify each axis.",
+    "key_result": "KosMos / Paligemma backbone + continuous actions + Policy Head + OXE post-train (KosMos P.H.) outperforms Octo-Base, OpenVLA, and other VLAs on every evaluation; emergent self-correction observed.",
+    "limitations": [
+      "Snapshot of late-2024 VLMs — newer PaliGemma successors / Gemini Robotics not covered",
+      "Action representation limited to regression (no diffusion / flow-matching heads)",
+      "Real-robot evaluation on a single embodiment",
+      "No data-efficiency curve for OXE post-train"
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [],
+  "relations": [
+    {
+      "target": "2405-octo-generalist-policy",
+      "type": "reviews",
+      "strength": "direct"
+    },
+    {
+      "target": "2410-pi0-vla-flow-model",
+      "type": "sharesTopicWith",
+      "strength": "tangential"
+    }
+  ],
+  "source_author": "Xinghang Li et al.",
+  "source_date": "2024-12-18T00:00:00Z",
+  "published_at": "2026-05-12T00:00:00Z"
+}
