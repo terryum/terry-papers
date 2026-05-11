@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-05T07:18:18.610Z",
-  "total_papers": 37,
+  "generated_at": "2026-05-11T15:08:37.339Z",
+  "total_papers": 38,
   "papers_with_memos": 1,
   "papers_with_gaps": 37,
   "memo_index": {
@@ -126,6 +126,38 @@
       {
         "from": "2402-umi-universal-manipulation-interface",
         "to": "2602-robopaint",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2405-octo-generalist-policy",
+        "to": "2410-pi0-vla-flow-model",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2405-octo-generalist-policy",
+        "to": "2303-diffusion-policy",
+        "predicate": "usesMethodIn",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": null
+      },
+      {
+        "from": "2303-diffusion-policy",
+        "to": "2405-octo-generalist-policy",
+        "predicate": "providesMethodFor",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": "usesMethodIn"
+      },
+      {
+        "from": "2405-octo-generalist-policy",
+        "to": "2505-forcevla-force-aware-moe",
         "predicate": "sharesTopicWith",
         "strength": "tangential",
         "directional": false,
@@ -932,7 +964,7 @@
         "inverse_of": null
       }
     ],
-    "total_edges": 110
+    "total_edges": 114
   },
   "paper_list": [
     {
@@ -1622,6 +1654,28 @@
       "one_liner": "Sakana AI의 7B Conductor는 RL로 LLM 에이전트들을 조율하는 통신 토폴로지·프롬프트 엔지니어링을 자동 학습해 LiveCodeBench·GPQA·AIME25에서 GPT-5·Gemini 2.5 Pro·Claude Sonnet 4를 능가하는 SOTA 평균 77.27%를 달성했다",
       "has_memo": false,
       "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2405-octo-generalist-policy",
+      "post_number": 55,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/brain/vla",
+      "key_concepts": [
+        "VLA",
+        "generalist-policy",
+        "open-x-embodiment",
+        "diffusion-policy",
+        "transformer-policy",
+        "block-wise-attention",
+        "pre-training",
+        "fine-tuning",
+        "goal-image-conditioning",
+        "language-conditioning"
+      ],
+      "one_liner": "Open-source generalist robot transformer pre-trained on 800k Open X-Embodiment trajectories with block-wise attention and a diffusion action head for modular fine-tuning to new robots, cameras, and action spaces.",
+      "has_memo": false,
+      "has_gaps": false,
       "memo_preview": null
     }
   ],

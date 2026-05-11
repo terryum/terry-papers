@@ -1,0 +1,71 @@
+{
+  "slug": "2405-octo-generalist-policy",
+  "post_number": 55,
+  "source_title": "Octo: An Open-Source Generalist Robot Policy",
+  "arxiv_id": "2405.12213",
+  "doi": null,
+  "bibtex_key": "ghosh2024octo",
+  "domain": "robotics",
+  "subfields": [
+    "manipulation",
+    "foundation-model",
+    "visuomotor-policy"
+  ],
+  "key_concepts": [
+    "VLA",
+    "generalist-policy",
+    "open-x-embodiment",
+    "diffusion-policy",
+    "transformer-policy",
+    "block-wise-attention",
+    "pre-training",
+    "fine-tuning",
+    "goal-image-conditioning",
+    "language-conditioning"
+  ],
+  "methodology": [
+    "imitation-learning",
+    "diffusion-modeling",
+    "pre-training",
+    "transformer"
+  ],
+  "taxonomy_primary": "robotics/brain/vla",
+  "taxonomy_secondary": [
+    "robotics/brain/rl-policy"
+  ],
+  "ai_summary": {
+    "one_liner": "Open-source generalist robot transformer pre-trained on 800k Open X-Embodiment trajectories with block-wise attention and a diffusion action head for modular fine-tuning to new robots, cameras, and action spaces.",
+    "problem": "Prior generalist policies (RT-1, RT-2-X) hard-wire the camera, sensor, and action stack into the tokenization and either lose pre-trained weights when migrated to a new robot or ship as closed 55B VLMs that are infeasible to reproduce and extend.",
+    "solution": "Block-wise causal transformer separating task / observation / readout blocks plus a small diffusion action head; pre-trained on 800k OXE demos with two scales (27M Octo-Small, 93M Octo-Base).",
+    "key_result": "Outperforms RT-1-X across 9 real robots and 4 institutions, matches RT-2-X (55B) at ~600× smaller, and fine-tunes to new observations / action spaces on a single A5000 GPU in ~5 hours.",
+    "limitations": [
+      "Language conditioning trails goal-image conditioning by ~25% in zero-shot",
+      "Heavy reliance on wrist cameras for precise manipulation",
+      "93M backbone limits visual/linguistic generalization vs VLM-based successors",
+      "No contact/tactile signals at pre-training time"
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [],
+  "relations": [
+    {
+      "target": "2410-pi0-vla-flow-model",
+      "type": "sharesTopicWith",
+      "strength": "tangential"
+    },
+    {
+      "target": "2303-diffusion-policy",
+      "type": "usesMethodIn",
+      "strength": "foundational"
+    },
+    {
+      "target": "2505-forcevla-force-aware-moe",
+      "type": "sharesTopicWith",
+      "strength": "tangential"
+    }
+  ],
+  "source_author": "Dibya Ghosh et al.",
+  "source_date": "2024-05-20T00:00:00Z",
+  "published_at": "2026-05-12T00:00:00Z"
+}
