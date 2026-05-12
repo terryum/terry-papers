@@ -1,0 +1,77 @@
+{
+  "slug": "2206-global-planning-contact",
+  "post_number": 57,
+  "source_title": "Global Planning for Contact-Rich Manipulation via Local Smoothing of Quasi-dynamic Contact Models",
+  "arxiv_id": "2206.10787",
+  "doi": "10.48550/arXiv.2206.10787",
+  "bibtex_key": null,
+  "domain": "robotics",
+  "subfields": [
+    "contact-rich-manipulation",
+    "motion-planning",
+    "sampling-based-planning",
+    "contact-dynamics"
+  ],
+  "key_concepts": [
+    "contact-rich-manipulation",
+    "quasi-dynamic-contact-model",
+    "local-smoothing",
+    "randomized-smoothing",
+    "analytic-smoothing",
+    "sampling-based-motion-planning",
+    "RRT",
+    "contact-mode-abstraction"
+  ],
+  "methodology": [
+    "convex-quasi-dynamic-contact-model",
+    "log-barrier-relaxation",
+    "implicit-differentiation",
+    "local-mahalanobis-metric",
+    "contact-aware-RRT"
+  ],
+  "taxonomy_primary": "robotics/brain/rl-policy",
+  "taxonomy_secondary": [
+    "robotics/hand/dexterous",
+    "robotics/arm/force-control"
+  ],
+  "ai_summary": {
+    "one_liner": "Global planner for contact-rich manipulation that smooths quasi-dynamic contact models and uses the resulting local models to guide RRT search",
+    "problem": "Contact-rich manipulation is hard for classical planning because contact modes are combinatorial, non-smooth, and globally non-convex.",
+    "solution": "Smooth quasi-dynamic contact models locally, derive contact-aware metrics and extension steps, and plug them into an enhanced RRT planner.",
+    "key_result": "Demonstrates global planning across in-hand manipulation, plate pickup, door opening, pen placement, and bimanual bucket rotation, with lower computation than RL-style approaches.",
+    "limitations": [
+      "Quasi-dynamic first-order model can mismatch second-order real dynamics.",
+      "3D systems show larger sim-to-real error than simpler planar setups.",
+      "Contact sampling can introduce non-physical teleportation assumptions."
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "현재는 planner 중심 결과라, closed-loop tactile feedback이나 modern policy/VLA와의 결합은 아직 열려 있다.",
+      "source": "ai_analysis",
+      "relates_to": []
+    }
+  ],
+  "relations": [
+    {
+      "type": "sharesTopicWith",
+      "target": "2506-exostart",
+      "strength": "tangential"
+    },
+    {
+      "type": "sharesTopicWith",
+      "target": "2501-dexforce-force-informed-actions",
+      "strength": "tangential"
+    },
+    {
+      "type": "sharesGoalWith",
+      "target": "2509-tactile-sensing-distribution",
+      "strength": "direct"
+    }
+  ],
+  "source_author": "Tao Pang et al.",
+  "source_date": "2022-06-22T00:00:00Z",
+  "published_at": "2026-05-12T08:15:51Z"
+}
