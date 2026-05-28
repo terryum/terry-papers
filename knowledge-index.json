@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-12T08:55:26.326Z",
-  "total_papers": 40,
+  "generated_at": "2026-05-28T06:44:41.554Z",
+  "total_papers": 41,
   "papers_with_memos": 1,
-  "papers_with_gaps": 38,
+  "papers_with_gaps": 39,
   "memo_index": {
     "VLA": [
       "2603-capx-coding-agents-manipulation"
@@ -980,6 +980,62 @@
         "inverse_of": null
       },
       {
+        "from": "2604-pi0-7-steerable-generalist-vla",
+        "to": "2410-pi0-vla-flow-model",
+        "predicate": "extends",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": null
+      },
+      {
+        "from": "2410-pi0-vla-flow-model",
+        "to": "2604-pi0-7-steerable-generalist-vla",
+        "predicate": "isExtendedBy",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": "extends"
+      },
+      {
+        "from": "2604-pi0-7-steerable-generalist-vla",
+        "to": "2511-pi0-6-recap",
+        "predicate": "extends",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": null
+      },
+      {
+        "from": "2511-pi0-6-recap",
+        "to": "2604-pi0-7-steerable-generalist-vla",
+        "predicate": "isExtendedBy",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": "extends"
+      },
+      {
+        "from": "2604-pi0-7-steerable-generalist-vla",
+        "to": "2405-octo-generalist-policy",
+        "predicate": "sharesGoalWith",
+        "strength": "direct",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2604-pi0-7-steerable-generalist-vla",
+        "to": "2412-robovlms-what-matters",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2604-pi0-7-steerable-generalist-vla",
+        "to": "2602-habilis-vla-on-device",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
         "from": "2604-self-driving-labs",
         "to": "2502-ai-co-scientist",
         "predicate": "sharesTopicWith",
@@ -1004,7 +1060,7 @@
         "inverse_of": null
       }
     ],
-    "total_edges": 119
+    "total_edges": 126
   },
   "paper_list": [
     {
@@ -1756,6 +1812,28 @@
         "contact-mode-abstraction"
       ],
       "one_liner": "Global planner for contact-rich manipulation that smooths quasi-dynamic contact models and uses the resulting local models to guide RRT search",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2604-pi0-7-steerable-generalist-vla",
+      "post_number": 62,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/brain/vla",
+      "key_concepts": [
+        "VLA",
+        "robot-foundation-model",
+        "context-conditioning",
+        "subgoal-images",
+        "episode-metadata",
+        "cross-embodiment-transfer",
+        "language-coaching",
+        "compositional-generalization",
+        "flow-matching",
+        "MEM"
+      ],
+      "one_liner": "Steerable 5B VLA robot foundation model that uses rich context conditioning to combine mixed-quality robot, human, and web data into broad out-of-the-box generalization",
       "has_memo": false,
       "has_gaps": true,
       "memo_preview": null
