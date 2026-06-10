@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-10T07:48:36.139Z",
+  "generated_at": "2026-06-10T08:03:09.136Z",
   "total_papers": 42,
-  "papers_with_memos": 1,
+  "papers_with_memos": 2,
   "papers_with_gaps": 40,
   "memo_index": {
     "VLA": [
@@ -12,6 +12,9 @@
     ],
     "CaP": [
       "2603-capx-coding-agents-manipulation"
+    ],
+    "RL": [
+      "2605-rldx-1"
     ]
   },
   "gap_index": {
@@ -1912,9 +1915,9 @@
         "humanoid-manipulation"
       ],
       "one_liner": "A general-purpose dexterous-manipulation VLA that unifies motion awareness, long-term memory, and physical (tactile/torque) sensing in a Multi-Stream Action Transformer, with synthetic data and inference optimizations for real-time humanoid deployment.",
-      "has_memo": false,
+      "has_memo": true,
       "has_gaps": true,
-      "memo_preview": null
+      "memo_preview": "이 논문은 'ALLEX에서 86.8% 대 40%대'처럼 압도적인 숫자로 사실상 '현존 최고 로봇 파운데이션 모델'을 주장한다. 하지만 나는 이 '벤치마크 증명'을 두 겹으로 의심하"
     }
   ],
   "candidate_index": {
