@@ -1,0 +1,95 @@
+{
+  "slug": "2605-rldx-1",
+  "post_number": 67,
+  "source_title": "RLDX-1 Technical Report",
+  "arxiv_id": "2605.03269",
+  "doi": "10.48550/arXiv.2605.03269",
+  "bibtex_key": null,
+  "domain": "robotics",
+  "subfields": [
+    "foundation-model",
+    "vla",
+    "dexterous-manipulation",
+    "humanoid",
+    "tactile-sensing"
+  ],
+  "key_concepts": [
+    "VLA",
+    "multi-stream-action-transformer",
+    "motion-awareness",
+    "long-term-memory",
+    "physical-sensing",
+    "tactile-torque-sensing",
+    "synthetic-data",
+    "inference-optimization",
+    "dexterous-manipulation",
+    "humanoid-manipulation"
+  ],
+  "methodology": [
+    "flow-matching",
+    "multi-stream-action-transformer",
+    "mm-dit",
+    "memory-module",
+    "motion-module",
+    "physics-stream",
+    "synthetic-data-augmentation",
+    "inverse-dynamics-labeling",
+    "recap-reinforcement-learning",
+    "cuda-graph-kernel-fusion"
+  ],
+  "taxonomy_primary": "robotics/brain/vla",
+  "taxonomy_secondary": [
+    "robotics/hand/dexterous",
+    "robotics/hand/tactile"
+  ],
+  "ai_summary": {
+    "one_liner": "A general-purpose dexterous-manipulation VLA that unifies motion awareness, long-term memory, and physical (tactile/torque) sensing in a Multi-Stream Action Transformer, with synthetic data and inference optimizations for real-time humanoid deployment.",
+    "problem": "VLAs inherit broad scene understanding and language generalization from pre-trained VLMs but still fail on contact-rich real-world tasks that need motion awareness, long-term memory, and physical sensing — capabilities absent from standard vision-language pre-training.",
+    "solution": "RLDX-1 adds a Motion Module and Memory Module to the VLM and a Physics Stream for torque/tactile inputs, fusing all modalities through a Multi-Stream Action Transformer (MSAT) with cross-modal joint self-attention, then trains it with synthetic data, a 3-stage pre/mid/post-training recipe (with optional RECAP-style RL), and CUDA-graph + kernel-fusion inference optimization.",
+    "key_result": "On the ALLEX humanoid benchmark RLDX-1 reaches 86.8% average success vs ~40% for π0.5 (39.1%) and GR00T N1.6 (44.8%); on Franka Research 3 it reaches 68.5% average vs 34.4%/31.6%. Inference latency drops from 71.2 ms to 43.7 ms (1.63x speedup, ~22 Hz) on an RTX 5090.",
+    "limitations": [
+      "Functional capabilities are injected through in-house teleoperation and synthetic data, so reproducing the gains requires private data and a large robot fleet.",
+      "Reported gains are on the authors' own ALLEX/FR3 benchmarks and tasks, making head-to-head comparison with other labs' setups difficult.",
+      "RECAP-style RL and test-time sampling help on some tasks but can degrade near-converged policies, so the recipe is not uniformly beneficial."
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "**재현성·일반성 한계**: RECAP 스타일 RL과 test-time sampling이 일부 태스크에선 도움이 되지만 거의 수렴한 정책의 성능을 떨어뜨리기도 한다. 즉 이 레시피가 모든 태스크에 일관되게 이로운 것은 아니어서, 외부에서 어떤 조합이 언제 효과적인지 판단하기 어렵다.",
+      "source": "ai_analysis",
+      "relates_to": []
+    }
+  ],
+  "relations": [
+    {
+      "target": "2410-pi0-vla-flow-model",
+      "type": "extends",
+      "strength": "foundational"
+    },
+    {
+      "target": "2511-pi0-6-recap",
+      "type": "extends",
+      "strength": "foundational"
+    },
+    {
+      "target": "2604-pi0-7-steerable-generalist-vla",
+      "type": "sharesTopicWith",
+      "strength": "tangential"
+    },
+    {
+      "target": "2505-forcevla-force-aware-moe",
+      "type": "sharesGoalWith",
+      "strength": "direct"
+    },
+    {
+      "target": "2602-habilis-vla-on-device",
+      "type": "sharesTopicWith",
+      "strength": "tangential"
+    }
+  ],
+  "source_author": "Dongyoung Kim et al. (RLWRLD)",
+  "source_date": "2026-05-05",
+  "published_at": "2026-06-10T07:40:00Z"
+}

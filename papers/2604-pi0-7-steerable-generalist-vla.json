@@ -54,17 +54,12 @@
   "terry_memo_topics": [],
   "research_gaps": [
     {
-      "question": "seen task는 90%를 넘는 경우가 많지만 unseen task나 unseen task-robot 조합은 60-80% 수준으로 낮아진다. zero-shot generalization은 아직 in-distribution 성능과 차이가 크다.",
+      "question": "seen task는 90%를 넘는 경우가 많지만 unseen task나 unseen task-robot 조합은 60-80% 수준으로 낮아진다. zero-shot generalization은 아직 in-distribution 성능과 차이가 크다.\n- **저자 언급**: 대규모 heterogeneous dataset에서는 무엇이 진짜 unseen인지 판정하기 어렵다. 논문의 generalization은 완전히 새로운 skill 생성이라기보다, 넓은 데이터에서 배운 behavior의 remix일 수 있다.",
       "source": "author",
       "relates_to": []
     },
     {
-      "question": "대규모 heterogeneous dataset에서는 무엇이 진짜 unseen인지 판정하기 어렵다. 논문의 generalization은 완전히 새로운 skill 생성이라기보다, 넓은 데이터에서 배운 behavior의 remix일 수 있다.",
-      "source": "author",
-      "relates_to": []
-    },
-    {
-      "question": "모델 크기, 데이터 규모, annotation pipeline, 로봇 fleet, evaluation infrastructure가 모두 크고 비공개 요소가 많아 외부 연구자가 결과를 재현하거나 공정 비교하기 어렵다.",
+      "question": "**재현성 한계**: 모델 크기, 데이터 규모, annotation pipeline, 로봇 fleet, evaluation infrastructure가 모두 크고 비공개 요소가 많아 외부 연구자가 결과를 재현하거나 공정 비교하기 어렵다.",
       "source": "ai_analysis",
       "relates_to": []
     }

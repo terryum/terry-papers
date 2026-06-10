@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-28T06:44:41.554Z",
-  "total_papers": 41,
+  "generated_at": "2026-06-10T07:48:36.139Z",
+  "total_papers": 42,
   "papers_with_memos": 1,
-  "papers_with_gaps": 39,
+  "papers_with_gaps": 40,
   "memo_index": {
     "VLA": [
       "2603-capx-coding-agents-manipulation"
@@ -1058,9 +1058,65 @@
         "strength": "tangential",
         "directional": false,
         "inverse_of": null
+      },
+      {
+        "from": "2605-rldx-1",
+        "to": "2410-pi0-vla-flow-model",
+        "predicate": "extends",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": null
+      },
+      {
+        "from": "2410-pi0-vla-flow-model",
+        "to": "2605-rldx-1",
+        "predicate": "isExtendedBy",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": "extends"
+      },
+      {
+        "from": "2605-rldx-1",
+        "to": "2511-pi0-6-recap",
+        "predicate": "extends",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": null
+      },
+      {
+        "from": "2511-pi0-6-recap",
+        "to": "2605-rldx-1",
+        "predicate": "isExtendedBy",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": "extends"
+      },
+      {
+        "from": "2605-rldx-1",
+        "to": "2604-pi0-7-steerable-generalist-vla",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2605-rldx-1",
+        "to": "2505-forcevla-force-aware-moe",
+        "predicate": "sharesGoalWith",
+        "strength": "direct",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2605-rldx-1",
+        "to": "2602-habilis-vla-on-device",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       }
     ],
-    "total_edges": 126
+    "total_edges": 133
   },
   "paper_list": [
     {
@@ -1834,6 +1890,28 @@
         "MEM"
       ],
       "one_liner": "Steerable 5B VLA robot foundation model that uses rich context conditioning to combine mixed-quality robot, human, and web data into broad out-of-the-box generalization",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2605-rldx-1",
+      "post_number": 67,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/brain/vla",
+      "key_concepts": [
+        "VLA",
+        "multi-stream-action-transformer",
+        "motion-awareness",
+        "long-term-memory",
+        "physical-sensing",
+        "tactile-torque-sensing",
+        "synthetic-data",
+        "inference-optimization",
+        "dexterous-manipulation",
+        "humanoid-manipulation"
+      ],
+      "one_liner": "A general-purpose dexterous-manipulation VLA that unifies motion awareness, long-term memory, and physical (tactile/torque) sensing in a Multi-Stream Action Transformer, with synthetic data and inference optimizations for real-time humanoid deployment.",
       "has_memo": false,
       "has_gaps": true,
       "memo_preview": null
