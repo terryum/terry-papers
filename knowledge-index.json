@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10T08:03:09.136Z",
+  "generated_at": "2026-06-10T08:12:01.199Z",
   "total_papers": 42,
   "papers_with_memos": 2,
   "papers_with_gaps": 40,
@@ -1917,7 +1917,7 @@
       "one_liner": "A general-purpose dexterous-manipulation VLA that unifies motion awareness, long-term memory, and physical (tactile/torque) sensing in a Multi-Stream Action Transformer, with synthetic data and inference optimizations for real-time humanoid deployment.",
       "has_memo": true,
       "has_gaps": true,
-      "memo_preview": "이 논문은 'ALLEX에서 86.8% 대 40%대'처럼 압도적인 숫자로 사실상 '현존 최고 로봇 파운데이션 모델'을 주장한다. 하지만 나는 이 '벤치마크 증명'을 두 겹으로 의심하"
+      "memo_preview": "🤖 정교한 양손 조작은 AI 모델, 로봇 제어, 로봇 하드웨어, 산업 도메인 지식이 모두 맞물려야 풀리는 문제다. RLDX-1은 자체 ALLEX 휴머노이드부터 모델·데이터·추론 "
     }
   ],
   "candidate_index": {
