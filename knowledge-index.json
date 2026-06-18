@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-18T02:39:01.731Z",
-  "total_papers": 43,
+  "generated_at": "2026-06-18T05:20:21.386Z",
+  "total_papers": 44,
   "papers_with_memos": 2,
-  "papers_with_gaps": 41,
+  "papers_with_gaps": 42,
   "memo_index": {
     "VLA": [
       "2603-capx-coding-agents-manipulation"
@@ -18,6 +18,13 @@
     ]
   },
   "gap_index": {
+    "Unitree-G1": [
+      {
+        "slug": "2509-omniretarget-interaction-preserving-retargeting",
+        "question": "재현성 한계: 결과는 Unitree G1, MoCap/OMOMO/LAFAN1, 시뮬레이션/하드웨어 파이프라인이 모두 맞물려 나온다. 다른 연구실이 동일한 hardware evaluation과 retargeting quality metric을 맞추기는 쉽지 않다.",
+        "source": "ai_analysis"
+      }
+    ],
     "skill-capture-glove": [
       {
         "slug": "2511-act1-robot-foundation-model",
@@ -499,6 +506,30 @@
         "to": "2407-stretchable-glove-hand-pose",
         "predicate": "sharesGoalWith",
         "strength": "direct",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2509-omniretarget-interaction-preserving-retargeting",
+        "to": "2512-osmo-tactile-glove",
+        "predicate": "sharesGoalWith",
+        "strength": "direct",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2509-omniretarget-interaction-preserving-retargeting",
+        "to": "2605-rldx-1",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2509-omniretarget-interaction-preserving-retargeting",
+        "to": "2206-global-planning-contact",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
         "directional": false,
         "inverse_of": null
       },
@@ -1167,7 +1198,7 @@
         "inverse_of": null
       }
     ],
-    "total_edges": 139
+    "total_edges": 142
   },
   "paper_list": [
     {
@@ -1985,6 +2016,29 @@
         "real-world-policy-learning"
       ],
       "one_liner": "ENPIRE turns real-world dexterous robot policy improvement into a coding-agent-managed physical autoresearch loop over reset, rollout, verification, and evolution.",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2509-omniretarget-interaction-preserving-retargeting",
+      "post_number": 70,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/brain/rl-policy",
+      "key_concepts": [
+        "interaction-preserving-retargeting",
+        "interaction-mesh",
+        "humanoid-loco-manipulation",
+        "whole-body-scene-interaction",
+        "kinematic-data-generation",
+        "hard-constraint-optimization",
+        "motion-retargeting",
+        "data-augmentation",
+        "minimal-reward-rl",
+        "zero-shot-sim-to-real",
+        "Unitree-G1"
+      ],
+      "one_liner": "OmniRetarget turns a single human whole-body demonstration into interaction-preserving humanoid reference trajectories by optimizing an interaction mesh with hard physical constraints.",
       "has_memo": false,
       "has_gaps": true,
       "memo_preview": null

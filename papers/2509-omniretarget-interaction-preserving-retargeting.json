@@ -1,0 +1,89 @@
+{
+  "slug": "2509-omniretarget-interaction-preserving-retargeting",
+  "post_number": 70,
+  "source_title": "OmniRetarget: Interaction-Preserving Data Generation for Humanoid Whole-Body Loco-Manipulation and Scene Interaction",
+  "arxiv_id": "2509.26633",
+  "doi": "10.48550/arXiv.2509.26633",
+  "bibtex_key": null,
+  "domain": "robotics",
+  "subfields": [
+    "humanoid-robotics",
+    "whole-body-control",
+    "motion-retargeting",
+    "loco-manipulation",
+    "reinforcement-learning",
+    "sim-to-real"
+  ],
+  "key_concepts": [
+    "interaction-preserving-retargeting",
+    "interaction-mesh",
+    "humanoid-loco-manipulation",
+    "whole-body-scene-interaction",
+    "kinematic-data-generation",
+    "hard-constraint-optimization",
+    "motion-retargeting",
+    "data-augmentation",
+    "minimal-reward-rl",
+    "zero-shot-sim-to-real",
+    "Unitree-G1"
+  ],
+  "methodology": [
+    "interaction-mesh",
+    "Delaunay-tetrahedralization",
+    "Laplacian-deformation-energy",
+    "sequential-quadratic-programming",
+    "hard-kinematic-constraints",
+    "collision-avoidance",
+    "foot-contact-stability",
+    "trajectory-augmentation",
+    "proprioceptive-rl",
+    "domain-randomization"
+  ],
+  "taxonomy_primary": "robotics/brain/rl-policy",
+  "taxonomy_secondary": [
+    "robotics/arm/manipulation",
+    "robotics/dataset/cross-embodiment"
+  ],
+  "ai_summary": {
+    "one_liner": "OmniRetarget turns a single human whole-body demonstration into interaction-preserving humanoid reference trajectories by optimizing an interaction mesh with hard physical constraints.",
+    "problem": "Humanoid whole-body loco-manipulation needs human-like references, but common retargeting pipelines lose object/terrain contact structure and produce penetration or foot-skating artifacts that make downstream RL brittle.",
+    "solution": "Build an interaction mesh over body, object, and terrain points, minimize Laplacian deformation while enforcing collision, joint, velocity, and foot-contact constraints, then re-solve the optimization under object, terrain, and embodiment augmentations.",
+    "key_result": "The method generates 8+ hours of retargeted trajectories and enables Unitree G1 policies to execute up to 30-second parkour/loco-manipulation skills with only five reward terms and simple domain randomization; Table II reports 82.20% robot-object and 94.73% robot-terrain downstream RL success.",
+    "limitations": [
+      "The current frame-by-frame optimization is effective but future work may need joint trajectory optimization for noisier motion sources such as video.",
+      "Some extremely difficult motions still expose limits of the simple RL formulation, motivating curriculum learning or richer policy training.",
+      "The paper reports strong Unitree G1 results, but cross-lab reproducibility depends on access to comparable mocap, simulation, robot, and evaluation infrastructure."
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "재현성 한계: 결과는 Unitree G1, MoCap/OMOMO/LAFAN1, 시뮬레이션/하드웨어 파이프라인이 모두 맞물려 나온다. 다른 연구실이 동일한 hardware evaluation과 retargeting quality metric을 맞추기는 쉽지 않다.",
+      "source": "ai_analysis",
+      "relates_to": [
+        "Unitree-G1"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target": "2512-osmo-tactile-glove",
+      "type": "sharesGoalWith",
+      "strength": "direct"
+    },
+    {
+      "target": "2605-rldx-1",
+      "type": "sharesTopicWith",
+      "strength": "tangential"
+    },
+    {
+      "target": "2206-global-planning-contact",
+      "type": "sharesTopicWith",
+      "strength": "tangential"
+    }
+  ],
+  "source_author": "Lujie Yang et al.",
+  "source_date": "2026-06-15",
+  "published_at": "2026-06-18T14:12:05+09:00"
+}
