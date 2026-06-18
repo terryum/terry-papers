@@ -1,0 +1,88 @@
+{
+  "slug": "2606-enpire-robot-policy-self-improvement",
+  "post_number": 69,
+  "source_title": "ENPIRE: Agentic Robot Policy Self-Improvement in the Real World",
+  "arxiv_id": null,
+  "doi": null,
+  "bibtex_key": null,
+  "domain": "robotics",
+  "subfields": [
+    "robot-learning",
+    "dexterous-manipulation",
+    "agentic-autoresearch",
+    "real-world-rl",
+    "robot-fleet"
+  ],
+  "key_concepts": [
+    "physical-autoresearch",
+    "coding-agent",
+    "automatic-reset",
+    "automatic-verification",
+    "policy-self-improvement",
+    "robot-fleet-scaling",
+    "mean-robot-utilization",
+    "mean-token-utilization",
+    "behavior-cloning-regularization",
+    "real-world-policy-learning"
+  ],
+  "methodology": [
+    "agentic-harness",
+    "environment-api-construction",
+    "parallel-rollout",
+    "evolutionary-hypothesis-selection",
+    "behavior-cloning",
+    "offline-to-online-rl",
+    "tool-calling",
+    "code-as-policy"
+  ],
+  "taxonomy_primary": "robotics/brain",
+  "taxonomy_secondary": [
+    "robotics/arm",
+    "ai/agentic-research"
+  ],
+  "ai_summary": {
+    "one_liner": "ENPIRE turns real-world dexterous robot policy improvement into a coding-agent-managed physical autoresearch loop over reset, rollout, verification, and evolution.",
+    "problem": "Real-world dexterous manipulation policy learning remains bottlenecked by human supervision for resets, success verification, experiment execution, and algorithmic tuning, while coding-agent autoresearch has mostly stayed in digital environments.",
+    "solution": "A four-module harness: Environment construction for automatic reset/verification, Policy Improvement for heuristic/BC/RL/tool-calling updates, Rollout for single- or multi-robot evaluation, and Evolution for log/literature analysis plus code and training-infrastructure changes.",
+    "key_result": "Frontier coding agents autonomously improve real robot policies up to 99% success; scaling from 1 to 8 agents cuts Push-T convergence from roughly 5h to 2h and pin insertion from over 1.5h to about 40min, at higher token cost.",
+    "limitations": [
+      "Robot and compute resources are underutilized while agents read logs, write code, debug, or wait for model responses.",
+      "Fleet scaling reduces wall-clock time but increases token consumption super-linearly.",
+      "Reproduction requires integrated robot stations, reset/verification APIs, logging, and agent sandbox infrastructure."
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "실험 환경은 매우 강하게 수직 통합된 로봇 플릿과 내부 tool API를 전제한다. 다른 연구실이 같은 수준의 자동 reset, verification, data logging, agent sandbox를 재현하기는 쉽지 않다.",
+      "source": "ai_analysis",
+      "relates_to": []
+    }
+  ],
+  "relations": [
+    {
+      "target": "2603-autoresearch-autonomous-ml",
+      "type": "extends",
+      "strength": "foundational"
+    },
+    {
+      "target": "2603-capx-coding-agents-manipulation",
+      "type": "usesMethodIn",
+      "strength": "foundational"
+    },
+    {
+      "target": "2603-roboclaw-agentic-long-horizon",
+      "type": "sharesGoalWith",
+      "strength": "direct"
+    },
+    {
+      "target": "2604-self-driving-labs",
+      "type": "sharesTopicWith",
+      "strength": "tangential"
+    }
+  ],
+  "source_author": "Wenli Xiao et al.",
+  "source_date": "2026-06-16",
+  "published_at": "2026-06-18T11:21:22+09:00"
+}

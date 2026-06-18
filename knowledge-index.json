@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-10T08:33:45.612Z",
-  "total_papers": 42,
+  "generated_at": "2026-06-18T02:39:01.731Z",
+  "total_papers": 43,
   "papers_with_memos": 2,
-  "papers_with_gaps": 40,
+  "papers_with_gaps": 41,
   "memo_index": {
     "VLA": [
       "2603-capx-coding-agents-manipulation"
@@ -1117,9 +1117,57 @@
         "strength": "tangential",
         "directional": false,
         "inverse_of": null
+      },
+      {
+        "from": "2606-enpire-robot-policy-self-improvement",
+        "to": "2603-autoresearch-autonomous-ml",
+        "predicate": "extends",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": null
+      },
+      {
+        "from": "2603-autoresearch-autonomous-ml",
+        "to": "2606-enpire-robot-policy-self-improvement",
+        "predicate": "isExtendedBy",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": "extends"
+      },
+      {
+        "from": "2606-enpire-robot-policy-self-improvement",
+        "to": "2603-capx-coding-agents-manipulation",
+        "predicate": "usesMethodIn",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": null
+      },
+      {
+        "from": "2603-capx-coding-agents-manipulation",
+        "to": "2606-enpire-robot-policy-self-improvement",
+        "predicate": "providesMethodFor",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": "usesMethodIn"
+      },
+      {
+        "from": "2606-enpire-robot-policy-self-improvement",
+        "to": "2603-roboclaw-agentic-long-horizon",
+        "predicate": "sharesGoalWith",
+        "strength": "direct",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2606-enpire-robot-policy-self-improvement",
+        "to": "2604-self-driving-labs",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       }
     ],
-    "total_edges": 133
+    "total_edges": 139
   },
   "paper_list": [
     {
@@ -1918,6 +1966,28 @@
       "has_memo": true,
       "has_gaps": true,
       "memo_preview": "🤖 정교한 양손 조작은 AI 모델, 로봇 제어, 로봇 하드웨어, 산업 도메인 지식이 모두 맞물려야 풀리는 문제다. RLDX-1은 자체 ALLEX 휴머노이드부터 모델·데이터·추론 "
+    },
+    {
+      "slug": "2606-enpire-robot-policy-self-improvement",
+      "post_number": 69,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/brain",
+      "key_concepts": [
+        "physical-autoresearch",
+        "coding-agent",
+        "automatic-reset",
+        "automatic-verification",
+        "policy-self-improvement",
+        "robot-fleet-scaling",
+        "mean-robot-utilization",
+        "mean-token-utilization",
+        "behavior-cloning-regularization",
+        "real-world-policy-learning"
+      ],
+      "one_liner": "ENPIRE turns real-world dexterous robot policy improvement into a coding-agent-managed physical autoresearch loop over reset, rollout, verification, and evolution.",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
     }
   ],
   "candidate_index": {
