@@ -1,0 +1,90 @@
+{
+  "slug": "2501-humanoid-locomotion-manipulation-survey",
+  "post_number": 73,
+  "source_title": "Humanoid Locomotion and Manipulation: Current Progress and Challenges in Control, Planning, and Learning",
+  "arxiv_id": "2501.02116",
+  "doi": null,
+  "bibtex_key": "gu2025humanoidsurvey",
+  "domain": "robotics",
+  "subfields": [
+    "humanoid-robotics",
+    "loco-manipulation",
+    "whole-body-control",
+    "robot-learning",
+    "tactile-sensing"
+  ],
+  "key_concepts": [
+    "humanoid-locomotion",
+    "loco-manipulation",
+    "whole-body-control",
+    "multi-contact-planning",
+    "model-predictive-control",
+    "reinforcement-learning",
+    "imitation-learning",
+    "foundation-models",
+    "whole-body-tactile-sensing"
+  ],
+  "methodology": [
+    "survey",
+    "taxonomy",
+    "model-based-control-review",
+    "learning-based-control-review",
+    "foundation-model-analysis"
+  ],
+  "taxonomy_primary": "robotics/whole-body",
+  "taxonomy_secondary": [
+    "robotics/brain/vla",
+    "robotics/hand"
+  ],
+  "ai_summary": {
+    "one_liner": "A broad survey that unifies humanoid locomotion and manipulation around model-based planning/control, learning-based skill acquisition, foundation models, and whole-body tactile sensing.",
+    "problem": "Humanoid locomotion, manipulation, tactile sensing, and cognitive planning have advanced rapidly but often as separate subfields, making it hard to see how they combine into general humanoid loco-manipulation.",
+    "solution": "The survey organizes the field into model-based contact planning, MPC and whole-body control, learning-based RL/IL skill acquisition, foundation-model task planning, and whole-body tactile sensing, then compares their trade-offs.",
+    "key_result": "Its main output is a taxonomy and roadmap: model-based methods remain strong for stability and guarantees, learning methods improve versatility, foundation models help semantic task planning, and tactile sensing is a missing modality for contact-rich whole-body behavior.",
+    "limitations": [
+      "The survey is broad and method-centric, so individual system implementations and company stacks are covered unevenly.",
+      "The field moved quickly after the v2 cut-off, including newer humanoid foundation model and dexterous manipulation releases."
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "**AI 분석 한계**: 이 서베이는 taxonomy와 방법론 비교가 강하지만, 빠르게 등장하는 frontier company stack과 실제 deployment cost를 같은 깊이로 비교하기는 어렵다.",
+      "source": "ai_analysis",
+      "relates_to": [
+        "taxonomy"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target": "2410-pi0-vla-flow-model",
+      "type": "sharesTopicWith",
+      "strength": "tangential"
+    },
+    {
+      "target": "2405-octo-generalist-policy",
+      "type": "sharesTopicWith",
+      "strength": "tangential"
+    },
+    {
+      "target": "2303-diffusion-policy",
+      "type": "usesMethodIn",
+      "strength": "foundational"
+    },
+    {
+      "target": "2512-sim2real-humanoid-locomotion-15min",
+      "type": "sharesTopicWith",
+      "strength": "tangential"
+    },
+    {
+      "target": "2602-perceptive-humanoid-parkour",
+      "type": "sharesTopicWith",
+      "strength": "tangential"
+    }
+  ],
+  "source_author": "Zhaoyuan Gu et al.",
+  "source_date": "2025-01-03T00:00:00Z",
+  "published_at": "2026-06-18T15:55:00+09:00"
+}

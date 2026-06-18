@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-18T06:28:28.357Z",
-  "total_papers": 46,
+  "generated_at": "2026-06-18T07:00:35.615Z",
+  "total_papers": 48,
   "papers_with_memos": 2,
-  "papers_with_gaps": 44,
+  "papers_with_gaps": 46,
   "memo_index": {
     "VLA": [
       "2603-capx-coding-agents-manipulation"
@@ -18,6 +18,13 @@
     ]
   },
   "gap_index": {
+    "taxonomy": [
+      {
+        "slug": "2501-humanoid-locomotion-manipulation-survey",
+        "question": "**AI 분석 한계**: 이 서베이는 taxonomy와 방법론 비교가 강하지만, 빠르게 등장하는 frontier company stack과 실제 deployment cost를 같은 깊이로 비교하기는 어렵다.",
+        "source": "ai_analysis"
+      }
+    ],
     "Unitree-G1": [
       {
         "slug": "2509-omniretarget-interaction-preserving-retargeting",
@@ -352,6 +359,54 @@
       {
         "from": "2501-dexforce-force-informed-actions",
         "to": "2505-forcevla-force-aware-moe",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2501-humanoid-locomotion-manipulation-survey",
+        "to": "2410-pi0-vla-flow-model",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2501-humanoid-locomotion-manipulation-survey",
+        "to": "2405-octo-generalist-policy",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2501-humanoid-locomotion-manipulation-survey",
+        "to": "2303-diffusion-policy",
+        "predicate": "usesMethodIn",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": null
+      },
+      {
+        "from": "2303-diffusion-policy",
+        "to": "2501-humanoid-locomotion-manipulation-survey",
+        "predicate": "providesMethodFor",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": "usesMethodIn"
+      },
+      {
+        "from": "2501-humanoid-locomotion-manipulation-survey",
+        "to": "2512-sim2real-humanoid-locomotion-15min",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2501-humanoid-locomotion-manipulation-survey",
+        "to": "2602-perceptive-humanoid-parkour",
         "predicate": "sharesTopicWith",
         "strength": "tangential",
         "directional": false,
@@ -1174,6 +1229,54 @@
         "inverse_of": null
       },
       {
+        "from": "2605-dexterous-hand-intelligence-survey",
+        "to": "2201-mano-hand-model",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2605-dexterous-hand-intelligence-survey",
+        "to": "2407-stretchable-glove-hand-pose",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2605-dexterous-hand-intelligence-survey",
+        "to": "2504-pp-tac",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2605-dexterous-hand-intelligence-survey",
+        "to": "2505-dexumi",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2605-dexterous-hand-intelligence-survey",
+        "to": "2501-dexforce-force-informed-actions",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2605-dexterous-hand-intelligence-survey",
+        "to": "2512-unitachand",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
         "from": "2605-rldx-1",
         "to": "2410-pi0-vla-flow-model",
         "predicate": "extends",
@@ -1278,7 +1381,7 @@
         "inverse_of": null
       }
     ],
-    "total_edges": 149
+    "total_edges": 161
   },
   "paper_list": [
     {
@@ -2168,13 +2271,55 @@
       "has_memo": false,
       "has_gaps": true,
       "memo_preview": null
+    },
+    {
+      "slug": "2501-humanoid-locomotion-manipulation-survey",
+      "post_number": 73,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/whole-body",
+      "key_concepts": [
+        "humanoid-locomotion",
+        "loco-manipulation",
+        "whole-body-control",
+        "multi-contact-planning",
+        "model-predictive-control",
+        "reinforcement-learning",
+        "imitation-learning",
+        "foundation-models",
+        "whole-body-tactile-sensing"
+      ],
+      "one_liner": "A broad survey that unifies humanoid locomotion and manipulation around model-based planning/control, learning-based skill acquisition, foundation models, and whole-body tactile sensing.",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2605-dexterous-hand-intelligence-survey",
+      "post_number": 74,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/hand",
+      "key_concepts": [
+        "dexterous-hand",
+        "actuation",
+        "transmission",
+        "multimodal-perception",
+        "in-hand-manipulation",
+        "diffusion-policy",
+        "vision-language-action",
+        "datasets",
+        "evaluation-protocols"
+      ],
+      "one_liner": "A holistic survey that connects dexterous hand hardware, sensing, control/learning methods, datasets, and evaluation into one developmental map.",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
     }
   ],
   "candidate_index": {
     "generated_at": "2026-05-14T02:32:15.185Z",
     "total_candidates": 486,
-    "active_candidates": 457,
-    "promoted_candidates": 29,
+    "active_candidates": 456,
+    "promoted_candidates": 30,
     "rich_candidates": 419,
     "skeleton_candidates": 67,
     "by_survey": {
@@ -13042,7 +13187,7 @@
             "gap_slug": "2603-capx-coding-agents-manipulation"
           }
         ],
-        "promoted_to_slug": null,
+        "promoted_to_slug": "2501-humanoid-locomotion-manipulation-survey",
         "first_seen_at": "2026-04-25T05:30:54.472Z",
         "last_seen_at": "2026-05-14T02:32:15.185Z"
       },

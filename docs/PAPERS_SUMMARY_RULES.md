@@ -64,6 +64,51 @@
 
 ---
 
+## Review / Survey 논문 섹션 구조
+
+`contribution_type: "survey"` 이거나 제목/초록/본문에서 review, survey, systematic review, taxonomy, roadmap 성격이 명확한 논문은 위의 문제-해결형 기본 구조 대신 아래 구조를 사용한다. Review/survey 논문은 특정 단일 방법의 성능 개선보다 **분야를 어떻게 나누고, 어떤 축으로 비교하며, 무엇을 다음 병목으로 보는지**가 핵심이다.
+
+### 1. TL;DR (1-2문장)
+- 분야 전체를 관통하는 관점 + 가장 중요한 taxonomy/trajectory를 요약한다.
+- 정량 성능 수치보다 "무엇을 어떤 축으로 통합했는가"를 우선한다.
+
+### 2. 이 서베이가 다루는 질문
+- 3-5문장, 1문단으로 압축한다.
+- 기존 리뷰의 빈틈 → 이 서베이의 범위 → 독자가 얻을 통합적 관점을 설명한다.
+- 저자가 명시한 research questions, contributions, roadmap이 있으면 그 표현을 우선한다.
+
+### 3. 전체 지형도
+- 핵심 taxonomy를 bullet로 정리한다.
+- **본문 이미지 1장** 포함: overview, roadmap, taxonomy, architecture figure를 우선한다.
+- 캡션은 원문 전체를 meta.json에 보존하고, MDX 본문 캡션은 독자가 이해하기 쉬운 언어로 요약해도 된다.
+
+### 4. 비교 축별 종합 (Collapsible)
+- `<Collapsible title="비교 축별 종합">` 으로 래핑한다.
+- 하드웨어/센싱/제어/학습/데이터/평가처럼 저자가 사용한 큰 축을 따라 3-6개 소절로 정리한다.
+- 개별 논문 나열보다 "어떤 trade-off가 반복되는가"와 "어떤 가정이 비교를 어렵게 만드는가"를 강조한다.
+
+### 5. 데이터셋과 평가 관행
+- Survey가 dataset, benchmark, evaluation protocol을 다룬 경우 별도 섹션으로 둔다.
+- 주요 데이터셋/벤치마크 표가 있으면 본문 Figure/Table로 삽입한다.
+- 특정 표가 너무 크거나 HTML table이면 본문에는 핵심 패턴만 쓰고, 원본 표는 갤러리/메타데이터에 보존한다.
+
+### 6. 열린 문제와 다음 방향
+- 저자 언급 challenge/future direction을 4-7개 bullet로 정리한다.
+- 각 bullet은 "현재 병목 → 왜 중요한가 → 다음 연구 방향"이 드러나게 쓴다.
+- AI 분석 한계는 1개만, `🤖` 표시를 붙인다.
+
+### 7. 달성점과 한계점
+- **새롭게 달성한 점**: 이 서베이가 제공하는 분류 체계, 비교 프레임, 분야 진단의 가치 (2-3개 bullet)
+- **한계점**:
+  - 저자 언급 또는 본문에서 드러나는 coverage/evaluation 한계
+  - 빠르게 변하는 분야에서는 cut-off 이후 등장한 시스템/논문 누락 가능성을 명시할 수 있다.
+
+### 8. Terry's memo
+- 일반 논문과 동일하게 AI가 작성하지 않는다.
+- 지시 없으면 frontmatter `terrys_memo: ""` 만 유지하고 본문에는 별도 Terry memo 섹션을 만들지 않는다.
+
+---
+
 ## 추출 규칙
 
 ### 1저자 Google Scholar URL 추출
@@ -96,6 +141,7 @@
 ### 주요 결과 추출
 - 우선순위: 결과 표 > 실험 문단 > 그림 캡션 > Abstract
 - 출력 형식: `Task X에서 68.2% → 79.4% (+11.2%p), baseline Y 대비`
+- Review/survey 논문에서는 "주요 결과"를 억지로 정량 성능으로 만들지 않는다. 대신 taxonomy, comparison table, dataset/evaluation consolidation, open challenge 정리를 핵심 산출물로 요약한다.
 
 ### 한계점 추출
 - **A. 저자 언급**: Limitations, Discussion, Future Work, Conclusion에 근거
@@ -131,6 +177,7 @@
 ### `summary` (상세 요약)
 - SEO/OG 메타 등에 사용되는 상세 요약
 - 2-3문장, 문제 + 방법 + 결과 수치 포함
+- Review/survey 논문은 2-3문장으로 범위 + taxonomy 축 + 열린 문제를 포함하고, 단일 성능 수치가 없으면 쓰지 않는다.
 
 ### 썸네일 (`cover-thumb.webp`)
 - 홈/리스트 카드 왼쪽에 표시되는 **정사각형** 이미지 (144px 표시, 288px 2x retina)

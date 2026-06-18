@@ -1,0 +1,93 @@
+{
+  "slug": "2605-dexterous-hand-intelligence-survey",
+  "post_number": 74,
+  "source_title": "Towards Robotic Dexterous Hand Intelligence: A Survey",
+  "arxiv_id": "2605.13925",
+  "doi": null,
+  "bibtex_key": null,
+  "domain": "robotics",
+  "subfields": [
+    "dexterous-manipulation",
+    "robot-hand",
+    "tactile-sensing",
+    "robot-learning",
+    "evaluation"
+  ],
+  "key_concepts": [
+    "dexterous-hand",
+    "actuation",
+    "transmission",
+    "multimodal-perception",
+    "in-hand-manipulation",
+    "diffusion-policy",
+    "vision-language-action",
+    "datasets",
+    "evaluation-protocols"
+  ],
+  "methodology": [
+    "survey",
+    "hardware-taxonomy",
+    "method-taxonomy",
+    "dataset-review",
+    "evaluation-review"
+  ],
+  "taxonomy_primary": "robotics/hand",
+  "taxonomy_secondary": [
+    "robotics/arm",
+    "robotics/brain/vla"
+  ],
+  "ai_summary": {
+    "one_liner": "A holistic survey that connects dexterous hand hardware, sensing, control/learning methods, datasets, and evaluation into one developmental map.",
+    "problem": "Dexterous hand studies differ in embodiment, sensors, task assumptions, data sources, and evaluation protocols, making progress hard to compare systematically.",
+    "solution": "The survey analyzes actuation, transmission, perception, representative hands, task categories, policy-learning paradigms, datasets, modalities, and evaluation practice under one taxonomy.",
+    "key_result": "Its main output is a structured map of the field: hardware choices constrain policy assumptions, learning methods depend on data/evaluation design, and robust deployment requires closing gaps in sensing, sim-to-real transfer, benchmarks, and safety.",
+    "limitations": [
+      "The survey is taxonomy-heavy and does not provide a unified benchmark or meta-analysis across all cited methods.",
+      "Fast-moving 2026 dexterous-hand and humanoid-hand releases may outpace the static survey snapshot."
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "**AI 분석 한계**: 이 서베이는 2026년 hand platform까지 표로 묶는 장점이 있지만, 실제 배포에서 중요한 내구성, 고장률, 유지보수 비용은 논문 표만으로 평가하기 어렵다.",
+      "source": "ai_analysis",
+      "relates_to": []
+    }
+  ],
+  "relations": [
+    {
+      "target": "2201-mano-hand-model",
+      "type": "sharesTopicWith",
+      "strength": "tangential"
+    },
+    {
+      "target": "2407-stretchable-glove-hand-pose",
+      "type": "sharesTopicWith",
+      "strength": "tangential"
+    },
+    {
+      "target": "2504-pp-tac",
+      "type": "sharesTopicWith",
+      "strength": "tangential"
+    },
+    {
+      "target": "2505-dexumi",
+      "type": "sharesTopicWith",
+      "strength": "tangential"
+    },
+    {
+      "target": "2501-dexforce-force-informed-actions",
+      "type": "sharesTopicWith",
+      "strength": "tangential"
+    },
+    {
+      "target": "2512-unitachand",
+      "type": "sharesTopicWith",
+      "strength": "tangential"
+    }
+  ],
+  "source_author": "Weiguang Zhao et al.",
+  "source_date": "2026-05-13T00:00:00Z",
+  "published_at": "2026-06-18T15:55:00+09:00"
+}
