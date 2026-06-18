@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-18T05:20:21.386Z",
-  "total_papers": 44,
+  "generated_at": "2026-06-18T05:33:41.159Z",
+  "total_papers": 45,
   "papers_with_memos": 2,
-  "papers_with_gaps": 42,
+  "papers_with_gaps": 43,
   "memo_index": {
     "VLA": [
       "2603-capx-coding-agents-manipulation"
@@ -22,6 +22,11 @@
       {
         "slug": "2509-omniretarget-interaction-preserving-retargeting",
         "question": "재현성 한계: 결과는 Unitree G1, MoCap/OMOMO/LAFAN1, 시뮬레이션/하드웨어 파이프라인이 모두 맞물려 나온다. 다른 연구실이 동일한 hardware evaluation과 retargeting quality metric을 맞추기는 쉽지 않다.",
+        "source": "ai_analysis"
+      },
+      {
+        "slug": "2602-perceptive-humanoid-parkour",
+        "question": "재현성 관점: 결과는 Unitree G1, OmniRetarget, 고속 simulation, 대규모 parallel rollout, real hardware tuning이 맞물린 system result다. 외부 연구실에서 같은 숫자를 재현하려면 motion library와 하드웨어 setup 차이를 함께 봐야 한다.",
         "source": "ai_analysis"
       }
     ],
@@ -48,6 +53,13 @@
       {
         "slug": "2512-osmo-tactile-glove",
         "question": "IK retargeting이 Ability Hand 관절 구조 기반으로 설계돼, 관절 수·형태가 크게 다른 로봇 손으로 확장 시 IK 재설계가 필요하다.",
+        "source": "ai_analysis"
+      }
+    ],
+    "OmniRetarget": [
+      {
+        "slug": "2602-perceptive-humanoid-parkour",
+        "question": "재현성 관점: 결과는 Unitree G1, OmniRetarget, 고속 simulation, 대규모 parallel rollout, real hardware tuning이 맞물린 system result다. 외부 연구실에서 같은 숫자를 재현하려면 motion library와 하드웨어 setup 차이를 함께 봐야 한다.",
         "source": "ai_analysis"
       }
     ],
@@ -862,6 +874,30 @@
         "inverse_of": null
       },
       {
+        "from": "2602-perceptive-humanoid-parkour",
+        "to": "2509-omniretarget-interaction-preserving-retargeting",
+        "predicate": "usesMethodIn",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": null
+      },
+      {
+        "from": "2509-omniretarget-interaction-preserving-retargeting",
+        "to": "2602-perceptive-humanoid-parkour",
+        "predicate": "providesMethodFor",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": "usesMethodIn"
+      },
+      {
+        "from": "2602-perceptive-humanoid-parkour",
+        "to": "2605-rldx-1",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
         "from": "2602-robopaint",
         "to": "2505-dexumi",
         "predicate": "reviews",
@@ -1198,7 +1234,7 @@
         "inverse_of": null
       }
     ],
-    "total_edges": 142
+    "total_edges": 145
   },
   "paper_list": [
     {
@@ -2039,6 +2075,28 @@
         "Unitree-G1"
       ],
       "one_liner": "OmniRetarget turns a single human whole-body demonstration into interaction-preserving humanoid reference trajectories by optimizing an interaction mesh with hard physical constraints.",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2602-perceptive-humanoid-parkour",
+      "post_number": 71,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/brain/rl-policy",
+      "key_concepts": [
+        "perceptive-humanoid-parkour",
+        "motion-matching",
+        "long-horizon-skill-composition",
+        "atomic-human-skills",
+        "teacher-student-distillation",
+        "DAgger-plus-RL",
+        "depth-based-policy",
+        "autonomous-skill-selection",
+        "Unitree-G1",
+        "zero-shot-sim-to-real"
+      ],
+      "one_liner": "PHP composes retargeted human parkour skills with motion matching and distills privileged RL experts into one depth-based Unitree G1 policy for autonomous long-horizon humanoid parkour.",
       "has_memo": false,
       "has_gaps": true,
       "memo_preview": null

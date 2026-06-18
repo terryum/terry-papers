@@ -1,0 +1,86 @@
+{
+  "slug": "2602-perceptive-humanoid-parkour",
+  "post_number": 71,
+  "source_title": "Perceptive Humanoid Parkour: Chaining Dynamic Human Skills via Motion Matching",
+  "arxiv_id": "2602.15827",
+  "doi": "10.48550/arXiv.2602.15827",
+  "bibtex_key": null,
+  "domain": "robotics",
+  "subfields": [
+    "humanoid-robotics",
+    "whole-body-control",
+    "parkour",
+    "motion-matching",
+    "reinforcement-learning",
+    "sim-to-real",
+    "vision-based-control"
+  ],
+  "key_concepts": [
+    "perceptive-humanoid-parkour",
+    "motion-matching",
+    "long-horizon-skill-composition",
+    "atomic-human-skills",
+    "teacher-student-distillation",
+    "DAgger-plus-RL",
+    "depth-based-policy",
+    "autonomous-skill-selection",
+    "Unitree-G1",
+    "zero-shot-sim-to-real"
+  ],
+  "methodology": [
+    "OmniRetarget",
+    "motion-matching",
+    "nearest-neighbor-search",
+    "kinematic-reference-synthesis",
+    "RL-motion-tracking",
+    "privileged-teacher-policy",
+    "DAgger",
+    "PPO",
+    "depth-rendering",
+    "domain-randomization",
+    "teacher-student-distillation"
+  ],
+  "taxonomy_primary": "robotics/brain/rl-policy",
+  "taxonomy_secondary": [
+    "robotics/body/humanoid",
+    "robotics/perception/depth"
+  ],
+  "ai_summary": {
+    "one_liner": "PHP composes retargeted human parkour skills with motion matching and distills privileged RL experts into one depth-based Unitree G1 policy for autonomous long-horizon humanoid parkour.",
+    "problem": "Humanoid parkour needs dynamic whole-body skills, perception-driven timing, and long-horizon skill transitions, but reward shaping alone struggles to discover arm-supported climbing and isolated human motion clips do not teach when and how to transition.",
+    "solution": "Retarget atomic human parkour skills with OmniRetarget, synthesize obstacle-adaptive long-horizon references via motion matching, train privileged single-skill motion-tracking teachers, then distill them into a single depth-conditioned student with DAgger plus PPO.",
+    "key_result": "On Unitree G1 hardware, PHP climbs a 1.25 m wall in 3.63 s, performs cat/speed vaults near 3 m/s, adapts to about 0.5 m real-time obstacle displacement, and in simulation reports 0.95-1.00 success across 36/58/76 cm obstacles at 1.0 m/s and 2.0 m/s.",
+    "limitations": [
+      "The pipeline currently lacks semantic scene understanding and richer conditioning such as language.",
+      "Real-world capability is constrained by a short-range, narrow-field-of-view depth camera at high running speed, causing perceptual ambiguity when obstacles appear too late.",
+      "The hardware lacks sufficiently strong hands or grippers for edge/bar interactions, so beyond-height climbing and hanging maneuvers are not tested."
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "재현성 관점: 결과는 Unitree G1, OmniRetarget, 고속 simulation, 대규모 parallel rollout, real hardware tuning이 맞물린 system result다. 외부 연구실에서 같은 숫자를 재현하려면 motion library와 하드웨어 setup 차이를 함께 봐야 한다.",
+      "source": "ai_analysis",
+      "relates_to": [
+        "Unitree-G1",
+        "OmniRetarget"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target": "2509-omniretarget-interaction-preserving-retargeting",
+      "type": "usesMethodIn",
+      "strength": "foundational"
+    },
+    {
+      "target": "2605-rldx-1",
+      "type": "sharesTopicWith",
+      "strength": "tangential"
+    }
+  ],
+  "source_author": "Zhen Wu et al.",
+  "source_date": "2026-05-06",
+  "published_at": "2026-06-18T14:28:47+09:00"
+}
