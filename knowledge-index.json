@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-18T05:33:41.159Z",
-  "total_papers": 45,
+  "generated_at": "2026-06-18T06:28:28.357Z",
+  "total_papers": 46,
   "papers_with_memos": 2,
-  "papers_with_gaps": 43,
+  "papers_with_gaps": 44,
   "memo_index": {
     "VLA": [
       "2603-capx-coding-agents-manipulation"
@@ -53,6 +53,18 @@
       {
         "slug": "2512-osmo-tactile-glove",
         "question": "IK retargeting이 Ability Hand 관절 구조 기반으로 설계돼, 관절 수·형태가 크게 다른 로봇 손으로 확장 시 IK 재설계가 필요하다.",
+        "source": "ai_analysis"
+      }
+    ],
+    "domain-randomization": [
+      {
+        "slug": "2512-sim2real-humanoid-locomotion-15min",
+        "question": "재현성 관점: “15분”은 알고리즘 하나의 속도가 아니라 simulator throughput, reward/curriculum, domain randomization, normalization, action bound, hardware setup이 모두 맞물린 system-level 숫자다. 다른 연구실이 같은 속도를 얻으려면 코드뿐 아니라 시뮬레이터와 로봇 파라미터까지 함께 맞춰야 한다.",
+        "source": "ai_analysis"
+      },
+      {
+        "slug": "2512-sim2real-humanoid-locomotion-15min",
+        "question": "재현성 관점: “15분”은 알고리즘 하나의 속도가 아니라 simulator throughput, reward/curriculum, domain randomization, normalization, action bound, hardware setup이 모두 맞물린 system-level 숫자다. 다른 연구실이 같은 속도를 얻으려면 코드뿐 아니라 시뮬레이터와 로봇 파라미터까지 함께 맞춰야 한다.",
         "source": "ai_analysis"
       }
     ],
@@ -714,6 +726,38 @@
         "inverse_of": null
       },
       {
+        "from": "2512-sim2real-humanoid-locomotion-15min",
+        "to": "2602-perceptive-humanoid-parkour",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2512-sim2real-humanoid-locomotion-15min",
+        "to": "2509-omniretarget-interaction-preserving-retargeting",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2512-sim2real-humanoid-locomotion-15min",
+        "to": "2506-exostart",
+        "predicate": "sharesGoalWith",
+        "strength": "direct",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2512-sim2real-humanoid-locomotion-15min",
+        "to": "2303-diffusion-policy",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
         "from": "2512-unitachand",
         "to": "2409-3dtactile-dex",
         "predicate": "sharesTopicWith",
@@ -1234,7 +1278,7 @@
         "inverse_of": null
       }
     ],
-    "total_edges": 145
+    "total_edges": 149
   },
   "paper_list": [
     {
@@ -2097,6 +2141,30 @@
         "zero-shot-sim-to-real"
       ],
       "one_liner": "PHP composes retargeted human parkour skills with motion matching and distills privileged RL experts into one depth-based Unitree G1 policy for autonomous long-horizon humanoid parkour.",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2512-sim2real-humanoid-locomotion-15min",
+      "post_number": 72,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/brain/rl-policy",
+      "key_concepts": [
+        "FastSAC",
+        "FastTD3",
+        "off-policy-RL",
+        "humanoid-locomotion",
+        "sim-to-real",
+        "massively-parallel-simulation",
+        "domain-randomization",
+        "minimalist-reward-design",
+        "Unitree-G1",
+        "Booster-T1",
+        "whole-body-tracking",
+        "RTX-4090"
+      ],
+      "one_liner": "FastSAC/FastTD3 make sim-to-real humanoid locomotion iteration a minutes-scale loop: 15-minute training on one RTX 4090 for Unitree G1 and Booster T1 locomotion under strong domain randomization.",
       "has_memo": false,
       "has_gaps": true,
       "memo_preview": null

@@ -1,0 +1,96 @@
+{
+  "slug": "2512-sim2real-humanoid-locomotion-15min",
+  "post_number": 72,
+  "source_title": "Learning Sim-to-Real Humanoid Locomotion in 15 Minutes",
+  "arxiv_id": "2512.01996",
+  "doi": "10.48550/arXiv.2512.01996",
+  "bibtex_key": "seo2025sim2real15min",
+  "domain": "robotics",
+  "subfields": [
+    "humanoid-robotics",
+    "reinforcement-learning",
+    "sim-to-real",
+    "locomotion",
+    "whole-body-control",
+    "parallel-simulation"
+  ],
+  "key_concepts": [
+    "FastSAC",
+    "FastTD3",
+    "off-policy-RL",
+    "humanoid-locomotion",
+    "sim-to-real",
+    "massively-parallel-simulation",
+    "domain-randomization",
+    "minimalist-reward-design",
+    "Unitree-G1",
+    "Booster-T1",
+    "whole-body-tracking",
+    "RTX-4090"
+  ],
+  "methodology": [
+    "FastSAC",
+    "FastTD3",
+    "off-policy-reinforcement-learning",
+    "massively-parallel-simulation",
+    "joint-limit-aware-action-bounds",
+    "observation-normalization",
+    "layer-normalization",
+    "domain-randomization",
+    "automatic-action-rate-curriculum",
+    "minimal-reward-design"
+  ],
+  "taxonomy_primary": "robotics/brain/rl-policy",
+  "taxonomy_secondary": [
+    "robotics/body/humanoid",
+    "robotics/simulation/sim-to-real"
+  ],
+  "ai_summary": {
+    "one_liner": "FastSAC/FastTD3 make sim-to-real humanoid locomotion iteration a minutes-scale loop: 15-minute training on one RTX 4090 for Unitree G1 and Booster T1 locomotion under strong domain randomization.",
+    "problem": "Massively parallel simulation can train robot policies quickly, but humanoid sim-to-real remains slow because high-dimensional control, strong domain randomization, terrain variation, and reward tuning make exploration unstable and sample-inefficient.",
+    "solution": "Scale off-policy RL variants FastSAC and FastTD3 with carefully chosen normalization, critic/exploration hyperparameters, joint-limit-aware action bounds, simple rewards, domain randomization, and action-rate curriculum.",
+    "key_result": "The recipe trains full humanoid locomotion policies for Unitree G1 and Booster T1 in 15 minutes on a single RTX 4090, while whole-body tracking experiments with 4xL40s and 16,384 environments show FastSAC/FastTD3 reaching motion tracking performance faster than PPO.",
+    "limitations": [
+      "The reported fast locomotion recipe is focused on locomotion and whole-body tracking, not contact-rich manipulation.",
+      "Whole-body tracking speedups use 4xL40s GPUs rather than a single consumer GPU.",
+      "The approach still depends on careful implementation choices in simulation, domain randomization, and reward/curriculum design."
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "재현성 관점: “15분”은 알고리즘 하나의 속도가 아니라 simulator throughput, reward/curriculum, domain randomization, normalization, action bound, hardware setup이 모두 맞물린 system-level 숫자다. 다른 연구실이 같은 속도를 얻으려면 코드뿐 아니라 시뮬레이터와 로봇 파라미터까지 함께 맞춰야 한다.",
+      "source": "ai_analysis",
+      "relates_to": [
+        "domain-randomization",
+        "domain-randomization"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target": "2602-perceptive-humanoid-parkour",
+      "type": "sharesTopicWith",
+      "strength": "tangential"
+    },
+    {
+      "target": "2509-omniretarget-interaction-preserving-retargeting",
+      "type": "sharesTopicWith",
+      "strength": "tangential"
+    },
+    {
+      "target": "2506-exostart",
+      "type": "sharesGoalWith",
+      "strength": "direct"
+    },
+    {
+      "target": "2303-diffusion-policy",
+      "type": "sharesTopicWith",
+      "strength": "tangential"
+    }
+  ],
+  "source_author": "Younggyo Seo et al.",
+  "source_date": "2025-12-01",
+  "published_at": "2026-06-18T15:23:09+09:00"
+}
