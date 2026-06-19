@@ -1,0 +1,108 @@
+{
+  "slug": "2505-egodex-egocentric-dexterous-video",
+  "post_number": 76,
+  "source_title": "EgoDex: Learning Dexterous Manipulation from Large-Scale Egocentric Video",
+  "arxiv_id": "2505.11709",
+  "doi": null,
+  "bibtex_key": null,
+  "domain": "robotics",
+  "subfields": [
+    "dexterous-manipulation",
+    "egocentric-video",
+    "imitation-learning",
+    "robot-learning-datasets",
+    "hand-pose-tracking"
+  ],
+  "key_concepts": [
+    "egodex",
+    "egocentric-human-video",
+    "dexterous-manipulation",
+    "apple-vision-pro",
+    "3d-hand-pose",
+    "language-annotation",
+    "camera-extrinsics",
+    "trajectory-prediction",
+    "inverse-dynamics",
+    "visual-goal-conditioning",
+    "best-of-k-evaluation",
+    "robot-data-scaling"
+  ],
+  "methodology": [
+    "vision-pro-data-collection",
+    "arkit-hand-tracking",
+    "bimanual-skeletal-action-representation",
+    "transformer-imitation-learning",
+    "behavior-cloning",
+    "denoising-diffusion-policy",
+    "flow-matching-policy",
+    "held-out-test-benchmark"
+  ],
+  "taxonomy_primary": "robotics/hand/dexterous",
+  "taxonomy_secondary": [
+    "robotics/brain"
+  ],
+  "ai_summary": {
+    "one_liner": "EgoDex uses Apple Vision Pro to collect 829 hours of egocentric dexterous manipulation video with 3D hand-pose, language, and camera annotations, then turns it into trajectory-prediction and inverse-dynamics benchmarks.",
+    "problem": "Dexterous manipulation lacks Internet-scale, action-labeled data: robot teleoperation is expensive and raw egocentric video usually lacks precise 3D hand/action annotations.",
+    "solution": "Collect bare-hand Vision Pro demonstrations across 194 tabletop tasks with synchronized video, ARKit hand/body pose, camera calibration, language annotations, and benchmark models for 48D bimanual hand trajectory prediction.",
+    "key_result": "EgoDex contains 338k episodes, 829 hours, and 90M frames; visual goal-conditioning reduces average trajectory distance by 22% and final distance by 53%, while performance improves with dataset size.",
+    "limitations": [
+      "Scene diversity is limited to tabletop environments and can require later background or scene randomization.",
+      "Dexterous annotations are still model predictions and can be imperfect during occlusion or fast motion.",
+      "A robot must still bridge the embodiment gap from human hands and first-person video to deployable robot actions."
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "EgoDex의 scene diversity는 tabletop environment에 제한되어 있고, dexterous annotation은 Vision Pro/ARKit 기반 model prediction이므로 occlusion이나 매우 빠른 motion에서 불완전할 수 있다.",
+      "source": "author",
+      "relates_to": [
+        "egodex"
+      ]
+    },
+    {
+      "question": "EgoDex는 data scale의 병목을 크게 줄이지만, \"사람의 손이 할 수 있는 것\"과 \"현재 로봇 손이 안정적으로 실행할 수 있는 것\" 사이의 capability gap을 해결하지는 않는다.",
+      "source": "ai_analysis",
+      "relates_to": [
+        "egodex"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target": "2602-humanplus-humanoid-shadowing",
+      "type": "sharesTopicWith",
+      "note": "Both use large-scale egocentric human video as a path toward dexterous robot learning.",
+      "strength": "tangential"
+    },
+    {
+      "target": "2405-octo-generalist-policy",
+      "type": "sharesTopicWith",
+      "note": "Both center robot policy pretraining on large heterogeneous manipulation data, though EgoDex uses human egocentric video rather than robot trajectories.",
+      "strength": "tangential"
+    },
+    {
+      "target": "2303-diffusion-policy",
+      "type": "usesMethodIn",
+      "note": "EgoDex benchmarks evaluate denoising diffusion and flow-matching policy representations for trajectory prediction.",
+      "strength": "foundational"
+    },
+    {
+      "target": "2402-umi-universal-manipulation-interface",
+      "type": "sharesGoalWith",
+      "note": "Both target scalable manipulation data collection beyond direct robot teleoperation.",
+      "strength": "direct"
+    },
+    {
+      "target": "2605-dexterous-hand-intelligence-survey",
+      "type": "sharesTopicWith",
+      "note": "EgoDex is a large dataset/benchmark contribution for the dexterous hand intelligence landscape.",
+      "strength": "tangential"
+    }
+  ],
+  "source_author": "Ryan Hoque et al.",
+  "source_date": "2025-05-16",
+  "published_at": "2026-06-19T12:21:12+09:00"
+}
