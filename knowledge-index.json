@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-19T03:51:58.347Z",
-  "total_papers": 49,
+  "generated_at": "2026-06-26T01:43:48.965Z",
+  "total_papers": 50,
   "papers_with_memos": 2,
-  "papers_with_gaps": 47,
+  "papers_with_gaps": 48,
   "memo_index": {
     "VLA": [
       "2603-capx-coding-agents-manipulation"
@@ -18,7 +18,19 @@
     ]
   },
   "gap_index": {
+    "review": [
+      {
+        "slug": "1306-hallmarks-aging",
+        "question": "**AI 분석 한계**: 이 리뷰는 field-defining taxonomy로 강하지만, systematic review나 meta-analysis가 아니므로 각 hallmark의 상대적 근거 강도와 2013년 이후의 업데이트는 별도로 검토해야 한다.",
+        "source": "ai_analysis"
+      }
+    ],
     "taxonomy": [
+      {
+        "slug": "1306-hallmarks-aging",
+        "question": "**AI 분석 한계**: 이 리뷰는 field-defining taxonomy로 강하지만, systematic review나 meta-analysis가 아니므로 각 hallmark의 상대적 근거 강도와 2013년 이후의 업데이트는 별도로 검토해야 한다.",
+        "source": "ai_analysis"
+      },
       {
         "slug": "2501-humanoid-locomotion-manipulation-survey",
         "question": "**AI 분석 한계**: 이 서베이는 taxonomy와 방법론 비교가 강하지만, 빠르게 등장하는 frontier company stack과 실제 deployment cost를 같은 깊이로 비교하기는 어렵다.",
@@ -2394,6 +2406,31 @@
         "robot-data-scaling"
       ],
       "one_liner": "EgoDex uses Apple Vision Pro to collect 829 hours of egocentric dexterous manipulation video with 3D hand-pose, language, and camera annotations, then turns it into trajectory-prediction and inverse-dynamics benchmarks.",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "1306-hallmarks-aging",
+      "post_number": 78,
+      "domain": "biology",
+      "taxonomy_primary": "biology/aging",
+      "key_concepts": [
+        "genomic-instability",
+        "telomere-attrition",
+        "epigenetic-alterations",
+        "loss-of-proteostasis",
+        "deregulated-nutrient-sensing",
+        "mitochondrial-dysfunction",
+        "cellular-senescence",
+        "stem-cell-exhaustion",
+        "altered-intercellular-communication",
+        "healthspan",
+        "inflammaging",
+        "mTOR",
+        "sirtuins"
+      ],
+      "one_liner": "A canonical Cell review that organizes mammalian aging into nine mechanistic hallmarks and three functional layers to guide healthspan interventions.",
       "has_memo": false,
       "has_gaps": true,
       "memo_preview": null
