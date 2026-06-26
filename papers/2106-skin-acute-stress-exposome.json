@@ -1,0 +1,73 @@
+{
+  "slug": "2106-skin-acute-stress-exposome",
+  "post_number": 79,
+  "source_title": "Adult skin acute stress responses to short-term environmental and internal aggression from exposome factors",
+  "arxiv_id": null,
+  "doi": "10.1111/jdv.17432",
+  "bibtex_key": null,
+  "domain": "biology",
+  "subfields": [
+    "dermatology",
+    "skin-biology",
+    "exposome",
+    "stress-biology",
+    "environmental-health"
+  ],
+  "key_concepts": [
+    "skin-exposome",
+    "acute-stress-response",
+    "skin-barrier",
+    "trans-epidermal-water-loss",
+    "pigmentation",
+    "oxidative-stress",
+    "neuroendocrine-immune-axis",
+    "skin-microbiome",
+    "photoimmunosuppression",
+    "psychosocial-stress",
+    "sleep-deprivation",
+    "inflammaging"
+  ],
+  "methodology": [
+    "review",
+    "narrative-synthesis",
+    "mechanistic-synthesis",
+    "stressor-taxonomy",
+    "clinical-manifestation-map"
+  ],
+  "taxonomy_primary": "biology/dermatology",
+  "taxonomy_secondary": [
+    "biology/cell-biology",
+    "biology/aging"
+  ],
+  "ai_summary": {
+    "one_liner": "A JEADV review that maps short-term exposome stressors onto six adult skin functions and their biological and clinical consequences.",
+    "problem": "The chronic skin exposome and skin aging literature had been reviewed extensively, but short-term acute exposures were scattered across dermatology, immunology, neuroendocrinology, and cosmetic science.",
+    "solution": "The review organizes acute stress responses by six skin functions and then synthesizes individual environmental, internal, procedural, and pandemic-related stressors.",
+    "key_result": "The paper provides a practical stressor-to-function-to-manifestation map, with Table 1 linking solar radiation, pollution, weather, psychosocial stress, sleep deprivation, nutrition, hormonal variation, procedures, and mask use to mechanisms and clinical signs.",
+    "limitations": [
+      "The review is narrative rather than a systematic review or meta-analysis.",
+      "Evidence types vary widely across stressors, from human exposure studies to mouse models and ex vivo skin experiments.",
+      "Several acute manifestations overlap with delayed flares or chronic exposure backgrounds, making causal attribution difficult."
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "**AI 분석 한계**: 이 리뷰는 넓은 지형도를 잘 만들지만, 근거의 질과 연구 설계가 stressor마다 매우 달라서 각 축의 효과 크기를 직접 비교하면 과해석이 될 수 있다.",
+      "source": "ai_analysis",
+      "relates_to": []
+    }
+  ],
+  "relations": [
+    {
+      "target": "1306-hallmarks-aging",
+      "type": "sharesTopicWith",
+      "note": "Both reviews connect stress, damage responses, inflammation, tissue homeostasis, and aging-related biological decline, with this paper focusing specifically on acute skin exposome stress.",
+      "strength": "tangential"
+    }
+  ],
+  "source_author": "T. Passeron et al.",
+  "source_date": "2021-06-24T00:00:00Z",
+  "published_at": "2026-06-26T11:16:00+09:00"
+}

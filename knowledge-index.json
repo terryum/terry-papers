@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-26T01:43:48.965Z",
-  "total_papers": 50,
+  "generated_at": "2026-06-26T04:07:54.540Z",
+  "total_papers": 51,
   "papers_with_memos": 2,
-  "papers_with_gaps": 48,
+  "papers_with_gaps": 49,
   "memo_index": {
     "VLA": [
       "2603-capx-coding-agents-manipulation"
@@ -116,6 +116,14 @@
   },
   "knowledge_graph": {
     "edges": [
+      {
+        "from": "2106-skin-acute-stress-exposome",
+        "to": "1306-hallmarks-aging",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
+      },
       {
         "from": "2201-mano-hand-model",
         "to": "2407-stretchable-glove-hand-pose",
@@ -1453,7 +1461,7 @@
         "inverse_of": null
       }
     ],
-    "total_edges": 167
+    "total_edges": 168
   },
   "paper_list": [
     {
@@ -2431,6 +2439,30 @@
         "sirtuins"
       ],
       "one_liner": "A canonical Cell review that organizes mammalian aging into nine mechanistic hallmarks and three functional layers to guide healthspan interventions.",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2106-skin-acute-stress-exposome",
+      "post_number": 79,
+      "domain": "biology",
+      "taxonomy_primary": "biology/dermatology",
+      "key_concepts": [
+        "skin-exposome",
+        "acute-stress-response",
+        "skin-barrier",
+        "trans-epidermal-water-loss",
+        "pigmentation",
+        "oxidative-stress",
+        "neuroendocrine-immune-axis",
+        "skin-microbiome",
+        "photoimmunosuppression",
+        "psychosocial-stress",
+        "sleep-deprivation",
+        "inflammaging"
+      ],
+      "one_liner": "A JEADV review that maps short-term exposome stressors onto six adult skin functions and their biological and clinical consequences.",
       "has_memo": false,
       "has_gaps": true,
       "memo_preview": null
