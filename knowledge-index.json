@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-26T04:07:54.540Z",
-  "total_papers": 51,
+  "generated_at": "2026-06-30T03:59:59.648Z",
+  "total_papers": 52,
   "papers_with_memos": 2,
-  "papers_with_gaps": 49,
+  "papers_with_gaps": 50,
   "memo_index": {
     "VLA": [
       "2603-capx-coding-agents-manipulation"
@@ -191,6 +191,30 @@
       {
         "from": "2303-diffusion-policy",
         "to": "2602-habilis-vla-on-device",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2305-dexpbt",
+        "to": "2509-tactile-sensing-distribution",
+        "predicate": "sharesGoalWith",
+        "strength": "direct",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2305-dexpbt",
+        "to": "2407-tactile-skin-inhand-translation",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2305-dexpbt",
+        "to": "2605-dexterous-hand-intelligence-survey",
         "predicate": "sharesTopicWith",
         "strength": "tangential",
         "directional": false,
@@ -1461,7 +1485,7 @@
         "inverse_of": null
       }
     ],
-    "total_edges": 168
+    "total_edges": 171
   },
   "paper_list": [
     {
@@ -2463,6 +2487,27 @@
         "inflammaging"
       ],
       "one_liner": "A JEADV review that maps short-term exposome stressors onto six adult skin functions and their biological and clinical consequences.",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2305-dexpbt",
+      "post_number": 80,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/brain/rl-policy",
+      "key_concepts": [
+        "decentralized-PBT",
+        "Isaac-Gym",
+        "PPO",
+        "LSTM-policy",
+        "Allegro-Hand",
+        "Kuka-arm",
+        "dual-arm-manipulation",
+        "object-reposing",
+        "sim-to-real-gap"
+      ],
+      "one_liner": "Decentralized PBT on Isaac Gym scales PPO to Allegro hand-arm regrasping, throwing, and reorientation, enabling simulated 46-DoF dual-arm policies.",
       "has_memo": false,
       "has_gaps": true,
       "memo_preview": null
