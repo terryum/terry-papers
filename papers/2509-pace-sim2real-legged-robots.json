@@ -60,19 +60,54 @@
   "terry_memo_topics": [],
   "research_gaps": [
     {
-      "question": "- 저자들이 명시하듯 suspended setup의 excitation bandwidth는 유한하다. 구조 유연성이나 firmware filter가 해당 범위 안에서 강하게 나타나면 식별이 깨질 수 있다.\n- Temperature, wear, aging, firmware update, simulator change는 fitted parameter를 이동시킨다. 현재 방식은 이를 online으로 추적하지 않는다.\n- Contact compliance, series elasticity, bus-voltage/current limit, inverter switching을 아직 fit에 명시적으로 넣지 않았다.\n- PACE는 correct kinematics, high-bandwidth current control 또는 LTI에 가까운 drive, mild temperature dependence, 충분한 stiffness를 가정한다. 이 가정이 무너지면 fully online 또는 model-free adaptation이 더 적합할 수 있다.",
-      "source": "author",
+      "question": "Can compact joint-space identification remain sufficient for highly compliant, contact-rich, or deformable-terrain locomotion?",
+      "source": "author_and_ai_analysis",
       "relates_to": [
-        "PACE"
+        "contact-compliance",
+        "series-elasticity",
+        "deformable-terrain"
       ]
     },
     {
-      "question": "세 주요 플랫폼이 모두 point-foot PMSM 기반 quadruped이고, 핵심 policy는 blind locomotion이다. Humanoid, wheeled-legged robot, deformable contact, perception-heavy navigation까지 같은 $4n+1$ parameterization이 충분한지는 아직 독립적으로 검증되지 않았다.",
-      "source": "ai_analysis",
+      "question": "How should electrical constraints and power-electronics losses be co-identified with mechanical dynamics so that high-speed policies exploit the true hardware envelope safely?",
+      "source": "author",
       "relates_to": [
-        "blind-locomotion"
+        "bus-voltage",
+        "current-limits",
+        "inverter-switching",
+        "energy-efficiency"
+      ]
+    },
+    {
+      "question": "Can lightweight online adaptation track temperature, wear, aging, and firmware drift without sacrificing the interpretability and stability of the fitted model?",
+      "source": "author",
+      "relates_to": [
+        "online-adaptation",
+        "hardware-drift",
+        "system-identification"
       ]
     }
+  ],
+  "future_directions": [
+    "Combine CMA-ES with local gradient refinement in differentiable physics.",
+    "Add contact-parameter refinement using force sensing or force plates.",
+    "Fit bus-voltage, current-limit, and inverter-switching behavior jointly with mechanical parameters.",
+    "Model joint and foot compliance, link flexibility, and series elasticity explicitly.",
+    "Use lightweight online adaptation to track wear and temperature drift.",
+    "Extend the model with higher-order motion terms to capture bandwidth limits and smooth high-frequency locomotion."
+  ],
+  "next_reading": [
+    "2512-sim2real-humanoid-locomotion-15min",
+    "2602-perceptive-humanoid-parkour",
+    "2501-humanoid-locomotion-manipulation-survey"
+  ],
+  "survey_hooks": [
+    "legged robot sim-to-real",
+    "actuator-aware reinforcement learning",
+    "physics-grounded reward design",
+    "energy-efficient locomotion",
+    "robot system identification",
+    "dynamics randomization alternatives"
   ],
   "relations": [
     {

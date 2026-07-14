@@ -1,0 +1,142 @@
+{
+  "slug": "2409-affordance-flow-matching",
+  "post_number": 84,
+  "source_title": "Affordance-based Robot Manipulation with Flow Matching",
+  "arxiv_id": "2409.01083",
+  "doi": "10.48550/arXiv.2409.01083",
+  "bibtex_key": null,
+  "domain": "robotics",
+  "subfields": [
+    "robot-manipulation",
+    "visuomotor-policy",
+    "affordance-learning",
+    "imitation-learning",
+    "vision-language-models"
+  ],
+  "key_concepts": [
+    "affordance-based-manipulation",
+    "flow-matching-policy",
+    "text-conditioned-prompt-tuning",
+    "parameter-efficient-finetuning",
+    "visual-affordance-heatmap",
+    "multimodal-action-distribution",
+    "activities-of-daily-living",
+    "few-step-inference"
+  ],
+  "methodology": [
+    "deep-visual-prompt-tuning",
+    "frozen-vision-transformer",
+    "conditional-flow-matching",
+    "behavior-cloning",
+    "FiLM-conditioning",
+    "receding-horizon-control",
+    "real-robot-evaluation",
+    "cross-benchmark-comparison"
+  ],
+  "taxonomy_primary": "robotics/brain",
+  "taxonomy_secondary": [
+    "robotics/arm",
+    "robotics/brain/vla"
+  ],
+  "ai_summary": {
+    "one_liner": "The framework freezes a vision transformer, learns language-conditioned affordance prompts, and uses those heatmaps to condition a few-step flow-matching robot policy, reaching 0.82 real-world ADL success and 13.228 ms one-step trajectory inference.",
+    "problem": "Assistive manipulation needs instruction-aware scene affordances and multimodal robot trajectories, but full VLM finetuning is data- and parameter-heavy while diffusion policies require iterative denoising.",
+    "solution": "Insert learnable text prompts into a frozen ViT to predict relational affordance heatmaps, then condition a supervised flow-matching vector field that transports random waypoints into robot action trajectories.",
+    "key_result": "Deep prompt tuning uses 42.1M learnable parameters versus 153.8M for full finetuning, while a one-step CNN flow policy reaches 1.031 cm trajectory error in 13.228 ms and the full affordance-based system reaches 0.82 real-world ADL success versus 0.76 for Diffusion Policy.",
+    "limitations": [
+      "Background and camera-view shifts cause out-of-distribution failures in real-world experiments.",
+      "The real-robot evaluation is open-loop, so an initial failed grasp cannot be recovered.",
+      "Deterministic flow matching may underrepresent rare outcomes in stochastic or biased datasets.",
+      "The learned trajectories do not explicitly enforce second-order smoothness, torque feasibility, or minimum transport cost."
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "How can an affordance-conditioned flow policy remain robust to background changes, camera shifts, and unseen object layouts without collecting substantially more labeled real-world data?",
+      "source": "author",
+      "relates_to": [
+        "out-of-distribution-generalization",
+        "visual-affordance-heatmap",
+        "data-diversity"
+      ]
+    },
+    {
+      "question": "Can the full affordance-to-action system operate in closed loop and recover online from missed grasps or inaccurate early waypoints?",
+      "source": "author",
+      "relates_to": [
+        "closed-loop-control",
+        "error-recovery",
+        "receding-horizon-control"
+      ]
+    },
+    {
+      "question": "How should flow-matching policies incorporate stochastic outcomes, explicit dynamic feasibility, and optimal-transport objectives without losing few-step inference speed?",
+      "source": "author",
+      "relates_to": [
+        "stochastic-manipulation",
+        "trajectory-smoothness",
+        "optimal-transport"
+      ]
+    },
+    {
+      "question": "Does the two-stage affordance bottleneck still help across unseen tasks and robot embodiments, or does it constrain transfer compared with end-to-end VLA pretraining?",
+      "source": "ai_analysis",
+      "relates_to": [
+        "cross-embodiment-transfer",
+        "unseen-task-generalization",
+        "vision-language-action"
+      ]
+    }
+  ],
+  "future_directions": [
+    "Train on more diverse viewpoints, backgrounds, objects, and failure trajectories to improve out-of-distribution robustness.",
+    "Move the real-world ADL system from open-loop execution to closed-loop replanning with grasp recovery.",
+    "Add velocity, acceleration, torque, or geometric constraints directly to the flow objective.",
+    "Evaluate rectified-flow and optimal-transport variants that may preserve speed while reducing transport cost.",
+    "Test whether explicit affordance intermediates improve or limit cross-task and cross-embodiment scaling relative to end-to-end VLA models."
+  ],
+  "next_reading": [
+    "2303-diffusion-policy",
+    "2410-pi0-vla-flow-model",
+    "2505-forcevla-force-aware-moe"
+  ],
+  "survey_hooks": [
+    "flow matching for robot policies",
+    "affordance-based robot manipulation",
+    "parameter-efficient VLM adaptation",
+    "generative behavior cloning",
+    "assistive robotics datasets",
+    "diffusion versus flow policies"
+  ],
+  "relations": [
+    {
+      "target": "2303-diffusion-policy",
+      "type": "cites",
+      "note": "The paper directly uses Diffusion Policy with DDPM and DDIM as its principal generative behavior-cloning baseline and frames flow matching as a faster few-step alternative.",
+      "strength": "foundational"
+    },
+    {
+      "target": "2410-pi0-vla-flow-model",
+      "type": "cites",
+      "note": "The latest revision discusses pi_0 as an end-to-end VLA flow model, contrasting that route with an explicit affordance intermediate representation and low-level flow policy.",
+      "strength": "foundational"
+    },
+    {
+      "target": "2405-octo-generalist-policy",
+      "type": "sharesGoalWith",
+      "note": "Both learn language-conditioned multi-task robot policies, while this work uses task-specific affordance heatmaps and Octo relies on broad transformer pretraining with a diffusion action head.",
+      "strength": "direct"
+    },
+    {
+      "target": "2505-forcevla-force-aware-moe",
+      "type": "sharesTopicWith",
+      "note": "Both combine vision-language conditioning with flow-based robot action generation; ForceVLA adds force-torque sensing whereas this work emphasizes visual affordances and parameter-efficient prompt tuning.",
+      "strength": "tangential"
+    }
+  ],
+  "source_author": "Fan Zhang and Michael Gienger",
+  "source_date": "2024-09-02",
+  "published_at": "2026-07-14T13:48:48+09:00"
+}

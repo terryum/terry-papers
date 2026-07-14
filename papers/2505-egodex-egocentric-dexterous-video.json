@@ -56,19 +56,42 @@
   "terry_memo_topics": [],
   "research_gaps": [
     {
-      "question": "EgoDex의 scene diversity는 tabletop environment에 제한되어 있고, dexterous annotation은 Vision Pro/ARKit 기반 model prediction이므로 occlusion이나 매우 빠른 motion에서 불완전할 수 있다.",
+      "question": "How can large egocentric human-video datasets be aligned with robot embodiments without losing dexterous contact and hand-object interaction detail?",
       "source": "author",
       "relates_to": [
-        "egodex"
+        "human-to-robot-transfer",
+        "embodiment-gap",
+        "dexterous-manipulation"
       ]
     },
     {
-      "question": "EgoDex는 data scale의 병목을 크게 줄이지만, \"사람의 손이 할 수 있는 것\"과 \"현재 로봇 손이 안정적으로 실행할 수 있는 것\" 사이의 capability gap을 해결하지는 않는다.",
+      "question": "Can Vision Pro-style passive data collection generalize beyond tabletop household tasks to cluttered, mobile, and multi-room manipulation?",
       "source": "ai_analysis",
       "relates_to": [
-        "egodex"
+        "scene-diversity",
+        "data-scaling",
+        "robot-learning-datasets"
       ]
     }
+  ],
+  "future_directions": [
+    "Combine EgoDex-scale human video with smaller robot datasets to learn embodiment-aligned dexterous policies.",
+    "Study retargeting and representation learning methods that preserve object contact and fingertip-level dexterity.",
+    "Use EgoDex as a source for egocentric world models and goal-conditioned manipulation priors.",
+    "Expand passive data collection beyond tabletop scenes and evaluate how much scene diversity matters relative to behavior diversity."
+  ],
+  "next_reading": [
+    "2602-humanplus-humanoid-shadowing",
+    "2405-octo-generalist-policy",
+    "2303-diffusion-policy",
+    "2402-umi-universal-manipulation-interface",
+    "2605-dexterous-hand-intelligence-survey"
+  ],
+  "survey_hooks": [
+    "dexterous-hand-datasets",
+    "egocentric-video-for-robot-learning",
+    "human-to-robot-transfer",
+    "robot-data-scaling"
   ],
   "relations": [
     {

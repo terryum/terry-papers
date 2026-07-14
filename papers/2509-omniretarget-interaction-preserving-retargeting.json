@@ -59,12 +59,47 @@
   "terry_memo_topics": [],
   "research_gaps": [
     {
-      "question": "재현성 한계: 결과는 Unitree G1, MoCap/OMOMO/LAFAN1, 시뮬레이션/하드웨어 파이프라인이 모두 맞물려 나온다. 다른 연구실이 동일한 hardware evaluation과 retargeting quality metric을 맞추기는 쉽지 않다.",
+      "question": "Can interaction-preserving retargeting remain stable when the source motion is extracted from noisy monocular video rather than clean motion capture?",
+      "source": "author",
+      "relates_to": [
+        "motion-retargeting",
+        "video-to-humanoid"
+      ]
+    },
+    {
+      "question": "How should whole-trajectory optimization and RL curriculum be coupled for the remaining high-difficulty agile motions?",
+      "source": "author",
+      "relates_to": [
+        "trajectory-optimization",
+        "curriculum-learning"
+      ]
+    },
+    {
+      "question": "Can the interaction mesh abstraction generalize from rigid object/terrain contacts to deformable, multi-object, or tactile-rich manipulation?",
       "source": "ai_analysis",
       "relates_to": [
-        "Unitree-G1"
+        "contact-rich-manipulation",
+        "tactile-manipulation"
       ]
     }
+  ],
+  "future_directions": [
+    "Jointly optimize entire trajectories instead of solving only frame by frame, especially for noisy video-derived sources.",
+    "Combine interaction-preserving retargeting with curriculum or residual RL for motions that are too difficult for the current minimal policy formulation.",
+    "Standardize open benchmarks for humanoid object-terrain interaction so retargeting quality and downstream policy robustness can be compared across labs.",
+    "Extend the interaction mesh to richer contact modalities, including deformable objects and tactile feedback."
+  ],
+  "next_reading": [
+    "2605-rldx-1",
+    "2512-osmo-tactile-glove",
+    "2206-global-planning-contact"
+  ],
+  "survey_hooks": [
+    "humanoid whole-body control",
+    "human-to-robot motion retargeting",
+    "loco-manipulation data generation",
+    "sim-to-real humanoid RL",
+    "physical AI data bottlenecks"
   ],
   "relations": [
     {

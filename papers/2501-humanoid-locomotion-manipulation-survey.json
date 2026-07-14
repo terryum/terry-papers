@@ -50,12 +50,34 @@
   "terry_memo_topics": [],
   "research_gaps": [
     {
-      "question": "**AI 분석 한계**: 이 서베이는 taxonomy와 방법론 비교가 강하지만, 빠르게 등장하는 frontier company stack과 실제 deployment cost를 같은 깊이로 비교하기는 어렵다.",
+      "question": "Unified locomotion-manipulation policy evaluation remains weak.",
+      "source": "ai_analysis",
+      "relates_to": []
+    },
+    {
+      "question": "Whole-body tactile sensing is still not integrated into most humanoid learning pipelines.",
       "source": "ai_analysis",
       "relates_to": [
-        "taxonomy"
+        "tactile-sensing"
+      ]
+    },
+    {
+      "question": "Foundation models need safer low-level grounding for unstable humanoid bodies.",
+      "source": "ai_analysis",
+      "relates_to": [
+        "foundation-models"
       ]
     }
+  ],
+  "future_directions": [
+    "Hybrid model-based and learning-based loco-manipulation stacks.",
+    "Large-scale humanoid data pipelines that bridge human motion and robot embodiment gaps.",
+    "Tactile-rich evaluation for physical interaction tasks."
+  ],
+  "next_reading": [],
+  "survey_hooks": [
+    "humanoid-revolution",
+    "robot-hand-tactile-sensor"
   ],
   "relations": [
     {

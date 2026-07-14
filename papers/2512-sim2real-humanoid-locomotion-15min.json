@@ -60,13 +60,50 @@
   "terry_memo_topics": [],
   "research_gaps": [
     {
-      "question": "재현성 관점: “15분”은 알고리즘 하나의 속도가 아니라 simulator throughput, reward/curriculum, domain randomization, normalization, action bound, hardware setup이 모두 맞물린 system-level 숫자다. 다른 연구실이 같은 속도를 얻으려면 코드뿐 아니라 시뮬레이터와 로봇 파라미터까지 함께 맞춰야 한다.",
+      "question": "Can minutes-scale off-policy sim-to-real training extend from locomotion and whole-body tracking to contact-rich loco-manipulation?",
       "source": "ai_analysis",
       "relates_to": [
-        "domain-randomization",
+        "humanoid-loco-manipulation",
+        "sim-to-real",
+        "contact-rich-control"
+      ]
+    },
+    {
+      "question": "Which parts of the FastSAC/FastTD3 recipe are robust across humanoid morphologies, actuators, simulators, and onboard compute budgets?",
+      "source": "ai_analysis",
+      "relates_to": [
+        "cross-embodiment",
+        "reproducibility",
         "domain-randomization"
       ]
+    },
+    {
+      "question": "Can off-policy humanoid RL be coupled with perception policies without losing the minutes-scale iteration loop?",
+      "source": "ai_analysis",
+      "relates_to": [
+        "vision-based-control",
+        "off-policy-RL",
+        "whole-body-control"
+      ]
     }
+  ],
+  "future_directions": [
+    "Test the FastSAC/FastTD3 recipe on loco-manipulation tasks where hands, payloads, and contact changes dominate the failure modes.",
+    "Ablate how much of the sim-to-real success comes from off-policy data reuse versus normalization, action bounds, action-rate curriculum, and reward simplification.",
+    "Benchmark the recipe across Unitree G1, Booster T1, H1-class platforms, and different simulators to separate algorithmic generality from platform-specific tuning.",
+    "Integrate onboard perception and terrain-aware commands while preserving high-throughput training."
+  ],
+  "next_reading": [
+    "2602-perceptive-humanoid-parkour",
+    "2509-omniretarget-interaction-preserving-retargeting",
+    "2506-exostart"
+  ],
+  "survey_hooks": [
+    "humanoid sim-to-real RL",
+    "off-policy RL for robot control",
+    "minutes-scale physical AI iteration",
+    "Unitree G1 locomotion",
+    "whole-body humanoid tracking"
   ],
   "relations": [
     {

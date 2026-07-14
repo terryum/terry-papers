@@ -60,13 +60,47 @@
   "terry_memo_topics": [],
   "research_gaps": [
     {
-      "question": "재현성 관점: 결과는 Unitree G1, OmniRetarget, 고속 simulation, 대규모 parallel rollout, real hardware tuning이 맞물린 system result다. 외부 연구실에서 같은 숫자를 재현하려면 motion library와 하드웨어 setup 차이를 함께 봐야 한다.",
+      "question": "Can a humanoid parkour policy reason semantically about obstacle affordances instead of relying mainly on depth geometry and velocity commands?",
+      "source": "author",
+      "relates_to": [
+        "semantic-scene-understanding",
+        "humanoid-parkour"
+      ]
+    },
+    {
+      "question": "How much of PHP's success transfers to robots with different hand strength, camera placement, field of view, and actuation limits?",
       "source": "ai_analysis",
       "relates_to": [
-        "Unitree-G1",
-        "OmniRetarget"
+        "sim-to-real",
+        "cross-embodiment"
+      ]
+    },
+    {
+      "question": "Can motion matching and interaction-preserving retargeting be combined with VLA-style task conditioning for user-directed parkour routes and style control?",
+      "source": "ai_analysis",
+      "relates_to": [
+        "motion-matching",
+        "VLA",
+        "language-conditioned-control"
       ]
     }
+  ],
+  "future_directions": [
+    "Add semantic scene understanding or language conditioning so the robot can choose among routes and styles beyond discrete velocity commands.",
+    "Improve depth sensing range, field of view, and latency robustness for high-speed approach decisions.",
+    "Test stronger hands or grippers for edge, rail, and bar interactions beyond wall climbing.",
+    "Benchmark cross-embodiment transfer of motion-matching reference libraries across humanoid platforms."
+  ],
+  "next_reading": [
+    "2509-omniretarget-interaction-preserving-retargeting",
+    "2605-rldx-1"
+  ],
+  "survey_hooks": [
+    "humanoid whole-body control",
+    "perceptive humanoid locomotion",
+    "human-motion priors for robot learning",
+    "motion matching for robotics",
+    "teacher-student sim-to-real RL"
   ],
   "relations": [
     {

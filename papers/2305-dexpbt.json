@@ -52,10 +52,54 @@
   "terry_memo_topics": [],
   "research_gaps": [
     {
-      "question": "PBT가 reward와 하이퍼파라미터를 잘 찾는 것은 보였지만, 그 결과가 domain randomization, tactile sensing, vision-only observation 같은 현실 전이 조건에서도 그대로 유지되는지는 별도 검증이 필요하다.",
+      "question": "Aggressive simulated hand-arm policies still need safe real-robot priors before deployment.",
+      "source": "ai_analysis",
+      "relates_to": []
+    },
+    {
+      "question": "The sim-to-real gap for high-DoF dual-arm dexterous manipulation remains open, especially with domain randomization added.",
+      "source": "ai_analysis",
+      "relates_to": [
+        "dexterous-manipulation"
+      ]
+    },
+    {
+      "question": "Dexterous RL results remain hard to compare across hands, sensors, task definitions, and compute budgets.",
       "source": "ai_analysis",
       "relates_to": []
     }
+  ],
+  "future_directions": [
+    "Combine decentralized PBT with domain randomization and tactile/vision sensing for real-hardware transfer.",
+    "Add Riemannian Motion Policies or Geometric Fabrics as safety priors for aggressive dexterous policies.",
+    "Use PBT-style outer loops to tune reward schedules and curricula for broader bimanual dexterity benchmarks."
+  ],
+  "next_reading": [
+    {
+      "title": "DeXtreme: Transfer of Agile In-hand Manipulation from Simulation to Reality",
+      "url": "https://arxiv.org/abs/2210.13702",
+      "reason": "Closest direct predecessor: Allegro Hand, Isaac Gym, sim-to-real reorientation, and shared authorship."
+    },
+    {
+      "title": "Population Based Training of Neural Networks",
+      "url": "https://arxiv.org/abs/1711.09846",
+      "reason": "Foundational PBT method that DexPBT adapts into a decentralized robotic RL outer loop."
+    },
+    {
+      "title": "Learning Dexterous In-Hand Manipulation",
+      "url": "https://arxiv.org/abs/1808.00177",
+      "reason": "Dactyl baseline lineage for large-scale simulation-trained dexterous manipulation."
+    },
+    {
+      "title": "Isaac Gym: High Performance GPU-Based Physics Simulation For Robot Learning",
+      "url": "https://arxiv.org/abs/2108.10470",
+      "reason": "Simulation infrastructure that enables DexPBT's high-throughput policy training."
+    }
+  ],
+  "survey_hooks": [
+    "dexterous-hand-rl",
+    "sim-to-real-dexterous-manipulation",
+    "gpu-parallel-robot-learning"
   ],
   "relations": [
     {

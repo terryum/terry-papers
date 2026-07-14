@@ -48,6 +48,9 @@
   "terry_memos": [],
   "terry_memo_topics": [],
   "research_gaps": [],
+  "future_directions": [],
+  "next_reading": [],
+  "survey_hooks": [],
   "relations": [
     {
       "target": "2410-pi0-vla-flow-model",

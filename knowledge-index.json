@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-14T04:02:46.815Z",
-  "total_papers": 54,
+  "generated_at": "2026-07-14T05:13:19.677Z",
+  "total_papers": 55,
   "papers_with_memos": 2,
-  "papers_with_gaps": 52,
+  "papers_with_gaps": 53,
   "memo_index": {
     "VLA": [
       "2603-capx-coding-agents-manipulation"
@@ -18,61 +18,301 @@
     ]
   },
   "gap_index": {
-    "review": [
+    "healthspan": [
       {
         "slug": "1306-hallmarks-aging",
-        "question": "**AI 분석 한계**: 이 리뷰는 field-defining taxonomy로 강하지만, systematic review나 meta-analysis가 아니므로 각 hallmark의 상대적 근거 강도와 2013년 이후의 업데이트는 별도로 검토해야 한다.",
+        "question": "Translate mouse proof-of-principle interventions into human healthspan endpoints with acceptable side effects.",
         "source": "ai_analysis"
       }
     ],
-    "taxonomy": [
+    "psychosocial-stress": [
       {
-        "slug": "1306-hallmarks-aging",
-        "question": "**AI 분석 한계**: 이 리뷰는 field-defining taxonomy로 강하지만, systematic review나 meta-analysis가 아니므로 각 hallmark의 상대적 근거 강도와 2013년 이후의 업데이트는 별도로 검토해야 한다.",
+        "slug": "2106-skin-acute-stress-exposome",
+        "question": "Separate the effects of simultaneous acute stressors such as UV, pollution, humidity, sleep deprivation, and psychosocial stress.",
+        "source": "ai_analysis"
+      }
+    ],
+    "sleep-deprivation": [
+      {
+        "slug": "2106-skin-acute-stress-exposome",
+        "question": "Separate the effects of simultaneous acute stressors such as UV, pollution, humidity, sleep deprivation, and psychosocial stress.",
+        "source": "ai_analysis"
+      }
+    ],
+    "acute-stress-response": [
+      {
+        "slug": "2106-skin-acute-stress-exposome",
+        "question": "Define when protective acute stress responses transition into chronic inflammation, skin aging, or disease flare.",
+        "source": "ai_analysis"
+      }
+    ],
+    "exposome": [
+      {
+        "slug": "2106-skin-acute-stress-exposome",
+        "question": "Model individual differences from phototype, genome, chronic exposome background, skin disease history, and microbiome state.",
+        "source": "ai_analysis"
+      }
+    ],
+    "dexterous-manipulation": [
+      {
+        "slug": "2305-dexpbt",
+        "question": "The sim-to-real gap for high-DoF dual-arm dexterous manipulation remains open, especially with domain randomization added.",
         "source": "ai_analysis"
       },
+      {
+        "slug": "2505-egodex-egocentric-dexterous-video",
+        "question": "How can large egocentric human-video datasets be aligned with robot embodiments without losing dexterous contact and hand-object interaction detail?",
+        "source": "author"
+      }
+    ],
+    "out-of-distribution-generalization": [
+      {
+        "slug": "2409-affordance-flow-matching",
+        "question": "How can an affordance-conditioned flow policy remain robust to background changes, camera shifts, and unseen object layouts without collecting substantially more labeled real-world data?",
+        "source": "author"
+      }
+    ],
+    "visual-affordance-heatmap": [
+      {
+        "slug": "2409-affordance-flow-matching",
+        "question": "How can an affordance-conditioned flow policy remain robust to background changes, camera shifts, and unseen object layouts without collecting substantially more labeled real-world data?",
+        "source": "author"
+      }
+    ],
+    "data-diversity": [
+      {
+        "slug": "2409-affordance-flow-matching",
+        "question": "How can an affordance-conditioned flow policy remain robust to background changes, camera shifts, and unseen object layouts without collecting substantially more labeled real-world data?",
+        "source": "author"
+      }
+    ],
+    "closed-loop-control": [
+      {
+        "slug": "2409-affordance-flow-matching",
+        "question": "Can the full affordance-to-action system operate in closed loop and recover online from missed grasps or inaccurate early waypoints?",
+        "source": "author"
+      }
+    ],
+    "error-recovery": [
+      {
+        "slug": "2409-affordance-flow-matching",
+        "question": "Can the full affordance-to-action system operate in closed loop and recover online from missed grasps or inaccurate early waypoints?",
+        "source": "author"
+      }
+    ],
+    "receding-horizon-control": [
+      {
+        "slug": "2409-affordance-flow-matching",
+        "question": "Can the full affordance-to-action system operate in closed loop and recover online from missed grasps or inaccurate early waypoints?",
+        "source": "author"
+      }
+    ],
+    "stochastic-manipulation": [
+      {
+        "slug": "2409-affordance-flow-matching",
+        "question": "How should flow-matching policies incorporate stochastic outcomes, explicit dynamic feasibility, and optimal-transport objectives without losing few-step inference speed?",
+        "source": "author"
+      }
+    ],
+    "trajectory-smoothness": [
+      {
+        "slug": "2409-affordance-flow-matching",
+        "question": "How should flow-matching policies incorporate stochastic outcomes, explicit dynamic feasibility, and optimal-transport objectives without losing few-step inference speed?",
+        "source": "author"
+      }
+    ],
+    "optimal-transport": [
+      {
+        "slug": "2409-affordance-flow-matching",
+        "question": "How should flow-matching policies incorporate stochastic outcomes, explicit dynamic feasibility, and optimal-transport objectives without losing few-step inference speed?",
+        "source": "author"
+      }
+    ],
+    "cross-embodiment-transfer": [
+      {
+        "slug": "2409-affordance-flow-matching",
+        "question": "Does the two-stage affordance bottleneck still help across unseen tasks and robot embodiments, or does it constrain transfer compared with end-to-end VLA pretraining?",
+        "source": "ai_analysis"
+      }
+    ],
+    "unseen-task-generalization": [
+      {
+        "slug": "2409-affordance-flow-matching",
+        "question": "Does the two-stage affordance bottleneck still help across unseen tasks and robot embodiments, or does it constrain transfer compared with end-to-end VLA pretraining?",
+        "source": "ai_analysis"
+      }
+    ],
+    "vision-language-action": [
+      {
+        "slug": "2409-affordance-flow-matching",
+        "question": "Does the two-stage affordance bottleneck still help across unseen tasks and robot embodiments, or does it constrain transfer compared with end-to-end VLA pretraining?",
+        "source": "ai_analysis"
+      }
+    ],
+    "tactile-sensing": [
       {
         "slug": "2501-humanoid-locomotion-manipulation-survey",
-        "question": "**AI 분석 한계**: 이 서베이는 taxonomy와 방법론 비교가 강하지만, 빠르게 등장하는 frontier company stack과 실제 deployment cost를 같은 깊이로 비교하기는 어렵다.",
+        "question": "Whole-body tactile sensing is still not integrated into most humanoid learning pipelines.",
         "source": "ai_analysis"
-      }
-    ],
-    "egodex": [
-      {
-        "slug": "2505-egodex-egocentric-dexterous-video",
-        "question": "EgoDex의 scene diversity는 tabletop environment에 제한되어 있고, dexterous annotation은 Vision Pro/ARKit 기반 model prediction이므로 occlusion이나 매우 빠른 motion에서 불완전할 수 있다.",
-        "source": "author"
       },
       {
-        "slug": "2505-egodex-egocentric-dexterous-video",
-        "question": "EgoDex는 data scale의 병목을 크게 줄이지만, \"사람의 손이 할 수 있는 것\"과 \"현재 로봇 손이 안정적으로 실행할 수 있는 것\" 사이의 capability gap을 해결하지는 않는다.",
+        "slug": "2605-dexterous-hand-intelligence-survey",
+        "question": "Hardware, tactile sensing, and policy learning are often optimized separately.",
         "source": "ai_analysis"
       }
     ],
-    "Unitree-G1": [
+    "foundation-models": [
+      {
+        "slug": "2501-humanoid-locomotion-manipulation-survey",
+        "question": "Foundation models need safer low-level grounding for unstable humanoid bodies.",
+        "source": "ai_analysis"
+      }
+    ],
+    "human-to-robot-transfer": [
+      {
+        "slug": "2505-egodex-egocentric-dexterous-video",
+        "question": "How can large egocentric human-video datasets be aligned with robot embodiments without losing dexterous contact and hand-object interaction detail?",
+        "source": "author"
+      }
+    ],
+    "embodiment-gap": [
+      {
+        "slug": "2505-egodex-egocentric-dexterous-video",
+        "question": "How can large egocentric human-video datasets be aligned with robot embodiments without losing dexterous contact and hand-object interaction detail?",
+        "source": "author"
+      }
+    ],
+    "scene-diversity": [
+      {
+        "slug": "2505-egodex-egocentric-dexterous-video",
+        "question": "Can Vision Pro-style passive data collection generalize beyond tabletop household tasks to cluttered, mobile, and multi-room manipulation?",
+        "source": "ai_analysis"
+      }
+    ],
+    "data-scaling": [
+      {
+        "slug": "2505-egodex-egocentric-dexterous-video",
+        "question": "Can Vision Pro-style passive data collection generalize beyond tabletop household tasks to cluttered, mobile, and multi-room manipulation?",
+        "source": "ai_analysis"
+      }
+    ],
+    "robot-learning-datasets": [
+      {
+        "slug": "2505-egodex-egocentric-dexterous-video",
+        "question": "Can Vision Pro-style passive data collection generalize beyond tabletop household tasks to cluttered, mobile, and multi-room manipulation?",
+        "source": "ai_analysis"
+      }
+    ],
+    "motion-retargeting": [
       {
         "slug": "2509-omniretarget-interaction-preserving-retargeting",
-        "question": "재현성 한계: 결과는 Unitree G1, MoCap/OMOMO/LAFAN1, 시뮬레이션/하드웨어 파이프라인이 모두 맞물려 나온다. 다른 연구실이 동일한 hardware evaluation과 retargeting quality metric을 맞추기는 쉽지 않다.",
-        "source": "ai_analysis"
-      },
-      {
-        "slug": "2602-perceptive-humanoid-parkour",
-        "question": "재현성 관점: 결과는 Unitree G1, OmniRetarget, 고속 simulation, 대규모 parallel rollout, real hardware tuning이 맞물린 system result다. 외부 연구실에서 같은 숫자를 재현하려면 motion library와 하드웨어 setup 차이를 함께 봐야 한다.",
-        "source": "ai_analysis"
-      }
-    ],
-    "PACE": [
-      {
-        "slug": "2509-pace-sim2real-legged-robots",
-        "question": "- 저자들이 명시하듯 suspended setup의 excitation bandwidth는 유한하다. 구조 유연성이나 firmware filter가 해당 범위 안에서 강하게 나타나면 식별이 깨질 수 있다.\n- Temperature, wear, aging, firmware update, simulator change는 fitted parameter를 이동시킨다. 현재 방식은 이를 online으로 추적하지 않는다.\n- Contact compliance, series elasticity, bus-voltage/current limit, inverter switching을 아직 fit에 명시적으로 넣지 않았다.\n- PACE는 correct kinematics, high-bandwidth current control 또는 LTI에 가까운 drive, mild temperature dependence, 충분한 stiffness를 가정한다. 이 가정이 무너지면 fully online 또는 model-free adaptation이 더 적합할 수 있다.",
+        "question": "Can interaction-preserving retargeting remain stable when the source motion is extracted from noisy monocular video rather than clean motion capture?",
         "source": "author"
       }
     ],
-    "blind-locomotion": [
+    "video-to-humanoid": [
+      {
+        "slug": "2509-omniretarget-interaction-preserving-retargeting",
+        "question": "Can interaction-preserving retargeting remain stable when the source motion is extracted from noisy monocular video rather than clean motion capture?",
+        "source": "author"
+      }
+    ],
+    "trajectory-optimization": [
+      {
+        "slug": "2509-omniretarget-interaction-preserving-retargeting",
+        "question": "How should whole-trajectory optimization and RL curriculum be coupled for the remaining high-difficulty agile motions?",
+        "source": "author"
+      }
+    ],
+    "curriculum-learning": [
+      {
+        "slug": "2509-omniretarget-interaction-preserving-retargeting",
+        "question": "How should whole-trajectory optimization and RL curriculum be coupled for the remaining high-difficulty agile motions?",
+        "source": "author"
+      }
+    ],
+    "contact-rich-manipulation": [
+      {
+        "slug": "2509-omniretarget-interaction-preserving-retargeting",
+        "question": "Can the interaction mesh abstraction generalize from rigid object/terrain contacts to deformable, multi-object, or tactile-rich manipulation?",
+        "source": "ai_analysis"
+      }
+    ],
+    "tactile-manipulation": [
+      {
+        "slug": "2509-omniretarget-interaction-preserving-retargeting",
+        "question": "Can the interaction mesh abstraction generalize from rigid object/terrain contacts to deformable, multi-object, or tactile-rich manipulation?",
+        "source": "ai_analysis"
+      }
+    ],
+    "contact-compliance": [
       {
         "slug": "2509-pace-sim2real-legged-robots",
-        "question": "세 주요 플랫폼이 모두 point-foot PMSM 기반 quadruped이고, 핵심 policy는 blind locomotion이다. Humanoid, wheeled-legged robot, deformable contact, perception-heavy navigation까지 같은 $4n+1$ parameterization이 충분한지는 아직 독립적으로 검증되지 않았다.",
-        "source": "ai_analysis"
+        "question": "Can compact joint-space identification remain sufficient for highly compliant, contact-rich, or deformable-terrain locomotion?",
+        "source": "author_and_ai_analysis"
+      }
+    ],
+    "series-elasticity": [
+      {
+        "slug": "2509-pace-sim2real-legged-robots",
+        "question": "Can compact joint-space identification remain sufficient for highly compliant, contact-rich, or deformable-terrain locomotion?",
+        "source": "author_and_ai_analysis"
+      }
+    ],
+    "deformable-terrain": [
+      {
+        "slug": "2509-pace-sim2real-legged-robots",
+        "question": "Can compact joint-space identification remain sufficient for highly compliant, contact-rich, or deformable-terrain locomotion?",
+        "source": "author_and_ai_analysis"
+      }
+    ],
+    "bus-voltage": [
+      {
+        "slug": "2509-pace-sim2real-legged-robots",
+        "question": "How should electrical constraints and power-electronics losses be co-identified with mechanical dynamics so that high-speed policies exploit the true hardware envelope safely?",
+        "source": "author"
+      }
+    ],
+    "current-limits": [
+      {
+        "slug": "2509-pace-sim2real-legged-robots",
+        "question": "How should electrical constraints and power-electronics losses be co-identified with mechanical dynamics so that high-speed policies exploit the true hardware envelope safely?",
+        "source": "author"
+      }
+    ],
+    "inverter-switching": [
+      {
+        "slug": "2509-pace-sim2real-legged-robots",
+        "question": "How should electrical constraints and power-electronics losses be co-identified with mechanical dynamics so that high-speed policies exploit the true hardware envelope safely?",
+        "source": "author"
+      }
+    ],
+    "energy-efficiency": [
+      {
+        "slug": "2509-pace-sim2real-legged-robots",
+        "question": "How should electrical constraints and power-electronics losses be co-identified with mechanical dynamics so that high-speed policies exploit the true hardware envelope safely?",
+        "source": "author"
+      }
+    ],
+    "online-adaptation": [
+      {
+        "slug": "2509-pace-sim2real-legged-robots",
+        "question": "Can lightweight online adaptation track temperature, wear, aging, and firmware drift without sacrificing the interpretability and stability of the fitted model?",
+        "source": "author"
+      }
+    ],
+    "hardware-drift": [
+      {
+        "slug": "2509-pace-sim2real-legged-robots",
+        "question": "Can lightweight online adaptation track temperature, wear, aging, and firmware drift without sacrificing the interpretability and stability of the fitted model?",
+        "source": "author"
+      }
+    ],
+    "system-identification": [
+      {
+        "slug": "2509-pace-sim2real-legged-robots",
+        "question": "Can lightweight online adaptation track temperature, wear, aging, and firmware drift without sacrificing the interpretability and stability of the fitted model?",
+        "source": "author"
       }
     ],
     "skill-capture-glove": [
@@ -101,22 +341,116 @@
         "source": "ai_analysis"
       }
     ],
-    "domain-randomization": [
+    "humanoid-loco-manipulation": [
       {
         "slug": "2512-sim2real-humanoid-locomotion-15min",
-        "question": "재현성 관점: “15분”은 알고리즘 하나의 속도가 아니라 simulator throughput, reward/curriculum, domain randomization, normalization, action bound, hardware setup이 모두 맞물린 system-level 숫자다. 다른 연구실이 같은 속도를 얻으려면 코드뿐 아니라 시뮬레이터와 로봇 파라미터까지 함께 맞춰야 한다.",
-        "source": "ai_analysis"
-      },
-      {
-        "slug": "2512-sim2real-humanoid-locomotion-15min",
-        "question": "재현성 관점: “15분”은 알고리즘 하나의 속도가 아니라 simulator throughput, reward/curriculum, domain randomization, normalization, action bound, hardware setup이 모두 맞물린 system-level 숫자다. 다른 연구실이 같은 속도를 얻으려면 코드뿐 아니라 시뮬레이터와 로봇 파라미터까지 함께 맞춰야 한다.",
+        "question": "Can minutes-scale off-policy sim-to-real training extend from locomotion and whole-body tracking to contact-rich loco-manipulation?",
         "source": "ai_analysis"
       }
     ],
-    "OmniRetarget": [
+    "sim-to-real": [
+      {
+        "slug": "2512-sim2real-humanoid-locomotion-15min",
+        "question": "Can minutes-scale off-policy sim-to-real training extend from locomotion and whole-body tracking to contact-rich loco-manipulation?",
+        "source": "ai_analysis"
+      },
       {
         "slug": "2602-perceptive-humanoid-parkour",
-        "question": "재현성 관점: 결과는 Unitree G1, OmniRetarget, 고속 simulation, 대규모 parallel rollout, real hardware tuning이 맞물린 system result다. 외부 연구실에서 같은 숫자를 재현하려면 motion library와 하드웨어 setup 차이를 함께 봐야 한다.",
+        "question": "How much of PHP's success transfers to robots with different hand strength, camera placement, field of view, and actuation limits?",
+        "source": "ai_analysis"
+      }
+    ],
+    "contact-rich-control": [
+      {
+        "slug": "2512-sim2real-humanoid-locomotion-15min",
+        "question": "Can minutes-scale off-policy sim-to-real training extend from locomotion and whole-body tracking to contact-rich loco-manipulation?",
+        "source": "ai_analysis"
+      }
+    ],
+    "cross-embodiment": [
+      {
+        "slug": "2512-sim2real-humanoid-locomotion-15min",
+        "question": "Which parts of the FastSAC/FastTD3 recipe are robust across humanoid morphologies, actuators, simulators, and onboard compute budgets?",
+        "source": "ai_analysis"
+      },
+      {
+        "slug": "2602-perceptive-humanoid-parkour",
+        "question": "How much of PHP's success transfers to robots with different hand strength, camera placement, field of view, and actuation limits?",
+        "source": "ai_analysis"
+      }
+    ],
+    "reproducibility": [
+      {
+        "slug": "2512-sim2real-humanoid-locomotion-15min",
+        "question": "Which parts of the FastSAC/FastTD3 recipe are robust across humanoid morphologies, actuators, simulators, and onboard compute budgets?",
+        "source": "ai_analysis"
+      },
+      {
+        "slug": "2606-enpire-robot-policy-self-improvement",
+        "question": "Can the ENPIRE loop be reproduced on heterogeneous robot platforms without NVIDIA-scale infrastructure and tightly integrated reset/verification APIs?",
+        "source": "ai_analysis"
+      }
+    ],
+    "domain-randomization": [
+      {
+        "slug": "2512-sim2real-humanoid-locomotion-15min",
+        "question": "Which parts of the FastSAC/FastTD3 recipe are robust across humanoid morphologies, actuators, simulators, and onboard compute budgets?",
+        "source": "ai_analysis"
+      }
+    ],
+    "vision-based-control": [
+      {
+        "slug": "2512-sim2real-humanoid-locomotion-15min",
+        "question": "Can off-policy humanoid RL be coupled with perception policies without losing the minutes-scale iteration loop?",
+        "source": "ai_analysis"
+      }
+    ],
+    "off-policy-RL": [
+      {
+        "slug": "2512-sim2real-humanoid-locomotion-15min",
+        "question": "Can off-policy humanoid RL be coupled with perception policies without losing the minutes-scale iteration loop?",
+        "source": "ai_analysis"
+      }
+    ],
+    "whole-body-control": [
+      {
+        "slug": "2512-sim2real-humanoid-locomotion-15min",
+        "question": "Can off-policy humanoid RL be coupled with perception policies without losing the minutes-scale iteration loop?",
+        "source": "ai_analysis"
+      }
+    ],
+    "semantic-scene-understanding": [
+      {
+        "slug": "2602-perceptive-humanoid-parkour",
+        "question": "Can a humanoid parkour policy reason semantically about obstacle affordances instead of relying mainly on depth geometry and velocity commands?",
+        "source": "author"
+      }
+    ],
+    "humanoid-parkour": [
+      {
+        "slug": "2602-perceptive-humanoid-parkour",
+        "question": "Can a humanoid parkour policy reason semantically about obstacle affordances instead of relying mainly on depth geometry and velocity commands?",
+        "source": "author"
+      }
+    ],
+    "motion-matching": [
+      {
+        "slug": "2602-perceptive-humanoid-parkour",
+        "question": "Can motion matching and interaction-preserving retargeting be combined with VLA-style task conditioning for user-directed parkour routes and style control?",
+        "source": "ai_analysis"
+      }
+    ],
+    "VLA": [
+      {
+        "slug": "2602-perceptive-humanoid-parkour",
+        "question": "Can motion matching and interaction-preserving retargeting be combined with VLA-style task conditioning for user-directed parkour routes and style control?",
+        "source": "ai_analysis"
+      }
+    ],
+    "language-conditioned-control": [
+      {
+        "slug": "2602-perceptive-humanoid-parkour",
+        "question": "Can motion matching and interaction-preserving retargeting be combined with VLA-style task conditioning for user-directed parkour routes and style control?",
         "source": "ai_analysis"
       }
     ],
@@ -127,18 +461,123 @@
         "source": "author"
       }
     ],
-    "criteria-decomposition": [
+    "evaluation-protocols": [
       {
-        "slug": "2607-llm-as-verifier",
-        "question": "- Direct formulation은 scoring-token logprob 접근을 가정한다. 일부 closed frontier API는 이를 제공하지 않아 closed-model reasoning을 open verifier로 전달하는 two-stage workaround가 필요하다.\n- Criteria decomposition은 아직 사람이 domain별 rubric을 설계하며, repeated evaluation도 verifier uncertainty와 관계없이 균일하게 compute를 사용한다.\n- Dense-reward 실험은 single-turn 설정에 제한된다. 여러 action이 상호 의존하는 multi-turn RL에서 per-step reward가 안정적인지는 아직 검증되지 않았다.\n- 반복 평가는 variance를 낮추지만 bias 자체는 바꾸지 않는다. Hard example에서 이득이 포화하는 것도 correlated bias가 남기 때문이다.",
+        "slug": "2605-dexterous-hand-intelligence-survey",
+        "question": "Cross-hand evaluation protocols remain fragmented.",
+        "source": "ai_analysis"
+      }
+    ],
+    "evaluation": [
+      {
+        "slug": "2605-dexterous-hand-intelligence-survey",
+        "question": "Cross-hand evaluation protocols remain fragmented.",
+        "source": "ai_analysis"
+      }
+    ],
+    "robot-fleet-scaling": [
+      {
+        "slug": "2606-enpire-robot-policy-self-improvement",
+        "question": "How can physical autoresearch agents keep robot utilization high while they are reading logs, writing code, and waiting for LLM calls?",
         "source": "author"
       }
     ],
-    "repeated-evaluation": [
+    "agent-orchestration": [
+      {
+        "slug": "2606-enpire-robot-policy-self-improvement",
+        "question": "How can physical autoresearch agents keep robot utilization high while they are reading logs, writing code, and waiting for LLM calls?",
+        "source": "author"
+      }
+    ],
+    "robot-learning-infrastructure": [
+      {
+        "slug": "2606-enpire-robot-policy-self-improvement",
+        "question": "Can the ENPIRE loop be reproduced on heterogeneous robot platforms without NVIDIA-scale infrastructure and tightly integrated reset/verification APIs?",
+        "source": "ai_analysis"
+      }
+    ],
+    "scoring-token-logits": [
       {
         "slug": "2607-llm-as-verifier",
-        "question": "- Direct formulation은 scoring-token logprob 접근을 가정한다. 일부 closed frontier API는 이를 제공하지 않아 closed-model reasoning을 open verifier로 전달하는 two-stage workaround가 필요하다.\n- Criteria decomposition은 아직 사람이 domain별 rubric을 설계하며, repeated evaluation도 verifier uncertainty와 관계없이 균일하게 compute를 사용한다.\n- Dense-reward 실험은 single-turn 설정에 제한된다. 여러 action이 상호 의존하는 multi-turn RL에서 per-step reward가 안정적인지는 아직 검증되지 않았다.\n- 반복 평가는 variance를 낮추지만 bias 자체는 바꾸지 않는다. Hard example에서 이득이 포화하는 것도 correlated bias가 남기 때문이다.",
+        "question": "How can continuous verification retain its calibration when frontier model APIs expose reasoning and sampled tokens but not scoring-token log probabilities?",
         "source": "author"
+      }
+    ],
+    "closed-model-APIs": [
+      {
+        "slug": "2607-llm-as-verifier",
+        "question": "How can continuous verification retain its calibration when frontier model APIs expose reasoning and sampled tokens but not scoring-token log probabilities?",
+        "source": "author"
+      }
+    ],
+    "calibration": [
+      {
+        "slug": "2607-llm-as-verifier",
+        "question": "How can continuous verification retain its calibration when frontier model APIs expose reasoning and sampled tokens but not scoring-token log probabilities?",
+        "source": "author"
+      }
+    ],
+    "criteria-decomposition": [
+      {
+        "slug": "2607-llm-as-verifier",
+        "question": "Can evaluation criteria and repeated-compute budgets be generated and allocated adaptively from the verifier's own uncertainty instead of being hand-designed and uniform?",
+        "source": "author"
+      }
+    ],
+    "adaptive-compute": [
+      {
+        "slug": "2607-llm-as-verifier",
+        "question": "Can evaluation criteria and repeated-compute budgets be generated and allocated adaptively from the verifier's own uncertainty instead of being hand-designed and uniform?",
+        "source": "author"
+      }
+    ],
+    "verification-scaling": [
+      {
+        "slug": "2607-llm-as-verifier",
+        "question": "Can evaluation criteria and repeated-compute budgets be generated and allocated adaptively from the verifier's own uncertainty instead of being hand-designed and uniform?",
+        "source": "author"
+      }
+    ],
+    "multi-turn-RL": [
+      {
+        "slug": "2607-llm-as-verifier",
+        "question": "Does dense verifier feedback remain stable for multi-turn RL and long-horizon agent trajectories where early scoring errors alter all later states?",
+        "source": "author"
+      }
+    ],
+    "credit-assignment": [
+      {
+        "slug": "2607-llm-as-verifier",
+        "question": "Does dense verifier feedback remain stable for multi-turn RL and long-horizon agent trajectories where early scoring errors alter all later states?",
+        "source": "author"
+      }
+    ],
+    "long-horizon-agents": [
+      {
+        "slug": "2607-llm-as-verifier",
+        "question": "Does dense verifier feedback remain stable for multi-turn RL and long-horizon agent trajectories where early scoring errors alter all later states?",
+        "source": "author"
+      }
+    ],
+    "verifier-bias": [
+      {
+        "slug": "2607-llm-as-verifier",
+        "question": "How robust is probabilistic verification to correlated bias, adversarial trajectories, and reward hacking when generation and verification models share training data or model families?",
+        "source": "ai_analysis"
+      }
+    ],
+    "reward-hacking": [
+      {
+        "slug": "2607-llm-as-verifier",
+        "question": "How robust is probabilistic verification to correlated bias, adversarial trajectories, and reward hacking when generation and verification models share training data or model families?",
+        "source": "ai_analysis"
+      }
+    ],
+    "adversarial-evaluation": [
+      {
+        "slug": "2607-llm-as-verifier",
+        "question": "How robust is probabilistic verification to correlated bias, adversarial trajectories, and reward hacking when generation and verification models share training data or model families?",
+        "source": "ai_analysis"
       }
     ]
   },
@@ -363,6 +802,54 @@
       {
         "from": "2409-3dtactile-dex",
         "to": "2505-dexumi",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2409-affordance-flow-matching",
+        "to": "2303-diffusion-policy",
+        "predicate": "cites",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": null
+      },
+      {
+        "from": "2303-diffusion-policy",
+        "to": "2409-affordance-flow-matching",
+        "predicate": "isCitedBy",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": "cites"
+      },
+      {
+        "from": "2409-affordance-flow-matching",
+        "to": "2410-pi0-vla-flow-model",
+        "predicate": "cites",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": null
+      },
+      {
+        "from": "2410-pi0-vla-flow-model",
+        "to": "2409-affordance-flow-matching",
+        "predicate": "isCitedBy",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": "cites"
+      },
+      {
+        "from": "2409-affordance-flow-matching",
+        "to": "2405-octo-generalist-policy",
+        "predicate": "sharesGoalWith",
+        "strength": "direct",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2409-affordance-flow-matching",
+        "to": "2505-forcevla-force-aware-moe",
         "predicate": "sharesTopicWith",
         "strength": "tangential",
         "directional": false,
@@ -1569,7 +2056,7 @@
         "inverse_of": null
       }
     ],
-    "total_edges": 178
+    "total_edges": 184
   },
   "paper_list": [
     {
@@ -2638,6 +3125,26 @@
         "dense-reward"
       ],
       "one_liner": "LLM-as-a-Verifier turns scoring-token logit distributions into continuous trajectory scores and scales verification through granularity, repetition, and criteria decomposition, reaching state of the art across coding, robotics, and medical agent benchmarks without verifier training.",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2409-affordance-flow-matching",
+      "post_number": 84,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/brain",
+      "key_concepts": [
+        "affordance-based-manipulation",
+        "flow-matching-policy",
+        "text-conditioned-prompt-tuning",
+        "parameter-efficient-finetuning",
+        "visual-affordance-heatmap",
+        "multimodal-action-distribution",
+        "activities-of-daily-living",
+        "few-step-inference"
+      ],
+      "one_liner": "The framework freezes a vision transformer, learns language-conditioned affordance prompts, and uses those heatmaps to condition a few-step flow-matching robot policy, reaching 0.82 real-world ADL success and 13.228 ms one-step trajectory inference.",
       "has_memo": false,
       "has_gaps": true,
       "memo_preview": null

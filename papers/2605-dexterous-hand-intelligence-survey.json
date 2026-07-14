@@ -50,10 +50,35 @@
   "terry_memo_topics": [],
   "research_gaps": [
     {
-      "question": "**AI 분석 한계**: 이 서베이는 2026년 hand platform까지 표로 묶는 장점이 있지만, 실제 배포에서 중요한 내구성, 고장률, 유지보수 비용은 논문 표만으로 평가하기 어렵다.",
+      "question": "Cross-hand evaluation protocols remain fragmented.",
+      "source": "ai_analysis",
+      "relates_to": [
+        "evaluation-protocols",
+        "evaluation"
+      ]
+    },
+    {
+      "question": "Hardware, tactile sensing, and policy learning are often optimized separately.",
+      "source": "ai_analysis",
+      "relates_to": [
+        "tactile-sensing"
+      ]
+    },
+    {
+      "question": "General dexterous VLA systems still need reliable real-time force and safety grounding.",
       "source": "ai_analysis",
       "relates_to": []
     }
+  ],
+  "future_directions": [
+    "Co-design of hand hardware, tactile sensing, and policy learning.",
+    "Standardized dexterous manipulation datasets and evaluation protocols.",
+    "Robust sim-to-real pipelines for high-DoF contact-rich hands."
+  ],
+  "next_reading": [],
+  "survey_hooks": [
+    "robot-hand-tactile-sensor",
+    "humanoid-revolution"
   ],
   "relations": [
     {

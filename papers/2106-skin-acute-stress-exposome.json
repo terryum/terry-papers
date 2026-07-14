@@ -54,10 +54,50 @@
   "terry_memo_topics": [],
   "research_gaps": [
     {
-      "question": "**AI 분석 한계**: 이 리뷰는 넓은 지형도를 잘 만들지만, 근거의 질과 연구 설계가 stressor마다 매우 달라서 각 축의 효과 크기를 직접 비교하면 과해석이 될 수 있다.",
+      "question": "Separate the effects of simultaneous acute stressors such as UV, pollution, humidity, sleep deprivation, and psychosocial stress.",
+      "source": "ai_analysis",
+      "relates_to": [
+        "psychosocial-stress",
+        "sleep-deprivation"
+      ]
+    },
+    {
+      "question": "Define when protective acute stress responses transition into chronic inflammation, skin aging, or disease flare.",
+      "source": "ai_analysis",
+      "relates_to": [
+        "acute-stress-response"
+      ]
+    },
+    {
+      "question": "Standardize acute skin-response biomarkers across TEWL, erythema, sebum, cytokines, ROS, microbiome state, neuropeptides, and cortisol.",
       "source": "ai_analysis",
       "relates_to": []
+    },
+    {
+      "question": "Model individual differences from phototype, genome, chronic exposome background, skin disease history, and microbiome state.",
+      "source": "ai_analysis",
+      "relates_to": [
+        "exposome"
+      ]
     }
+  ],
+  "future_directions": [
+    "Design controlled multi-stressor human studies with shared barrier, immune, pigmentary, neuroendocrine, and microbiome endpoints.",
+    "Build acute-to-chronic exposome models that connect transient homeostatic responses to inflammaging and visible skin aging.",
+    "Test prevention strategies such as photoprotection, sleep improvement, stress management, moisturizers, antioxidants, anti-pollution products, and probiotics against acute-response biomarkers.",
+    "Use longitudinal wearable and environmental exposure data to connect real-world exposome bursts to skin symptoms."
+  ],
+  "next_reading": [
+    "Clinical and biological impact of the exposome on the skin",
+    "The skin aging exposome",
+    "Photoimmunology: how ultraviolet radiation affects the immune system",
+    "Stress-Induced Changes in Skin Barrier Function in Healthy Women"
+  ],
+  "survey_hooks": [
+    "skin-exposome",
+    "acute-stress-response",
+    "dermatology-systems-biology",
+    "skin-aging-exposome"
   ],
   "relations": [
     {

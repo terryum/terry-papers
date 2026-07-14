@@ -52,13 +52,37 @@
   "terry_memo_topics": [],
   "research_gaps": [
     {
-      "question": "**AI 분석 한계**: 이 리뷰는 field-defining taxonomy로 강하지만, systematic review나 meta-analysis가 아니므로 각 hallmark의 상대적 근거 강도와 2013년 이후의 업데이트는 별도로 검토해야 한다.",
+      "question": "Disentangle the causal network among the nine hallmarks instead of treating them as independent mechanisms.",
+      "source": "ai_analysis",
+      "relates_to": []
+    },
+    {
+      "question": "Translate mouse proof-of-principle interventions into human healthspan endpoints with acceptable side effects.",
       "source": "ai_analysis",
       "relates_to": [
-        "review",
-        "taxonomy"
+        "healthspan"
       ]
+    },
+    {
+      "question": "Separate beneficial acute stress responses from chronic pro-aging versions of the same pathways, especially senescence, ROS, and nutrient sensing.",
+      "source": "ai_analysis",
+      "relates_to": []
     }
+  ],
+  "future_directions": [
+    "Use single-cell genomic and epigenomic profiling to map damage accumulation across aging tissues.",
+    "Combine gain- and loss-of-function animal models with systems biology to infer causal hierarchy.",
+    "Design multi-target interventions that improve healthspan without amplifying cancer, immune, or metabolic risk."
+  ],
+  "next_reading": [
+    "Hallmarks of Cancer: The Next Generation",
+    "The Genetics of Ageing",
+    "Interventions that target senescent cells and nutrient-sensing pathways"
+  ],
+  "survey_hooks": [
+    "aging-hallmark-taxonomy",
+    "geroscience-interventions",
+    "healthspan-targets"
   ],
   "relations": [],
   "source_author": "Carlos López-Otín et al.",

@@ -55,10 +55,37 @@
   "terry_memo_topics": [],
   "research_gaps": [
     {
-      "question": "실험 환경은 매우 강하게 수직 통합된 로봇 플릿과 내부 tool API를 전제한다. 다른 연구실이 같은 수준의 자동 reset, verification, data logging, agent sandbox를 재현하기는 쉽지 않다.",
+      "question": "How can physical autoresearch agents keep robot utilization high while they are reading logs, writing code, and waiting for LLM calls?",
+      "source": "author",
+      "relates_to": [
+        "robot-fleet-scaling",
+        "agent-orchestration"
+      ]
+    },
+    {
+      "question": "Can the ENPIRE loop be reproduced on heterogeneous robot platforms without NVIDIA-scale infrastructure and tightly integrated reset/verification APIs?",
       "source": "ai_analysis",
-      "relates_to": []
+      "relates_to": [
+        "reproducibility",
+        "robot-learning-infrastructure"
+      ]
     }
+  ],
+  "future_directions": [
+    "Design scheduling policies that decouple agent reasoning from robot execution so idle robot time is minimized.",
+    "Develop shared environment API standards for reset, verification, rollout logging, and safety boundaries in physical autoresearch.",
+    "Study when token-heavy multi-agent hypothesis search is worth the wall-clock speedup compared with more sample-efficient single-agent search."
+  ],
+  "next_reading": [
+    "2603-autoresearch-autonomous-ml",
+    "2603-capx-coding-agents-manipulation",
+    "2603-roboclaw-agentic-long-horizon",
+    "2604-self-driving-labs"
+  ],
+  "survey_hooks": [
+    "physical-ai-agentic-research",
+    "robot-learning-infrastructure",
+    "coding-agents-for-robotics"
   ],
   "relations": [
     {

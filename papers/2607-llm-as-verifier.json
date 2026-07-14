@@ -56,18 +56,61 @@
   "terry_memo_topics": [],
   "research_gaps": [
     {
-      "question": "- Direct formulation은 scoring-token logprob 접근을 가정한다. 일부 closed frontier API는 이를 제공하지 않아 closed-model reasoning을 open verifier로 전달하는 two-stage workaround가 필요하다.\n- Criteria decomposition은 아직 사람이 domain별 rubric을 설계하며, repeated evaluation도 verifier uncertainty와 관계없이 균일하게 compute를 사용한다.\n- Dense-reward 실험은 single-turn 설정에 제한된다. 여러 action이 상호 의존하는 multi-turn RL에서 per-step reward가 안정적인지는 아직 검증되지 않았다.\n- 반복 평가는 variance를 낮추지만 bias 자체는 바꾸지 않는다. Hard example에서 이득이 포화하는 것도 correlated bias가 남기 때문이다.",
+      "question": "How can continuous verification retain its calibration when frontier model APIs expose reasoning and sampled tokens but not scoring-token log probabilities?",
       "source": "author",
       "relates_to": [
-        "criteria-decomposition",
-        "repeated-evaluation"
+        "scoring-token-logits",
+        "closed-model-APIs",
+        "calibration"
       ]
     },
     {
-      "question": "Generator와 verifier가 비슷한 model family나 training data를 공유하면 같은 blind spot을 확신 있게 반복할 수 있다. Adversarial trajectory와 reward hacking 상황에서 continuous score가 discrete judge보다 실제로 더 안전한지는 별도 평가가 필요하다.",
+      "question": "Can evaluation criteria and repeated-compute budgets be generated and allocated adaptively from the verifier's own uncertainty instead of being hand-designed and uniform?",
+      "source": "author",
+      "relates_to": [
+        "criteria-decomposition",
+        "adaptive-compute",
+        "verification-scaling"
+      ]
+    },
+    {
+      "question": "Does dense verifier feedback remain stable for multi-turn RL and long-horizon agent trajectories where early scoring errors alter all later states?",
+      "source": "author",
+      "relates_to": [
+        "multi-turn-RL",
+        "credit-assignment",
+        "long-horizon-agents"
+      ]
+    },
+    {
+      "question": "How robust is probabilistic verification to correlated bias, adversarial trajectories, and reward hacking when generation and verification models share training data or model families?",
       "source": "ai_analysis",
-      "relates_to": []
+      "relates_to": [
+        "verifier-bias",
+        "reward-hacking",
+        "adversarial-evaluation"
+      ]
     }
+  ],
+  "future_directions": [
+    "Learn or dynamically generate domain-specific criteria rather than relying on manually authored rubrics.",
+    "Allocate repeated evaluations and pivots adaptively using estimated verifier uncertainty.",
+    "Develop calibrated continuous-scoring interfaces for closed models without requiring a second open verifier.",
+    "Extend dense verification rewards from single-turn experiments to multi-turn, long-horizon reinforcement learning.",
+    "Measure and mitigate correlated verifier bias, adversarial gaming, and cross-model-family calibration drift."
+  ],
+  "next_reading": [
+    "2604-automated-alignment-researchers",
+    "2512-conductor-llm-orchestration",
+    "2606-enpire-robot-policy-self-improvement"
+  ],
+  "survey_hooks": [
+    "LLM evaluation and verification",
+    "agentic test-time scaling",
+    "trajectory reward models",
+    "AI scalable oversight",
+    "robotics reward modeling",
+    "dense rewards for reinforcement learning"
   ],
   "relations": [
     {
