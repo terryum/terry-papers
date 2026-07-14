@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-30T03:59:59.648Z",
-  "total_papers": 52,
+  "generated_at": "2026-07-14T03:19:29.458Z",
+  "total_papers": 53,
   "papers_with_memos": 2,
-  "papers_with_gaps": 50,
+  "papers_with_gaps": 51,
   "memo_index": {
     "VLA": [
       "2603-capx-coding-agents-manipulation"
@@ -58,6 +58,20 @@
       {
         "slug": "2602-perceptive-humanoid-parkour",
         "question": "재현성 관점: 결과는 Unitree G1, OmniRetarget, 고속 simulation, 대규모 parallel rollout, real hardware tuning이 맞물린 system result다. 외부 연구실에서 같은 숫자를 재현하려면 motion library와 하드웨어 setup 차이를 함께 봐야 한다.",
+        "source": "ai_analysis"
+      }
+    ],
+    "PACE": [
+      {
+        "slug": "2509-pace-sim2real-legged-robots",
+        "question": "- 저자들이 명시하듯 suspended setup의 excitation bandwidth는 유한하다. 구조 유연성이나 firmware filter가 해당 범위 안에서 강하게 나타나면 식별이 깨질 수 있다.\n- Temperature, wear, aging, firmware update, simulator change는 fitted parameter를 이동시킨다. 현재 방식은 이를 online으로 추적하지 않는다.\n- Contact compliance, series elasticity, bus-voltage/current limit, inverter switching을 아직 fit에 명시적으로 넣지 않았다.\n- PACE는 correct kinematics, high-bandwidth current control 또는 LTI에 가까운 drive, mild temperature dependence, 충분한 stiffness를 가정한다. 이 가정이 무너지면 fully online 또는 model-free adaptation이 더 적합할 수 있다.",
+        "source": "author"
+      }
+    ],
+    "blind-locomotion": [
+      {
+        "slug": "2509-pace-sim2real-legged-robots",
+        "question": "세 주요 플랫폼이 모두 point-foot PMSM 기반 quadruped이고, 핵심 policy는 blind locomotion이다. Humanoid, wheeled-legged robot, deformable contact, perception-heavy navigation까지 같은 $4n+1$ parameterization이 충분한지는 아직 독립적으로 검증되지 않았다.",
         "source": "ai_analysis"
       }
     ],
@@ -711,6 +725,30 @@
       {
         "from": "2509-omniretarget-interaction-preserving-retargeting",
         "to": "2206-global-planning-contact",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2509-pace-sim2real-legged-robots",
+        "to": "2512-sim2real-humanoid-locomotion-15min",
+        "predicate": "sharesGoalWith",
+        "strength": "direct",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2509-pace-sim2real-legged-robots",
+        "to": "2602-perceptive-humanoid-parkour",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2509-pace-sim2real-legged-robots",
+        "to": "2501-humanoid-locomotion-manipulation-survey",
         "predicate": "sharesTopicWith",
         "strength": "tangential",
         "directional": false,
@@ -1485,7 +1523,7 @@
         "inverse_of": null
       }
     ],
-    "total_edges": 171
+    "total_edges": 174
   },
   "paper_list": [
     {
@@ -2508,6 +2546,30 @@
         "sim-to-real-gap"
       ],
       "one_liner": "Decentralized PBT on Isaac Gym scales PPO to Allegro hand-arm regrasping, throwing, and reorientation, enabling simulated 46-DoF dual-arm policies.",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2509-pace-sim2real-legged-robots",
+      "post_number": 82,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/brain/rl-policy",
+      "key_concepts": [
+        "PACE",
+        "sim-to-real",
+        "joint-space-dynamics",
+        "system-identification",
+        "CMA-ES",
+        "PMSM-energy-model",
+        "blind-locomotion",
+        "zero-shot-transfer",
+        "quadrupedal-locomotion",
+        "Cost-of-Transport",
+        "dynamics-randomization-free",
+        "cross-platform-validation"
+      ],
+      "one_liner": "PACE fits a 4n+1 physically interpretable joint-dynamics model from about 20 seconds of encoder-only in-air data, enabling dynamics-randomization-free zero-shot locomotion across diverse robots while reducing ANYmal's full Cost of Transport by 32%.",
       "has_memo": false,
       "has_gaps": true,
       "memo_preview": null

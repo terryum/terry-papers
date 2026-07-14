@@ -1,0 +1,100 @@
+{
+  "slug": "2509-pace-sim2real-legged-robots",
+  "post_number": 82,
+  "source_title": "Towards bridging the gap: Systematic sim-to-real transfer for diverse legged robots",
+  "arxiv_id": "2509.06342",
+  "doi": "10.48550/arXiv.2509.06342",
+  "bibtex_key": null,
+  "domain": "robotics",
+  "subfields": [
+    "legged-robotics",
+    "reinforcement-learning",
+    "sim-to-real",
+    "system-identification",
+    "actuator-modeling",
+    "energy-efficient-locomotion"
+  ],
+  "key_concepts": [
+    "PACE",
+    "sim-to-real",
+    "joint-space-dynamics",
+    "system-identification",
+    "CMA-ES",
+    "PMSM-energy-model",
+    "blind-locomotion",
+    "zero-shot-transfer",
+    "quadrupedal-locomotion",
+    "Cost-of-Transport",
+    "dynamics-randomization-free",
+    "cross-platform-validation"
+  ],
+  "methodology": [
+    "fixed-base-in-air-chirp-data-collection",
+    "compact-joint-dynamics-parameterization",
+    "massively-parallel-CMA-ES",
+    "asymmetric-PPO",
+    "four-term-reward",
+    "physics-grounded-PMSM-loss-model",
+    "zero-shot-hardware-deployment",
+    "bottom-up-dynamic-validation"
+  ],
+  "taxonomy_primary": "robotics/brain/rl-policy",
+  "taxonomy_secondary": [
+    "robotics/body/legged",
+    "robotics/simulation/sim-to-real",
+    "robotics/control/system-identification"
+  ],
+  "ai_summary": {
+    "one_liner": "PACE fits a 4n+1 physically interpretable joint-dynamics model from about 20 seconds of encoder-only in-air data, enabling dynamics-randomization-free zero-shot locomotion across diverse robots while reducing ANYmal's full Cost of Transport by 32%.",
+    "problem": "Sim-trained legged locomotion policies often fail or waste energy on hardware because actuator and system dynamics are mismatched; common fixes require broad dynamics randomization, torque sensors, black-box actuator networks, or complex hand-tuned rewards.",
+    "solution": "Collect fixed-base chirp trajectories, fit per-joint armature, viscous damping, Coulomb friction, joint bias, and one global delay with massively parallel CMA-ES, then train an asymmetric PPO policy with four reward terms including a physics-grounded PMSM energy loss.",
+    "key_result": "Using about 20 seconds of encoder-only data, PACE transfers without dynamics randomization across three primary and more than ten additional robots; ANYmal D reaches CoT 1.27 versus 1.86 for the prior ANYmal C baseline (32% reduction), while Tytan reaches CoT 0.97 and 6.10 km per charge.",
+    "limitations": [
+      "The fixed-base identification has finite excitation bandwidth and assumes sufficiently rigid structures, correct kinematics, consistent firmware compensation, and modest nonlinearities.",
+      "Effective parameters drift with temperature, wear, aging, filters, firmware, and simulator changes.",
+      "Contact compliance, electrical bus/current limits, inverter switching, and higher-order dynamics are not yet explicitly identified.",
+      "Parameter optimization still takes roughly 10–24 hours per robot on a single GPU despite requiring little real data."
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "- 저자들이 명시하듯 suspended setup의 excitation bandwidth는 유한하다. 구조 유연성이나 firmware filter가 해당 범위 안에서 강하게 나타나면 식별이 깨질 수 있다.\n- Temperature, wear, aging, firmware update, simulator change는 fitted parameter를 이동시킨다. 현재 방식은 이를 online으로 추적하지 않는다.\n- Contact compliance, series elasticity, bus-voltage/current limit, inverter switching을 아직 fit에 명시적으로 넣지 않았다.\n- PACE는 correct kinematics, high-bandwidth current control 또는 LTI에 가까운 drive, mild temperature dependence, 충분한 stiffness를 가정한다. 이 가정이 무너지면 fully online 또는 model-free adaptation이 더 적합할 수 있다.",
+      "source": "author",
+      "relates_to": [
+        "PACE"
+      ]
+    },
+    {
+      "question": "세 주요 플랫폼이 모두 point-foot PMSM 기반 quadruped이고, 핵심 policy는 blind locomotion이다. Humanoid, wheeled-legged robot, deformable contact, perception-heavy navigation까지 같은 $4n+1$ parameterization이 충분한지는 아직 독립적으로 검증되지 않았다.",
+      "source": "ai_analysis",
+      "relates_to": [
+        "blind-locomotion"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target": "2512-sim2real-humanoid-locomotion-15min",
+      "type": "sharesGoalWith",
+      "note": "Both target fast, reliable zero-shot sim-to-real locomotion with compact rewards; PACE replaces dynamics randomization with identified actuator/system dynamics, whereas the humanoid recipe relies on strong randomization and fast off-policy RL.",
+      "strength": "direct"
+    },
+    {
+      "target": "2602-perceptive-humanoid-parkour",
+      "type": "sharesTopicWith",
+      "note": "Both study learned legged locomotion transferred from simulation to hardware, but PACE focuses on actuator/system alignment and energy while the parkour work focuses on perception and long-horizon skill composition.",
+      "strength": "tangential"
+    },
+    {
+      "target": "2501-humanoid-locomotion-manipulation-survey",
+      "type": "sharesTopicWith",
+      "note": "PACE supplies a concrete system-identification and energy-modeling point in the broader learned legged and whole-body control landscape covered by the survey.",
+      "strength": "tangential"
+    }
+  ],
+  "source_author": "Filip Bjelonic et al.",
+  "source_date": "2025-09-08",
+  "published_at": "2026-07-14T11:52:09+09:00"
+}
