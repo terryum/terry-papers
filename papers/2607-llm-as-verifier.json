@@ -1,0 +1,101 @@
+{
+  "slug": "2607-llm-as-verifier",
+  "post_number": 83,
+  "source_title": "LLM-as-a-Verifier: A General-Purpose Verification Framework",
+  "arxiv_id": "2607.05391",
+  "doi": "10.48550/arXiv.2607.05391",
+  "bibtex_key": null,
+  "domain": "ai",
+  "subfields": [
+    "large-language-models",
+    "agent-evaluation",
+    "reward-modeling",
+    "test-time-scaling",
+    "reinforcement-learning"
+  ],
+  "key_concepts": [
+    "LLM-as-a-Verifier",
+    "probabilistic-verification",
+    "scoring-token-logits",
+    "verification-scaling",
+    "criteria-decomposition",
+    "repeated-evaluation",
+    "probabilistic-pivot-tournament",
+    "trajectory-reward-model",
+    "progress-tracking",
+    "dense-reward"
+  ],
+  "methodology": [
+    "logprob-expectation-scoring",
+    "pairwise-preference-modeling",
+    "Bradley-Terry-model",
+    "Monte-Carlo-ensembling",
+    "rubric-decomposition",
+    "pivot-based-ranking",
+    "cross-domain-benchmarking",
+    "dense-reward-shaping"
+  ],
+  "taxonomy_primary": "ai/agent",
+  "taxonomy_secondary": [
+    "ai/evaluation",
+    "ml/reinforcement-learning"
+  ],
+  "ai_summary": {
+    "one_liner": "LLM-as-a-Verifier turns scoring-token logit distributions into continuous trajectory scores and scales verification through granularity, repetition, and criteria decomposition, reaching state of the art across coding, robotics, and medical agent benchmarks without verifier training.",
+    "problem": "Discrete LLM judges collapse uncertain scoring distributions into coarse tokens, causing ties and weak discrimination, while trained reward models often fail to generalize across domains and exhaustive candidate comparison is costly.",
+    "solution": "Compute the expected value over score-token probabilities, average across repeated evaluations and decomposed criteria, convert continuous rewards into Bradley-Terry preferences, and rank candidates with an O(Nk) Probabilistic Pivot Tournament.",
+    "key_result": "The framework reaches 86.5% on Terminal-Bench V2, 78.2% on SWE-Bench Verified, 87.4% on RoboRewardBench, and 73.3% on MedAgentBench; it also yields VOC 0.966 on robot trajectories and improves LIBERO RL sample efficiency by about 1.8x.",
+    "limitations": [
+      "Direct continuous scoring requires access to scoring-token log probabilities, which several closed frontier APIs do not expose.",
+      "Criteria are manually designed and repeated evaluations allocate compute uniformly rather than according to uncertainty.",
+      "Dense-reward experiments are limited to single-turn settings rather than long-horizon multi-turn reinforcement learning.",
+      "Repeated sampling reduces variance but cannot remove correlated verifier bias or systematic model-family blind spots."
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "- Direct formulation은 scoring-token logprob 접근을 가정한다. 일부 closed frontier API는 이를 제공하지 않아 closed-model reasoning을 open verifier로 전달하는 two-stage workaround가 필요하다.\n- Criteria decomposition은 아직 사람이 domain별 rubric을 설계하며, repeated evaluation도 verifier uncertainty와 관계없이 균일하게 compute를 사용한다.\n- Dense-reward 실험은 single-turn 설정에 제한된다. 여러 action이 상호 의존하는 multi-turn RL에서 per-step reward가 안정적인지는 아직 검증되지 않았다.\n- 반복 평가는 variance를 낮추지만 bias 자체는 바꾸지 않는다. Hard example에서 이득이 포화하는 것도 correlated bias가 남기 때문이다.",
+      "source": "author",
+      "relates_to": [
+        "criteria-decomposition",
+        "repeated-evaluation"
+      ]
+    },
+    {
+      "question": "Generator와 verifier가 비슷한 model family나 training data를 공유하면 같은 blind spot을 확신 있게 반복할 수 있다. Adversarial trajectory와 reward hacking 상황에서 continuous score가 discrete judge보다 실제로 더 안전한지는 별도 평가가 필요하다.",
+      "source": "ai_analysis",
+      "relates_to": []
+    }
+  ],
+  "relations": [
+    {
+      "target": "2604-automated-alignment-researchers",
+      "type": "sharesGoalWith",
+      "note": "Both address scalable oversight of increasingly capable agent systems; this paper supplies a general-purpose fine-grained verifier rather than an automated research organization.",
+      "strength": "direct"
+    },
+    {
+      "target": "2512-conductor-llm-orchestration",
+      "type": "sharesTopicWith",
+      "note": "Both treat test-time computation over multiple candidate agent behaviors as a scaling axis, with verification and orchestration as complementary selection mechanisms.",
+      "strength": "tangential"
+    },
+    {
+      "target": "2606-enpire-robot-policy-self-improvement",
+      "type": "sharesTopicWith",
+      "note": "ENPIRE depends on automatic verification in physical policy-improvement loops, while LLM-as-a-Verifier provides a transferable continuous progress and reward signal.",
+      "strength": "tangential"
+    },
+    {
+      "target": "2502-ai-co-scientist",
+      "type": "sharesTopicWith",
+      "note": "Both rank candidate agent outputs through tournaments; the AI co-scientist uses Elo debate while this work uses probabilistic pairwise scores and pivots.",
+      "strength": "tangential"
+    }
+  ],
+  "source_author": "Jacky Kwok et al.",
+  "source_date": "2026-07-06",
+  "published_at": "2026-07-14T12:43:23+09:00"
+}

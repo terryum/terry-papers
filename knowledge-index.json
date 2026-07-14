@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-14T03:19:29.458Z",
-  "total_papers": 53,
+  "generated_at": "2026-07-14T04:02:46.815Z",
+  "total_papers": 54,
   "papers_with_memos": 2,
-  "papers_with_gaps": 51,
+  "papers_with_gaps": 52,
   "memo_index": {
     "VLA": [
       "2603-capx-coding-agents-manipulation"
@@ -124,6 +124,20 @@
       {
         "slug": "2603-capx-coding-agents-manipulation",
         "question": "single-arm 조작 위주 평가로 bimanual이나 mobile manipulation은 미검증. RL 학습이 privileged state(S1) 기반으로 vision observation 하에서의 RL은 미해결",
+        "source": "author"
+      }
+    ],
+    "criteria-decomposition": [
+      {
+        "slug": "2607-llm-as-verifier",
+        "question": "- Direct formulation은 scoring-token logprob 접근을 가정한다. 일부 closed frontier API는 이를 제공하지 않아 closed-model reasoning을 open verifier로 전달하는 two-stage workaround가 필요하다.\n- Criteria decomposition은 아직 사람이 domain별 rubric을 설계하며, repeated evaluation도 verifier uncertainty와 관계없이 균일하게 compute를 사용한다.\n- Dense-reward 실험은 single-turn 설정에 제한된다. 여러 action이 상호 의존하는 multi-turn RL에서 per-step reward가 안정적인지는 아직 검증되지 않았다.\n- 반복 평가는 variance를 낮추지만 bias 자체는 바꾸지 않는다. Hard example에서 이득이 포화하는 것도 correlated bias가 남기 때문이다.",
+        "source": "author"
+      }
+    ],
+    "repeated-evaluation": [
+      {
+        "slug": "2607-llm-as-verifier",
+        "question": "- Direct formulation은 scoring-token logprob 접근을 가정한다. 일부 closed frontier API는 이를 제공하지 않아 closed-model reasoning을 open verifier로 전달하는 two-stage workaround가 필요하다.\n- Criteria decomposition은 아직 사람이 domain별 rubric을 설계하며, repeated evaluation도 verifier uncertainty와 관계없이 균일하게 compute를 사용한다.\n- Dense-reward 실험은 single-turn 설정에 제한된다. 여러 action이 상호 의존하는 multi-turn RL에서 per-step reward가 안정적인지는 아직 검증되지 않았다.\n- 반복 평가는 variance를 낮추지만 bias 자체는 바꾸지 않는다. Hard example에서 이득이 포화하는 것도 correlated bias가 남기 때문이다.",
         "source": "author"
       }
     ]
@@ -1521,9 +1535,41 @@
         "strength": "tangential",
         "directional": false,
         "inverse_of": null
+      },
+      {
+        "from": "2607-llm-as-verifier",
+        "to": "2604-automated-alignment-researchers",
+        "predicate": "sharesGoalWith",
+        "strength": "direct",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2607-llm-as-verifier",
+        "to": "2512-conductor-llm-orchestration",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2607-llm-as-verifier",
+        "to": "2606-enpire-robot-policy-self-improvement",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2607-llm-as-verifier",
+        "to": "2502-ai-co-scientist",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
       }
     ],
-    "total_edges": 174
+    "total_edges": 178
   },
   "paper_list": [
     {
@@ -2570,6 +2616,28 @@
         "cross-platform-validation"
       ],
       "one_liner": "PACE fits a 4n+1 physically interpretable joint-dynamics model from about 20 seconds of encoder-only in-air data, enabling dynamics-randomization-free zero-shot locomotion across diverse robots while reducing ANYmal's full Cost of Transport by 32%.",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2607-llm-as-verifier",
+      "post_number": 83,
+      "domain": "ai",
+      "taxonomy_primary": "ai/agent",
+      "key_concepts": [
+        "LLM-as-a-Verifier",
+        "probabilistic-verification",
+        "scoring-token-logits",
+        "verification-scaling",
+        "criteria-decomposition",
+        "repeated-evaluation",
+        "probabilistic-pivot-tournament",
+        "trajectory-reward-model",
+        "progress-tracking",
+        "dense-reward"
+      ],
+      "one_liner": "LLM-as-a-Verifier turns scoring-token logit distributions into continuous trajectory scores and scales verification through granularity, repetition, and criteria decomposition, reaching state of the art across coding, robotics, and medical agent benchmarks without verifier training.",
       "has_memo": false,
       "has_gaps": true,
       "memo_preview": null
