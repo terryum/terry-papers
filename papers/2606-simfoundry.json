@@ -1,0 +1,127 @@
+{
+  "slug": "2606-simfoundry",
+  "post_number": 85,
+  "source_title": "SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation",
+  "arxiv_id": "2606.28276",
+  "doi": null,
+  "bibtex_key": null,
+  "domain": "robotics",
+  "subfields": [
+    "robot-learning",
+    "real-to-sim",
+    "sim-to-real",
+    "scene-reconstruction",
+    "policy-evaluation",
+    "synthetic-data"
+  ],
+  "key_concepts": [
+    "SimFoundry",
+    "digital-twins",
+    "digital-cousins",
+    "object-cousins",
+    "scene-cousins",
+    "task-cousins",
+    "real-to-sim-policy-evaluation",
+    "zero-shot-sim-to-real",
+    "automated-scene-generation",
+    "3D-Gaussian-Splatting"
+  ],
+  "methodology": [
+    "video-to-simulation",
+    "RGB-D-scene-decomposition",
+    "2D-to-3D-mesh-generation",
+    "VLM-physics-annotation",
+    "articulated-object-generation",
+    "physics-stability-checking",
+    "digital-cousin-augmentation",
+    "MimicGen-demonstration-synthesis",
+    "paired-sim-real-evaluation"
+  ],
+  "taxonomy_primary": "robotics/brain/rl-policy",
+  "taxonomy_secondary": [
+    "robotics/arm",
+    "robotics/simulation",
+    "computer-vision/3d-reconstruction"
+  ],
+  "ai_summary": {
+    "one_liner": "SimFoundry turns one real-world video into an interactive digital twin, expands it into object, scene, and task cousins, and uses the resulting simulations for both predictive policy evaluation and zero-shot sim-to-real training.",
+    "problem": "Real-world robot policy training and evaluation are expensive, while prior real-to-sim systems often automate only scene reconstruction, policy evaluation, or sim-to-real training rather than closing the full loop for complex manipulation.",
+    "solution": "A modular Extraction-Generation-Augmentation pipeline decomposes a video into RGB-D objects, generates and aligns sim-ready articulated meshes with physical properties, stabilizes the scene, and produces affordance-preserving object, scene, and task cousins for evaluation and data generation.",
+    "key_result": "Across 7 tasks and 5 policy architectures, simulation evaluation reaches mean Pearson correlation 0.911 and MMRV 0.018; object, scene, and task cousins improve average zero-shot real-world task success by 17%, 21%, and 40%, respectively.",
+    "limitations": [
+      "The pipeline inherits non-determinism and failure modes from remote VLM, inpainting, depth, segmentation, and image-to-mesh components.",
+      "Physics stabilization assumes a single flat support surface, restricting current use to tabletop-style layouts.",
+      "Automatic 3DGS background reconstruction requires roughly 90 minutes per scene on one GPU and may introduce inpainting or near-field artifacts.",
+      "Evidence is concentrated on seven manipulation tasks across DROID and YAM, so broader transfer to mobile, non-planar, and contact-diverse environments remains unverified."
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "How can automated real-to-sim pipelines support multi-level, non-planar, and mobile-manipulation environments without assuming a single tabletop support plane?",
+      "source": "author",
+      "relates_to": [
+        "scene-reconstruction",
+        "physics-stability"
+      ]
+    },
+    {
+      "question": "How can foundation-model scene generation become deterministic and uncertainty-aware enough for reproducible policy evaluation?",
+      "source": "author",
+      "relates_to": [
+        "VLM",
+        "reproducibility",
+        "policy-evaluation"
+      ]
+    },
+    {
+      "question": "Do simulation-to-reality correlations and cousin-driven gains persist across mobile manipulation, deformable objects, and contact regimes beyond DROID and YAM tabletop tasks?",
+      "source": "ai_analysis",
+      "relates_to": [
+        "external-validity",
+        "sim-to-real",
+        "robot-manipulation"
+      ]
+    }
+  ],
+  "future_directions": [
+    "Replace the single-plane stability assumption with hierarchical support and contact reasoning for multi-level and non-planar scenes.",
+    "Add uncertainty estimates and deterministic caching around VLM, inpainting, depth, segmentation, and mesh-generation modules.",
+    "Reduce automatic background reconstruction latency and improve near-field 3DGS rendering for robot-mounted cameras.",
+    "Validate cousin generation and zero-shot evaluation on mobile manipulation, deformable objects, and additional robot embodiments."
+  ],
+  "next_reading": [
+    "2602-robopaint",
+    "2509-pace-sim2real-legged-robots",
+    "2512-sim2real-humanoid-locomotion-15min"
+  ],
+  "survey_hooks": [
+    "real-to-sim-to-real-robot-learning",
+    "synthetic-data-for-robotics",
+    "scalable-robot-policy-evaluation"
+  ],
+  "relations": [
+    {
+      "target": "2602-robopaint",
+      "type": "sharesGoalWith",
+      "note": "Both use reconstructed simulation to scale manipulation data and transfer policies to the real world; RoboPaint retargets human demonstrations across embodiments and views, while SimFoundry reconstructs interactive scenes and diversifies objects, layouts, and tasks.",
+      "strength": "direct"
+    },
+    {
+      "target": "2509-pace-sim2real-legged-robots",
+      "type": "sharesTopicWith",
+      "note": "Both target reliable zero-shot sim-to-real transfer, but SimFoundry focuses on manipulation scene generation and policy evaluation while PACE focuses on identified legged-robot dynamics.",
+      "strength": "tangential"
+    },
+    {
+      "target": "2512-sim2real-humanoid-locomotion-15min",
+      "type": "sharesTopicWith",
+      "note": "Both scale robot learning in simulation for zero-shot hardware deployment, with different task domains and approaches to closing the simulation gap.",
+      "strength": "tangential"
+    }
+  ],
+  "source_author": "Nadun Ranawaka et al.",
+  "source_date": "2026-06-25",
+  "published_at": "2026-07-22T07:14:11+09:00"
+}

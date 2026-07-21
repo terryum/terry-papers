@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-14T05:13:19.677Z",
-  "total_papers": 55,
+  "generated_at": "2026-07-21T22:23:40.306Z",
+  "total_papers": 56,
   "papers_with_memos": 2,
-  "papers_with_gaps": 53,
+  "papers_with_gaps": 54,
   "memo_index": {
     "VLA": [
       "2603-capx-coding-agents-manipulation"
@@ -358,6 +358,11 @@
         "slug": "2602-perceptive-humanoid-parkour",
         "question": "How much of PHP's success transfers to robots with different hand strength, camera placement, field of view, and actuation limits?",
         "source": "ai_analysis"
+      },
+      {
+        "slug": "2606-simfoundry",
+        "question": "Do simulation-to-reality correlations and cousin-driven gains persist across mobile manipulation, deformable objects, and contact regimes beyond DROID and YAM tabletop tasks?",
+        "source": "ai_analysis"
       }
     ],
     "contact-rich-control": [
@@ -389,6 +394,11 @@
         "slug": "2606-enpire-robot-policy-self-improvement",
         "question": "Can the ENPIRE loop be reproduced on heterogeneous robot platforms without NVIDIA-scale infrastructure and tightly integrated reset/verification APIs?",
         "source": "ai_analysis"
+      },
+      {
+        "slug": "2606-simfoundry",
+        "question": "How can foundation-model scene generation become deterministic and uncertainty-aware enough for reproducible policy evaluation?",
+        "source": "author"
       }
     ],
     "domain-randomization": [
@@ -493,6 +503,48 @@
       {
         "slug": "2606-enpire-robot-policy-self-improvement",
         "question": "Can the ENPIRE loop be reproduced on heterogeneous robot platforms without NVIDIA-scale infrastructure and tightly integrated reset/verification APIs?",
+        "source": "ai_analysis"
+      }
+    ],
+    "scene-reconstruction": [
+      {
+        "slug": "2606-simfoundry",
+        "question": "How can automated real-to-sim pipelines support multi-level, non-planar, and mobile-manipulation environments without assuming a single tabletop support plane?",
+        "source": "author"
+      }
+    ],
+    "physics-stability": [
+      {
+        "slug": "2606-simfoundry",
+        "question": "How can automated real-to-sim pipelines support multi-level, non-planar, and mobile-manipulation environments without assuming a single tabletop support plane?",
+        "source": "author"
+      }
+    ],
+    "VLM": [
+      {
+        "slug": "2606-simfoundry",
+        "question": "How can foundation-model scene generation become deterministic and uncertainty-aware enough for reproducible policy evaluation?",
+        "source": "author"
+      }
+    ],
+    "policy-evaluation": [
+      {
+        "slug": "2606-simfoundry",
+        "question": "How can foundation-model scene generation become deterministic and uncertainty-aware enough for reproducible policy evaluation?",
+        "source": "author"
+      }
+    ],
+    "external-validity": [
+      {
+        "slug": "2606-simfoundry",
+        "question": "Do simulation-to-reality correlations and cousin-driven gains persist across mobile manipulation, deformable objects, and contact regimes beyond DROID and YAM tabletop tasks?",
+        "source": "ai_analysis"
+      }
+    ],
+    "robot-manipulation": [
+      {
+        "slug": "2606-simfoundry",
+        "question": "Do simulation-to-reality correlations and cousin-driven gains persist across mobile manipulation, deformable objects, and contact regimes beyond DROID and YAM tabletop tasks?",
         "source": "ai_analysis"
       }
     ],
@@ -2024,6 +2076,30 @@
         "inverse_of": null
       },
       {
+        "from": "2606-simfoundry",
+        "to": "2602-robopaint",
+        "predicate": "sharesGoalWith",
+        "strength": "direct",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2606-simfoundry",
+        "to": "2509-pace-sim2real-legged-robots",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2606-simfoundry",
+        "to": "2512-sim2real-humanoid-locomotion-15min",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
         "from": "2607-llm-as-verifier",
         "to": "2604-automated-alignment-researchers",
         "predicate": "sharesGoalWith",
@@ -2056,7 +2132,7 @@
         "inverse_of": null
       }
     ],
-    "total_edges": 184
+    "total_edges": 187
   },
   "paper_list": [
     {
@@ -3145,6 +3221,28 @@
         "few-step-inference"
       ],
       "one_liner": "The framework freezes a vision transformer, learns language-conditioned affordance prompts, and uses those heatmaps to condition a few-step flow-matching robot policy, reaching 0.82 real-world ADL success and 13.228 ms one-step trajectory inference.",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2606-simfoundry",
+      "post_number": 85,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/brain/rl-policy",
+      "key_concepts": [
+        "SimFoundry",
+        "digital-twins",
+        "digital-cousins",
+        "object-cousins",
+        "scene-cousins",
+        "task-cousins",
+        "real-to-sim-policy-evaluation",
+        "zero-shot-sim-to-real",
+        "automated-scene-generation",
+        "3D-Gaussian-Splatting"
+      ],
+      "one_liner": "SimFoundry turns one real-world video into an interactive digital twin, expands it into object, scene, and task cousins, and uses the resulting simulations for both predictive policy evaluation and zero-shot sim-to-real training.",
       "has_memo": false,
       "has_gaps": true,
       "memo_preview": null
