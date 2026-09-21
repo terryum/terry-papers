@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-21T22:23:40.306Z",
-  "total_papers": 56,
+  "generated_at": "2026-09-21T04:02:49.605Z",
+  "total_papers": 57,
   "papers_with_memos": 2,
-  "papers_with_gaps": 54,
+  "papers_with_gaps": 55,
   "memo_index": {
     "VLA": [
       "2603-capx-coding-agents-manipulation"
@@ -63,6 +63,92 @@
         "slug": "2505-egodex-egocentric-dexterous-video",
         "question": "How can large egocentric human-video datasets be aligned with robot embodiments without losing dexterous contact and hand-object interaction detail?",
         "source": "author"
+      }
+    ],
+    "perception": [
+      {
+        "slug": "2403-rialto",
+        "question": "How can the policy support thin, reflective, and transparent objects when depth reconstruction is unreliable?",
+        "source": "author"
+      }
+    ],
+    "sim-to-real": [
+      {
+        "slug": "2403-rialto",
+        "question": "How can the policy support thin, reflective, and transparent objects when depth reconstruction is unreliable?",
+        "source": "author"
+      },
+      {
+        "slug": "2512-sim2real-humanoid-locomotion-15min",
+        "question": "Can minutes-scale off-policy sim-to-real training extend from locomotion and whole-body tracking to contact-rich loco-manipulation?",
+        "source": "ai_analysis"
+      },
+      {
+        "slug": "2602-perceptive-humanoid-parkour",
+        "question": "How much of PHP's success transfers to robots with different hand strength, camera placement, field of view, and actuation limits?",
+        "source": "ai_analysis"
+      },
+      {
+        "slug": "2606-simfoundry",
+        "question": "Do simulation-to-reality correlations and cousin-driven gains persist across mobile manipulation, deformable objects, and contact regimes beyond DROID and YAM tabletop tasks?",
+        "source": "ai_analysis"
+      }
+    ],
+    "deformable-manipulation": [
+      {
+        "slug": "2403-rialto",
+        "question": "Can the pipeline handle deformable objects and faster interactions that require accurate physical parameters?",
+        "source": "author"
+      }
+    ],
+    "system-identification": [
+      {
+        "slug": "2403-rialto",
+        "question": "Can the pipeline handle deformable objects and faster interactions that require accurate physical parameters?",
+        "source": "author"
+      },
+      {
+        "slug": "2509-pace-sim2real-legged-robots",
+        "question": "Can lightweight online adaptation track temperature, wear, aging, and firmware drift without sacrificing the interpretability and stability of the fitted model?",
+        "source": "author"
+      }
+    ],
+    "training-efficiency": [
+      {
+        "slug": "2403-rialto",
+        "question": "How can end-to-end task learning be reduced from about two days to a practical continual-adaptation cycle?",
+        "source": "author"
+      }
+    ],
+    "continual-learning": [
+      {
+        "slug": "2403-rialto",
+        "question": "How can end-to-end task learning be reduced from about two days to a practical continual-adaptation cycle?",
+        "source": "author"
+      }
+    ],
+    "external-validity": [
+      {
+        "slug": "2403-rialto",
+        "question": "Do robustness gains persist under seed-averaged evaluation, many more trials, and genuinely unseen deployment scenes?",
+        "source": "ai_analysis"
+      },
+      {
+        "slug": "2606-simfoundry",
+        "question": "Do simulation-to-reality correlations and cousin-driven gains persist across mobile manipulation, deformable objects, and contact regimes beyond DROID and YAM tabletop tasks?",
+        "source": "ai_analysis"
+      }
+    ],
+    "evaluation": [
+      {
+        "slug": "2403-rialto",
+        "question": "Do robustness gains persist under seed-averaged evaluation, many more trials, and genuinely unseen deployment scenes?",
+        "source": "ai_analysis"
+      },
+      {
+        "slug": "2605-dexterous-hand-intelligence-survey",
+        "question": "Cross-hand evaluation protocols remain fragmented.",
+        "source": "ai_analysis"
       }
     ],
     "out-of-distribution-generalization": [
@@ -308,13 +394,6 @@
         "source": "author"
       }
     ],
-    "system-identification": [
-      {
-        "slug": "2509-pace-sim2real-legged-robots",
-        "question": "Can lightweight online adaptation track temperature, wear, aging, and firmware drift without sacrificing the interpretability and stability of the fitted model?",
-        "source": "author"
-      }
-    ],
     "skill-capture-glove": [
       {
         "slug": "2511-act1-robot-foundation-model",
@@ -345,23 +424,6 @@
       {
         "slug": "2512-sim2real-humanoid-locomotion-15min",
         "question": "Can minutes-scale off-policy sim-to-real training extend from locomotion and whole-body tracking to contact-rich loco-manipulation?",
-        "source": "ai_analysis"
-      }
-    ],
-    "sim-to-real": [
-      {
-        "slug": "2512-sim2real-humanoid-locomotion-15min",
-        "question": "Can minutes-scale off-policy sim-to-real training extend from locomotion and whole-body tracking to contact-rich loco-manipulation?",
-        "source": "ai_analysis"
-      },
-      {
-        "slug": "2602-perceptive-humanoid-parkour",
-        "question": "How much of PHP's success transfers to robots with different hand strength, camera placement, field of view, and actuation limits?",
-        "source": "ai_analysis"
-      },
-      {
-        "slug": "2606-simfoundry",
-        "question": "Do simulation-to-reality correlations and cousin-driven gains persist across mobile manipulation, deformable objects, and contact regimes beyond DROID and YAM tabletop tasks?",
         "source": "ai_analysis"
       }
     ],
@@ -478,13 +540,6 @@
         "source": "ai_analysis"
       }
     ],
-    "evaluation": [
-      {
-        "slug": "2605-dexterous-hand-intelligence-survey",
-        "question": "Cross-hand evaluation protocols remain fragmented.",
-        "source": "ai_analysis"
-      }
-    ],
     "robot-fleet-scaling": [
       {
         "slug": "2606-enpire-robot-policy-self-improvement",
@@ -532,13 +587,6 @@
         "slug": "2606-simfoundry",
         "question": "How can foundation-model scene generation become deterministic and uncertainty-aware enough for reproducible policy evaluation?",
         "source": "author"
-      }
-    ],
-    "external-validity": [
-      {
-        "slug": "2606-simfoundry",
-        "question": "Do simulation-to-reality correlations and cousin-driven gains persist across mobile manipulation, deformable objects, and contact regimes beyond DROID and YAM tabletop tasks?",
-        "source": "ai_analysis"
       }
     ],
     "robot-manipulation": [
@@ -768,6 +816,22 @@
         "to": "2602-robopaint",
         "predicate": "sharesTopicWith",
         "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2403-rialto",
+        "to": "2606-simfoundry",
+        "predicate": "sharesGoalWith",
+        "strength": "direct",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2403-rialto",
+        "to": "2506-exostart",
+        "predicate": "sharesGoalWith",
+        "strength": "direct",
         "directional": false,
         "inverse_of": null
       },
@@ -2132,7 +2196,7 @@
         "inverse_of": null
       }
     ],
-    "total_edges": 187
+    "total_edges": 189
   },
   "paper_list": [
     {
@@ -3243,6 +3307,26 @@
         "3D-Gaussian-Splatting"
       ],
       "one_liner": "SimFoundry turns one real-world video into an interactive digital twin, expands it into object, scene, and task cousins, and uses the resulting simulations for both predictive policy evaluation and zero-shot sim-to-real training.",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2403-rialto",
+      "post_number": 87,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/brain/rl-policy",
+      "key_concepts": [
+        "RialTo",
+        "real-to-sim-to-real",
+        "digital-twins",
+        "inverse-distillation",
+        "privileged-state",
+        "sparse-reward-RL",
+        "real-data-co-training",
+        "robust-manipulation"
+      ],
+      "one_liner": "RialTo uses reconstructed deployment scenes to turn demonstration-trained manipulation into disturbance-tolerant behavior through simulation RL.",
       "has_memo": false,
       "has_gaps": true,
       "memo_preview": null

@@ -1,0 +1,121 @@
+{
+  "slug": "2403-rialto",
+  "post_number": 87,
+  "source_title": "Reconciling Reality through Simulation: A Real-to-Sim-to-Real Approach for Robust Manipulation",
+  "arxiv_id": "2403.03949",
+  "doi": "10.15607/RSS.2024.XX.015",
+  "bibtex_key": null,
+  "domain": "robotics",
+  "subfields": [
+    "robot-learning",
+    "robot-manipulation",
+    "sim-to-real",
+    "3d-reconstruction"
+  ],
+  "key_concepts": [
+    "RialTo",
+    "real-to-sim-to-real",
+    "digital-twins",
+    "inverse-distillation",
+    "privileged-state",
+    "sparse-reward-RL",
+    "real-data-co-training",
+    "robust-manipulation"
+  ],
+  "methodology": [
+    "3D-scene-reconstruction",
+    "interactive-articulation-annotation",
+    "point-cloud-behavior-cloning",
+    "successful-rollout-filtering",
+    "demonstration-augmented-PPO",
+    "teacher-student-DAgger",
+    "domain-randomization",
+    "real-world-co-training"
+  ],
+  "taxonomy_primary": "robotics/brain/rl-policy",
+  "taxonomy_secondary": [
+    "robotics/arm",
+    "robotics/simulation",
+    "computer-vision/3d-reconstruction"
+  ],
+  "ai_summary": {
+    "one_liner": "RialTo uses reconstructed deployment scenes to turn demonstration-trained manipulation into disturbance-tolerant behavior through simulation RL.",
+    "problem": "A small behavior-cloning dataset rarely covers recovery from unexpected object motion or clutter.",
+    "solution": "Reconstruct the scene, obtain successful simulator trajectories with privileged states, train a state policy with demonstration-augmented PPO, and distill to point-cloud observations while retaining real demonstrations.",
+    "key_result": "Section IV-A reports 91/77/75% success for pose randomization/distractors/disturbances versus BC at 25/11/5%. The main comparison uses 15 simulator demos plus 15 real demos for co-training; the real-only initialization route is tested separately.",
+    "limitations": [
+      "Depth-sensor failures on thin, transparent, or reflective objects.",
+      "Evidence focuses on rigid and articulated objects in relatively quasistatic tasks.",
+      "Approximately two days of end-to-end training per task.",
+      "Best-policy evaluation and at least ten real rollouts per condition leave deployment reliability uncertain."
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "How can the policy support thin, reflective, and transparent objects when depth reconstruction is unreliable?",
+      "source": "author",
+      "relates_to": [
+        "perception",
+        "sim-to-real"
+      ]
+    },
+    {
+      "question": "Can the pipeline handle deformable objects and faster interactions that require accurate physical parameters?",
+      "source": "author",
+      "relates_to": [
+        "deformable-manipulation",
+        "system-identification"
+      ]
+    },
+    {
+      "question": "How can end-to-end task learning be reduced from about two days to a practical continual-adaptation cycle?",
+      "source": "author",
+      "relates_to": [
+        "training-efficiency",
+        "continual-learning"
+      ]
+    },
+    {
+      "question": "Do robustness gains persist under seed-averaged evaluation, many more trials, and genuinely unseen deployment scenes?",
+      "source": "ai_analysis",
+      "relates_to": [
+        "external-validity",
+        "evaluation"
+      ]
+    }
+  ],
+  "future_directions": [
+    "Investigate RGB or RGB-D students to reduce dependence on reliable depth alone.",
+    "Extend interactive reconstruction and simulation to deformables and identify physical parameters for dynamic tasks.",
+    "Accelerate point-cloud learning and parallelization to shorten the adaptation loop.",
+    "Evaluate many seeds and repeated hardware trials before extrapolating to unattended deployment."
+  ],
+  "next_reading": [
+    "2606-simfoundry",
+    "2506-exostart"
+  ],
+  "survey_hooks": [
+    "real-to-sim-to-real-robot-learning",
+    "demonstration-guided-reinforcement-learning",
+    "digital-twins-for-manipulation"
+  ],
+  "relations": [
+    {
+      "target": "2606-simfoundry",
+      "type": "sharesGoalWith",
+      "note": "Both turn real scenes into interactive simulation for manipulation learning. This is a retrospective topical connection: RialTo predates SimFoundry and does not cite it. SimFoundry expands automation and scene diversity.",
+      "strength": "direct"
+    },
+    {
+      "target": "2506-exostart",
+      "type": "sharesGoalWith",
+      "note": "Both combine few real demonstrations, simulation RL, and a visual student for deployment. ExoStart uses an exoskeleton and dynamics filtering; RialTo uses visual-policy rollouts in a scene twin. This is not a citation claim.",
+      "strength": "direct"
+    }
+  ],
+  "source_author": "Marcel Torne et al.",
+  "source_date": "2024-03-06",
+  "published_at": "2026-09-21T13:00:28+09:00"
+}
