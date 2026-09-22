@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-21T04:02:49.605Z",
-  "total_papers": 57,
+  "generated_at": "2026-09-22T04:37:09.892Z",
+  "total_papers": 58,
   "papers_with_memos": 2,
-  "papers_with_gaps": 55,
+  "papers_with_gaps": 56,
   "memo_index": {
     "VLA": [
       "2603-capx-coding-agents-manipulation"
@@ -79,6 +79,11 @@
         "source": "author"
       },
       {
+        "slug": "2502-recipe-humanoid-manipulation",
+        "question": "How can dynamic contact behavior transfer more reliably than with conventional domain randomization, especially for bimanual handover?",
+        "source": "author"
+      },
+      {
         "slug": "2512-sim2real-humanoid-locomotion-15min",
         "question": "Can minutes-scale off-policy sim-to-real training extend from locomotion and whole-body tracking to contact-rich loco-manipulation?",
         "source": "ai_analysis"
@@ -134,6 +139,11 @@
         "source": "ai_analysis"
       },
       {
+        "slug": "2502-recipe-humanoid-manipulation",
+        "question": "How stable are the gains across unseen task families, camera placements, and seeds when the total human setup effort is included?",
+        "source": "ai_analysis"
+      },
+      {
         "slug": "2606-simfoundry",
         "question": "Do simulation-to-reality correlations and cousin-driven gains persist across mobile manipulation, deformable objects, and contact regimes beyond DROID and YAM tabletop tasks?",
         "source": "ai_analysis"
@@ -143,6 +153,11 @@
       {
         "slug": "2403-rialto",
         "question": "Do robustness gains persist under seed-averaged evaluation, many more trials, and genuinely unseen deployment scenes?",
+        "source": "ai_analysis"
+      },
+      {
+        "slug": "2502-recipe-humanoid-manipulation",
+        "question": "How stable are the gains across unseen task families, camera placements, and seeds when the total human setup effort is included?",
         "source": "ai_analysis"
       },
       {
@@ -251,6 +266,48 @@
       {
         "slug": "2501-humanoid-locomotion-manipulation-survey",
         "question": "Foundation models need safer low-level grounding for unstable humanoid bodies.",
+        "source": "ai_analysis"
+      }
+    ],
+    "contact-dynamics": [
+      {
+        "slug": "2502-recipe-humanoid-manipulation",
+        "question": "How can dynamic contact behavior transfer more reliably than with conventional domain randomization, especially for bimanual handover?",
+        "source": "author"
+      }
+    ],
+    "reward-design": [
+      {
+        "slug": "2502-recipe-humanoid-manipulation",
+        "question": "How can reward construction incorporate stronger human priors while preserving the efficiency of simulation learning?",
+        "source": "author"
+      }
+    ],
+    "human-priors": [
+      {
+        "slug": "2502-recipe-humanoid-manipulation",
+        "question": "How can reward construction incorporate stronger human priors while preserving the efficiency of simulation learning?",
+        "source": "author"
+      }
+    ],
+    "dexterous-hardware": [
+      {
+        "slug": "2502-recipe-humanoid-manipulation",
+        "question": "Can the framework exploit more reliable hands with richer active degrees of freedom?",
+        "source": "author"
+      }
+    ],
+    "embodiment": [
+      {
+        "slug": "2502-recipe-humanoid-manipulation",
+        "question": "Can the framework exploit more reliable hands with richer active degrees of freedom?",
+        "source": "author"
+      }
+    ],
+    "human-effort": [
+      {
+        "slug": "2502-recipe-humanoid-manipulation",
+        "question": "How stable are the gains across unseen task families, camera placements, and seeds when the total human setup effort is included?",
         "source": "ai_analysis"
       }
     ],
@@ -1094,6 +1151,46 @@
       {
         "from": "2501-humanoid-locomotion-manipulation-survey",
         "to": "2602-perceptive-humanoid-parkour",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2502-recipe-humanoid-manipulation",
+        "to": "2303-diffusion-policy",
+        "predicate": "usesMethodIn",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": null
+      },
+      {
+        "from": "2303-diffusion-policy",
+        "to": "2502-recipe-humanoid-manipulation",
+        "predicate": "providesMethodFor",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": "usesMethodIn"
+      },
+      {
+        "from": "2502-recipe-humanoid-manipulation",
+        "to": "2403-rialto",
+        "predicate": "cites",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": null
+      },
+      {
+        "from": "2403-rialto",
+        "to": "2502-recipe-humanoid-manipulation",
+        "predicate": "isCitedBy",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": "cites"
+      },
+      {
+        "from": "2502-recipe-humanoid-manipulation",
+        "to": "2606-simfoundry",
         "predicate": "sharesTopicWith",
         "strength": "tangential",
         "directional": false,
@@ -2196,7 +2293,7 @@
         "inverse_of": null
       }
     ],
-    "total_edges": 189
+    "total_edges": 194
   },
   "paper_list": [
     {
@@ -3330,13 +3427,34 @@
       "has_memo": false,
       "has_gaps": true,
       "memo_preview": null
+    },
+    {
+      "slug": "2502-recipe-humanoid-manipulation",
+      "post_number": 88,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/brain/rl-policy",
+      "key_concepts": [
+        "RECIPE",
+        "Fourier-GR1",
+        "real-to-sim-autotuning",
+        "contact-goals",
+        "object-goals",
+        "task-aware-initialization",
+        "divide-and-conquer-distillation",
+        "sparse-dense-object-representations",
+        "bimanual-manipulation"
+      ],
+      "one_liner": "A four-part recipe combines robot-model autotuning, contact/object rewards, specialist-to-generalist learning, and depth-position perception for real humanoid dexterous manipulation.",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
     }
   ],
   "candidate_index": {
     "generated_at": "2026-08-30T22:41:20.292Z",
     "total_candidates": 1301,
-    "active_candidates": 1249,
-    "promoted_candidates": 52,
+    "active_candidates": 1248,
+    "promoted_candidates": 53,
     "rich_candidates": 572,
     "skeleton_candidates": 729,
     "by_survey": {
@@ -37383,7 +37501,7 @@
             "gap_slug": "2603-capx-coding-agents-manipulation"
           }
         ],
-        "promoted_to_slug": null,
+        "promoted_to_slug": "2502-recipe-humanoid-manipulation",
         "first_seen_at": "2026-04-25T05:33:28.692Z",
         "last_seen_at": "2026-08-30T22:41:20.292Z"
       },
