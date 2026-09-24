@@ -1,0 +1,135 @@
+{
+  "slug": "2606-t-rex-tactile-reactive-dexterous",
+  "post_number": 89,
+  "source_title": "T-Rex: Tactile-Reactive Dexterous Manipulation",
+  "arxiv_id": "2606.17055",
+  "doi": null,
+  "bibtex_key": null,
+  "domain": "robotics",
+  "subfields": [
+    "dexterous-manipulation",
+    "tactile-sensing",
+    "contact-rich-manipulation"
+  ],
+  "key_concepts": [
+    "VLA",
+    "tactile-sensing",
+    "flow-matching",
+    "VQ-VAE",
+    "asynchronous-control",
+    "human-to-robot-transfer"
+  ],
+  "methodology": [
+    "imitation-learning",
+    "mixture-of-experts",
+    "representation-learning",
+    "multi-stage-training"
+  ],
+  "taxonomy_primary": "robotics/brain/vla",
+  "taxonomy_secondary": [
+    "robotics/hand"
+  ],
+  "ai_summary": {
+    "one_liner": "A variable-rate three-expert VLA combines human-video priors with tactile mid-training and fast tactile action refinement.",
+    "problem": "Vision-dominated action chunks react too slowly to contact changes, while tactile encoders and training datasets often lack temporal and interaction diversity.",
+    "solution": "100 hours of synchronized tactile robot mid-training, temporal force VQ-VAE plus deformation encoding, and asynchronous cascaded flow matching with cached visual-language context.",
+    "key_result": "Table 1 reports a 65% average progress-based task score across 12 tasks versus 35% for EgoScale (+30 percentage points); each task uses 16 evaluation rollouts.",
+    "limitations": [
+      "Long-horizon tasks with tight tolerances remain difficult to demonstrate and execute.",
+      "Sensor distortion, calibration drift, and missing dense palm sensing constrain transfer.",
+      "Evaluation is concentrated on one robot/sensor platform and awards partial task completion."
+    ]
+  },
+  "terry_memos": [],
+  "terry_memo_topics": [],
+  "research_gaps": [
+    {
+      "question": "How can online correction or reinforcement learning improve long-horizon, tight-tolerance manipulation beyond teleoperated behavior cloning?",
+      "source": "author",
+      "relates_to": [
+        "dexterous-manipulation",
+        "imitation-learning"
+      ]
+    },
+    {
+      "question": "How can tactile representations transfer across sensor calibration, hardware, and fingertip-versus-palm coverage?",
+      "source": "author",
+      "relates_to": [
+        "tactile-sensing",
+        "representation-learning"
+      ]
+    },
+    {
+      "question": "Does the improvement persist across robot embodiments and longer runs when full completion is reported separately from partial progress?",
+      "source": "ai_analysis",
+      "relates_to": [
+        "dexterous-manipulation",
+        "human-to-robot-transfer"
+      ]
+    }
+  ],
+  "future_directions": [
+    {
+      "direction": "Combine imitation learning with reinforcement learning or online corrective feedback for difficult contact transitions.",
+      "source": "author"
+    },
+    {
+      "direction": "Develop unified tactile representations for heterogeneous sensors and extend sensing coverage to the palm.",
+      "source": "author"
+    },
+    {
+      "direction": "Evaluate across embodiments with full-completion rates, partial-progress scores, and uncertainty reported separately.",
+      "source": "ai_analysis"
+    }
+  ],
+  "next_reading": [
+    {
+      "slug": "2602-humanplus-humanoid-shadowing",
+      "reason": "EgoScale provides the human-video pretraining and robot-transfer basis used by T-Rex."
+    },
+    {
+      "slug": "2505-forcevla-force-aware-moe",
+      "reason": "Compare force-aware VLA fusion with T-Rex’s temporal tactile representation and fast refinement."
+    },
+    {
+      "slug": "2512-unitachand",
+      "reason": "Study cross-sensor tactile alignment as a possible route toward the transfer limitation identified by T-Rex."
+    }
+  ],
+  "survey_hooks": [],
+  "relations": [
+    {
+      "target": "2602-humanplus-humanoid-shadowing",
+      "type": "usesMethodIn",
+      "note": "Section 4.3 follows the EgoScale human-video pretraining and robot adaptation recipe.",
+      "strength": "foundational"
+    },
+    {
+      "target": "2505-forcevla-force-aware-moe",
+      "type": "cites",
+      "note": "Cited prior force-aware VLA work; T-Rex adds temporal fingertip sensing and asynchronous refinement.",
+      "strength": "foundational"
+    },
+    {
+      "target": "2409-3dtactile-dex",
+      "type": "sharesGoalWith",
+      "note": "Both learn tactile representations for contact-rich dexterous control; this edge is a thematic comparison.",
+      "strength": "direct"
+    },
+    {
+      "target": "2504-pp-tac",
+      "type": "sharesGoalWith",
+      "note": "Both address tactile control of thin objects, including paper; this is not a claim of methodological inheritance.",
+      "strength": "direct"
+    },
+    {
+      "target": "2512-unitachand",
+      "type": "sharesTopicWith",
+      "note": "Human-to-robot skill transfer and tactile representation provide complementary perspectives on sensor generalization.",
+      "strength": "tangential"
+    }
+  ],
+  "source_author": "Dantong Niu et al.",
+  "source_date": "2026-06-15T00:00:00Z",
+  "published_at": "2026-09-24T13:25:10Z"
+}

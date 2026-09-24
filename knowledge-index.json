@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-22T04:37:09.892Z",
-  "total_papers": 58,
+  "generated_at": "2026-09-24T13:42:07.624Z",
+  "total_papers": 59,
   "papers_with_memos": 2,
-  "papers_with_gaps": 56,
+  "papers_with_gaps": 57,
   "memo_index": {
     "VLA": [
       "2603-capx-coding-agents-manipulation"
@@ -63,6 +63,16 @@
         "slug": "2505-egodex-egocentric-dexterous-video",
         "question": "How can large egocentric human-video datasets be aligned with robot embodiments without losing dexterous contact and hand-object interaction detail?",
         "source": "author"
+      },
+      {
+        "slug": "2606-t-rex-tactile-reactive-dexterous",
+        "question": "How can online correction or reinforcement learning improve long-horizon, tight-tolerance manipulation beyond teleoperated behavior cloning?",
+        "source": "author"
+      },
+      {
+        "slug": "2606-t-rex-tactile-reactive-dexterous",
+        "question": "Does the improvement persist across robot embodiments and longer runs when full completion is reported separately from partial progress?",
+        "source": "ai_analysis"
       }
     ],
     "perception": [
@@ -260,6 +270,11 @@
         "slug": "2605-dexterous-hand-intelligence-survey",
         "question": "Hardware, tactile sensing, and policy learning are often optimized separately.",
         "source": "ai_analysis"
+      },
+      {
+        "slug": "2606-t-rex-tactile-reactive-dexterous",
+        "question": "How can tactile representations transfer across sensor calibration, hardware, and fingertip-versus-palm coverage?",
+        "source": "author"
       }
     ],
     "foundation-models": [
@@ -316,6 +331,11 @@
         "slug": "2505-egodex-egocentric-dexterous-video",
         "question": "How can large egocentric human-video datasets be aligned with robot embodiments without losing dexterous contact and hand-object interaction detail?",
         "source": "author"
+      },
+      {
+        "slug": "2606-t-rex-tactile-reactive-dexterous",
+        "question": "Does the improvement persist across robot embodiments and longer runs when full completion is reported separately from partial progress?",
+        "source": "ai_analysis"
       }
     ],
     "embodiment-gap": [
@@ -651,6 +671,20 @@
         "slug": "2606-simfoundry",
         "question": "Do simulation-to-reality correlations and cousin-driven gains persist across mobile manipulation, deformable objects, and contact regimes beyond DROID and YAM tabletop tasks?",
         "source": "ai_analysis"
+      }
+    ],
+    "imitation-learning": [
+      {
+        "slug": "2606-t-rex-tactile-reactive-dexterous",
+        "question": "How can online correction or reinforcement learning improve long-horizon, tight-tolerance manipulation beyond teleoperated behavior cloning?",
+        "source": "author"
+      }
+    ],
+    "representation-learning": [
+      {
+        "slug": "2606-t-rex-tactile-reactive-dexterous",
+        "question": "How can tactile representations transfer across sensor calibration, hardware, and fingertip-versus-palm coverage?",
+        "source": "author"
       }
     ],
     "scoring-token-logits": [
@@ -2261,6 +2295,62 @@
         "inverse_of": null
       },
       {
+        "from": "2606-t-rex-tactile-reactive-dexterous",
+        "to": "2602-humanplus-humanoid-shadowing",
+        "predicate": "usesMethodIn",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": null
+      },
+      {
+        "from": "2602-humanplus-humanoid-shadowing",
+        "to": "2606-t-rex-tactile-reactive-dexterous",
+        "predicate": "providesMethodFor",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": "usesMethodIn"
+      },
+      {
+        "from": "2606-t-rex-tactile-reactive-dexterous",
+        "to": "2505-forcevla-force-aware-moe",
+        "predicate": "cites",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": null
+      },
+      {
+        "from": "2505-forcevla-force-aware-moe",
+        "to": "2606-t-rex-tactile-reactive-dexterous",
+        "predicate": "isCitedBy",
+        "strength": "foundational",
+        "directional": true,
+        "inverse_of": "cites"
+      },
+      {
+        "from": "2606-t-rex-tactile-reactive-dexterous",
+        "to": "2409-3dtactile-dex",
+        "predicate": "sharesGoalWith",
+        "strength": "direct",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2606-t-rex-tactile-reactive-dexterous",
+        "to": "2504-pp-tac",
+        "predicate": "sharesGoalWith",
+        "strength": "direct",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
+        "from": "2606-t-rex-tactile-reactive-dexterous",
+        "to": "2512-unitachand",
+        "predicate": "sharesTopicWith",
+        "strength": "tangential",
+        "directional": false,
+        "inverse_of": null
+      },
+      {
         "from": "2607-llm-as-verifier",
         "to": "2604-automated-alignment-researchers",
         "predicate": "sharesGoalWith",
@@ -2293,7 +2383,7 @@
         "inverse_of": null
       }
     ],
-    "total_edges": 194
+    "total_edges": 201
   },
   "paper_list": [
     {
@@ -3445,6 +3535,24 @@
         "bimanual-manipulation"
       ],
       "one_liner": "A four-part recipe combines robot-model autotuning, contact/object rewards, specialist-to-generalist learning, and depth-position perception for real humanoid dexterous manipulation.",
+      "has_memo": false,
+      "has_gaps": true,
+      "memo_preview": null
+    },
+    {
+      "slug": "2606-t-rex-tactile-reactive-dexterous",
+      "post_number": 89,
+      "domain": "robotics",
+      "taxonomy_primary": "robotics/brain/vla",
+      "key_concepts": [
+        "VLA",
+        "tactile-sensing",
+        "flow-matching",
+        "VQ-VAE",
+        "asynchronous-control",
+        "human-to-robot-transfer"
+      ],
+      "one_liner": "A variable-rate three-expert VLA combines human-video priors with tactile mid-training and fast tactile action refinement.",
       "has_memo": false,
       "has_gaps": true,
       "memo_preview": null
