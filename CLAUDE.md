@@ -1,97 +1,81 @@
-# CLAUDE.md — Papers 콘텐츠 워크스페이스
+# CLAUDE.md
 
-## 이 워크스페이스의 역할
+## 1. Think Before Coding
 
-논문 포스팅, 지식그래프, 참고문헌 관리에 집중하는 워크스페이스.
-홈페이지 코드 수정, 인프라 변경은 `terryum-ai`에서 한다.
+Don't assume. Don't hide confusion. Surface tradeoffs.
 
-| 이곳에서 하는 것 | 이곳에서 하지 않는 것 |
+- State assumptions explicitly. If uncertain, ask.
+- If multiple interpretations exist, present them — don't pick silently.
+- If a simpler approach exists, say so. Push back when warranted.
+- If something is unclear, stop. Name what's confusing. Ask.
+
+## 2. Simplicity First
+
+Minimum code that solves the problem. Nothing speculative.
+
+- No features beyond what was asked.
+- No abstractions for single-use code.
+- No "flexibility" or "configurability" that wasn't requested.
+- No error handling for impossible scenarios.
+- If 200 lines could be 50, rewrite it.
+
+## 3. Surgical Changes
+
+Touch only what you must. Clean up only your own mess.
+
+- Don't "improve" adjacent code, comments, or formatting.
+- Don't refactor things that aren't broken.
+- Match existing style, even if you'd do it differently.
+- Mention unrelated dead code; don't delete it.
+- Remove imports/variables your changes orphaned.
+
+The test: every changed line should trace directly to the user's request.
+
+## 4. Goal-Driven Execution
+
+Define success criteria. Loop until verified.
+
+- "Add validation" → write tests for invalid inputs, then make them pass.
+- "Fix the bug" → write a test that reproduces it, then make it pass.
+- "Refactor X" → ensure tests pass before and after.
+
+For multi-step tasks, state a brief plan with verifiable checks per step.
+
+---
+
+## Workspace: terry-papers (paper posts + knowledge graph)
+
+Paper posting, knowledge graph, references. Homepage code/infra changes happen in `terryum-ai`, not here.
+
+| Do here | Don't do here |
 |---|---|
-| 논문 포스팅 (`/post`) | 홈페이지 코드/컴포넌트 수정 |
-| 블로그/에세이 포스팅 | Next.js 라우트 변경 |
-| 지식그래프 관리 (sync-papers, sync-references) | 빌드 스크립트 수정 |
-| R2 이미지 업로드 | Supabase 스키마 변경 |
-| 논문 추천 (`/paper-search`) | Cloudflare Workers/Pages 배포 설정 |
-| 포스트 삭제 (`/del`) | ACL/인증 시스템 수정 |
-| 소셜 공유 (`/share`) | |
-| Obsidian 동기화 | |
+| Paper posts (`/post`), essays, memos | Homepage code/components, Next.js routes |
+| Knowledge graph (sync-papers, sync-references) | Build scripts, Cloudflare deploy config |
+| R2 image uploads, post deletion (`/del`), share (`/share`) | Supabase schema, ACL/auth |
+| Paper recommendation (`/paper-search`), Obsidian sync | |
 
-## 프로젝트 구조
+### Layout (note the symlinks)
+- `posts/`, `scripts/`, `node_modules`, `package.json`, `content.config.json` → symlinks to `terryum-ai`.
+- `papers/<slug>.json` and `knowledge-index.json` are **owned by this repo** (AI insight cache produced by `scripts/export-knowledge.mjs`). Don't confuse with `posts/papers/<slug>/` (the MDX content under the symlink) — they share slugs.
 
-```
-terry-papers/
-├── CLAUDE.md              ← 이 파일
-├── posts/                 ← terryum-ai/posts/ 심링크
-│   ├── papers/            ← 논문 MDX + meta.json (소스 오브 트루스)
-│   ├── essays/            ← 에세이
-│   ├── memos/             ← 메모
-│   └── index.json         ← 포스트 인덱스 (generate-index.mjs로 생성)
-├── papers/                ← 논문별 AI 인사이트 JSON (이 레포에 직접 커밋)
-│   └── <slug>.json        ← terrys_memos, research_gaps, enriched relations
-├── knowledge-index.json   ← memo_index, gap_index, knowledge_graph 통합 인덱스
-├── scripts/               ← terryum-ai/scripts/ 심링크
-├── .claude/skills/        ← 스킬 심링크 (post, paper-search, del, share 등)
-└── .env.local             ← 환경변수 (R2, Supabase)
-```
+### Knowledge base
+`/post` and `/del` auto-run `export-knowledge.mjs`. Manual rebuild: `cd ~/Codes/personal/terryum-ai && node scripts/export-knowledge.mjs` (no args → outputs to this repo).
 
-> **`posts/papers/` vs `papers/` 헷갈리지 말 것.** `posts/papers/<slug>/`(심링크)는 MDX 콘텐츠와 meta.json의 소스 오브 트루스. 최상위 `papers/<slug>.json`은 거기서 추출한 AI 인사이트 캐시 — `scripts/export-knowledge.mjs`가 자동 갱신한다. 둘은 같은 슬러그를 공유.
+### Key commands
+- `/post https://arxiv.org/abs/...` — paper post
+- `/post --type=essays --from="<draft path>"` — essay/memo from Obsidian draft
+- `/post synthesis URL1 URL2` — multi-source synthesis
+- `/paper-search` — recommendation
+- `/share #N` — social share
+- `/del #N` — delete
 
-## 지식 베이스 (papers/, knowledge-index.json)
+### Git / private
+- Always `git pull --rebase origin main` before pushing to `terryum-ai`.
+- Separate content commits from code commits.
+- `--visibility=group --group=snu` posts: Supabase only (no Git trace). `posts/global-index.json` is gitignored.
 
-`/post` 또는 `/del` 실행 시 `scripts/export-knowledge.mjs`가 자동으로 두 파일을 갱신한다. AI 에이전트(`/paper-search` 등)는 별도 클론 없이 이 레포 안의 파일을 직접 읽으면 된다.
-
-- `papers/<slug>.json` — 논문별 인사이트 (`terry_memos`, `research_gaps`, 강화 관계)
-- `knowledge-index.json` — `memo_index`, `gap_index`, `knowledge_graph` (역방향 엣지 포함)
-
-수동 재생성: `cd ~/Codes/personal/terryum-ai && node scripts/export-knowledge.mjs` (인자 없음 → 이 레포로 출력)
-
-## 핵심 명령어
-
-```bash
-# 논문 포스팅
-/post https://arxiv.org/abs/XXXX.XXXXX
-
-# 블로그 포스팅
-/post --type=essays --from="~/Documents/Obsidian Vault/From Terry/Drafts/slug.md"
-
-# 다중 소스 종합
-/post synthesis URL1 URL2
-
-# 논문 추천
-/paper-search
-
-# 소셜 공유
-/share #N
-
-# 포스트 삭제
-/del #N
-```
-
-## Git 규칙
-
-- 이 워크스페이스에서 terryum-ai에 push할 때 반드시 `git pull --rebase origin main` 후 push
-- 콘텐츠 커밋과 코드 커밋을 분리
-
-## Supabase / 인증 시스템
-
-이 워크스페이스는 **Supabase 스키마, RLS 정책, ACL/그룹 인증 코드를 수정하지 않는다** (위 "이곳에서 하지 않는 것" 표 참조). 새 그룹이 필요하면 `terryum-ai/src/lib/group-auth.ts`의 `ALLOWED_GROUPS` allowlist + `.env.local` 갱신을 사용자에게 안내만 한다.
-
-## 환경변수 (.env.local)
-
-terryum-ai의 .env.local과 동일한 키 필요:
-- `NEXT_PUBLIC_SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`
-- `R2_ACCOUNT_ID`, `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY`, `R2_BUCKET_NAME`, `R2_PUBLIC_URL`
-- `NEXT_PUBLIC_R2_URL`
-
-## 비공개 포스트 규칙
-
-- `--visibility=group --group=snu` 포스트는 Supabase에만 저장 (Git에 흔적 없음)
-- `posts/global-index.json`은 gitignore (비공개 ID 포함)
-- 공개 포스트만 Git에 커밋
-
-## 참고
-
-- 홈페이지 개발: `terryum-ai`
-- Obsidian 운영: `terry-obsidian`
-- Survey 콘텐츠: `terry-surveys`
-- 사이트: https://www.terryum.ai
+### Pointers
+- Site: https://www.terryum.ai
+- Homepage code: `terryum-ai`. Obsidian ops: `terry-obsidian`. Surveys: `terry-surveys`.
+- Env keys: same `.env.local` shape as `terryum-ai` (Supabase + R2). See `terryum-ai/.env.example`.
+- Knowledge structure: `ONTOLOGY.md`.
